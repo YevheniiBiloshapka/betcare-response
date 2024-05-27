@@ -5,35 +5,135 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/index.min.css">
+	 <link
+		 rel="stylesheet"
+		 href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+	 />
 	<title>Главная</title>
 </head>
-	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
-	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/CustomEase.min.js"></script>
 	<body>
 		<header>
 
 </header>
 		<main>
+			<section class="hero">
+  <div class="swiper heroPageSwiper">
+    <ul class="swiper-wrapper">
+      <!--      slide 1-->
+      <li class="swiper-slide hero__slide red">
+        <div class="hero__slide red">
+          <picture class="hero__slide-img ">
+            <source srcset="./img/hero/red1728.webp" media="(min-width: 1728px)">
+            <source srcset="./img/hero/red1512.webp" media="(min-width: 1512px)">
+            <source srcset="./img/hero/red1280.webp" media="(min-width: 1280px)">
+            <source srcset="./img/hero/red1180.webp" media="(min-width: 1180px)">
+            <source srcset="./img/hero/red834.webp" media="(min-width: 834px)">
+            <source srcset="./img/hero/red375.webp" media="(min-width: 375px)">
+            <img class="hero__slide-img " src="./img/hero/red375.webp" alt="first image">
+          </picture>
 
-			<div class="wrapper">
-				<div class="boxes">
-					<div class="box">1</div>
-					<div class="box">2</div>
-					<div class="box">3</div>
-					<div class="box">4</div>
-					<div class="box" id="5">5usus</div>
-					<div class="box">6</div>
-					<div class="box">7</div>
-					<div class="box">8</div>
-					<div class="box">9</div>
-					<div class="box">10</div>
-				</div>
-			</div>
-			<button id="buttondfs">Button</button>
+          <div class="hero__info-box">
+            <h1 class="hero__info-box--title">We care.<br class="hero__info-box--title-first" /> You win.<br /><span>Personal<br class="span-br" /> VIP Concierge 24/7</span>
+            </h1>
+            <a href="#" class="hero__info-box--button button red"><span>Let’s talk!</span></a>
+          </div>
+
+          <div class="hero__scroll-button">
+            <p>Scroll</p>
+            <a class="hero__scroll-button-link" href="#services"><span></span></a>
+          </div>
+        </div>
+
+      </li>
+      <!--      slide 2-->
+      <li class="swiper-slide ">
+        <div class="hero__slide purple">
+
+          <picture class="hero__slide-img ">
+            <source srcset="./img/hero/purple1728.webp" media="(min-width: 1728px)">
+            <source srcset="./img/hero/purple1512.webp" media="(min-width: 1512px)">
+            <source srcset="./img/hero/purple1280.webp" media="(min-width: 1280px)">
+            <source srcset="./img/hero/purple1180.webp" media="(min-width: 1180px)">
+            <source srcset="./img/hero/purple834.webp" media="(min-width: 834px)">
+            <source srcset="./img/hero/purple375.webp" media="(min-width: 375px)">
+            <img class="hero__slide-img " src="./img/hero/purple1728.webp" alt="second image">
+          </picture>
+          <div class="hero__info-box">
+            <h2 class="hero__info-box--title">We care.<br class="hero__info-box--title-first" />You win.<br />
+              <span>Your Unique<br class="span-br" /> VIP Loyalty Program</span>
+            </h2>
+            <a href="#" class="hero__info-box--button button purple"><span>Activate Account</span></a>
+          </div>
+          <div class="hero__scroll-button">
+            <p>Scroll</p>
+            <a class="hero__scroll-button-link" href="#services"><span></span></a>
+          </div>
+        </div>
+      </li>
+      <!--      slide 3-->
+      <li class="swiper-slide ">
+        <div class="hero__slide orange">
+          <picture class="hero__slide-img ">
+            <source srcset="./img/hero/orange1728.webp" media="(min-width: 1728px)">
+            <source srcset="./img/hero/orange1512.webp" media="(min-width: 1512px)">
+            <source srcset="./img/hero/orange1280.webp" media="(min-width: 1280px)">
+            <source srcset="./img/hero/orange1180.webp" media="(min-width: 1180px)">
+            <source srcset="./img/hero/orange834.webp" media="(min-width: 834px)">
+            <source srcset="./img/hero/orange375.webp" media="(min-width: 375px)">
+            <img class="hero__slide-img " src="./img/hero/orange1728.webp" alt="second image">
+          </picture>
+          <div class="hero__info-box">
+            <h2 class="hero__info-box--title">
+              We care.<br class="hero__info-box--title-first" />You win.<br />
+              <span>Exclusive<br class="span-br" /> VIP <br class="span-br" />Offers</span>
+            </h2>
+
+            <a href="#" class="hero__info-box--button button orange"><span>Exclusive Deals</span></a>
+
+          </div>
+          <div class="hero__scroll-button">
+            <p>Scroll</p>
+            <a class="hero__scroll-button-link" href="#services"><span></span></a>
+          </div>
+        </div>
+      </li>
+      <!--      slide 4-->
+      <li class="swiper-slide ">
+        <div class="hero__slide green">
+          <picture class="hero__slide-img ">
+            <source srcset="./img/hero/green1728.webp" media="(min-width: 1728px)">
+            <source srcset="./img/hero/green1512.webp" media="(min-width: 1512px)">
+            <source srcset="./img/hero/green1280.webp" media="(min-width: 1280px)">
+            <source srcset="./img/hero/green1180.webp" media="(min-width: 1180px)">
+            <source srcset="./img/hero/green834.webp" media="(min-width: 834px)">
+            <source srcset="./img/hero/green375.webp" media="(min-width: 375px)">
+            <img class="hero__slide-img " src="./img/hero/green1728.webp" alt="second image">
+          </picture>
+          <div class="hero__info-box">
+            <h2 class="hero__info-box--title">We care.<br class="hero__info-box--title-first" />You win.<br />
+              <span>Honest<br class="span-br" /> VIP Programs Reviews</span>
+            </h2>
+            <a href="#" class="hero__info-box--button button green"><span>VIP Reviews</span></a>
+          </div>
+          <div class="hero__scroll-button">
+            <p>Scroll</p>
+            <a class="hero__scroll-button-link" href="#services"><span></span></a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</section>
+
+
+
+
 		</main>
 		<footer></footer>
 		<script src="js/index.min.js"></script>
-		<script src="js/home.min.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	</body>
 </html>

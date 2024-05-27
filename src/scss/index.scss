@@ -1,57 +1,28 @@
 @import "fonts";
+@import 'utils/variables';
+@import 'utils/scrollbar';
+@import 'utils/mixin';
+@import 'utils/reset';
+@import 'utils/base';
+@import 'utils/normalize';
 
-body {
-	font-family: CormorantUpright;
-	font-size: 50px;
-	span {
-		color: red;
-	}
-}
-
-
-.wrapper{
-	width:450px;
-	height:50px;
-	position:relative;
-	margin:auto;
-	background:#ccc;
-	overflow:hidden;
-}
-
-.wrapper::after {
-	width:448px;
-	height:48px;
-	content:"";
-	position:absolute;
-	border:solid 1px white;
-}
-
-.box{
-	width:50px;
-	height:50px;
-	position:absolute;
-	background:red;
-	font-size:25px;
-	line-height:50px;
-	text-align:center;
-	color: var(--color-just-black);
-
-}
+// components
+@import 'components/container';
+@import 'components/button';
+//@import 'components/modal';
+//@import 'components/select';
+//@import 'components/accordion';
+//@import 'components/inputs';
+//@import 'components/FAQ';
+//main
 
 
+//index page
+@import "pages/index/hero";
+@import "pages/index/service";
 
-.boxes {
-	display: flex;
-	flex-direction: column;
-	position:relative;
-	left:0;
-}
+// header footer
+//@import 'components/header';
+//@import 'components/footer';
 
-.nav {
-	position:relative;
-	text-align:center;
 
-	color:white;
-	font-size:20px;
-	margin:20px 0;
-}

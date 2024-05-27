@@ -13,7 +13,7 @@ export const js = () => {
 			entry:{
 				// Добавить еще страницы
 				index: './src/js/index.js',
-				home: './src/js/home.js',
+				// home: './src/js/home.js',
 			},
 			output: {
 				filename: '[name].min.js',

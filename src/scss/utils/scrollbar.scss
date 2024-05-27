@@ -1,0 +1,26 @@
+* {
+  scrollbar-width: auto;
+  scrollbar-color: $cl-neutral-900 transparent;
+
+  &::-webkit-scrollbar {
+    width: 0.35714rem;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+
+    border-radius: 10rem;
+    background: inherit;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10rem;
+    border: 0 none #fff;
+    background-color: $cl-neutral-900;
+    transition: all 280ms ease-in-out;
+
+    &:hover {
+      background-color: $cl-neutral-800;
+    }
+  }
+}

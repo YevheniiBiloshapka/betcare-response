@@ -51,7 +51,6 @@
     text-overflow: ellipsis;
     padding: 12px 0 12px 0;
     color: $cl-grey-300;
-    @include font($fs-14, 600, 157.143%);
 }
 
 //!Style focus
@@ -105,7 +104,7 @@
         cursor: pointer;
 
         color: $cl-base-black;
-        @include font($fs-14, 600, 157.143%);
+
         transition: all 0.3s ease-out;
 
         &:hover {

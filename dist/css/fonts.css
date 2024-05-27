@@ -1,28 +1,49 @@
 @font-face {
-  font-family: CormorantUpright;
+  font-family: Duplet;
   font-display: swap;
-  src: url("../fonts/CormorantUpright-Bold.woff2") format("woff2"), url("../fonts/CormorantUpright-Bold.woff") format("woff");
+  src: url("../fonts/Duplet-Bold.otf") format("opentype"), url("../fonts/Duplet-Bold.ttf") format("truetype"), url("../fonts/Duplet-Bold.woff2") format("woff2"), url("../fonts/Duplet-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: CormorantUpright;
+  font-family: Duplet;
   font-display: swap;
-  src: url("../fonts/CormorantUpright-Regular.woff2") format("woff2"), url("../fonts/CormorantUpright-Regular.woff") format("woff");
+  src: url("../fonts/Duplet-Light.otf") format("opentype"), url("../fonts/Duplet-Light.ttf") format("truetype"), url("../fonts/Duplet-Light.woff2") format("woff2"), url("../fonts/Duplet-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Duplet;
+  font-display: swap;
+  src: url("../fonts/Duplet-Regular.otf") format("opentype"), url("../fonts/Duplet-Regular.ttf") format("truetype"), url("../fonts/Duplet-Regular.woff2") format("woff2"), url("../fonts/Duplet-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: CormorantUpright;
+  font-family: Duplet;
   font-display: swap;
-  src: url("../fonts/CormorantUpright-SemiBold.woff2") format("woff2"), url("../fonts/CormorantUpright-SemiBold.woff") format("woff");
+  src: url("../fonts/Duplet-Thin.otf") format("opentype"), url("../fonts/Duplet-Thin.ttf") format("truetype"), url("../fonts/Duplet-Thin.woff2") format("woff2"), url("../fonts/Duplet-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: Duplet;
+  font-display: swap;
+  src: url("../fonts/Duplet-Extrabold.otf") format("opentype"), url("../fonts/Duplet-Extrabold.ttf") format("truetype"), url("../fonts/Duplet-Extrabold.woff2") format("woff2"), url("../fonts/Duplet-Extrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: Duplet;
+  font-display: swap;
+  src: url("../fonts/Duplet-Extralight.otf") format("opentype"), url("../fonts/Duplet-Extralight.ttf") format("truetype"), url("../fonts/Duplet-Extralight.woff2") format("woff2"), url("../fonts/Duplet-Extralight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: Duplet;
+  font-display: swap;
+  src: url("../fonts/Duplet-Semibold.otf") format("opentype"), url("../fonts/Duplet-Semibold.ttf") format("truetype"), url("../fonts/Duplet-Semibold.woff2") format("woff2"), url("../fonts/Duplet-Semibold.woff") format("woff");
   font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: TTTrailers;
-  font-display: swap;
-  src: url("../fonts/TTTrailers-Regular.woff2") format("woff2"), url("../fonts/TTTrailers-Regular.woff") format("woff");
-  font-weight: 400;
   font-style: normal;
 }

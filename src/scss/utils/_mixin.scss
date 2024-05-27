@@ -1,7 +1,7 @@
 @mixin transition(
-  $property: 'all',
-  $duration: '0.25s',
-  $timing-function: 'cubic-bezier(0.4, 0, 0.2, 1)'
+  $property: all,
+  $duration: 0.25s,
+  $timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 ) {
   transition: $property $duration $timing-function;
 }
@@ -11,6 +11,25 @@
   font-weight: $fw;
   line-height: $lh;
 }
+@mixin font-title($key) {
+  $font-styles: map-get($font-title, $key);
+  @each $property, $value in $font-styles {
+    #{$property}: $value;
+  }
+}
+@mixin font-body($key) {
+  $font-styles: map-get($font-body, $key);
+  @each $property, $value in $font-styles {
+    #{$property}: $value;
+  }
+}
+@mixin font-button($key) {
+  $font-styles: map-get($font-button, $key);
+  @each $property, $value in $font-styles {
+    #{$property}: $value;
+  }
+}
+
 
 $breakpoints: (
   mobile: 320px,

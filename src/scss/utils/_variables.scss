@@ -1,20 +1,154 @@
 //font-size
-$fs-h1: 64px;
-$fs-h2: 48px;
-$fs-h3: 40px;
-$fs-h4: 36px;
+$font-title: (
+        h1-lg: (
+                font-size: 6.42857rem,
+                font-weight: 600,
+                letter-spacing: 0.03571rem,
+                line-height: 6.85714rem
+        ),
+        h1-md: (
+                font-size: 5.57143rem,
+                font-weight:600,
+                letter-spacing: 0.03571rem,
+                line-height:  6rem
 
-$fs-32: 32px;
-$fs-30: 30px;
-$fs-28: 28px;
-$fs-26: 26px;
-$fs-24: 24px;
-$fs-22: 22px;
-$fs-20: 20px;
-$fs-18: 18px;
-$fs-16: 16px;
-$fs-14: 14px;
-$fs-12: 12px;
+        ),
+        h1-sm: (
+                font-size: 3.5rem,
+                font-weight: 600,
+                line-height: 3.861rem,
+                letter-spacing: 0.03571rem,
+        ),
+        h2-lg: (
+                font-size: 6.42857rem,
+                font-weight: 600,
+                line-height: 6.85714rem,
+                letter-spacing: 0.03571rem,
+        ),
+        h2-md: (
+                font-size: 2.28571rem,
+                font-weight: 600,
+                line-height: 2.85714rem,
+                letter-spacing: 0.03571rem,
+        ),
+        h2-sm: (
+                font-size: 2.28571rem,
+                font-weight: 600,
+                line-height: 2.85714rem,
+                letter-spacing: 0.03571rem,
+        ),
+        h1-mob: (
+                font-size: 3rem,
+                font-style: normal,
+                font-weight: 600,
+                line-height: 3.76rem,
+                letter-spacing: 0.03571rem,
+        ),
+        h2-mob: (
+                font-size: 1.71429rem,
+                font-weight: 600,
+                line-height: 2.28571rem,
+                letter-spacing: 0.03571rem,
+        ),
+
+);
+$font-body: (
+        large-bold: (
+                font-size: 1.71429rem,
+                font-weight: 600,
+                line-height: 2.57143rem,
+                letter-spacing: 0.03571rem,
+        ),
+        large:(
+                font-size: 1.71429rem,
+                font-style: normal,
+                font-weight: 400,
+                line-height: 2.57143rem,
+                letter-spacing: 0.03571rem,
+        ),
+        big-bold:(
+                font-size: 1.28571rem,
+                font-style: normal,
+                font-weight: 600,
+                line-height: 1.71429rem,
+                letter-spacing: 0.03571rem,
+        ),
+        big:(
+                font-size: 1.28571rem,
+                font-weight: 400,
+                line-height: 1.71429rem,
+                letter-spacing: 0.03571rem
+        ),
+        normal-bold:(
+                font-size: 1.14286rem,
+                font-weight: 600,
+                line-height: 1.71429rem,
+                letter-spacing: 0.03571rem
+        ),
+        normal:(
+                font-size: 1.14286rem,
+                font-weight: 400,
+                line-height: 1.71429rem,
+                letter-spacing: 0.03571rem,
+        ),
+        small-bold:(
+                font-size: 0.98rem,
+                font-weight: 500,
+                line-height: 1.28571rem,
+                letter-spacing: 0.03571rem,
+        ),
+        small:(
+                font-size: 1rem,
+                font-weight: 400,
+                line-height: 1.28571rem,
+                letter-spacing: 0.03571rem,
+        ),
+        micro-bold:(
+                font-size: 0.85714rem,
+                font-weight: 600,
+                line-height: 1.14286rem,
+                letter-spacing: 0.03571rem,
+        ),
+        micro:(
+                font-size: 0.85714rem,
+                font-weight: 400,
+                line-height: 1.14286rem,
+                letter-spacing: 0.03571rem,
+        ),
+);
+$font-button:(
+        large:(
+                font-size: 1.42857rem,
+                font-weight: 600,
+                line-height: 1.42857rem,
+                letter-spacing: 0.03571rem,
+        ),
+        medium:(
+                font-size: 1.14286rem,
+                font-weight: 600,
+                line-height: 1.14286rem,
+                letter-spacing: 0.03571rem,
+        ),
+        small:(
+                font-size: 1rem,
+                font-weight: 500,
+                line-height: 1rem,
+                letter-spacing: 0.03571rem
+        ),
+        micro:(
+                font-size: 1rem,
+                font-weight: 600,
+                line-height: 1rem,
+                letter-spacing: 0.03571rem,
+        ),
+        link:(
+                font-size: 0.85714rem,
+                font-weight: 400,
+                line-height: 0.85714rem,
+                letter-spacing: 0.03571rem,
+                text-decoration-line: underline
+        )
+);
 
 //border-radius
 $br-button: 100px;
@@ -25,34 +159,58 @@ $br-2: 2px;
 $br-1: 1px;
 
 //base
-$cl-base-white: #fff;
-$cl-base-black: #191818;
-$cl-base-primary: #ec6608;
-$cl-base-primary-hover: #d85200;
+$cl-neutral-900:#1B1B1B;
+$cl-neutral-800:#353535;
+$cl-neutral-700:#575757;
+$cl-neutral-600:#727272;
+$cl-neutral-400:#A3A3A3;
+$cl-neutral-300:#C2C2C2;
+$cl-neutral-200:#F5F5F5;
+$cl-neutral-100:#FFF;
 
-//Greyscale
-$cl-grey-900: #232222;
-$cl-grey-800: #2d2c2c;
-$cl-grey-700: #373636;
-$cl-grey-600: #414040;
-$cl-grey-500: #555454;
-$cl-grey-400: #737272;
-$cl-grey-300: #a5a4a4;
-$cl-grey-200: #cdcccc;
-$cl-grey-100: #ebeaea;
-$cl-grey-50: #f4f3f3;
+//magenta
+$cl-magenta-900:#C01760;
+$cl-magenta-800:#DE3768;
+$cl-magenta-700:#FF5970;
+$cl-magenta-200:#FFD7E4;
+$cl-magenta-100:#FFEFF5;
 
-//Other
-$cl-other-green: #299c46;
-$cl-other-red: #e9303b;
-$cl-other-orange: #fba91d;
-$cl-other-blue: #32b1e8;
+//Gradient
+$gr-text-1: linear-gradient(90deg, #E1126E 2.22%, #FF996E 52.07%, #FF4A4A 80.55%);
+$gr-text-2: linear-gradient(90deg, #3B5EFF 25.36%, #A09EFF 49.29%, #A838FF 73.22%);
+$gr-text-3: linear-gradient(90deg, #FE5A14 25.36%, #FFBC3B 50.04%, #FF1919 73.22%);
+$gr-text-4: linear-gradient(90deg, #2EA380 8.91%, #E7F899 47.84%, #88D11D 92.77%);
+$gr-text-5: linear-gradient(90deg, #FFBC3B 0.23%, #FF6051 50.08%, #FF4AB0 99.94%, #FF4AAC 99.94%);
+$gr-text-6: linear-gradient(90deg, #FFBC3B 55.67%, #FF6051 73.03%, #FF528C 90.39%);
 
-//background
-$cl-bg-default: #fafafa;
+//gradient button
+$gr-btn-1-default: linear-gradient(90deg, rgba(255, 155, 60, 0.80) 0.1%, rgba(255, 79, 64, 0.80) 50%, rgba(219, 50, 120, 0.80) 99.9%);
+$gr-btn-1-hover: linear-gradient(90deg, #FF9B3C 0.1%, #FF4F40 50%, #DB3278 99.9%);
+$gr-btn-1-stroke: linear-gradient(90deg, #FFBC3B 30.89%, #FF4F40 60.43%, #AE1D6E 89.96%);
+
+$gr-btn-2-default: linear-gradient(90deg, rgba(162, 161, 236, 0.80) 0.04%, rgba(75, 111, 237, 0.80) 47.81%, rgba(150, 46, 232, 0.80) 99.96%);
+$gr-btn-2-hover: linear-gradient(90deg, #A2A1EC 0.04%, #4B6FED 47.81%, #962EE8 99.96%);
+$gr-btn-2-stroke: linear-gradient(90deg, #B9B8F6 0.04%, #3D5DD2 50.5%, #5D1695 99.96%);
+
+$gr-btn-3-default: linear-gradient(90deg, rgba(255, 188, 59, 0.80) 0.04%, rgba(254, 90, 20, 0.80) 49.63%, rgba(255, 25, 25, 0.80) 99.96%);
+$gr-btn-3-hover: linear-gradient(90deg, #FFBC3B 0.04%, #FE5A14 49.63%, #FF1919 99.96%);
+$gr-btn-3-stroke: linear-gradient(90deg, #FFC047 0.04%, #DF5012 48.5%, #C40C0C 99.96%);
+
+$gr-btn-4-default: linear-gradient(90deg, rgba(200, 217, 121, 0.80) 0%, rgba(136, 209, 29, 0.80) 50.44%, rgba(46, 163, 128, 0.80) 100%);
+$gr-btn-4-hover: linear-gradient(90deg, #C8D979 0%, #88D11D 50.44%, #2EA380 100%);
+$gr-btn-4-stroke: linear-gradient(90deg, #E7F899 0%, #E4F0AF 0.01%, #97DD31 48.21%, #176850 100%);
+
+//diagonal grad
+$gr-dg-1: linear-gradient(145deg, #E1126E 13.59%, #FF996E 54.92%, #FF4A4A 78.53%);
+$gr-dg-2: linear-gradient(140deg, #3B5EFF 16.92%, #A09EFF 52.46%, #A838FF 87.99%);
+$gr-dg-3: linear-gradient(133deg, #FE5A14 12.34%, #FFBC3B 50.76%, #FF1919 86.85%);
+$gr-dg-4: linear-gradient(138deg, #237427 8.16%, #E5F1AF 43.64%, #A4D35F 94.7%);
 
 //animation
-$anim-linear: 0.3s linear;
+$anim-linear: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 //shadow
-$shadow-modal: 0px 14px 24px 0px rgba(0, 0, 0, 0.47);
+$shd-card: 3px 5px 15px 0px rgba(91, 7, 48, 0.40);
+$shd-simple: 6px 6px 19px 0px rgba(148, 148, 148, 0.12);
+$shd-inner: 0px 0px 80px 0px rgba(0, 0, 0, 0.30) inset;
+$shd-floating: 2px 2px 8px 0px rgba(0, 0, 0, 0.40);
