@@ -1,0 +1,190 @@
+body {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    color: $cl-base-black;
+    background-color: $cl-bg-default;
+    letter-spacing: 0.03em;
+    overflow-x: hidden;
+    margin: 0;
+    position: relative;
+}
+
+main {
+    overflow-x: hidden;
+    min-height: calc(100vh - 448px);
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.visually-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Manrope;
+    font-style: normal;
+    src: url('../fonts/Manrope-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Manrope;
+    font-style: normal;
+    src: url('../fonts/Manrope-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Manrope;
+    font-style: normal;
+    src: url('../fonts/Manrope-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Manrope;
+    font-style: normal;
+    src: url('../fonts/Manrope-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Manrope;
+    font-style: normal;
+    src: url('../fonts/Manrope-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Manrope;
+    font-style: normal;
+    src: url('../fonts/Manrope-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Manrope;
+    font-style: normal;
+    src: url('../fonts/Manrope-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+}
+
+.title {
+    color: $cl-base-black;
+    @include font($fs-30, 700, 140%);
+    font-style: normal;
+    @media screen and (min-width: 744px) {
+        @include font($fs-h3, 700, 140%);
+    }
+}
+
+.horizontal-scrollbar {
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: $br-button;
+    }
+
+    &::-webkit-scrollbar {
+        height: 2px;
+        width: 6px;
+        background-color: transparent;
+        border-radius: $br-button;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        cursor: pointer;
+        background-color: $cl-grey-100;
+        border-radius: $br-button;
+
+        &:hover {
+            background-color: $cl-base-primary-hover;
+        }
+    }
+}
+
+.banner__inner {
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+    min-height: 215px;
+    max-height: 215px;
+
+
+    border-radius: 8px;
+    background-color: $cl-grey-50;
+
+    &--image {
+        width: 100%;
+        min-height: 215px;
+        max-height: 215px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &--box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 310px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        padding: 16px;
+    }
+
+    & .banner__inner--title {
+        color: $cl-base-white;
+        text-align: center;
+        @include font($fs-20, 700, 140%);
+    }
+
+
+    @media screen and (min-width: 744px) {
+        min-height: 325px;
+        max-height: 325px;
+
+        &--image {
+            min-height: 325px;
+            max-height: 325px;
+        }
+        &--box {
+            max-width: 555px;
+        }
+        & .banner__inner--title {
+            @include font($fs-32, 700, 125%);
+        }
+    }
+}

@@ -1,0 +1,855 @@
+@import 'select';
+@import 'inputs';
+
+.header {
+    background-color: $cl-base-black;
+
+    &__burger-menu {
+        flex: 1;
+        display: flex;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+
+        & svg {
+            fill: $cl-base-white;
+        }
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 16px;
+    }
+
+    &__logo {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+
+        & svg {
+            width: 115px;
+            height: 34px;
+        }
+    }
+
+    & .navbar {
+        flex: 1;
+    }
+
+    &__controls {
+        flex: 1;
+    }
+
+    @media screen and (min-width: 744px) {
+        &__logo {
+            & svg {
+                width: 140px;
+                height: 45px;
+            }
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        &__logo {
+            justify-content: start;
+        }
+        &__burger-menu {
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+}
+
+// TODO: Стили для десктопной панели навигации
+.navbar {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    width: 0;
+    height: 100vh;
+    padding: 24px 16px;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: $cl-base-white;
+
+    ul {
+        list-style: none;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    &.show {
+        display: flex;
+        width: 100%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        padding: 0;
+        align-items: center;
+        flex-direction: row;
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+
+        background-color: transparent;
+    }
+}
+
+// Стили для .navbar-nav
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+
+    & .nav-link {
+        white-space: nowrap;
+        color: $cl-grey-600;
+        @include font($fs-14, 600, 157.143%);
+        transition: 150ms ease;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        & .nav-link {
+            color: $cl-grey-100;
+        }
+    }
+    @media screen and (min-width: 1440px) {
+        gap: 32px;
+    }
+}
+
+// Стили для .nav-item
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    padding: 7px 0;
+
+    &__icon {
+        transition: 0.15s linear;
+        fill: $cl-grey-200;
+        transform: rotate(-90deg);
+    }
+
+    &:hover > &__icon {
+        transform: rotate(180deg);
+        color: $cl-base-primary-hover;
+        fill: $cl-base-primary-hover;
+    }
+
+    &:hover > .nav-link {
+        color: $cl-base-primary;
+    }
+
+    &:hover > .dropdown {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+        top: 0;
+        left: 0;
+        transition: 100ms;
+        width: 100%;
+        height: 100%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: start;
+        position: relative;
+        padding: 7px 0;
+        &__icon {
+            transform: rotate(0deg);
+            fill: $cl-grey-100;
+        }
+        &:hover > .dropdown {
+            display: block;
+            width: fit-content;
+            height: fit-content;
+            min-width: 320px;
+            left: 0;
+            top: 36px;
+        }
+    }
+}
+
+// Стили для .dropdown
+.dropdown {
+    display: block;
+    visibility: hidden;
+    width: 0;
+    top: 0;
+    left: 0;
+    padding: 8px 0;
+    position: absolute;
+    opacity: 0;
+    transform: translateY(5px);
+    height: 100%;
+    background-color: $cl-base-white;
+    z-index: 999;
+
+
+    & > .nav-item {
+        justify-content: space-between;
+        position: unset;
+        width: 100%;
+        padding: 10px 20px;
+
+
+        & .nav-item__icon {
+            transform: rotate(-90deg) !important;
+        }
+
+        &:hover {
+            background-color: $cl-grey-800;
+        }
+
+        &:hover .nav-item__icon {
+            fill: $cl-base-primary-hover;
+        }
+    }
+
+    & > .nav-item__icon {
+        transform: rotate(45deg) !important;
+    }
+
+    & .nav-link {
+        align-items: start;
+        width: 100%;
+        color: $cl-grey-300;
+        @include font($fs-14, 500, 157.143%);
+    }
+
+    & > .nav-item:hover > .nav-link {
+        color: $cl-base-white;
+    }
+
+    & .dropdown {
+        top: 0;
+        left: 100%;
+        width: 0;
+        height: 0;
+        z-index: 966;
+        box-shadow: 5px 14px 24px 0px rgba(0, 0, 0, 0.47);
+        border-left: 1px solid rgba(74, 74, 79, 0.32);
+
+        & .nav-link {
+            align-items: start;
+            width: 100%;
+            color: $cl-grey-300;
+            @include font($fs-16, 500, 157.143%);
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        top: 35px;
+        height: fit-content;
+        background-color: $cl-grey-900;
+        box-shadow: $shadow-modal;
+        & > .nav-item {
+            &:hover > .dropdown {
+                min-width: fit-content;
+                min-height: 100%;
+                width: fit-content;
+                height: fit-content;
+                left: 100%;
+                top: 0;
+            }
+        }
+    }
+}
+
+// TODO: header controls
+
+.header__controls {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    &--basket,
+    &--language-switcher,
+    &--search {
+        height: 40px;
+        cursor: pointer;
+
+        fill: $cl-grey-100;
+        color: $cl-grey-100;
+
+        &:hover {
+            background-color: $cl-grey-900;
+            cursor: $cl-base-primary-hover;
+        }
+    }
+
+    &--basket {
+        fill: $cl-base-white;
+    }
+
+    @media screen and (min-width: 744px) {
+        //gap: 12px;
+    }
+}
+
+//! basket label
+.header__controls--basket {
+    position: relative;
+
+    &-label {
+        position: absolute;
+        top: 5px;
+        right: 3px;
+
+        display: none;
+        padding: 3px 4px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 90px;
+
+        text-align: center;
+        @include font(10px, 600, 90%);
+
+        color: $cl-base-white;
+        background-color: $cl-base-primary;
+
+        &.is-hidden {
+            display: flex;
+        }
+    }
+}
+
+//!language switcher
+.header__controls--language-switcher {
+    padding: 0;
+    width: 64px;
+    max-width: 64px;
+    min-width: 64px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    justify-content: center;
+
+    &:hover {
+        background-color: transparent;
+
+        & .custom-select__active-list-svg {
+            fill: $cl-base-primary-hover;
+        }
+
+        & .custom-select__active-list-value {
+            color: $cl-base-primary-hover !important;
+        }
+    }
+
+    .custom-select {
+        width: fit-content;
+    }
+
+    & .custom-select__active-list {
+        gap: 4px;
+        padding-right: 0;
+        justify-content: normal;
+    }
+
+    & .custom-select__active-list-svg {
+        fill: $cl-base-white;
+    }
+
+    & .select.added .custom-select__active-list-value, & .custom-select__active-list-value {
+        color: $cl-base-white !important;
+    }
+
+    // * dropdown
+    .custom-select__drop-down-list {
+        border: 1px solid transparent;
+        background-color: $cl-grey-900;
+        box-shadow: 0px 14px 24px 0px rgba(0, 0, 0, 0.47);
+    }
+
+    // * dropdown item
+    & .custom-select__drop-down-list-item {
+        color: $cl-grey-300;
+        text-align: center;
+
+        &.active {
+            color: $cl-base-white;
+        }
+
+        &:hover {
+            background-color: $cl-base-primary-hover;
+            color: $cl-base-white;
+        }
+    }
+
+    // * dropdown item
+    &.focus, .select.focus {
+        border: 1px solid transparent;
+
+        & .custom-select__active-list-value {
+            color: $cl-base-primary !important;
+        }
+
+        & .custom-select__active-list-svg {
+            fill: $cl-base-primary;
+        }
+    }
+
+    &:hover {
+        border: 1px solid transparent;
+    }
+}
+
+// TODO: Стили для десктопной панели навигации
+.mobile__navbar-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+
+    &__title {
+        color: $cl-grey-900;
+        @include font($fs-16, 600, 150%);
+    }
+
+    &__button-close {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        padding: 0;
+        width: 20px;
+        height: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+    }
+}
+
+.mobile__navbar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &__button-back {
+        border: none;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        height: 14px;
+        width: 7px;
+    }
+
+    &__icon {
+        fill: $cl-grey-300;
+    }
+
+    &-dropdown {
+        display: none;
+    }
+
+    &-item {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-link {
+        display: flex;
+        justify-content: space-between;
+        padding: 7px 0;
+        width: 100%;
+        color: $cl-grey-600;
+        @include font($fs-14, 600, 157.143%);
+    }
+
+    &-item.show {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: $cl-base-white;
+    }
+
+    &-item.show &__icon.show {
+        display: none;
+    }
+
+    &-item.show &-dropdown.show {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 24px 16px;
+        width: 100%;
+        height: 100%;
+    }
+
+    &-item.show &-link.show {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.mobile__navbar-nav-dropdown {
+    left: 100%;
+    min-height: 100%;
+    z-index: 966;
+
+    & .nav-link {
+        align-items: start;
+        width: 100%;
+        color: $cl-grey-300;
+        @include font($fs-16, 500, 157.143%);
+    }
+}
+
+// dropdown mobile
+.dropdown-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 16px;
+    margin-bottom: 16px;
+    text-align: center;
+
+    & .navbar-mobile__button-back {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        padding: 0;
+        width: 8.5px;
+        height: 15.5px;
+        flex: 1 0 20px;
+    }
+
+    & .navbar-mobile__title {
+        flex: 100%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+    }
+}
+
+//TODO: Поиск
+.header__modal-search-backdrop {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: rgba(35, 34, 34, 0.47);
+
+    &.is-hidden {
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    &.is-hidden .modal {
+        transform: translate(-50%, -50%) scale(0.2);
+        opacity: 0;
+    }
+}
+
+.header__modal-search {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 12px;
+
+    width: 100%;
+    height: 100%;
+    min-width: 288px;
+    min-height: 400px;
+    max-width: 288px;
+    max-height: 500px;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+
+    background-color: $cl-grey-900;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 375px) {
+        min-width: 343px;
+        min-height: 343px;
+    }
+    @media screen and (min-width: 425px) {
+        min-width: 393px;
+        min-height: 393px;
+    }
+    @media screen and (min-width: 744px) {
+        min-width: 500px;
+        min-height: 500px;
+        padding: 24px;
+    }
+}
+
+//TODO: контент
+.header__modal-search-content {
+    & .input__search {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+}
+
+.header__content {
+    &--category-search,
+    &--product,
+    &--results {
+        &.is-hidden {
+            display: none;
+        }
+    }
+
+    &--category-search {
+        margin-bottom: 16px;
+
+        &-title {
+            color: $cl-base-white;
+            @include font($fs-14, 600, 157.143%);
+            margin-bottom: 8px;
+        }
+
+        &-info {
+            padding: 6px 0 2px 0;
+            color: $cl-grey-300;
+            @include font($fs-16, 500, 150%);
+
+            & span {
+                color: $cl-base-primary;
+            }
+        }
+    }
+
+    &--product {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        max-height: 294px;
+        overflow: hidden;
+
+        &-title {
+            color: $cl-base-white;
+            @include font($fs-14, 600, 157.143%);
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            overflow-y: scroll;
+            padding-right: 8px;
+
+            &::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                background-color: transparent;
+                border-radius: $br-button;
+            }
+
+            &::-webkit-scrollbar {
+                width: 6px;
+                background-color: transparent;
+                border-radius: $br-button;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: $cl-base-primary;
+                border-radius: $br-button;
+
+                &:hover {
+                    background-color: $cl-base-primary-hover;
+                }
+            }
+        }
+
+        &-item {
+        }
+    }
+
+    &--results {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 10px;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+        & a {
+            text-align: center;
+            cursor: pointer;
+            color: $cl-base-primary;
+            @include font($fs-14, 600, 157.143%);
+
+            &:hover {
+                color: $cl-base-primary-hover;
+            }
+        }
+    }
+}
+
+//TODO: Карточка
+.header__content--product-item {
+    display: flex;
+    border-radius: 1px;
+    border: 1px solid $cl-grey-500;
+    background-color: $cl-grey-700;
+    width: 100%;
+    //TODO: Image
+    &-image {
+        display: flex;
+        flex-direction: column;
+        min-width: 100px;
+        width: 100px;
+        height: 92px;
+        position: relative;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media screen and (min-width: 744px) {
+            min-width: 120px;
+            height: 71px;
+        }
+    }
+
+    &-label {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 8px;
+        background-color: $cl-grey-700;
+        border-radius: $br-button;
+        white-space: nowrap;
+
+        top: 6px;
+        left: 6px;
+        color: $cl-base-white;
+        @include font(11px, 800, 181.818%);
+
+        &.sale {
+            background-color: $cl-other-red;
+        }
+
+        &.new {
+            background-color: $cl-other-blue;
+        }
+
+        &.top {
+            background-color: $cl-other-green;
+        }
+    }
+
+    //TODO: info
+    &-info {
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        width: 100%;
+        @media screen and (min-width: 744px) {
+            padding: 8px 12px;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+    }
+
+    &-opt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 8px;
+        width: fit-content;
+        height: fit-content;
+
+        border-radius: $br-button;
+        background-color: $cl-base-black;
+        color: $cl-base-white;
+        @include font(11px, 400, 181.818%);
+    }
+
+    &-title {
+        color: $cl-base-white;
+        @include font(14px, 700, 157.143%);
+        margin-bottom: 6px;
+        max-width: 10em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @media screen and (min-width: 375px) {
+            max-width: 13em;
+        }
+        @media screen and (min-width: 425px) {
+            max-width: 17em;
+        }
+        @media screen and (min-width: 744px) {
+            max-width: 12em;
+            margin-bottom: 4px;
+        }
+    }
+
+    &-price {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: $cl-base-white;
+        @include font($fs-20, 700, 122%);
+
+        & span {
+            display: none;
+            color: $cl-grey-200;
+            @include font($fs-14, 500, 157.143%);
+            text-decoration-line: line-through;
+        }
+
+        &.sale {
+            color: $cl-other-red;
+
+            & span {
+                display: flex;
+            }
+        }
+    }
+}

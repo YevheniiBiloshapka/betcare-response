@@ -1,0 +1,248 @@
+//TODO: Button Outline
+
+
+.button-outline {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 30px;
+    font-family: 'Manrope', sans-serif;
+    gap: 10px;
+    width: fit-content;
+    cursor: pointer;
+    border: none;
+    white-space: nowrap;
+
+    border-radius: $br-button;
+    outline: 1px solid $cl-base-black;
+    background-color: $cl-base-white;
+    color: $cl-base-black;
+    @include font($fs-16, 600, 150%);
+    transition: background-color 0.3s,
+    border-color 0.3s;
+
+    & svg {
+        width: 20px;
+        height: 20px;
+        fill: $cl-grey-700;
+        color: $cl-grey-700;
+    }
+
+    &:hover {
+        outline: 1px solid $cl-grey-800;
+        color: $cl-grey-800;
+
+        & svg {
+            fill: $cl-grey-800;
+            color: $cl-grey-800;
+        }
+    }
+
+    &.small {
+        padding: 8px 16.5px;
+    }
+
+    &.disabled {
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+}
+
+.button-outline-primary {
+    @extend .button-outline;
+    outline: 1px solid $cl-base-primary;
+    background-color: $cl-base-white;
+    color: $cl-base-primary;
+
+    & svg {
+        fill: $cl-base-primary;
+        color: $cl-base-primary;
+    }
+
+    &:hover {
+        outline: 1px solid $cl-base-primary-hover;
+        color: $cl-base-primary-hover;
+
+        & svg {
+            fill: $cl-base-primary-hover;
+            color: $cl-base-primary-hover;
+        }
+    }
+}
+
+//TODO: Button Fill
+.button {
+    @extend .button-outline;
+    background-color: $cl-base-black;
+    color: $cl-base-white;
+    outline: 1px solid transparent;
+    height: fit-content;
+
+    & svg {
+        fill: $cl-base-white;
+        color: $cl-base-white;
+    }
+
+    &:hover {
+        background-color: $cl-grey-800;
+        color: $cl-base-white;
+        outline: 1px solid transparent;
+
+        & svg {
+            fill: $cl-base-white;
+            color: $cl-base-white;
+        }
+    }
+}
+
+.button-primary {
+    @extend .button;
+    background-color: $cl-base-primary;
+    color: $cl-base-white;
+    outline: 1px solid transparent;
+
+    & svg {
+        fill: $cl-base-white;
+        color: $cl-base-white;
+    }
+
+    &:hover {
+        background-color: $cl-base-primary-hover;
+        color: $cl-base-white;
+        outline: 1px solid transparent;
+
+        & svg {
+            fill: $cl-base-white;
+            color: $cl-base-white;
+        }
+    }
+}
+
+//TODO: Button link
+.button-link {
+    @extend .button-outline;
+    outline: none;
+    background-color: transparent;
+    color: $cl-base-black;
+
+    & svg {
+        fill: $cl-base-black;
+        color: $cl-base-black;
+    }
+
+    &:hover {
+        color: $cl-base-primary-hover;
+        outline: none;
+
+        & svg {
+            fill: $cl-base-primary-hover;
+            color: $cl-base-primary-hover;
+        }
+    }
+}
+
+.button-link-primary {
+    @extend .button-link;
+    color: $cl-base-primary;
+
+    & svg {
+        fill: $cl-base-primary;
+        color: $cl-base-primary;
+    }
+}
+
+//TODO: link
+.link {
+    display: inline-flex;
+
+    justify-content: center;
+    align-items: center;
+    color: $cl-grey-300;
+
+    @include font($fs-14, 500, 157.143%);
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        border-bottom: 1px solid $cl-base-white;
+        color: $cl-base-white;
+    }
+
+    @media screen and (min-width: 744px) {
+        @include font($fs-16, 500, 150%);
+        padding: 6px 0px 2px 0px;
+    }
+}
+
+//TODO: Social Icons
+
+.social__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: $br-button;
+    outline: 1px solid transparent;
+    background-color: $cl-grey-900;
+    backdrop-filter: blur(17px);
+    width: fit-content;
+    height: fit-content;
+
+    & svg {
+        width: 16px;
+        height: 16px;
+        color: white;
+        fill: white;
+    }
+
+    &:hover {
+        outline: 1px solid $cl-base-white;
+        animation: pulsate-bck 0.5s ease-in-out 2 both;
+    }
+}
+
+
+.close__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+        fill: $cl-base-primary-hover;
+    }
+}
+
+//TODO: Button disabled
+.button,
+.button-outline,
+.button-link,
+.social__icon,
+.close__button {
+
+
+    &:hover {
+        // Ваши стили при наведении
+    }
+
+    &:disabled, &.disabled {
+        cursor: not-allowed;
+        opacity: 0.64;
+        background-color: $cl-grey-200;
+        outline: 1px solid $cl-grey-200;
+    }
+}
+
+
+@keyframes pulsate-bck {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

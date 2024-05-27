@@ -1,0 +1,49 @@
+.rating {
+    display: flex;
+    gap: 8px;
+    flex-direction: row-reverse;
+    justify-content: start;
+
+}
+
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+}
+
+.rating label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+}
+
+//base
+.rating:not(:checked) > label {
+    cursor: pointer;
+    fill: $cl-grey-100;
+}
+
+//hover checked
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    fill: $cl-base-primary-hover;
+}
+
+//hover not checked
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+
+    fill: $cl-base-primary-hover;
+
+}
+
+//checked
+.rating > input:checked ~ label {
+    fill: $cl-base-primary;
+
+}

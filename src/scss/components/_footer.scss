@@ -1,0 +1,253 @@
+.footer {
+    padding: 16px 0;
+
+    background-color: $cl-base-black;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+
+    &__social {
+        flex: 1;
+        max-width: 288px;
+
+        & .header__controls--language-switcher {
+            justify-content: normal;
+        }
+    }
+
+    &__contact {
+        flex: 1;
+        max-width: fit-content;
+    }
+
+    &__payment-shipping {
+        flex: 1;
+    }
+
+    @media screen and (min-width: 744px) {
+        padding: 48px 0;
+    }
+    @media screen and (min-width: 1200px) {
+        &__content {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__payment-shipping {
+            flex: 1;
+            max-width: 200px;
+        }
+    }
+}
+
+//TODO: footer social
+.footer__social {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &--link-list {
+        display: flex;
+        gap: 16px;
+    }
+
+    &--review {
+        display: flex;
+        padding: 12px 10px;
+        justify-content: space-between;
+        max-width: 375px;
+        gap: 12px;
+        border-radius: $br-12;
+        background: $cl-grey-900;
+
+        &-google {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            &-stars {
+                display: flex;
+                align-items: center;
+                gap: 7px;
+                color: $cl-base-white;
+                @include font($fs-14, 500, 171.429%);
+
+                & span {
+                    display: flex;
+                    gap: 2px;
+                }
+            }
+        }
+
+        & button {
+            width: 100%;
+            align-self: end;
+            max-width: 215px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        gap: 24px;
+        &--review {
+            max-width: 288px;
+        }
+    }
+}
+
+//TODO: footer contact
+.footer__contact {
+    display: flex;
+    justify-content: space-between;
+
+    &--links-list {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &--list {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+
+        &-link {
+            color: $cl-grey-300;
+            @include font($fs-14, 500, 157.143%);
+            margin-bottom: 12px;
+        }
+    }
+
+    &--info-list {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &--info-item {
+        display: flex;
+        gap: 8px;
+        color: $cl-grey-100;
+        @include font($fs-14, 400, 157.143%);
+
+        & svg {
+            display: block;
+            margin-top: 6px;
+            min-width: 16px;
+            width: 16px;
+            height: 16px;
+            fill: $cl-base-white;
+
+            & use {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 744px) {
+        gap: 16px;
+        &--links-list {
+            gap: 8px;
+        }
+        &--list {
+            &-link {
+                padding: 6px 0 2px 0;
+                @include font($fs-16, 500, 150%);
+                margin-bottom: 26px;
+
+            }
+        }
+        &--info-list {
+            gap: 8px;
+            max-width: 255px;
+        }
+        &--info-item {
+            @include font($fs-18, 400, 144.444%);
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        gap: 75px;
+    }
+    @media screen and (min-width: 1440px) {
+        gap: 130px;
+    }
+}
+
+//TODO: Icon payment and shipping
+.footer__payment-shipping {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    & .footer__payment-list,
+    .footer__shipping-list {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        padding: 16px 60px;
+        border-radius: $br-4;
+        background-color: $cl-grey-900;
+    }
+
+    @media screen and (min-width: 375px) {
+        & .footer__payment-list,
+        .footer__shipping-list {
+            padding: 16px 97px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        gap: 24px;
+        & .footer__payment-list,
+        .footer__shipping-list {
+            padding: 16px 24px;
+            justify-content: start;
+        }
+    }
+}
+
+//TODO: bottom
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 12px;
+    border-top: 1px solid $cl-grey-800;
+
+    &--link-list {
+        display: flex;
+        gap: 32px;
+    }
+
+    &--copyright,
+    &--link-item {
+        cursor: pointer;
+        color: $cl-grey-300;
+        @include font($fs-12, 400, 166.667%);
+    }
+
+    &--link-item {
+        &:hover {
+            color: $cl-base-white;
+            text-decoration: underline;
+        }
+    }
+
+    @media screen and (min-width: 744px) {
+        padding-top: 24px;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &--copyright,
+        &--link-item {
+            @include font($fs-14, 400, 157.143%);
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    gap: 4px;
+    max-width: 90vw;
+    @media screen and (min-width: 744px) {
+        max-width: 743px;
+        padding: 24px 0;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
+    @media screen and (min-width: 1440px) {
+        max-width: 1390px;
+    }
+}
+
+.breadcrumb__item {
+    color: $cl-base-black;
+    @include font($fs-12, 500, 166.667%);
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    white-space: nowrap;
+
+    &:not(:last-child):hover {
+        border-bottom: 1px solid $cl-base-black;
+    }
+
+    &:last-child {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: $cl-grey-600;
+
+    }
+
+    @media screen and (min-width: 744px) {
+        @include font($fs-14, 500, 157.143%);
+
+    }
+
+}

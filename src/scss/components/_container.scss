@@ -1,0 +1,31 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+
+    @media screen and (min-width: 744px) {
+        max-width: 744px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
+    @media screen and (min-width: 1280px) {
+        max-width: 1280px;
+    }
+    @media screen and (min-width: 1440px) {
+        max-width: 1392px;
+    }
+}
+
+.layout_with_sidebar {
+    display: flex;
+    gap: 16px;
+
+    @media screen and (min-width: 1280px) {
+        display: grid;
+        grid-template-columns: 329px 1fr;
+    }
+}
+

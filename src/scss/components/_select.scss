@@ -1,0 +1,120 @@
+.select {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+    padding-left: 12px;
+
+    cursor: pointer;
+    border-radius: 1px;
+    border: 1px solid $cl-grey-100;
+    background-color: $cl-base-white;
+    width: 300px;
+    max-width: 300px;
+    min-width: 200px;
+
+    & label {
+        white-space: nowrap;
+        color: $cl-grey-400;
+        @include font($fs-14, 400, 157.143%);
+    }
+
+    &:hover {
+        border: 1px solid $cl-grey-400;;
+    }
+}
+
+.custom-select {
+    width: 100%;
+    overflow: hidden;
+}
+
+//! Active list
+.custom-select__active-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    position: relative;
+    padding-right: 12px;
+    z-index: 2;
+    width: 100%;
+
+    cursor: pointer;
+
+    background-color: transparent;
+}
+
+.custom-select__active-list-value {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 12px 0 12px 0;
+    color: $cl-grey-300;
+    @include font($fs-14, 600, 157.143%);
+}
+
+//!Style focus
+.select.focus {
+    border: 1px solid $cl-base-primary;
+}
+
+.select.focus .custom-select__active-list {
+    & svg {
+        transform: rotate(180deg);
+    }
+}
+
+.select.added .custom-select__active-list-value {
+    color: $cl-base-black;
+}
+
+// display none input
+.custom-select__list-field {
+    width: 100%;
+    height: 52px;
+    padding: 0 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+//! Dropdown list
+.custom-select__drop-down-list {
+    display: none;
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    padding: 8px 0;
+    margin-top: 2px;
+
+    overflow-x: auto;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+
+    border: 1px solid $cl-grey-100;
+    background-color: $cl-base-white;
+    box-shadow: rgba(0, 0, 0, 0.11765) 0px 1px 6px, rgba(0, 0, 0, 0.11765) 0px 1px 4px;
+    transition: 300ms;
+    //? item
+    &-item {
+        padding: 12px;
+        cursor: pointer;
+
+        color: $cl-base-black;
+        @include font($fs-14, 600, 157.143%);
+        transition: all 0.3s ease-out;
+
+        &:hover {
+            background-color: $cl-grey-100;
+        }
+
+        &.active {
+            background-color: $cl-base-primary;
+            color: $cl-base-white;
+        }
+    }
+}

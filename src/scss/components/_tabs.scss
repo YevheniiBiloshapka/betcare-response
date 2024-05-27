@@ -1,0 +1,56 @@
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    gap: 8px;
+    border-radius: $br-2;
+    border: 1px solid $cl-grey-100;
+    background-color: $cl-bg-default;
+
+
+}
+
+.tab {
+    flex: 1 0 0;
+    display: flex;
+    padding: 7px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+    background-color: transparent;
+    border-radius: $br-2;
+    color: $cl-grey-300;
+    @include font($fs-14, 600, 157.143%);
+    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+
+    &:hover {
+        border-radius: $br-2;
+        background-color: $cl-base-white;
+        color: $cl-base-black;
+    }
+
+    &.active {
+
+        background-color: $cl-base-white;
+        color: $cl-base-black;
+        font-weight: 600;
+
+        box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.06), 0 1px 3px 0 rgba(16, 24, 40, 0.10);
+        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+}
+
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

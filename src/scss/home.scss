@@ -1,0 +1,23 @@
+// utils
+@import 'utils/variables';
+@import 'utils/mixin';
+@import 'utils/reset';
+@import 'utils/base';
+@import 'utils/normalize';
+@import 'components/container';
+@import 'components/animations/animations';
+
+// components
+@import 'components/button';
+@import 'components/modal';
+@import 'components/select';
+@import 'components/catalogCard';
+@import 'components/accordion';
+@import 'components/inputs';
+@import 'components/FAQ';
+//main
+
+
+// header footer
+@import 'components/header';
+@import 'components/footer';

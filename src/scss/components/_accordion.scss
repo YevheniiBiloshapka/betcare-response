@@ -1,0 +1,109 @@
+.accordion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    & .description-block {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+        margin: 0;
+    }
+}
+
+.accordion__item {
+    border: 1px solid $cl-grey-100;
+    border-radius: $br-2;
+    transition: all 0.3s ease-out;
+
+    &.show {
+        transition: all 0.3s ease-in;
+        background-color: $cl-base-white;
+    }
+
+    &--header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 14px;
+
+        &.show .accordion__item--button {
+            border: 1px solid $cl-base-primary;
+            background-color: $cl-base-primary;
+        }
+    }
+
+    &--title {
+        color: $cl-base-black;
+        @include font($fs-16, 600, 150%);
+    }
+
+    @media screen and (min-width: 744px) {
+        &--header {
+            padding: 24px;
+        }
+        &--title {
+            @include font($fs-22, 600, 136.364%);
+        }
+    }
+}
+
+.accordion__item--button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 32px;
+    min-height: 32px;
+    max-height: 32px;
+    max-width: 32px;
+
+    border: 1px solid $cl-grey-100;
+    background-color: transparent;
+    border-radius: $br-button;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+        background-color: $cl-grey-800;
+        fill: $cl-base-white;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    &.show {
+        border: 1px solid $cl-base-primary;
+        background-color: $cl-base-primary;
+    }
+
+    @media screen and (min-width: 744px) {
+        min-width: 40px;
+        min-height: 40px;
+        max-height: 40px;
+        max-width: 40px;
+    }
+}
+
+.accordion__content {
+    max-height: 0;
+    padding: 0 12px 0;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+
+    &.show {
+        padding: 0 12px 14px;
+        max-height: 1000px;
+        transition: all 0.3s ease-in;
+    }
+
+    @media screen and (min-width: 744px) {
+        padding: 0 24px 0;
+        &.show {
+            padding: 0 24px 24px;
+            max-height: 1000px;
+            transition: all 0.3s ease-in;
+        }
+    }
+}

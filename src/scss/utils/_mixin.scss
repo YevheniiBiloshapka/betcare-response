@@ -1,0 +1,37 @@
+@mixin transition(
+  $property: 'all',
+  $duration: '0.25s',
+  $timing-function: 'cubic-bezier(0.4, 0, 0.2, 1)'
+) {
+  transition: $property $duration $timing-function;
+}
+
+@mixin font($fs: $fs-14, $fw: 400, $lh: normal) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+$breakpoints: (
+  mobile: 320px,
+  tablet: 744px,
+  desktopS: 1280px,
+);
+
+@mixin media-query($breakpoint) {
+  $breakpoint-value: map-get($breakpoints, $breakpoint);
+  @media (min-width: $breakpoint-value) {
+    @content;
+  }
+}
+
+// .another-element {
+// color: $color-success-main;
+// font-size: $fs-14;
+//   @include font(14, 400, 120%); // Переопределение значений
+//   @include transition; //стандарт
+//   @include media-query(lg) {
+//     //@media-query
+//     font-size: 16px;
+//   }
+// }
