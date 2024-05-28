@@ -663,7 +663,7 @@ template {
 }
 
 .hero {
-  height: 44.7rem;
+  height: 100dvh;
 }
 .hero .heroPageSwiper {
   height: 100%;
@@ -671,32 +671,6 @@ template {
 .hero .swiper-slide-active .hero__slide {
   opacity: 1;
 }
-@media screen and (min-width: 834px) {
-  .hero {
-    height: 59rem;
-  }
-}
-@media screen and (min-width: 1180px) {
-  .hero {
-    height: 32.4256rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .hero {
-    height: 32.576rem;
-  }
-}
-@media screen and (min-width: 1512px) {
-  .hero {
-    height: 31.93rem;
-  }
-}
-@media screen and (min-width: 1728px) {
-  .hero {
-    height: 34.8177rem;
-  }
-}
-
 .hero__slide {
   opacity: 0;
   position: relative;
@@ -750,7 +724,10 @@ template {
   background: linear-gradient(138deg, #237427 8.16%, #E5F1AF 43.64%, #A4D35F 94.7%);
 }
 .hero__info-box {
-  padding-top: 7.2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -772,7 +749,6 @@ template {
 }
 @media screen and (min-width: 834px) {
   .hero__info-box {
-    padding-top: 17.3rem;
     margin-top: 0;
   }
   .hero__info-box--title {
@@ -791,7 +767,6 @@ template {
 }
 @media screen and (min-width: 1180px) {
   .hero__info-box {
-    padding-top: 8.56rem;
     margin-top: 0;
   }
   .hero__info-box--title {
@@ -812,7 +787,6 @@ template {
 }
 @media screen and (min-width: 1280px) {
   .hero__info-box {
-    padding-top: 9.47rem;
     margin-top: 0;
   }
   .hero__info-box--title {
@@ -827,9 +801,6 @@ template {
   }
 }
 @media screen and (min-width: 1512px) {
-  .hero__info-box {
-    padding-top: 8.8rem;
-  }
   .hero__info-box--title {
     margin-bottom: 2.7rem;
     font-size: 3.24rem;
@@ -840,9 +811,6 @@ template {
   }
 }
 @media screen and (min-width: 1728px) {
-  .hero__info-box {
-    padding-top: 9.6rem;
-  }
   .hero__info-box--title {
     margin-bottom: 2rem;
     font-size: 3.46rem;
