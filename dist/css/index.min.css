@@ -662,6 +662,24 @@ template {
   background: #1B1B1B;
 }
 
+.header {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 64px;
+  background-color: #2A2A2A;
+}
+@media screen and (min-width: 834px) {
+  .header {
+    height: 80px;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .header {
+    height: 80px;
+  }
+}
+
 .hero {
   height: 100dvh;
 }
