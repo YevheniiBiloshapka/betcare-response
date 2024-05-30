@@ -1,23 +1,8 @@
 
 
-.header{
-  position: fixed;
-  z-index: 9999;
-    width: 100%;
-    height: 64px;
-    background-color: #2A2A2A;
-  @media screen and (min-width: 834px) {
-    height: 80px;
-  }
-  @media screen and (min-width: 1180px) {
-    height: 80px;
-  }
 
-}
 
 .hero {
-  //height: 44.7rem;
-  //height: 648px;
   height:100dvh;
 
   & .heroPageSwiper {
@@ -26,26 +11,6 @@
 
   & .swiper-slide-active .hero__slide {
     opacity: 1;
-  }
-  @media screen and (min-width: 834px) {
-    //height: 59rem;
-    //height: 1094px;
-  }
-  @media screen and (min-width: 1180px) {
-    //height: 32.4256rem;
-    //height: 700px;
-  }
-  @media screen and (min-width: 1280px) {
-    //height: 32.576rem;
-    //height: 732px;
-  }
-  @media screen and (min-width: 1512px) {
-    //height: 31.93rem;
-    //height: 782px;
-  }
-  @media screen and (min-width: 1728px) {
-    //height: 34.8177rem;
-    //height: 900px;
   }
 }
 
@@ -126,8 +91,6 @@
 
 // info box
 .hero__info-box {
-  //padding-top: 7.2rem;
-  //padding-top: 133px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -158,8 +121,6 @@
   }
 
   @media screen and (min-width: 834px) {
-    //padding-top: 17.3rem;
-    //padding-top: 364px;
     margin-top: 0;
 
     &--title {
@@ -174,8 +135,6 @@
     }
   }
   @media screen and (min-width: 1180px) {
-    //padding-top: 8.56rem;
-    //padding-top: 229px;
     margin-top: 0;
 
     &--title {
@@ -191,16 +150,13 @@
     }
   }
   @media screen and (min-width: 1280px) {
-    //padding-top: 9.47rem;
-    //padding-top: 258px;
     margin-top: 0;
     &--button {
       max-width: 165px;
     }
   }
   @media screen and (min-width: 1512px) {
-    //padding-top: 8.8rem;
-    //padding-top: 267px;
+
     &--title {
       margin-bottom: 64px;
       @include font-title(h1-md);
@@ -211,8 +167,7 @@
     }
   }
   @media screen and (min-width: 1728px) {
-    //padding-top: 9.6rem;
-    //padding-top: 314px;
+
     &--title {
       margin-bottom: 51px;
       @include font-title(h1-lg);
@@ -314,8 +269,7 @@
       @include font-body(normal-bold);
     }
   }
-  @media screen and (min-width: 1728px) {
-  }
+
 }
 
 

@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  font-size: calc(16px + 6 * ((100vw - 320px) / 680));
   scroll-behavior: smooth;
 
   &.lock {
