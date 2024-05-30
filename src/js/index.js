@@ -33,10 +33,10 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   var heroSwiper = new Swiper('.heroPageSwiper', {
     effect: 'fade',
-    // autoplay: {
-    //   delay: 5000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
     allowTouchMove: false,
     loop: true,
   });
