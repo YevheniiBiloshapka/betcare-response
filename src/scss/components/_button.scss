@@ -12,7 +12,7 @@
 
 
   border: none;
-  @include transition;
+  @include transition();
   color: #fff;
   @include font-button(small);
 
