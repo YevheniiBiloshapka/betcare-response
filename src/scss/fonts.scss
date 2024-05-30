@@ -1,49 +1,98 @@
 @font-face {
 	font-family: Duplet;
 	font-display: swap;
-	src:url("../fonts/Duplet-Bold.otf") format("opentype"), url("../fonts/Duplet-Bold.ttf") format("truetype"), url("../fonts/Duplet-Bold.woff2") format("woff2"), url("../fonts/Duplet-Bold.woff") format("woff");
+	src:url("../fonts/Duplet-Bold-BF642a3406582e7.otf") format("opentype"), url("../fonts/Duplet-Bold-BF642a3406582e7.ttf") format("truetype"), url("../fonts/Duplet-Bold-BF642a3406582e7.woff2") format("woff2"), url("../fonts/Duplet-Bold-BF642a3406582e7.woff") format("woff");
 	font-weight: 700;
 	font-style: normal;
 }
 @font-face {
 	font-family: Duplet;
 	font-display: swap;
-	src:url("../fonts/Duplet-Light.otf") format("opentype"), url("../fonts/Duplet-Light.ttf") format("truetype"), url("../fonts/Duplet-Light.woff2") format("woff2"), url("../fonts/Duplet-Light.woff") format("woff");
-	font-weight: 300;
-	font-style: normal;
-}
-@font-face {
-	font-family: Duplet;
-	font-display: swap;
-	src:url("../fonts/Duplet-Regular.otf") format("opentype"), url("../fonts/Duplet-Regular.ttf") format("truetype"), url("../fonts/Duplet-Regular.woff2") format("woff2"), url("../fonts/Duplet-Regular.woff") format("woff");
+	src:url("../fonts/Duplet-ExtraboldItalic-BF642a34064c93d.otf") format("opentype"), url("../fonts/Duplet-ExtraboldItalic-BF642a34064c93d.ttf") format("truetype"), url("../fonts/Duplet-ExtraboldItalic-BF642a34064c93d.woff2") format("woff2"), url("../fonts/Duplet-ExtraboldItalic-BF642a34064c93d.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: Duplet;
 	font-display: swap;
-	src:url("../fonts/Duplet-Thin.otf") format("opentype"), url("../fonts/Duplet-Thin.ttf") format("truetype"), url("../fonts/Duplet-Thin.woff2") format("woff2"), url("../fonts/Duplet-Thin.woff") format("woff");
+	src:url("../fonts/Duplet-ExtralightItalic-BF642a34062fad2.otf") format("opentype"), url("../fonts/Duplet-ExtralightItalic-BF642a34062fad2.ttf") format("truetype"), url("../fonts/Duplet-ExtralightItalic-BF642a34062fad2.woff2") format("woff2"), url("../fonts/Duplet-ExtralightItalic-BF642a34062fad2.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Duplet;
+	font-display: swap;
+	src:url("../fonts/Duplet-Italic-BF642a34058f127.otf") format("opentype"), url("../fonts/Duplet-Italic-BF642a34058f127.ttf") format("truetype"), url("../fonts/Duplet-Italic-BF642a34058f127.woff2") format("woff2"), url("../fonts/Duplet-Italic-BF642a34058f127.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Duplet;
+	font-display: swap;
+	src:url("../fonts/Duplet-Light-BF642a34063c321.otf") format("opentype"), url("../fonts/Duplet-Light-BF642a34063c321.ttf") format("truetype"), url("../fonts/Duplet-Light-BF642a34063c321.woff2") format("woff2"), url("../fonts/Duplet-Light-BF642a34063c321.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: Duplet;
+	font-display: swap;
+	src:url("../fonts/Duplet-LightItalic-BF642a340624d9b.otf") format("opentype"), url("../fonts/Duplet-LightItalic-BF642a340624d9b.ttf") format("truetype"), url("../fonts/Duplet-LightItalic-BF642a340624d9b.woff2") format("woff2"), url("../fonts/Duplet-LightItalic-BF642a340624d9b.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Duplet;
+	font-display: swap;
+	src:url("../fonts/Duplet-Regular-BF642a340663b06.otf") format("opentype"), url("../fonts/Duplet-Regular-BF642a340663b06.ttf") format("truetype"), url("../fonts/Duplet-Regular-BF642a340663b06.woff2") format("woff2"), url("../fonts/Duplet-Regular-BF642a340663b06.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Duplet;
+	font-display: swap;
+	src:url("../fonts/Duplet-Semibold-BF642a34066f658.otf") format("opentype"), url("../fonts/Duplet-Semibold-BF642a34066f658.ttf") format("truetype"), url("../fonts/Duplet-Semibold-BF642a34066f658.woff2") format("woff2"), url("../fonts/Duplet-Semibold-BF642a34066f658.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: Duplet;
+	font-display: swap;
+	src:url("../fonts/Duplet-SemiboldItalic-BF642a340662c47.otf") format("opentype"), url("../fonts/Duplet-SemiboldItalic-BF642a340662c47.ttf") format("truetype"), url("../fonts/Duplet-SemiboldItalic-BF642a340662c47.woff2") format("woff2"), url("../fonts/Duplet-SemiboldItalic-BF642a340662c47.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Duplet;
+	font-display: swap;
+	src:url("../fonts/Duplet-Thin-BF642a340659e70.otf") format("opentype"), url("../fonts/Duplet-Thin-BF642a340659e70.ttf") format("truetype"), url("../fonts/Duplet-Thin-BF642a340659e70.woff2") format("woff2"), url("../fonts/Duplet-Thin-BF642a340659e70.woff") format("woff");
 	font-weight: 100;
 	font-style: normal;
 }
 @font-face {
 	font-family: Duplet;
 	font-display: swap;
-	src:url("../fonts/Duplet-Extrabold.otf") format("opentype"), url("../fonts/Duplet-Extrabold.ttf") format("truetype"), url("../fonts/Duplet-Extrabold.woff2") format("woff2"), url("../fonts/Duplet-Extrabold.woff") format("woff");
+	src:url("../fonts/Duplet-ThinItalic-BF642a34061eee3.otf") format("opentype"), url("../fonts/Duplet-ThinItalic-BF642a34061eee3.ttf") format("truetype"), url("../fonts/Duplet-ThinItalic-BF642a34061eee3.woff2") format("woff2"), url("../fonts/Duplet-ThinItalic-BF642a34061eee3.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Duplet;
+	font-display: swap;
+	src:url("../fonts/Duplet-Extrabold-BF642a34066ffff.otf") format("opentype"), url("../fonts/Duplet-Extrabold-BF642a34066ffff.ttf") format("truetype"), url("../fonts/Duplet-Extrabold-BF642a34066ffff.woff2") format("woff2"), url("../fonts/Duplet-Extrabold-BF642a34066ffff.woff") format("woff");
 	font-weight: 800;
 	font-style: normal;
 }
 @font-face {
 	font-family: Duplet;
 	font-display: swap;
-	src:url("../fonts/Duplet-Extralight.otf") format("opentype"), url("../fonts/Duplet-Extralight.ttf") format("truetype"), url("../fonts/Duplet-Extralight.woff2") format("woff2"), url("../fonts/Duplet-Extralight.woff") format("woff");
+	src:url("../fonts/Duplet-Extralight-BF642a34066d940.otf") format("opentype"), url("../fonts/Duplet-Extralight-BF642a34066d940.ttf") format("truetype"), url("../fonts/Duplet-Extralight-BF642a34066d940.woff2") format("woff2"), url("../fonts/Duplet-Extralight-BF642a34066d940.woff") format("woff");
 	font-weight: 200;
 	font-style: normal;
 }
 @font-face {
 	font-family: Duplet;
 	font-display: swap;
-	src:url("../fonts/Duplet-Semibold.otf") format("opentype"), url("../fonts/Duplet-Semibold.ttf") format("truetype"), url("../fonts/Duplet-Semibold.woff2") format("woff2"), url("../fonts/Duplet-Semibold.woff") format("woff");
-	font-weight: 600;
+	src:url("../fonts/Duplet-BoldItalic-BF642a34065bd61.otf") format("opentype"), url("../fonts/Duplet-BoldItalic-BF642a34065bd61.ttf") format("truetype"), url("../fonts/Duplet-BoldItalic-BF642a34065bd61.woff2") format("woff2"), url("../fonts/Duplet-BoldItalic-BF642a34065bd61.woff") format("woff");
+	font-weight: 400;
 	font-style: normal;
 }

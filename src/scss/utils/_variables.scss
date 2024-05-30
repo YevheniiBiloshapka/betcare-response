@@ -1,163 +1,149 @@
 //font-size
 $font-title: (
-        h1-lg: (
-                font-size: 6.42857rem,
+        h1-lg:(
+                font-size: 90px,
                 font-weight: 600,
-                letter-spacing: 0.03571rem,
-                line-height: 6.85714rem
+                line-height: 96px,
+                letter-spacing: 0.5px,
         ),
-        h1-md: (
-                font-size: 5.57143rem,
-                font-weight:600,
-                letter-spacing: 0.03571rem,
-                line-height:  6rem
-
-        ),
-        h1-sm: (
-                font-size: 3.5rem,
+        h1-md:(
+                font-size: 78px,
                 font-weight: 600,
-                line-height: 3.861rem,
-                letter-spacing: 0.03571rem,
+                line-height: 84px,
+                letter-spacing: 0.5px
         ),
-        h2-375: (
-                font-size: 1.71429rem,
+        h1-sm:(
+                font-size: 66px,
                 font-weight: 600,
-                line-height: 2.28571rem,
-                letter-spacing: 0.009rem,
+                line-height: 72px,
+                letter-spacing: 0.5px,
         ),
-        h2-834:(
-                font-size: 1.7rem,
+        h2-lg:(
+                font-size: 44px,
                 font-weight: 600,
-                line-height: 2.85714rem,
-                letter-spacing: 0.0430rem,
+                line-height: 54px,
+                letter-spacing: 0.5px,
         ),
-        h2-1180:(
-                font-size: 1.5rem,
+        h2-md:(
+                font-size: 32px,
                 font-weight: 600,
-                line-height: 2.85714rem,
-                letter-spacing: 0.0143rem
+                line-height: 40px,
+                letter-spacing: 0.5px,
         ),
-        h2-1280:(
-                font-size: 1.5rem,
+        h2-sm:(
+                font-size: 32px,
                 font-weight: 600,
-                line-height: 2.85714rem,
-                letter-spacing: -0.009rem
-        ),
-        h2-1512:(
-                font-size: 1.5rem,
-                font-weight: 600,
-                line-height: 2.85714rem,
-                letter-spacing: 0.045rem
-        ),
-        h2-1728:(
-                font-size: 1.62rem,
-                font-weight: 600,
-                line-height: 2.85714rem,
-                letter-spacing: 0.0389rem
+                line-height: 40px,
+                letter-spacing: 0.5px
         ),
 
         h1-mob: (
-                font-size: 3rem,
-                font-style: normal,
+                font-size: 44px,
                 font-weight: 600,
-                line-height: 3.76rem,
-                letter-spacing: 0.03571rem,
+                line-height: 54px,
+                letter-spacing: 0.5px
         ),
         h2-mob: (
-                font-size: 1.71429rem,
+                font-size: 24px,
                 font-weight: 600,
-                line-height: 2.28571rem,
-                letter-spacing: 0.03571rem,
+                line-height: 32px,
+                letter-spacing: 0.5px
         ),
 
 );
 $font-body: (
-        normal-375:(
-                font-size: 1.14286rem,
-                font-weight: 400,
-                line-height: 1.623rem,
-                letter-spacing: 0.02rem,
+        large-bold:(
+                font-size: 24px,
+                font-weight: 600,
+                line-height: 36px,
+                letter-spacing: 0.5px
         ),
-        normal-834:(
-                font-size: 0.945rem,
+        large:(
+                font-size: 24px,
                 font-weight: 400,
-                line-height: 1.341rem,
-                letter-spacing: 0.0392rem
+                line-height: 36px,
+                letter-spacing: 0.5px
         ),
-        normal-1180:(
-                font-size: 0.86rem,
-                font-weight: 400,
-                line-height: 1.1rem,
-                letter-spacing: 0.012rem
+        big-bold:(
+                font-size: 18px,
+                font-weight: 600,
+                line-height: 24px,
+                letter-spacing: 0.5px
         ),
-        normal-1280:(
-                font-size: 0.86rem,
+        big:(
+                font-size: 18px,
                 font-weight: 400,
-                line-height: 1.1rem,
-                letter-spacing: -0.004rem
+                line-height: 24px,
+                letter-spacing: 0.5px
         ),
-        normal-1512:(
-                font-size: 1.04rem,
-                font-weight: 400,
-                line-height: 1.45rem,
-                letter-spacing: -0.005rem
+        normal-bold:(
+                font-size: 16px,
+                font-weight: 600,
+                line-height: 24px,
+                letter-spacing: 0.5px,
         ),
-        normal-1728:(
-                font-size: 1rem,
+        normal:(
+                font-size: 16px,
                 font-weight: 400,
-                line-height: 1.38rem,
-                letter-spacing: -0.021rem
+                line-height: 24px,
+                letter-spacing: 0.5px
+        ),
+        small-bold:(
+                font-size: 14px,
+                font-weight: 600,
+                line-height: 18px,
+                letter-spacing: 0.5px
+        ),
+        small:(
+                font-size: 14px,
+                font-weight: 400,
+                line-height: 18px,
+                letter-spacing: 0.5px
         ),
 
-        small:(
-                font-size: 1rem,
-                font-weight: 400,
-                line-height: 1.28571rem,
-                letter-spacing: 0.03571rem,
-        ),
         micro-bold:(
-                font-size: 0.85714rem,
+                font-size: 12px,
                 font-weight: 600,
-                line-height: 1.14286rem,
-                letter-spacing: 0.03571rem,
+                line-height: 16px,
+                letter-spacing: 0.5px,
         ),
         micro:(
-                font-size: 0.85714rem,
+                font-size: 12px,
                 font-weight: 400,
-                line-height: 1.14286rem,
-                letter-spacing: 0.03571rem,
+                line-height: 16px,
+                letter-spacing: 0.5px,
         ),
 );
 $font-button:(
         large:(
-                font-size: 1.42857rem,
+                font-size: 20px,
                 font-weight: 600,
-                line-height: 1.42857rem,
-                letter-spacing: 0.03571rem,
+                line-height: 20px,
+                letter-spacing: 0.5px,
         ),
         medium:(
-                font-size: 1.14286rem,
+                font-size: 16px,
                 font-weight: 600,
-                line-height: 1.14286rem,
-                letter-spacing: 0.03571rem,
+                line-height: 16px,
+                letter-spacing: 0.5px,
         ),
         small:(
-                font-size: 1rem,
-                font-weight: 500,
-                line-height: 1rem,
-                letter-spacing: 0.03571rem
+                font-size: 14px,
+                font-weight: 600,
+                line-height: 14px,
+                letter-spacing: 0.5px,
         ),
         micro:(
-                font-size: 1rem,
+                font-size: 14px,
                 font-weight: 600,
-                line-height: 1rem,
-                letter-spacing: 0.03571rem,
+                line-height: 14px,
+                letter-spacing: 0.5px,
         ),
         link:(
-                font-size: 0.85714rem,
+                font-size: 12px,
                 font-weight: 400,
-                line-height: 0.85714rem,
-                letter-spacing: 0.03571rem,
+                line-height: 12px,
+                letter-spacing: 0.5px,
                 text-decoration-line: underline
         )
 );
@@ -196,21 +182,21 @@ $gr-text-5: linear-gradient(90deg, #FFBC3B 0.23%, #FF6051 50.08%, #FF4AB0 99.94%
 $gr-text-6: linear-gradient(90deg, #FFBC3B 55.67%, #FF6051 73.03%, #FF528C 90.39%);
 
 //gradient button
-$gr-btn-1-default: linear-gradient(90deg, rgba(255, 155, 60, 0.80) 0.1%, rgba(255, 79, 64, 0.80) 50%, rgba(219, 50, 120, 0.80) 99.9%);
+$gr-btn-1-default: linear-gradient(90deg, #E0833C 0.1%, #E0483E 50%, #C43269 99.9%);
 $gr-btn-1-hover: linear-gradient(90deg, #FF9B3C 0.1%, #FF4F40 50%, #DB3278 99.9%);
-$gr-btn-1-stroke: linear-gradient(90deg, #FFBC3B 30.89%, #FF4F40 60.43%, #AE1D6E 89.96%);
+$gr-btn-1-stroke: linear-gradient(90deg, #FFB067 0.1%, #FF4F40 50%, #DB3278 99.9%);
 
-$gr-btn-2-default: linear-gradient(90deg, rgba(162, 161, 236, 0.80) 0.04%, rgba(75, 111, 237, 0.80) 47.81%, rgba(150, 46, 232, 0.80) 99.96%);
+$gr-btn-2-default: linear-gradient(90deg, #8A89D1 0.04%, #495FD3 47.81%, #822DCF 99.96%);
 $gr-btn-2-hover: linear-gradient(90deg, #A2A1EC 0.04%, #4B6FED 47.81%, #962EE8 99.96%);
 $gr-btn-2-stroke: linear-gradient(90deg, #B9B8F6 0.04%, #3D5DD2 50.5%, #5D1695 99.96%);
 
-$gr-btn-3-default: linear-gradient(90deg, rgba(255, 188, 59, 0.80) 0.04%, rgba(254, 90, 20, 0.80) 49.63%, rgba(255, 25, 25, 0.80) 99.96%);
+$gr-btn-3-default:  linear-gradient(90deg, #DEA037 0.04%, #DD5318 49.63%, #DE1F1B 99.96%);
 $gr-btn-3-hover: linear-gradient(90deg, #FFBC3B 0.04%, #FE5A14 49.63%, #FF1919 99.96%);
-$gr-btn-3-stroke: linear-gradient(90deg, #FFC047 0.04%, #DF5012 48.5%, #C40C0C 99.96%);
+$gr-btn-3-stroke: linear-gradient(90deg, #FFCA62 0.04%, #DF5012 48.5%, #C40C0C 99.96%);
 
-$gr-btn-4-default: linear-gradient(90deg, rgba(200, 217, 121, 0.80) 0%, rgba(136, 209, 29, 0.80) 50.44%, rgba(46, 163, 128, 0.80) 100%);
+$gr-btn-4-default:  linear-gradient(90deg, #A9BA6A 0%, #78B422 50.44%, #308F70 100%);
 $gr-btn-4-hover: linear-gradient(90deg, #C8D979 0%, #88D11D 50.44%, #2EA380 100%);
-$gr-btn-4-stroke: linear-gradient(90deg, #E7F899 0%, #E4F0AF 0.01%, #97DD31 48.21%, #176850 100%);
+$gr-btn-4-stroke: linear-gradient(90deg, #E4F0AF 0%, #97DD31 48.21%, #176850 100%);
 
 //diagonal grad
 $gr-dg-1: linear-gradient(145deg, #E1126E 13.59%, #FF996E 54.92%, #FF4A4A 78.53%);

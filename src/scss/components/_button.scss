@@ -4,9 +4,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   width: 100%;
-  padding: 0.07143rem;
-  border-radius: 10rem;
+  height: 38px;
+  padding: 1px;
+  border-radius: 100px;
 
 
   border: none;
@@ -22,35 +24,42 @@
     width: 100%;
     height: 100%;
     white-space: nowrap;
-    padding: 0.86rem;
+    padding: 0 24px;
     background: transparent;
     border-radius: 100rem;
   }
+}
+//sizes mixins.scss
 
-  //sizes
-  &.large {
-    padding: 11px;
+@mixin button-large() {
+  height: 62px;
+  & span {
+    @include font-button(large);
+    padding: 0 56px;
   }
+}
 
-  &.medium {
-    padding: 10px;
+@mixin button-medium() {
+  height: 44px;
+  padding: 2px;
+  & span {
+    padding: 0 48px;
+    @include font-button(medium);
   }
+}
 
-  &.small {
-    padding: 10px;
+@mixin button-small() {
+  & span {
+    padding: 0 24px;
+    @include font-button(small);
   }
+}
 
-  @media screen and (min-width: 834px) {
-    font-size: 0.77rem;
-    & span{
-      padding: 0.501843rem;
-    }
-  }
-  @media screen and (min-width: 1180px) {
-    font-size: 0.64rem;
-    & span{
-      padding: 0.3561rem;
-    }
+@mixin button-micro() {
+  height: 30px;
+  & span {
+    padding: 0 16px;
+    @include font-button(micro);
   }
 }
 //colors
@@ -127,10 +136,10 @@
 
 .button-outline {
   @extend .button;
-&.red,&.orange,&.purple,&.green{
-  & span{
-    background: $cl-neutral-900;
+  &.red,&.orange,&.purple,&.green{
+    & span{
+      background: $cl-neutral-900;
+    }
   }
 }
 
-}

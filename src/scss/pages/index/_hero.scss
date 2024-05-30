@@ -1,3 +1,5 @@
+
+
 .header{
   position: fixed;
   z-index: 9999;
@@ -15,6 +17,7 @@
 
 .hero {
   //height: 44.7rem;
+  //height: 648px;
   height:100dvh;
 
   & .heroPageSwiper {
@@ -26,18 +29,23 @@
   }
   @media screen and (min-width: 834px) {
     //height: 59rem;
+    //height: 1094px;
   }
   @media screen and (min-width: 1180px) {
     //height: 32.4256rem;
+    //height: 700px;
   }
   @media screen and (min-width: 1280px) {
     //height: 32.576rem;
+    //height: 732px;
   }
   @media screen and (min-width: 1512px) {
     //height: 31.93rem;
+    //height: 782px;
   }
   @media screen and (min-width: 1728px) {
     //height: 34.8177rem;
+    //height: 900px;
   }
 }
 
@@ -119,6 +127,7 @@
 // info box
 .hero__info-box {
   //padding-top: 7.2rem;
+  //padding-top: 133px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -133,7 +142,7 @@
   &--title {
     text-align: center;
     padding: 0 16px;
-    margin: 0.67em 0;
+    margin: 0 0 32px;
     color: #fff;
     @include font-title(h1-mob);
 
@@ -145,36 +154,31 @@
   }
 
   &--button {
-    max-width: 11.1rem;
+    max-width: 165px;
   }
 
   @media screen and (min-width: 834px) {
     //padding-top: 17.3rem;
-
+    //padding-top: 364px;
     margin-top: 0;
 
     &--title {
-      margin-bottom: 2.6rem;
+      margin-bottom: 48px;
       @include font-title(h1-sm);
       &-first {
         display: none;
       }
     }
     &--button {
-      max-width: 8.8rem;
+      max-width: 165px;
     }
   }
   @media screen and (min-width: 1180px) {
     //padding-top: 8.56rem;
-
+    //padding-top: 229px;
     margin-top: 0;
 
     &--title {
-      margin-bottom: 2.2rem;
-      font-size: 3.04rem;
-      line-height: 3.3352rem;
-      letter-spacing: 0.03571rem;
-
       & .span-br{
         display: none;
       }
@@ -183,49 +187,37 @@
       }
     }
     &--button {
-      max-width: 9rem;
+      max-width: 200px;
     }
   }
   @media screen and (min-width: 1280px) {
     //padding-top: 9.47rem;
-
+    //padding-top: 258px;
     margin-top: 0;
-
-    &--title {
-      margin-bottom: 2.1rem;
-      font-size: 3rem;
-      line-height: 3.2rem;
-      letter-spacing: 0.0rem;
-      font-weight: 600;
-    }
     &--button {
-      max-width: 7.2rem;
+      max-width: 165px;
     }
   }
   @media screen and (min-width: 1512px) {
     //padding-top: 8.8rem;
-
+    //padding-top: 267px;
     &--title {
-      margin-bottom: 2.7rem;
-      font-size: 3.24rem;
-      line-height: 3.36rem;
+      margin-bottom: 64px;
+      @include font-title(h1-md);
     }
     &--button {
-      max-width: 9.2rem;
+      @include button-medium;
+      max-width: 228px;
     }
   }
   @media screen and (min-width: 1728px) {
     //padding-top: 9.6rem;
-
+    //padding-top: 314px;
     &--title {
-      margin-bottom: 2rem;
-      font-size: 3.46rem;
-      line-height: 3.58rem;
+      margin-bottom: 51px;
+      @include font-title(h1-lg);
     }
-    &--button {
-      max-width: 8.5rem;
-      font-size: 0.58rem;
-    }
+
   }
 }
 
@@ -233,7 +225,7 @@
 .hero__scroll-button {
   cursor: pointer;
   position: absolute;
-  bottom: 2.15rem;
+  bottom: 32px;
   left: 50%;
   right: 50%;
   transform: translateX(-50%);
@@ -241,12 +233,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.4rem;
+  gap: 8px;
   @include transition;
 
   &-link {
-    width: 2.28571rem;
-    height: 2.28571rem;
+    $size: 32px;
+    width: $size;
+    height: $size;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -283,8 +276,9 @@
     transition: opacity 2s;
 
     content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M13.0285 16.172L18.5456 10.808L20 12.222L12 20L4 12.222L5.45436 10.808L10.9715 16.172L10.9715 4L13.0285 4L13.0285 16.172Z" fill="white"/></svg>');
-    width: 1.14286rem;
-    height: 1.14286rem;
+    $size: 16px;
+    width: $size;
+    height: $size;
   }
 
   p {
@@ -295,72 +289,32 @@
     text-transform: uppercase;
   }
   @media screen and (min-width: 834px) {
-    bottom: 3.5rem;
-    gap: 0.34rem;
-    &-link {
-      $size: 1.85rem;
-      width: $size;
-      height: $size;
-    }
-    span {
-      width: 1rem;
-      height: 1rem;
-    }
-    p {
-      font-size: 0.7rem;
-    }
+    bottom: 64px;
   }
   @media screen and (min-width: 1180px) {
-    bottom: 2.2rem;
-    gap: 0.3rem;
-    &-link {
-      $size: 1.6rem;
-      width: $size;
-      height: $size;
-    }
-    span {
-      $size: 0.76rem;
-      width: $size;
-      height: $size;
-    }
-    p {
-      font-size: 0.65rem;
-    }
+    bottom: 48px;
   }
   @media screen and (min-width: 1280px) {
-    bottom: 1rem;
-    gap: 0.32rem;
-    &-link {
-      $size: 1.5rem;
-      width: $size;
-      height: $size;
-    }
-    span {
-      $size: 0.74rem;
-      width: $size;
-      height: $size;
-    }
-    p {
-      font-size: 0.63rem;
-    }
+    bottom: 32px;
   }
   @media screen and (min-width: 1512px) {
-    bottom: 2rem;
+    bottom: 48px;
     &-link {
-      $size: 1.7rem;
+      $size: 40px;
       width: $size;
       height: $size;
     }
     span {
-      $size: 1rem;
+      $size: 24px;
       width: $size;
       height: $size;
       content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M13.0285 16.172L18.5456 10.808L20 12.222L12 20L4 12.222L5.45436 10.808L10.9715 16.172L10.9715 4L13.0285 4L13.0285 16.172Z" fill="white"/></svg>');
     }
+    p {
+      @include font-body(normal-bold);
+    }
   }
   @media screen and (min-width: 1728px) {
-    bottom: 2.5rem;
-    gap: 0.3rem;
   }
 }
 

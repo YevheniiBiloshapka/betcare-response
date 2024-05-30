@@ -1,6 +1,5 @@
 html {
     box-sizing: border-box;
-    font-size: calc(14px + 6 * ((100vw - 320px) / 680));
 }
 
 body {
@@ -8,7 +7,6 @@ body {
     font-style: normal;
     color: $cl-neutral-400;
     background-color: $cl-neutral-900;
-    letter-spacing: 0.03em;
     overflow-x: hidden;
     margin: 0;
     position: relative;
@@ -33,5 +31,23 @@ body.modal-open {
 
     color: rgba(117, 117, 117, 0.5);
 }
-
+.container{
+    margin: 0 auto;
+    max-width: 375px;
+    @media screen and (min-width: 834px) {
+        max-width: 834px;
+    }
+    @media screen and (min-width: 1180px) {
+        max-width: 1180px;
+    }
+    @media screen and (min-width: 1280px) {
+        max-width: 1280px;
+    }
+    @media screen and (min-width: 1512px) {
+        max-width: 1512px;
+    }
+    @media screen and (min-width: 1728px) {
+        max-width: 1728px;
+    }
+}
 

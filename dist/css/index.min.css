@@ -1,50 +1,99 @@
 @font-face {
   font-family: Duplet;
   font-display: swap;
-  src: url("../fonts/Duplet-Bold.otf") format("opentype"), url("../fonts/Duplet-Bold.ttf") format("truetype"), url("../fonts/Duplet-Bold.woff2") format("woff2"), url("../fonts/Duplet-Bold.woff") format("woff");
+  src: url("../fonts/Duplet-Bold-BF642a3406582e7.otf") format("opentype"), url("../fonts/Duplet-Bold-BF642a3406582e7.ttf") format("truetype"), url("../fonts/Duplet-Bold-BF642a3406582e7.woff2") format("woff2"), url("../fonts/Duplet-Bold-BF642a3406582e7.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: Duplet;
   font-display: swap;
-  src: url("../fonts/Duplet-Light.otf") format("opentype"), url("../fonts/Duplet-Light.ttf") format("truetype"), url("../fonts/Duplet-Light.woff2") format("woff2"), url("../fonts/Duplet-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: Duplet;
-  font-display: swap;
-  src: url("../fonts/Duplet-Regular.otf") format("opentype"), url("../fonts/Duplet-Regular.ttf") format("truetype"), url("../fonts/Duplet-Regular.woff2") format("woff2"), url("../fonts/Duplet-Regular.woff") format("woff");
+  src: url("../fonts/Duplet-ExtraboldItalic-BF642a34064c93d.otf") format("opentype"), url("../fonts/Duplet-ExtraboldItalic-BF642a34064c93d.ttf") format("truetype"), url("../fonts/Duplet-ExtraboldItalic-BF642a34064c93d.woff2") format("woff2"), url("../fonts/Duplet-ExtraboldItalic-BF642a34064c93d.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: Duplet;
   font-display: swap;
-  src: url("../fonts/Duplet-Thin.otf") format("opentype"), url("../fonts/Duplet-Thin.ttf") format("truetype"), url("../fonts/Duplet-Thin.woff2") format("woff2"), url("../fonts/Duplet-Thin.woff") format("woff");
+  src: url("../fonts/Duplet-ExtralightItalic-BF642a34062fad2.otf") format("opentype"), url("../fonts/Duplet-ExtralightItalic-BF642a34062fad2.ttf") format("truetype"), url("../fonts/Duplet-ExtralightItalic-BF642a34062fad2.woff2") format("woff2"), url("../fonts/Duplet-ExtralightItalic-BF642a34062fad2.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Duplet;
+  font-display: swap;
+  src: url("../fonts/Duplet-Italic-BF642a34058f127.otf") format("opentype"), url("../fonts/Duplet-Italic-BF642a34058f127.ttf") format("truetype"), url("../fonts/Duplet-Italic-BF642a34058f127.woff2") format("woff2"), url("../fonts/Duplet-Italic-BF642a34058f127.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Duplet;
+  font-display: swap;
+  src: url("../fonts/Duplet-Light-BF642a34063c321.otf") format("opentype"), url("../fonts/Duplet-Light-BF642a34063c321.ttf") format("truetype"), url("../fonts/Duplet-Light-BF642a34063c321.woff2") format("woff2"), url("../fonts/Duplet-Light-BF642a34063c321.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Duplet;
+  font-display: swap;
+  src: url("../fonts/Duplet-LightItalic-BF642a340624d9b.otf") format("opentype"), url("../fonts/Duplet-LightItalic-BF642a340624d9b.ttf") format("truetype"), url("../fonts/Duplet-LightItalic-BF642a340624d9b.woff2") format("woff2"), url("../fonts/Duplet-LightItalic-BF642a340624d9b.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Duplet;
+  font-display: swap;
+  src: url("../fonts/Duplet-Regular-BF642a340663b06.otf") format("opentype"), url("../fonts/Duplet-Regular-BF642a340663b06.ttf") format("truetype"), url("../fonts/Duplet-Regular-BF642a340663b06.woff2") format("woff2"), url("../fonts/Duplet-Regular-BF642a340663b06.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Duplet;
+  font-display: swap;
+  src: url("../fonts/Duplet-Semibold-BF642a34066f658.otf") format("opentype"), url("../fonts/Duplet-Semibold-BF642a34066f658.ttf") format("truetype"), url("../fonts/Duplet-Semibold-BF642a34066f658.woff2") format("woff2"), url("../fonts/Duplet-Semibold-BF642a34066f658.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Duplet;
+  font-display: swap;
+  src: url("../fonts/Duplet-SemiboldItalic-BF642a340662c47.otf") format("opentype"), url("../fonts/Duplet-SemiboldItalic-BF642a340662c47.ttf") format("truetype"), url("../fonts/Duplet-SemiboldItalic-BF642a340662c47.woff2") format("woff2"), url("../fonts/Duplet-SemiboldItalic-BF642a340662c47.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Duplet;
+  font-display: swap;
+  src: url("../fonts/Duplet-Thin-BF642a340659e70.otf") format("opentype"), url("../fonts/Duplet-Thin-BF642a340659e70.ttf") format("truetype"), url("../fonts/Duplet-Thin-BF642a340659e70.woff2") format("woff2"), url("../fonts/Duplet-Thin-BF642a340659e70.woff") format("woff");
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
   font-family: Duplet;
   font-display: swap;
-  src: url("../fonts/Duplet-Extrabold.otf") format("opentype"), url("../fonts/Duplet-Extrabold.ttf") format("truetype"), url("../fonts/Duplet-Extrabold.woff2") format("woff2"), url("../fonts/Duplet-Extrabold.woff") format("woff");
+  src: url("../fonts/Duplet-ThinItalic-BF642a34061eee3.otf") format("opentype"), url("../fonts/Duplet-ThinItalic-BF642a34061eee3.ttf") format("truetype"), url("../fonts/Duplet-ThinItalic-BF642a34061eee3.woff2") format("woff2"), url("../fonts/Duplet-ThinItalic-BF642a34061eee3.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Duplet;
+  font-display: swap;
+  src: url("../fonts/Duplet-Extrabold-BF642a34066ffff.otf") format("opentype"), url("../fonts/Duplet-Extrabold-BF642a34066ffff.ttf") format("truetype"), url("../fonts/Duplet-Extrabold-BF642a34066ffff.woff2") format("woff2"), url("../fonts/Duplet-Extrabold-BF642a34066ffff.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: Duplet;
   font-display: swap;
-  src: url("../fonts/Duplet-Extralight.otf") format("opentype"), url("../fonts/Duplet-Extralight.ttf") format("truetype"), url("../fonts/Duplet-Extralight.woff2") format("woff2"), url("../fonts/Duplet-Extralight.woff") format("woff");
+  src: url("../fonts/Duplet-Extralight-BF642a34066d940.otf") format("opentype"), url("../fonts/Duplet-Extralight-BF642a34066d940.ttf") format("truetype"), url("../fonts/Duplet-Extralight-BF642a34066d940.woff2") format("woff2"), url("../fonts/Duplet-Extralight-BF642a34066d940.woff") format("woff");
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: Duplet;
   font-display: swap;
-  src: url("../fonts/Duplet-Semibold.otf") format("opentype"), url("../fonts/Duplet-Semibold.ttf") format("truetype"), url("../fonts/Duplet-Semibold.woff2") format("woff2"), url("../fonts/Duplet-Semibold.woff") format("woff");
-  font-weight: 600;
+  src: url("../fonts/Duplet-BoldItalic-BF642a34065bd61.otf") format("opentype"), url("../fonts/Duplet-BoldItalic-BF642a34065bd61.ttf") format("truetype"), url("../fonts/Duplet-BoldItalic-BF642a34065bd61.woff2") format("woff2"), url("../fonts/Duplet-BoldItalic-BF642a34065bd61.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 * {
@@ -166,7 +215,6 @@ address {
 
 html {
   box-sizing: border-box;
-  font-size: calc(14px + 6 * (100vw - 320px) / 680);
 }
 
 body {
@@ -174,7 +222,6 @@ body {
   font-style: normal;
   color: #A3A3A3;
   background-color: #1B1B1B;
-  letter-spacing: 0.03em;
   overflow-x: hidden;
   margin: 0;
   position: relative;
@@ -196,6 +243,36 @@ body.modal-open {
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 375px;
+}
+@media screen and (min-width: 834px) {
+  .container {
+    max-width: 834px;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .container {
+    max-width: 1180px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media screen and (min-width: 1512px) {
+  .container {
+    max-width: 1512px;
+  }
+}
+@media screen and (min-width: 1728px) {
+  .container {
+    max-width: 1728px;
+  }
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -550,16 +627,18 @@ template {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   width: 100%;
-  padding: 0.07143rem;
-  border-radius: 10rem;
+  height: 38px;
+  padding: 1px;
+  border-radius: 100px;
   border: none;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   color: #fff;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1rem;
-  letter-spacing: 0.03571rem;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 0.5px;
 }
 .button span, .button-outline span {
   text-align: center;
@@ -569,50 +648,25 @@ template {
   width: 100%;
   height: 100%;
   white-space: nowrap;
-  padding: 0.86rem;
+  padding: 0 24px;
   background: transparent;
   border-radius: 100rem;
 }
-.button.large, .large.button-outline {
-  padding: 11px;
-}
-.button.medium, .medium.button-outline {
-  padding: 10px;
-}
-.button.small, .small.button-outline {
-  padding: 10px;
-}
-@media screen and (min-width: 834px) {
-  .button, .button-outline {
-    font-size: 0.77rem;
-  }
-  .button span, .button-outline span {
-    padding: 0.501843rem;
-  }
-}
-@media screen and (min-width: 1180px) {
-  .button, .button-outline {
-    font-size: 0.64rem;
-  }
-  .button span, .button-outline span {
-    padding: 0.3561rem;
-  }
-}
 
 .button.orange, .orange.button-outline {
-  background: linear-gradient(90deg, #FFC047 0.04%, #DF5012 48.5%, #C40C0C 99.96%);
+  background: linear-gradient(90deg, #FFCA62 0.04%, #DF5012 48.5%, #C40C0C 99.96%);
 }
 .button.orange span, .orange.button-outline span {
-  background: linear-gradient(90deg, rgba(255, 188, 59, 0.8) 0.04%, rgba(254, 90, 20, 0.8) 49.63%, rgba(255, 25, 25, 0.8) 99.96%);
+  background: linear-gradient(90deg, #DEA037 0.04%, #DD5318 49.63%, #DE1F1B 99.96%);
 }
 .button.orange:hover span, .orange.button-outline:hover span {
   background: linear-gradient(90deg, #FFBC3B 0.04%, #FE5A14 49.63%, #FF1919 99.96%);
 }
 .button.red, .red.button-outline {
-  background: linear-gradient(90deg, #FFBC3B 30.89%, #FF4F40 60.43%, #AE1D6E 89.96%);
+  background: linear-gradient(90deg, #FFB067 0.1%, #FF4F40 50%, #DB3278 99.9%);
 }
 .button.red span, .red.button-outline span {
-  background: linear-gradient(90deg, rgba(255, 155, 60, 0.8) 0.1%, rgba(255, 79, 64, 0.8) 50%, rgba(219, 50, 120, 0.8) 99.9%);
+  background: linear-gradient(90deg, #E0833C 0.1%, #E0483E 50%, #C43269 99.9%);
 }
 .button.red:hover span, .red.button-outline:hover span {
   background: linear-gradient(90deg, #FF9B3C 0.1%, #FF4F40 50%, #DB3278 99.9%);
@@ -621,16 +675,16 @@ template {
   background: linear-gradient(90deg, #B9B8F6 0.04%, #3D5DD2 50.5%, #5D1695 99.96%);
 }
 .button.purple span, .purple.button-outline span {
-  background: linear-gradient(90deg, rgba(162, 161, 236, 0.8) 0.04%, rgba(75, 111, 237, 0.8) 47.81%, rgba(150, 46, 232, 0.8) 99.96%);
+  background: linear-gradient(90deg, #8A89D1 0.04%, #495FD3 47.81%, #822DCF 99.96%);
 }
 .button.purple:hover span, .purple.button-outline:hover span {
   background: linear-gradient(90deg, #A2A1EC 0.04%, #4B6FED 47.81%, #962EE8 99.96%);
 }
 .button.green, .green.button-outline {
-  background: linear-gradient(90deg, #E7F899 0%, #E4F0AF 0.01%, #97DD31 48.21%, #176850 100%);
+  background: linear-gradient(90deg, #E4F0AF 0%, #97DD31 48.21%, #176850 100%);
 }
 .button.green span, .green.button-outline span {
-  background: linear-gradient(90deg, rgba(200, 217, 121, 0.8) 0%, rgba(136, 209, 29, 0.8) 50.44%, rgba(46, 163, 128, 0.8) 100%);
+  background: linear-gradient(90deg, #A9BA6A 0%, #78B422 50.44%, #308F70 100%);
 }
 .button.green:hover span, .green.button-outline:hover span {
   background: linear-gradient(90deg, #C8D979 0%, #88D11D 50.44%, #2EA380 100%);
@@ -754,44 +808,37 @@ template {
 .hero__info-box--title {
   text-align: center;
   padding: 0 16px;
-  margin: 0.67em 0;
+  margin: 0 0 32px;
   color: #fff;
-  font-size: 3rem;
-  font-style: normal;
+  font-size: 44px;
   font-weight: 600;
-  line-height: 3.76rem;
-  letter-spacing: 0.03571rem;
+  line-height: 54px;
+  letter-spacing: 0.5px;
 }
 .hero__info-box--button {
-  max-width: 11.1rem;
+  max-width: 165px;
 }
 @media screen and (min-width: 834px) {
   .hero__info-box {
     margin-top: 0;
   }
   .hero__info-box--title {
-    margin-bottom: 2.6rem;
-    font-size: 3.5rem;
+    margin-bottom: 48px;
+    font-size: 66px;
     font-weight: 600;
-    line-height: 3.861rem;
-    letter-spacing: 0.03571rem;
+    line-height: 72px;
+    letter-spacing: 0.5px;
   }
   .hero__info-box--title-first {
     display: none;
   }
   .hero__info-box--button {
-    max-width: 8.8rem;
+    max-width: 165px;
   }
 }
 @media screen and (min-width: 1180px) {
   .hero__info-box {
     margin-top: 0;
-  }
-  .hero__info-box--title {
-    margin-bottom: 2.2rem;
-    font-size: 3.04rem;
-    line-height: 3.3352rem;
-    letter-spacing: 0.03571rem;
   }
   .hero__info-box--title .span-br {
     display: none;
@@ -800,62 +847,64 @@ template {
     display: none;
   }
   .hero__info-box--button {
-    max-width: 9rem;
+    max-width: 200px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero__info-box {
     margin-top: 0;
   }
-  .hero__info-box--title {
-    margin-bottom: 2.1rem;
-    font-size: 3rem;
-    line-height: 3.2rem;
-    letter-spacing: 0rem;
-    font-weight: 600;
-  }
   .hero__info-box--button {
-    max-width: 7.2rem;
+    max-width: 165px;
   }
 }
 @media screen and (min-width: 1512px) {
   .hero__info-box--title {
-    margin-bottom: 2.7rem;
-    font-size: 3.24rem;
-    line-height: 3.36rem;
+    margin-bottom: 64px;
+    font-size: 78px;
+    font-weight: 600;
+    line-height: 84px;
+    letter-spacing: 0.5px;
   }
   .hero__info-box--button {
-    max-width: 9.2rem;
+    height: 44px;
+    padding: 2px;
+    max-width: 228px;
+  }
+  .hero__info-box--button span {
+    padding: 0 48px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.5px;
   }
 }
 @media screen and (min-width: 1728px) {
   .hero__info-box--title {
-    margin-bottom: 2rem;
-    font-size: 3.46rem;
-    line-height: 3.58rem;
-  }
-  .hero__info-box--button {
-    max-width: 8.5rem;
-    font-size: 0.58rem;
+    margin-bottom: 51px;
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 96px;
+    letter-spacing: 0.5px;
   }
 }
 
 .hero__scroll-button {
   cursor: pointer;
   position: absolute;
-  bottom: 2.15rem;
+  bottom: 32px;
   left: 50%;
   right: 50%;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.4rem;
+  gap: 8px;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__scroll-button-link {
-  width: 2.28571rem;
-  height: 2.28571rem;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -888,86 +937,53 @@ template {
   opacity: 1;
   transition: opacity 2s;
   content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M13.0285 16.172L18.5456 10.808L20 12.222L12 20L4 12.222L5.45436 10.808L10.9715 16.172L10.9715 4L13.0285 4L13.0285 16.172Z" fill="white"/></svg>');
-  width: 1.14286rem;
-  height: 1.14286rem;
+  width: 16px;
+  height: 16px;
 }
 .hero__scroll-button p {
   color: #fff;
   text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 @media screen and (min-width: 834px) {
   .hero__scroll-button {
-    bottom: 3.5rem;
-    gap: 0.34rem;
-  }
-  .hero__scroll-button-link {
-    width: 1.85rem;
-    height: 1.85rem;
-  }
-  .hero__scroll-button span {
-    width: 1rem;
-    height: 1rem;
-  }
-  .hero__scroll-button p {
-    font-size: 0.7rem;
+    bottom: 64px;
   }
 }
 @media screen and (min-width: 1180px) {
   .hero__scroll-button {
-    bottom: 2.2rem;
-    gap: 0.3rem;
-  }
-  .hero__scroll-button-link {
-    width: 1.6rem;
-    height: 1.6rem;
-  }
-  .hero__scroll-button span {
-    width: 0.76rem;
-    height: 0.76rem;
-  }
-  .hero__scroll-button p {
-    font-size: 0.65rem;
+    bottom: 48px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero__scroll-button {
-    bottom: 1rem;
-    gap: 0.32rem;
-  }
-  .hero__scroll-button-link {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-  .hero__scroll-button span {
-    width: 0.74rem;
-    height: 0.74rem;
-  }
-  .hero__scroll-button p {
-    font-size: 0.63rem;
+    bottom: 32px;
   }
 }
 @media screen and (min-width: 1512px) {
   .hero__scroll-button {
-    bottom: 2rem;
+    bottom: 48px;
   }
   .hero__scroll-button-link {
-    width: 1.7rem;
-    height: 1.7rem;
+    width: 40px;
+    height: 40px;
   }
   .hero__scroll-button span {
-    width: 1rem;
-    height: 1rem;
+    width: 24px;
+    height: 24px;
     content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M13.0285 16.172L18.5456 10.808L20 12.222L12 20L4 12.222L5.45436 10.808L10.9715 16.172L10.9715 4L13.0285 4L13.0285 16.172Z" fill="white"/></svg>');
   }
-}
-@media screen and (min-width: 1728px) {
-  .hero__scroll-button {
-    bottom: 2.5rem;
-    gap: 0.3rem;
+  .hero__scroll-button p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.5px;
   }
 }
-
 .services {
   overflow: hidden;
   position: relative;
@@ -1225,18 +1241,10 @@ template {
 .services__title {
   position: relative;
   width: fit-content;
-  font-size: 1.71429rem;
-  font-weight: 600;
-  line-height: 2.28571rem;
-  letter-spacing: 0.009rem;
   color: #353535;
   margin-bottom: 0.2rem;
 }
 .services__title:before, .services__title::after {
-  font-size: 1.71429rem;
-  font-weight: 600;
-  line-height: 2.28571rem;
-  letter-spacing: 0.009rem;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -1255,17 +1263,7 @@ template {
 @media screen and (min-width: 834px) {
   .services__title {
     width: 100%;
-    font-size: 1.7rem;
-    font-weight: 600;
-    line-height: 2.85714rem;
-    letter-spacing: 0.043rem;
     margin-bottom: 1.799rem;
-  }
-  .services__title:before, .services__title::after {
-    font-size: 1.7rem;
-    font-weight: 600;
-    line-height: 2.85714rem;
-    letter-spacing: 0.043rem;
   }
   .services__title::before {
     right: 109%;
@@ -1277,17 +1275,7 @@ template {
 @media screen and (min-width: 1180px) {
   .services__title {
     width: 100%;
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 2.85714rem;
-    letter-spacing: 0.0143rem;
     margin-bottom: 0.63rem;
-  }
-  .services__title:before, .services__title::after {
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 2.85714rem;
-    letter-spacing: 0.0143rem;
   }
   .services__title::before {
     right: 111%;
@@ -1299,17 +1287,7 @@ template {
 @media screen and (min-width: 1280px) {
   .services__title {
     width: 100%;
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 2.85714rem;
-    letter-spacing: -0.009rem;
     margin-bottom: 0.5rem;
-  }
-  .services__title:before, .services__title::after {
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 2.85714rem;
-    letter-spacing: -0.009rem;
   }
   .services__title::before {
     right: 111%;
@@ -1321,84 +1299,36 @@ template {
 @media screen and (min-width: 1512px) {
   .services__title {
     width: 100%;
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 2.85714rem;
-    letter-spacing: 0.045rem;
     margin-bottom: 0.9rem;
-  }
-  .services__title:before, .services__title::after {
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 2.85714rem;
-    letter-spacing: 0.045rem;
   }
 }
 @media screen and (min-width: 1728px) {
   .services__title {
     width: 100%;
-    font-size: 1.62rem;
-    font-weight: 600;
-    line-height: 2.85714rem;
-    letter-spacing: 0.0389rem;
     margin-bottom: 0.68rem;
-  }
-  .services__title:before, .services__title::after {
-    font-size: 1.62rem;
-    font-weight: 600;
-    line-height: 2.85714rem;
-    letter-spacing: 0.0389rem;
   }
 }
 
 .services__text {
   color: #353535;
-  font-size: 1.14286rem;
-  font-weight: 400;
-  line-height: 1.623rem;
-  letter-spacing: 0.02rem;
-}
-@media screen and (min-width: 834px) {
-  .services__text {
-    font-size: 0.945rem;
-    font-weight: 400;
-    line-height: 1.341rem;
-    letter-spacing: 0.0392rem;
-  }
 }
 @media screen and (min-width: 1180px) {
   .services__text {
-    font-size: 0.86rem;
-    font-weight: 400;
-    line-height: 1.1rem;
-    letter-spacing: 0.012rem;
     max-width: 17.834rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .services__text {
-    font-size: 0.86rem;
-    font-weight: 400;
-    line-height: 1.1rem;
-    letter-spacing: -0.004rem;
     max-width: 16.999999rem;
   }
 }
 @media screen and (min-width: 1512px) {
   .services__text {
-    font-size: 1.04rem;
-    font-weight: 400;
-    line-height: 1.45rem;
-    letter-spacing: -0.005rem;
     max-width: 21.087rem;
   }
 }
 @media screen and (min-width: 1728px) {
   .services__text {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.38rem;
-    letter-spacing: -0.021rem;
     max-width: 19.566rem;
   }
 }
