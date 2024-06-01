@@ -1,0 +1,312 @@
+.reward {
+  position: relative;
+  width: 100vw;
+
+  z-index: 0;
+  margin-top: -1px;
+
+  background-image: url("../img/reward/375_rewardsBg.webp");
+  background-size: cover;
+  background-position: bottom;
+
+  &__gradient {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__container {
+    z-index: 5;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px;
+    gap: 48px;
+  }
+  @media screen and (min-width: 834px) {
+    background-image: url("../img/reward/834_rewardsBg.webp");
+    &__container {
+      padding: 64px;
+    }
+  }
+  @media screen and (min-width: 1180px) {
+    background-image: url("../img/reward/1180_rewardsBg.webp");
+    &__container {
+      gap: 32px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+
+    background-image: url("../img/reward/1280_rewardsBg.webp");
+    &__container {
+      flex-direction: row;
+      align-items: start;
+      padding: 64px 140px;
+      gap: 64px;
+      & .reward-block{
+        width: 100%;
+        max-width: 480px;
+      }
+      & .reward-content{
+        width: 100%;
+        max-width: 456px;
+      }
+    }
+  }
+  @media screen and (min-width: 1512px) {
+    background-image: url("../img/reward/1512_rewardsBg.webp");
+    &__container {
+      padding: 80px 120px;
+      gap: 162px;
+      & .reward-block{
+        max-width: 520px;
+      }
+      & .reward-content{
+        max-width: 590px;
+      }
+    }
+  }
+  @media screen and (min-width: 1728px) {
+    background-image: url("../img/reward/1728_rewardsBg.webp");
+    &__container {
+      gap: 144px;
+      padding: 86px 170px 86px 304px;
+    }
+  }
+}
+// content block
+.reward-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+
+  &__title {
+
+    text-align: center;
+    margin-bottom: 12px;
+
+    @include font-title(h2-mob);
+    background: $gr-text-1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
+  &__text {
+    text-align: center;
+    @include font-body(normal);
+    color: $cl-neutral-400;
+    margin-bottom: 24px;
+  }
+  &__btn {}
+
+  @media screen and (min-width: 834px) {
+    &__title {
+      margin-bottom: 12px;
+      @include font-title(h2-sm);
+    }
+    &__text {
+      @include font-body(big);
+      margin-bottom: 32px;
+    }
+    &__btn {
+      max-width: 174px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    align-items: start;
+    margin-top: 14px;
+    &__title {
+
+      text-align: start;
+      margin-bottom: 24px;
+
+      @include font-title(h2-sm);
+      & br{
+        display: none;
+      }
+    }
+    &__text {
+      text-align: start;
+      @include font-body(big);
+      margin-bottom: 24px;
+    }
+    &__btn {
+      & span{
+        background: #3F211D !important;
+      }
+    }
+  }
+  @media screen and (min-width: 1512px) {
+    margin-top: 0;
+    &__title {
+      margin-bottom:32px;
+      @include font-title(h2-md);
+    }
+    &__text {
+      @include font-body(large);
+      margin-bottom: 32px;
+    }
+    &__btn {
+      @include button-large();
+      max-width: 288px;
+      background: #3F211D;
+      &:hover{
+        background: $gr-btn-1-stroke !important;
+        & span{background: $gr-btn-1-hover !important;}
+      }
+    }
+  }
+  @media screen and (min-width: 1728px) {
+    margin-top: -6px;
+    &__title {
+      margin-bottom:32px;
+      @include font-title(h2-lg);
+    }
+  }
+}
+
+// list block
+.reward-block {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 24px;
+  height: fit-content;
+
+  border: 1px solid #BA3470;
+  border-radius: 24px;
+  background: $gr-bg-red;
+  @include transition;
+
+  &__item {
+    position: relative;
+    padding-left: 48px;
+  }
+
+  &__check {
+    position: absolute;
+    left: 0;
+
+    padding: 2px;
+
+    $size:32px;
+    width: $size;
+    height: $size;
+
+
+    border-radius: 100px;
+    @include transition;
+    background: $gr-dg-1;
+
+    &-wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      border-radius: 300px;
+      background: #321E25;
+      & svg {
+        $size: 16px;
+        width: $size;
+        height: $size;
+        @include transition;
+        fill: $cl-neutral-100;
+      }
+    }
+
+  }
+
+  &__title {
+    @include font-body(big);
+    color: $cl-neutral-100;
+    margin-bottom: 4px;
+  }
+
+  &__text {
+   @include font-body(small);
+    color: $cl-neutral-400;
+  }
+
+  @media screen and (min-width: 834px) {
+    max-width: 522px;
+    padding: 40px;
+    &__item {
+      padding-left: 56px;
+    }
+    &__check {
+      $size:40px;
+      width: $size;
+      height: $size;
+
+      &-wrapper{
+        background-color: #5E3129;
+        & svg {
+          $size: 24px;
+          width: $size;
+          height: $size;
+        }
+      }
+
+    }
+    &__title {
+      margin-bottom: 8px;
+    }
+  }
+  @media screen and (min-width: 1180px) {
+    gap: 26px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 32px;
+    gap: 24px;
+    border: 1px solid $cl-neutral-800;
+    background: linear-gradient(93deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.00) 100%);
+    &__check {
+      background: transparent;
+      border: 2px solid $cl-neutral-400;
+      &-wrapper{
+        background: transparent;
+        & svg {
+          fill: $cl-neutral-400;
+        }
+      }
+
+    }
+    &:hover{
+      border: 1px solid #BA3470;
+      background: $gr-bg-red;
+      & .reward-block__check {
+        background: $gr-dg-1;
+        border: none;
+        &-wrapper{
+          background: #422529;
+          & svg {
+            fill: $cl-neutral-100;
+          }
+        }
+
+      }
+    }
+  }
+  @media screen and (min-width: 1512px) {
+    padding: 40px;
+    &__title {
+      @include font-body(large);
+      margin-bottom: 8px;
+    }
+    &__text {
+      @include font-body(normal);
+    }
+  }
+
+  @media screen and (min-width: 1728px) {
+  }
+}
+
+
