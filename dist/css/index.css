@@ -2448,17 +2448,17 @@ template {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
-  width: 100%;
-  height: 100%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
   opacity: 0;
-  animation: wave 2s linear infinite;
-  transition: 0.3s;
+  animation: wave 1.4s linear infinite;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: inherit;
-  border: 1.5px solid transparent;
+  border: 1px solid transparent;
   background: inherit;
 }
 .slot__container--button:after {
-  animation-delay: 0.8s;
+  animation-delay: 0.7s;
 }
 .slot__container--button:hover span {
   background: linear-gradient(90deg, #FF9B3C 0.1%, #FF4F40 50%, #DB3278 99.9%) padding-box, linear-gradient(90deg, #FFB067 0.1%, #FF4F40 50%, #DB3278 99.9%) border-box;
@@ -2467,6 +2467,10 @@ template {
   .slot__container--button {
     width: 143.25px;
     height: 45px;
+    border: 1.5px solid transparent;
+  }
+  .slot__container--button:before, .slot__container--button:after {
+    border: 1.5px solid transparent;
   }
   .slot__container--button span {
     font-size: 16px;
@@ -2481,6 +2485,9 @@ template {
     height: 60px;
     border: 2px solid transparent;
   }
+  .slot__container--button:before, .slot__container--button:after {
+    border: 2px solid transparent;
+  }
   .slot__container--button span {
     font-size: 20px;
     font-weight: 600;
@@ -2491,19 +2498,53 @@ template {
 
 @keyframes wave {
   0% {
-    width: 100%;
-    height: 100%;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
     opacity: 0;
   }
-  50% {
-    width: 110%;
-    height: 120%;
-    opacity: 1;
+  33% {
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    opacity: 0.5;
+  }
+  66% {
+    width: calc(100% + 24px);
+    height: calc(100% + 24px);
+    opacity: 0.2;
   }
   100% {
-    width: 120%;
-    height: 140%;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
     opacity: 0;
+  }
+}
+@media screen and (min-width: 1512px) {
+  @keyframes wave {
+    0% {
+      opacity: 1;
+      width: calc(100% + 0px);
+      height: calc(100% + 0px);
+    }
+    25% {
+      opacity: 1;
+      width: calc(100% + 10px);
+      height: calc(100% + 10px);
+    }
+    50% {
+      opacity: 0.5;
+      width: calc(100% + 20px);
+      height: calc(100% + 20px);
+    }
+    75% {
+      opacity: 0.25;
+      width: calc(100% + 30px);
+      height: calc(100% + 30px);
+    }
+    100% {
+      opacity: 0;
+      width: calc(100% + 40px);
+      height: calc(100% + 40px);
+    }
   }
 }
 .slot__modal {
