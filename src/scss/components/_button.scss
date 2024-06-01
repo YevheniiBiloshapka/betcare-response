@@ -32,7 +32,8 @@
 //sizes mixins.scss
 
 @mixin button-large() {
-  height: 62px;
+  height: 64px;
+  padding: 2px;
   & span {
     @include font-button(large);
     padding: 0 56px;
@@ -87,7 +88,7 @@
     }
   }
   &.purple {
-     background:  $gr-btn-2-stroke;
+     background: $gr-btn-2-stroke;
     & span{
        background:$gr-btn-2-default ;
     }
