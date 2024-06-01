@@ -92,13 +92,13 @@ $font-body: (
                 font-size: 14px,
                 font-weight:600,
                 line-height: 18px,
-                letter-spacing: 0.66px
+                letter-spacing: 0.6px
         ),
         small:(
                 font-size: 14px,
                 font-weight: 300,
                 line-height: 18px,
-                letter-spacing: 0.66px
+                letter-spacing: 0.6px
         ),
 
         micro-bold:(
@@ -173,6 +173,11 @@ $cl-magenta-700:#FF5970;
 $cl-magenta-200:#FFD7E4;
 $cl-magenta-100:#FFEFF5;
 
+//other
+$cl-other-purple:#2B3771;
+$cl-other-blue:#1F3D61;
+$cl-other-swPurple:#55237B;
+
 //Gradient
 $gr-text-1: linear-gradient(90deg, #E1126E 2.22%, #FF996E 52.07%, #FF4A4A 80.55%);
 $gr-text-2: linear-gradient(90deg, #3B5EFF 25.36%, #A09EFF 49.29%, #A838FF 73.22%);
@@ -197,6 +202,13 @@ $gr-btn-3-stroke: linear-gradient(90deg, #FFCA62 0.04%, #DF5012 48.5%, #C40C0C 9
 $gr-btn-4-default:  linear-gradient(90deg, #A9BA6A 0%, #78B422 50.44%, #308F70 100%);
 $gr-btn-4-hover: linear-gradient(90deg, #C8D979 0%, #88D11D 50.44%, #2EA380 100%);
 $gr-btn-4-stroke: linear-gradient(90deg, #E4F0AF 0%, #97DD31 48.21%, #176850 100%);
+
+
+// gradient background
+$gr-bg-transparent: linear-gradient(93deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.00) 100%);
+$gr-bg-purple: linear-gradient(105deg, rgba(59, 94, 255, 0.10) 0.98%, rgba(160, 158, 255, 0.10) 50.49%, rgba(168, 56, 255, 0.03) 100%);
+$gr-bg-blue: linear-gradient(105deg, rgba(59, 94, 255, 0.10) 0.98%, rgba(160, 158, 255, 0.10) 50.49%, rgba(168, 56, 255, 0.03) 100%);
+$gr-bg-swPurple: linear-gradient(105deg, rgba(59, 94, 255, 0.10) 0.98%, rgba(160, 158, 255, 0.10) 50.49%, rgba(168, 56, 255, 0.03) 100%);
 
 //diagonal grad
 $gr-dg-1: linear-gradient(145deg, #E1126E 13.59%, #FF996E 54.92%, #FF4A4A 78.53%);

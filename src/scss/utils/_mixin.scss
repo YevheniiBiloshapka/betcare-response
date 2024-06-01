@@ -1,7 +1,7 @@
 @mixin transition(
   $property: all,
   $duration: 0.25s,
-  $timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+  $timing-function: cubic-bezier(0.4, 0, 0.2, 1),
 ) {
   transition: $property $duration $timing-function;
 }
