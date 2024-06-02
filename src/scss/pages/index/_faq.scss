@@ -1,0 +1,165 @@
+
+.faq {
+  position: relative;
+  background-image: url("../img/faq/375_faqBg.webp");
+  background-color: $cl-neutral-100;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+
+  &__container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 48px 16px;
+  }
+
+  &__title {
+    text-align: center;
+    color: $cl-neutral-900;
+    @include font-title(h2-mob);
+    & span{
+      background: $gr-text-5;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  @media screen and (min-width: 834px) {
+    background-image: url("../img/faq/834_faqBg.webp");
+    &__container {
+      gap: 49px;
+      padding: 64px;
+    }
+    &__title {
+      @include font-title(h2-sm);
+    }
+  }
+  @media screen and (min-width: 1180px) {
+    background-image: url("../img/faq/1180_faqBg.webp");
+    &__container {
+      gap: 33px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url("../img/faq/1280_faqBg.webp");
+    &__container {
+      flex-direction: row;
+      align-items: start;
+      justify-content: space-between;
+
+      gap: 143px;
+      padding: 64px 80px;
+      &--accordion{
+        width: 692px;
+      }
+    }
+    &__title {
+      text-align: start;
+      width: fit-content;
+    }
+  }
+  @media screen and (min-width: 1512px) {
+    background-image: url("../img/faq/1512_faqBg.webp");
+    &__container {
+      gap: 117px;
+      padding: 80px 152px 80px 80px;
+      &--accordion{
+        width: 790px;
+      }
+    }
+    &__title {
+      @include font-title(h2-md);
+      margin-top: 6px;
+    }
+
+  }
+  @media screen and (min-width: 1728px) {
+    background-image: url("../img/faq/1728_faqBg.webp");
+    &__container {
+      gap: 117px;
+      padding: 80px 120px ;
+      &--accordion{
+        width: 824px;
+      }
+    }
+    &__title {
+      @include font-title(h2-lg);
+      margin-top: 0;
+    }
+  }
+}
+
+.faq__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  position: relative;
+  z-index: 1;
+
+  &-text {
+    text-align: center;
+    color: $cl-neutral-900;
+    @include font-body(big-bold);
+  }
+
+  &-button {
+    max-width: 124px;
+  }
+  @media screen and (min-width: 834px) {
+    gap: 15px;
+    &-text {
+      & br{
+        display: none;
+      }
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    align-items: start;
+
+    bottom: 65px;
+    left: 80px;
+    gap: 21px;
+    &-text {
+      text-align: start;
+      & br{
+        display: unset;
+      }
+    }
+  }
+  @media screen and (min-width: 1512px) {
+    bottom: 80px;
+    gap: 23px;
+
+    &-text {
+      @include font-body(large-bold);
+    }
+    &-button{
+      @include button-large();
+      max-width: 219px;
+    }
+  }
+  @media screen and (min-width: 1728px) {
+    left: 120px;
+    gap: 23px;
+
+    &-text {
+      & br{
+        display: none;
+      }
+    }
+    &-button{
+      @include button-large();
+      max-width: 219px;
+    }
+  }
+}
+

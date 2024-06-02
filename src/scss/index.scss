@@ -6,18 +6,17 @@
 @import 'utils/base';
 @import 'utils/normalize';
 
-// components
+// ? components
 @import 'components/container';
 @import 'components/button';
 //@import 'components/modal';
 //@import 'components/select';
-//@import 'components/accordion';
+@import 'components/accordion';
 //@import 'components/inputs';
-//@import 'components/FAQ';
 //main
 
 
-//index page
+// ! index page
 @import "pages/index/hero";
 @import "pages/index/service";
 @import "pages/index/vip";
@@ -25,6 +24,7 @@
 @import "pages/index/reward";
 @import "pages/index/cards";
 @import "pages/index/features";
+@import "pages/index/faq";
 
 // header footer
 //@import 'components/header';
