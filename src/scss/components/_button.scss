@@ -110,25 +110,25 @@
     }
   }
   &.black {
-    color: #fff;
-    background: #1B1B1B;
+    color: $cl-neutral-100;
+    background: $cl-neutral-900;
     &:hover{
-      color: #fff;
-      background: #464347;
+      color: $cl-neutral-100;
+      background: #232323;
     }
   }
   &.white {
-    color: #1B1B1B;
-    background: #CCCCCC;
+    color: $cl-neutral-900;
+    background: #D9D9D9;
     &:hover {
-        background: #fff;
+        background: $cl-neutral-100;
       }
   }
   &.secondBlack {
-    color: #fff;
-    background: #2A2A2A;
+    color: $cl-neutral-100;
+    background: #373737;
     &:hover{
-      background: #353535;
+      background: $cl-neutral-800;
     }
   }
 }
