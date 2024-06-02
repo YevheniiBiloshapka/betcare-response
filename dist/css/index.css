@@ -919,7 +919,7 @@ template {
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 @media screen and (min-width: 834px) {
@@ -3128,5 +3128,280 @@ template {
     height: 259.789px;
     border-radius: 24px;
     box-shadow: 3px 5px 15px 0px rgba(91, 7, 48, 0.4);
+  }
+}
+.features {
+  position: relative;
+  background-image: url("../img/features/375_featuresBg.webp");
+  background-color: #FFF;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.features__container {
+  padding: 48px 32px 0;
+}
+.features__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+  color: #1B1B1B;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.features__title span {
+  background: linear-gradient(89.83deg, #FFBC3B 0.23%, #FF6051 50.08%, #FF4AB0 99.94%, #FF4AAC 99.94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.features__content {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+@media screen and (min-width: 834px) {
+  .features {
+    background-image: url("../img/features/834_featuresBg.webp");
+  }
+  .features__container {
+    padding: 71px 207px 0;
+  }
+  .features__title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+    margin-bottom: 48px;
+  }
+  .features__content {
+    gap: 64px;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .features {
+    background-image: url("../img/features/1180_featuresBg.webp");
+  }
+  .features__container {
+    padding: 64px 175px 0;
+  }
+  .features__title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+    margin-bottom: 48px;
+  }
+  .features__content {
+    flex-direction: row;
+    gap: 48px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .features {
+    background-image: url("../img/features/1280_featuresBg.webp");
+  }
+  .features__container {
+    padding: 64px 225px 0;
+  }
+}
+@media screen and (min-width: 1512px) {
+  .features {
+    background-image: url("../img/features/1512_featuresBg.webp");
+  }
+  .features__container {
+    padding: 83px 267px 0 240px;
+  }
+  .features__title {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.5px;
+    margin-bottom: 67px;
+    margin-left: -37px;
+  }
+  .features__content {
+    gap: 136px;
+  }
+}
+@media screen and (min-width: 1728px) {
+  .features {
+    background-image: url("../img/features/1728_featuresBg.webp");
+  }
+  .features__container {
+    padding: 80px 324px 0 368px;
+  }
+  .features__title {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0.5px;
+    margin-bottom: 76px;
+    margin-left: -46px;
+  }
+  .features__content {
+    gap: 83px;
+  }
+}
+
+.features__video-block {
+  width: 311px;
+  height: 430px;
+  margin-bottom: -1px;
+  background-image: url("../img/features/phone/375_phoneBg.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+.features__video-block img, .features__video-block picture {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 834px) {
+  .features__video-block {
+    width: 420px;
+    height: 569px;
+    background-image: url("../img/features/phone/834_phoneBg.webp");
+  }
+}
+@media screen and (min-width: 1180px) {
+  .features__video-block {
+    width: 384px;
+    height: 532px;
+    background-image: url("../img/features/phone/1180_phoneBg.webp");
+  }
+}
+@media screen and (min-width: 1280px) {
+  .features__video-block {
+    width: 384px;
+    height: 532px;
+    background-image: url("../img/features/phone/1280_phoneBg.webp");
+  }
+}
+@media screen and (min-width: 1512px) {
+  .features__video-block {
+    width: 390px;
+    height: 548px;
+    background-image: url("../img/features/phone/1512_phoneBg.webp");
+  }
+}
+@media screen and (min-width: 1728px) {
+  .features__video-block {
+    width: 474px;
+    height: 645px;
+    background-image: url("../img/features/phone/1728_phoneBg.webp");
+  }
+}
+
+.features__tab-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  counter-reset: custom-counter;
+  margin: 0;
+  padding-left: 2px;
+}
+@media screen and (min-width: 834px) {
+  .features__tab-block {
+    gap: 16px;
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .features__tab-block {
+    margin-top: -26px;
+  }
+}
+@media screen and (min-width: 1512px) {
+  .features__tab-block {
+    gap: 24px;
+    margin-top: -50px;
+  }
+}
+@media screen and (min-width: 1728px) {
+  .features__tab-block {
+    margin-top: -8px;
+  }
+}
+
+.features__tab {
+  counter-increment: custom-counter;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  text-align: left;
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #353535;
+}
+.features__tab svg {
+  margin: 0 8px;
+  width: 20px;
+  height: 20px;
+}
+.features__tab:before {
+  content: counter(custom-counter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: 8px;
+  border: 1px solid #FFD7E4;
+  border-radius: 300px;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.66px;
+  color: #353535;
+  background: #FFF;
+}
+.features__tab.active {
+  opacity: 1;
+}
+@media screen and (min-width: 834px) {
+  .features__tab {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+  }
+  .features__tab svg {
+    margin: 0 12px;
+    width: 28px;
+    height: 28px;
+  }
+  .features__tab:before {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+  }
+}
+@media screen and (min-width: 1512px) {
+  .features__tab {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.41px;
+  }
+  .features__tab svg {
+    margin: 0 12px;
+    width: 28px;
+    height: 28px;
+  }
+  .features__tab:before {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.41px;
   }
 }

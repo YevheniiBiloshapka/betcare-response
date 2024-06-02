@@ -54,9 +54,9 @@ $font-title: (
 $font-body: (
         large-bold:(
                 font-size: 24px,
-                font-weight: 400,
+                font-weight: 600,
                 line-height: 36px,
-                letter-spacing: 0.66px
+                letter-spacing: 0.41px
         ),
         large:(
                 font-size: 24px,
@@ -66,9 +66,9 @@ $font-body: (
         ),
         big-bold:(
                 font-size: 18px,
-                font-weight: 400,
+                font-weight: 600,
                 line-height: 24px,
-                letter-spacing: 0.66px
+                letter-spacing: 0.5px
         ),
         big:(
                 font-size: 18px,
@@ -92,7 +92,7 @@ $font-body: (
                 font-size: 14px,
                 font-weight:600,
                 line-height: 18px,
-                letter-spacing: 0.6px
+                letter-spacing: 0.5px
         ),
         small:(
                 font-size: 14px,
