@@ -653,12 +653,14 @@
     border-radius: inherit;
 
 
-    opacity: .8;
-    -webkit-animation: pulseAnimate 4s linear infinite;
-    -moz-animation: pulseAnimate 4s linear infinite;
-    -o-animation: pulseAnimate 4s linear infinite;
-    animation: pulseAnimate 4s linear infinite;
+    opacity: 0;
+    -webkit-animation: pulseAnimate 4s linear infinite backwards;
+    -moz-animation: pulseAnimate 4s linear infinite backwards;
+    -o-animation: pulseAnimate 4s linear infinite backwards;
+    animation: pulseAnimate 4s linear infinite backwards;
+    will-change: transform, opacity;
     animation-delay: calc(1s * var(--i));
+
     &:before{
       content: " ";
       width: 100%;
@@ -696,38 +698,114 @@
     }
   }
 }
-
-@-webkit-keyframes pulseAnimate {
-  100% {
+@keyframes pulseAnimate {
+  0% {
     opacity: 0;
+    width: calc(100% + 0.1px);
+    height: calc(100% + 0.1px);
+  }
+  1% {
+    opacity: 0.8;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+  }
+  50% {
+    opacity: 0.4;
+  }
+  95% {
+    opacity: 0.001;
+    visibility: hidden;
     width: calc(100% + 40px);
     height: calc(100% + 40px);
+  }
+  100% {
+    opacity: 0.001;
+    width: 0;
+    height: 0;
+  }
+}
+@-webkit-keyframes pulseAnimate {
+  0% {
+    opacity: 0;
+    width: calc(100% + 0.1px);
+    height: calc(100% + 0.1px);
+  }
+  1% {
+    opacity: 0.8;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+  }
+  50% {
+    opacity: 0.4;
+  }
+  95% {
+    opacity: 0.001;
+    visibility: hidden;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+  }
+  100% {
+    opacity: 0.001;
+    width: 0;
+    height: 0;
   }
 }
 
 @-moz-keyframes pulseAnimate {
-  100% {
+  0% {
     opacity: 0;
+    width: calc(100% + 0.1px);
+    height: calc(100% + 0.1px);
+  }
+  1% {
+    opacity: 0.8;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+  }
+  50% {
+    opacity: 0.4;
+  }
+  95% {
+    opacity: 0.001;
+    visibility: hidden;
     width: calc(100% + 40px);
     height: calc(100% + 40px);
+  }
+  100% {
+    opacity: 0.001;
+    width: 0;
+    height: 0;
   }
 }
 
 @-o-keyframes pulseAnimate {
-  100% {
+  0% {
     opacity: 0;
+    width: calc(100% + 0.1px);
+    height: calc(100% + 0.1px);
+  }
+  1% {
+    opacity: 0.8;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+  }
+  50% {
+    opacity: 0.4;
+  }
+  95% {
+    opacity: 0.001;
+    visibility: hidden;
     width: calc(100% + 40px);
     height: calc(100% + 40px);
+  }
+  100% {
+    opacity: 0.001;
+    width: 0;
+    height: 0;
   }
 }
 
-@keyframes pulseAnimate {
-  100% {
-    opacity: 0;
-    width: calc(100% + 40px);
-    height: calc(100% + 40px);
-  }
-}
+
 
 
 
