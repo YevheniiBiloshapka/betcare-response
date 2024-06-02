@@ -98,24 +98,24 @@
 }
 * {
   scrollbar-width: auto;
-  scrollbar-color: #1B1B1B transparent;
+  scrollbar-color: #FFF transparent;
 }
 *::-webkit-scrollbar {
-  width: 0.35714rem;
+  width: 8px;
   background-color: transparent;
 }
 *::-webkit-scrollbar-track {
-  border-radius: 10rem;
+  border-radius: 100px;
   background: inherit;
 }
 *::-webkit-scrollbar-thumb {
-  border-radius: 10rem;
+  border-radius: 100px;
   border: 0 none #fff;
-  background-color: #1B1B1B;
+  background-color: #FFF;
   transition: all 280ms ease-in-out;
 }
 *::-webkit-scrollbar-thumb:hover {
-  background-color: #353535;
+  background-color: #FFF;
 }
 
 html {
@@ -3250,7 +3250,6 @@ template {
 .features__video-block {
   width: 311px;
   height: 430px;
-  margin-bottom: -1px;
   background-image: url("../img/features/phone/375_phoneBg.webp");
   background-repeat: no-repeat;
   background-size: contain;
