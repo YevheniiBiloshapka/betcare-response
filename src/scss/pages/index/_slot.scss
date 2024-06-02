@@ -654,10 +654,10 @@
 
 
     opacity: .8;
-    -webkit-animation: pulseAnimate 4s infinite;
-    -moz-animation: pulseAnimate 4s infinite;
-    -o-animation: pulseAnimate 4s infinite;
-    animation: pulseAnimate 4s infinite;
+    -webkit-animation: pulseAnimate 4s linear infinite;
+    -moz-animation: pulseAnimate 4s linear infinite;
+    -o-animation: pulseAnimate 4s linear infinite;
+    animation: pulseAnimate 4s linear infinite;
     animation-delay: calc(1s * var(--i));
     &:before{
       content: " ";
