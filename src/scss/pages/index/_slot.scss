@@ -654,7 +654,10 @@
 
 
     opacity: .8;
-    animation: pulseAnimate 4s linear infinite;
+    -webkit-animation: pulseAnimate 4s infinite;
+    -moz-animation: pulseAnimate 4s infinite;
+    -o-animation: pulseAnimate 4s infinite;
+    animation: pulseAnimate 4s infinite;
     animation-delay: calc(1s * var(--i));
     &:before{
       content: " ";
@@ -671,12 +674,12 @@
     height: 45px;
     border: 1.5px solid transparent;
     padding: 1.5px;
-    &:before, &:after {
-      border: 1.5px solid transparent;
-    }
     & span {
       @include font(16px,600,16px);
       letter-spacing: 0.5px;
+    }
+    & .slot_button-wave{
+      padding: 1.5px;
     }
   }
   @media screen and (min-width: 1512px) {
@@ -694,11 +697,35 @@
   }
 }
 
-@keyframes pulseAnimate {
-  100%{
+@-webkit-keyframes pulseAnimate {
+  100% {
     opacity: 0;
-    width:  calc(100% + 40px);
-    height:calc(100% + 40px);
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+  }
+}
+
+@-moz-keyframes pulseAnimate {
+  100% {
+    opacity: 0;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+  }
+}
+
+@-o-keyframes pulseAnimate {
+  100% {
+    opacity: 0;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+  }
+}
+
+@keyframes pulseAnimate {
+  100% {
+    opacity: 0;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
   }
 }
 

@@ -2562,7 +2562,10 @@ template {
   background: inherit;
   border-radius: inherit;
   opacity: 0.8;
-  animation: pulseAnimate 4s linear infinite;
+  -webkit-animation: pulseAnimate 4s infinite;
+  -moz-animation: pulseAnimate 4s infinite;
+  -o-animation: pulseAnimate 4s infinite;
+  animation: pulseAnimate 4s infinite;
   animation-delay: calc(1s * var(--i));
 }
 .slot_button .slot_button-wave:before {
@@ -2579,14 +2582,14 @@ template {
     border: 1.5px solid transparent;
     padding: 1.5px;
   }
-  .slot_button:before, .slot_button:after {
-    border: 1.5px solid transparent;
-  }
   .slot_button span {
     font-size: 16px;
     font-weight: 600;
     line-height: 16px;
     letter-spacing: 0.5px;
+  }
+  .slot_button .slot_button-wave {
+    padding: 1.5px;
   }
 }
 @media screen and (min-width: 1512px) {
@@ -2606,6 +2609,27 @@ template {
   }
 }
 
+@-webkit-keyframes pulseAnimate {
+  100% {
+    opacity: 0;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+  }
+}
+@-moz-keyframes pulseAnimate {
+  100% {
+    opacity: 0;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+  }
+}
+@-o-keyframes pulseAnimate {
+  100% {
+    opacity: 0;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+  }
+}
 @keyframes pulseAnimate {
   100% {
     opacity: 0;
