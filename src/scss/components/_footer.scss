@@ -1,253 +1,168 @@
 .footer {
-    padding: 16px 0;
+  width: 100%;
+  background: $cl-neutral-900;
 
-    background-color: $cl-base-black;
-
-    &__content {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        margin-bottom: 24px;
-    }
-
-    &__social {
-        flex: 1;
-        max-width: 288px;
-
-        & .header__controls--language-switcher {
-            justify-content: normal;
-        }
-    }
-
-    &__contact {
-        flex: 1;
-        max-width: fit-content;
-    }
-
-    &__payment-shipping {
-        flex: 1;
-    }
-
-    @media screen and (min-width: 744px) {
-        padding: 48px 0;
-    }
-    @media screen and (min-width: 1200px) {
-        &__content {
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        &__payment-shipping {
-            flex: 1;
-            max-width: 200px;
-        }
-    }
-}
-
-//TODO: footer social
-.footer__social {
+  &__container {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-
-    &--link-list {
-        display: flex;
-        gap: 16px;
+    gap: 28px;
+    padding: 24px 24px 16px;
+  }
+  @media screen and (min-width: 834px) {
+    &__container {
+      gap:31px;
+      padding: 24px 64px 16px;
     }
-
-    &--review {
-        display: flex;
-        padding: 12px 10px;
-        justify-content: space-between;
-        max-width: 375px;
-        gap: 12px;
-        border-radius: $br-12;
-        background: $cl-grey-900;
-
-        &-google {
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-
-            &-stars {
-                display: flex;
-                align-items: center;
-                gap: 7px;
-                color: $cl-base-white;
-                @include font($fs-14, 500, 171.429%);
-
-                & span {
-                    display: flex;
-                    gap: 2px;
-                }
-            }
-        }
-
-        & button {
-            width: 100%;
-            align-self: end;
-            max-width: 215px;
-        }
+  }
+  @media screen and (min-width: 1280px) {
+    &__container {
+      gap:44px;
+      padding: 48px 120px 32px;
     }
-
-    @media screen and (min-width: 1200px) {
-        gap: 24px;
-        &--review {
-            max-width: 288px;
-        }
-    }
+  }
 }
 
-//TODO: footer contact
-.footer__contact {
-    display: flex;
+// TODO:Top
+.footer__top-block {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+
+  @media screen and (min-width: 834px) {
+    flex-direction: row;
+    align-items: end;
     justify-content: space-between;
-
-    &--links-list {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-    }
-
-    &--list {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-
-
-        &-link {
-            color: $cl-grey-300;
-            @include font($fs-14, 500, 157.143%);
-            margin-bottom: 12px;
-        }
-    }
-
-    &--info-list {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-    }
-
-    &--info-item {
-        display: flex;
-        gap: 8px;
-        color: $cl-grey-100;
-        @include font($fs-14, 400, 157.143%);
-
-        & svg {
-            display: block;
-            margin-top: 6px;
-            min-width: 16px;
-            width: 16px;
-            height: 16px;
-            fill: $cl-base-white;
-
-            & use {
-                width: 16px;
-                height: 16px;
-            }
-        }
-    }
-
-    @media screen and (min-width: 744px) {
-        gap: 16px;
-        &--links-list {
-            gap: 8px;
-        }
-        &--list {
-            &-link {
-                padding: 6px 0 2px 0;
-                @include font($fs-16, 500, 150%);
-                margin-bottom: 26px;
-
-            }
-        }
-        &--info-list {
-            gap: 8px;
-            max-width: 255px;
-        }
-        &--info-item {
-            @include font($fs-18, 400, 144.444%);
-        }
-    }
-    @media screen and (min-width: 1200px) {
-        gap: 75px;
-    }
-    @media screen and (min-width: 1440px) {
-        gap: 130px;
-    }
+    gap: 77px;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 52px;
+    align-items: center;
+  }
 }
 
-//TODO: Icon payment and shipping
-.footer__payment-shipping {
+// social
+.footer__socials {
+  display: flex;
+  gap:24px;
+
+  &-icon {
+
+    & svg {
+      @include transition;
+      fill: #727272;
+    }
+
+    &.facebook:hover {
+      & svg {
+        fill: #1877F2;
+      }
+    }
+
+    &.instagram:hover {
+      & svg {
+        fill: url(#instagram-gradient);
+      }
+    }
+
+    &.linkedin:hover {
+      & svg {
+        fill: #1D5BB5;
+      }
+    }
+
+    &.youtube:hover {
+      & svg {
+        fill: #FF0000;
+      }
+    }
+  }
+
+}
+
+.footer__links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  justify-content: space-between;
+  gap: 24px 6px;
+  text-align: center;
+  width: 100%;
+
+  & a {
+    width: 100%;
+    color: #FFF;
+     @include font-body(normal);
+    @include transition;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+  }
+
+
+  @media screen and (min-width: 834px) {
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+  @media screen and (min-width: 1180px) {
+    max-width: 428px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: fit-content;
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-
-    & .footer__payment-list,
-    .footer__shipping-list {
-        display: flex;
-        gap: 16px;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-
-        padding: 16px 60px;
-        border-radius: $br-4;
-        background-color: $cl-grey-900;
+    gap: 64px;
+    & a{
+      white-space: nowrap;
     }
-
-    @media screen and (min-width: 375px) {
-        & .footer__payment-list,
-        .footer__shipping-list {
-            padding: 16px 97px;
-        }
-    }
-    @media screen and (min-width: 1200px) {
-        gap: 24px;
-        & .footer__payment-list,
-        .footer__shipping-list {
-            padding: 16px 24px;
-            justify-content: start;
-        }
-    }
+  }
 }
 
-//TODO: bottom
-.footer__info {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding-top: 12px;
-    border-top: 1px solid $cl-grey-800;
+// TODO: Bottom logos
+.footer__bottom-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px 24px;
 
-    &--link-list {
-        display: flex;
-        gap: 32px;
+  padding: 12px 8px 0;
+  border-top: 1px solid $cl-neutral-800;
+
+  & img {
+    max-height: 26px;
+  }
+
+  @media screen and (min-width: 834px) {
+    padding: 10px 11px 0;
+    & img {
+      max-height: 26px;
     }
-
-    &--copyright,
-    &--link-item {
-        cursor: pointer;
-        color: $cl-grey-300;
-        @include font($fs-12, 400, 166.667%);
+  }
+  @media screen and (min-width: 1180px) {
+    justify-content: center;
+    gap: 32px;
+    padding: 12px 11px 0;
+  }
+  @media screen and (min-width: 1280px) {
+    justify-content: center;
+    gap: 16px;
+    padding: 31px 0 0;
+    & img {
+      max-height: 52px;
     }
-
-    &--link-item {
-        &:hover {
-            color: $cl-base-white;
-            text-decoration: underline;
-        }
+  }
+  @media screen and (min-width: 1280px) {
+    justify-content: space-between;
+    gap: 16px;
+    padding: 31px 0 0;
+    & img {
+      max-height: 52px;
     }
-
-    @media screen and (min-width: 744px) {
-        padding-top: 24px;
-        flex-direction: row;
-        justify-content: space-between;
-
-        &--copyright,
-        &--link-item {
-            @include font($fs-14, 400, 157.143%);
-        }
-    }
+  }
 }
+
+
+
