@@ -4093,16 +4093,16 @@ input:-webkit-autofill:focus {
   .menu__buttons--login:hover {
     background: #353535 !important;
   }
-}
-.menu__buttons--deals {
-  display: none;
-  width: 121px;
-  height: 32px !important;
-}
-.menu__buttons--talk {
-  display: flex;
-  width: 121px;
-  height: 32px !important;
+  .menu__buttons--deals {
+    display: none;
+    width: 121px;
+    height: 32px !important;
+  }
+  .menu__buttons--talk {
+    display: flex;
+    width: 121px;
+    height: 32px !important;
+  }
 }
 
 .menu__burger {
