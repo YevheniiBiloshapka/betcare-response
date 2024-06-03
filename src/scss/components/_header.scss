@@ -1,9 +1,10 @@
 .header{
-  position: fixed;
+  position: absolute;
   z-index: 9999;
   width: 100%;
   height: 64px;
   // hidden
+  @include transition(all,0.4s);
   &.show-modal{
     & .header__menu-list{
       display: flex;
@@ -22,6 +23,7 @@
     }
   }
   &.scroll{
+    position: fixed;
     background: $cl-neutral-900;
       & .menu__buttons--talk{
         display: none;
@@ -89,7 +91,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  max-width: 100%;
   @media screen and (min-width: 834px) {
     padding: 24px 40px;
   }
@@ -261,6 +263,9 @@
       height: 32px !important;
     }
   }
+  @media screen and (min-width: 1180px) {
+    gap: 16px;
+  }
 
 }
 
@@ -352,6 +357,7 @@
       padding: 0;
       width: fit-content;
       height: fit-content;
+      background: transparent;
     }
     & .header__menu-list{
       display: flex;
@@ -436,7 +442,9 @@
         @include transition();
       }
     }
-
+    & .menu__buttons{
+      padding-right: 56px;
+    }
     }
 
 }
@@ -522,6 +530,9 @@
     }
     & .menu-dropdown__link{
       @include font-body(normal);
+    }
+    & .menu__buttons{
+      padding-right: 48px;
     }
   }
 }

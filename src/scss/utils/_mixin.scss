@@ -29,7 +29,18 @@
     #{$property}: $value;
   }
 }
-
+@mixin retina-bg($image-1x, $image-2x,$image-3x, $type1: "image/webp",$type2: "image/webp") {
+  background-image: -webkit-image-set(
+                  url(#{$image-1x}) type(#{$type1}) 1x,
+                  url(#{$image-2x}) type(#{$type2}) 2x,
+                  url(#{$image-3x}) type(#{$type2}) 3x
+  );
+  background-image: image-set(
+                  url(#{$image-1x}) type(#{$type1}) 1x,
+                  url(#{$image-2x}) type(#{$type2}) 2x,
+                  url(#{$image-3x}) type(#{$type2}) 3x
+  );
+}
 
 $breakpoints: (
   mobile: 320px,

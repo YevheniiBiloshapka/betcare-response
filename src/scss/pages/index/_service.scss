@@ -358,6 +358,13 @@
     min-width: $size;
     width: $size;
     height: $size;
+    & svg{
+      $size: 24px;
+      min-width: $size;
+      min-height: $size;
+      width: $size;
+      height: $size;
+    }
 
     border-radius: 300px;
     border: 1px solid $cl-magenta-200;

@@ -29,9 +29,10 @@
     border: 2px solid transparent;
     background:  linear-gradient($cl-neutral-100, $cl-neutral-100) padding-box,
     linear-gradient($cl-neutral-100, $cl-neutral-100) border-box;
-
     box-shadow: $shd-simple;
 
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 
 
     &--header {
@@ -63,7 +64,7 @@
         border: 2px solid transparent;
         background: linear-gradient(#fff, #fff) padding-box,
         linear-gradient(90deg, #FFBC3B 0.23%, #FF6051 50.08%, #FF4AB0 99.94%, #FF4AAC 99.94%) border-box;
-        transition: all 0.3s ease-in;
+
 
     & .accordion__item-header--button:before{
         transform: translate(-50%,-50%) rotate(180deg) ;
@@ -71,7 +72,8 @@
     & .accordion__item--content{
         max-height: 1000px;
         padding-top: 12px;
-        transition: all 0.3s ease-in;
+        transition: max-height 1.5s;
+        -webkit-transition: max-height 1.5s;
     }
     @media screen and (min-width: 1280px) {
         & .accordion__item--content{
@@ -126,7 +128,9 @@
 .accordion__item--content {
     max-height: 0;
     overflow: hidden;
-    transition: all 0.3s ease-out;
+    padding-top: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 
     color: $cl-neutral-800;
     @include font-body(normal);

@@ -597,16 +597,35 @@
       });
     });
   }
-  // addScrollClass
+  // ! addScrollClass
   function addScrollClass() {
     const header = document.querySelector('[data-action="header-wrapper"]');
+    const heroSection = document.getElementById('hero');
+    let lastScrollTop = 0;
 
     function handleScroll() {
-      if (window.scrollY > 400) {
+      const heroRect = heroSection.getBoundingClientRect();
+      const heroBottom = heroRect.bottom + window.scrollY;
+      const scrollTop = window.scrollY;
+
+      if (scrollTop > heroBottom) {
         header.classList.add('scroll');
       } else {
         header.classList.remove('scroll');
       }
+
+      // Проверка направления прокрутки
+      if (header.classList.contains('scroll')) {
+        if (scrollTop > lastScrollTop) {
+          // Прокрутка вниз
+          header.classList.remove('hidden');
+        } else {
+          // Прокрутка вверх
+          header.classList.add('hidden');
+        }
+      }
+
+      lastScrollTop = scrollTop;
     }
 
     window.addEventListener('scroll', handleScroll);

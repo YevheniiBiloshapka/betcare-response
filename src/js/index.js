@@ -14,22 +14,20 @@ document.addEventListener('DOMContentLoaded', function () {
         return '<span class="' + className + '"></span>';
       },
     },
+    allowTouchMove: false,
     loop: true,
-    loopedSlides: 2,
   });
   var galleryThumbs = new Swiper('.gallery-thumbs', {
-    spaceBetween: 40,
-    centeredSlides: true,
     slidesPerView: 1,
-    touchRatio: 0.2,
     slideToClickedSlide: true,
+
+    allowTouchMove: false,
     loop: true,
-    loopedSlides: 2,
   });
   var heroSwiper = new Swiper('.heroPageSwiper', {
     effect: 'fade',
     autoplay: {
-      delay: 5000,
+      delay: 3000,
       disableOnInteraction: false,
     },
     allowTouchMove: false,

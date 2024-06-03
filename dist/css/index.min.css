@@ -615,6 +615,8 @@ body.modal-open {
   border: 2px solid transparent;
   background: linear-gradient(#FFF, #FFF) padding-box, linear-gradient(#FFF, #FFF) border-box;
   box-shadow: 6px 6px 19px 0px rgba(148, 148, 148, 0.12);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .accordion__item--header {
   display: flex;
@@ -650,7 +652,6 @@ body.modal-open {
 .accordion__item.show {
   border: 2px solid transparent;
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #FFBC3B 0.23%, #FF6051 50.08%, #FF4AB0 99.94%, #FF4AAC 99.94%) border-box;
-  transition: all 0.3s ease-in;
 }
 .accordion__item.show .accordion__item-header--button:before {
   transform: translate(-50%, -50%) rotate(180deg);
@@ -658,7 +659,8 @@ body.modal-open {
 .accordion__item.show .accordion__item--content {
   max-height: 1000px;
   padding-top: 12px;
-  transition: all 0.3s ease-in;
+  transition: max-height 1.5s;
+  -webkit-transition: max-height 1.5s;
 }
 @media screen and (min-width: 1280px) {
   .accordion__item.show .accordion__item--content {
@@ -700,7 +702,9 @@ body.modal-open {
 .accordion__item--content {
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3s ease-out;
+  padding-top: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   color: #353535;
   font-size: 16px;
   font-weight: 300;
@@ -1552,6 +1556,12 @@ input:-webkit-autofill:focus {
   border: 1px solid #FFD7E4;
   background-color: #FFF;
 }
+.services-slider-nav-next svg, .services-slider-nav-prev svg {
+  min-width: 24px;
+  min-height: 24px;
+  width: 24px;
+  height: 24px;
+}
 .services-slider-nav-next:hover, .services-slider-nav-prev:hover {
   background-color: #F5F5F5;
 }
@@ -1637,8 +1647,8 @@ input:-webkit-autofill:focus {
 .vip {
   position: relative;
   background-image: url("../img/vip/375_vipBg.webp");
-  background-position: top;
-  background-size: cover;
+  background-position: top right;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 718px;
 }
@@ -2846,8 +2856,9 @@ input:-webkit-autofill:focus {
   z-index: 0;
   margin-top: -1px;
   background-image: url("../img/reward/375_rewardsBg.webp");
-  background-size: cover;
-  background-position: bottom;
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
 }
 .reward__gradient {
   position: absolute;
@@ -2867,6 +2878,8 @@ input:-webkit-autofill:focus {
 @media screen and (min-width: 834px) {
   .reward {
     background-image: url("../img/reward/834_rewardsBg.webp");
+    background-size: cover;
+    background-position: bottom;
   }
   .reward__container {
     padding: 64px;
@@ -2883,6 +2896,8 @@ input:-webkit-autofill:focus {
 @media screen and (min-width: 1280px) {
   .reward {
     background-image: url("../img/reward/1280_rewardsBg.webp");
+    background-size: contain;
+    background-position: bottom left;
   }
   .reward__container {
     flex-direction: row;
@@ -3865,10 +3880,11 @@ input:-webkit-autofill:focus {
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   z-index: 9999;
   width: 100%;
   height: 64px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header.show-modal .header__menu-list {
   display: flex;
@@ -3883,6 +3899,7 @@ input:-webkit-autofill:focus {
   content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10.0007 8.66634L4.66732 3.33301L3.33398 4.66631L8.66732 9.99965L3.33398 15.333L4.66732 16.6663L10.0006 11.333L15.334 16.6663L16.6673 15.333L11.334 9.99965L16.6673 4.66631L15.334 3.33301L10.0007 8.66634Z" fill="white"/></svg>');
 }
 .header.scroll {
+  position: fixed;
   background: #1B1B1B;
 }
 .header.scroll .menu__buttons--talk {
@@ -3943,6 +3960,7 @@ input:-webkit-autofill:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 100%;
 }
 @media screen and (min-width: 834px) {
   .header__container {
@@ -4133,6 +4151,11 @@ input:-webkit-autofill:focus {
     height: 32px !important;
   }
 }
+@media screen and (min-width: 1180px) {
+  .menu__buttons {
+    gap: 16px;
+  }
+}
 
 .menu__burger {
   border-radius: 100px;
@@ -4218,6 +4241,7 @@ input:-webkit-autofill:focus {
     padding: 0;
     width: fit-content;
     height: fit-content;
+    background: transparent;
   }
   .header.scroll .header__menu-list {
     display: flex;
@@ -4296,6 +4320,9 @@ input:-webkit-autofill:focus {
   }
   .header.scroll .menu-dropdown__link:hover {
     opacity: 0.6 !important;
+  }
+  .header.scroll .menu__buttons {
+    padding-right: 56px;
   }
 }
 @media screen and (min-width: 1512px) {
@@ -4384,6 +4411,9 @@ input:-webkit-autofill:focus {
     font-weight: 300;
     line-height: 24px;
     letter-spacing: 0.66px;
+  }
+  .header.scroll .menu__buttons {
+    padding-right: 48px;
   }
 }
 .login-modal {

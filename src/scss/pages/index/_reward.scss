@@ -6,8 +6,9 @@
   margin-top: -1px;
 
   background-image: url("../img/reward/375_rewardsBg.webp");
-  background-size: cover;
-  background-position: bottom;
+  background-size: contain;
+  background-position:  bottom right;
+  background-repeat: no-repeat;
 
   &__gradient {
     position: absolute;
@@ -27,6 +28,8 @@
   }
   @media screen and (min-width: 834px) {
     background-image: url("../img/reward/834_rewardsBg.webp");
+    background-size: cover;
+    background-position:  bottom;
     &__container {
       padding: 64px;
     }
@@ -40,6 +43,8 @@
   @media screen and (min-width: 1280px) {
 
     background-image: url("../img/reward/1280_rewardsBg.webp");
+    background-size: contain;
+    background-position:  bottom left;
     &__container {
       flex-direction: row;
       align-items: start;
