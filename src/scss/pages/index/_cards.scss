@@ -1,8 +1,9 @@
 .cards {
   position: relative;
-  background-image: url("../img/cards//bg/375_cardBg.webp");
+
+  @include retina-bg("../img/cards/bg/375_cardBg.webp","../img/cards/bg/375_cardBg@2x.webp","../img/cards/bg/375_cardBg@3x.webp");
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 
   &__container {
@@ -33,7 +34,9 @@
   }
 
   @media screen and (min-width: 834px) {
-    background-image: url("../img/cards//bg/834_cardBg.webp");
+
+    @include retina-bg("../img/cards/bg/834_cardBg.webp","../img/cards/bg/834_cardBg@2x.webp","../img/cards/bg/834_cardBg@3x.webp");
+    background-position: top;
     &__container {
       padding:64px 160px ;
       gap: 48px;
@@ -43,7 +46,7 @@
     }
   }
   @media screen and (min-width: 1180px) {
-    background-image: url("../img/cards//bg/1180_cardBg.webp");
+    @include retina-bg("../img/cards/bg/1180_cardBg.webp","../img/cards/bg/1180_cardBg@2x.webp","../img/cards/bg/1180_cardBg@3x.webp");
     &__container {
       padding:64px 140px ;
       gap:100px;
@@ -59,7 +62,7 @@
     background-image: url("../img/cards//bg/1280_cardBg.webp");
   }
   @media screen and (min-width: 1512px) {
-    background-image: url("../img/cards//bg/1512_cardBg.webp");
+    @include retina-bg("../img/cards/bg/1512_cardBg.webp","../img/cards/bg/1512_cardBg@2x.webp","../img/cards/bg/1512_cardBg@3x.webp");
     &__container {
       padding:80px 151px ;
       gap:113px;
@@ -74,7 +77,7 @@
     }
   }
   @media screen and (min-width: 1728px) {
-    background-image: url("../img/cards//bg/1728_cardBg.webp");
+    @include retina-bg("../img/cards/bg/1728_cardBg.webp","../img/cards/bg/1728_cardBg@2x.webp","../img/cards/bg/1728_cardBg@3x.webp");
     &__title {
       @include font-title(h2-lg);
       max-width: 700px;

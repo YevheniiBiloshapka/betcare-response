@@ -4,8 +4,8 @@
 
   z-index: 0;
   margin-top: -1px;
+  @include retina-bg("../img/reward/375_rewardsBg.webp","../img/reward/375_rewardsBg@2x.webp","../img/reward/375_rewardsBg@3x.webp");
 
-  background-image: url("../img/reward/375_rewardsBg.webp");
   background-size: contain;
   background-position:  bottom right;
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@
     gap: 48px;
   }
   @media screen and (min-width: 834px) {
-    background-image: url("../img/reward/834_rewardsBg.webp");
+    @include retina-bg("../img/reward/834_rewardsBg.webp","../img/reward/834_rewardsBg@2x.webp","../img/reward/834_rewardsBg@3x.webp");
     background-size: cover;
     background-position:  bottom;
     &__container {
@@ -35,14 +35,16 @@
     }
   }
   @media screen and (min-width: 1180px) {
-    background-image: url("../img/reward/1180_rewardsBg.webp");
+    @include retina-bg("../img/reward/1180_rewardsBg.webp","../img/reward/1180_rewardsBg@2x.webp","../img/reward/1180_rewardsBg@3x.webp");
+    background-size: 100% 100%;
+    background-position:  bottom;
     &__container {
       gap: 32px;
     }
   }
   @media screen and (min-width: 1280px) {
 
-    background-image: url("../img/reward/1280_rewardsBg.webp");
+    @include retina-bg("../img/reward/1280_rewardsBg.webp","../img/reward/1280_rewardsBg@2x.webp","../img/reward/1280_rewardsBg@3x.webp");
     background-size: contain;
     background-position:  bottom left;
     &__container {
@@ -61,7 +63,7 @@
     }
   }
   @media screen and (min-width: 1512px) {
-    background-image: url("../img/reward/1512_rewardsBg.webp");
+    @include retina-bg("../img/reward/1512_rewardsBg.webp","../img/reward/1512_rewardsBg@2x.webp","../img/reward/1512_rewardsBg@3x.webp");
     &__container {
       padding: 80px 120px;
       gap: 162px;
@@ -74,7 +76,7 @@
     }
   }
   @media screen and (min-width: 1728px) {
-    background-image: url("../img/reward/1728_rewardsBg.webp");
+    @include retina-bg("../img/reward/1728_rewardsBg.webp","../img/reward/1728_rewardsBg@2x.webp","../img/reward/1728_rewardsBg@3x.webp");
     background-size: contain;
     &__container {
       gap: 144px;
