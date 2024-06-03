@@ -1,0 +1,257 @@
+.login-modal {
+  &.is-hidden {
+    display: block;
+  }
+
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1B1B1B;
+
+  z-index: 9999;
+  @media screen and (min-width: 1200px) {
+  }
+}
+
+.login-modal--close-button {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: #353535;
+  border-radius: 100px;
+  opacity: 0.8;
+
+  &:hover {
+
+  }
+
+  @media screen and (min-width: 744px) {
+    top: 20px;
+    right: 40px;
+  }
+}
+
+// TODO: auth form
+.login-modal__auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+
+  & .login-modal__auth-variant {
+    margin: 0;
+  }
+}
+
+.login-button {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  place-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  text-align: center;
+  padding: 14px 16px;
+
+  border-radius: 100px;
+  border: 2px solid transparent;
+  background: linear-gradient(90deg, rgba(255, 155, 60, 0.80) 0.1%, rgba(255, 79, 64, 0.80) 50%, rgba(219, 50, 120, 0.80) 99.9%) padding-box,
+  linear-gradient(90deg, #FFBC3B 30.89%, #FF4F40 60.43%, #AE1D6E 89.96%) border-box;
+
+  &.resend-email {
+    background: #353535;
+
+    &:hover {
+      background: #403F3F;
+    }
+  }
+
+  color: #F5F5F5;
+  @include font(16px, 600, 100%);
+  letter-spacing: 0.5px;
+
+
+  @media screen and (min-width: 744px) {
+
+  }
+}
+
+.login-modal__box {
+  position: absolute;
+  top: 88px;
+  left: 50%;
+  transform: translateX(-50%);
+  //border: 1px solid red;
+
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 320px;
+
+  &-title {
+    color: #FFF;
+    text-align: center;
+    @include font(50px, 600, 120%);
+    letter-spacing: 0.5px;
+    margin-bottom: 32px;
+  }
+
+  &-desc {
+    color: #FFF;
+    text-align: center;
+
+    @include font(16px, 400, 150%);
+    letter-spacing: 0.5px;
+    margin-bottom: 32px;
+
+    & span {
+      color: #FFF;
+    }
+  }
+
+  &.forgot-pass-form, &.new-password-pass {
+    & .login-modal__box-title {
+      color: #FFF;
+      @include font(24px, 600, 133.333%);
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+
+  }
+
+  @media screen and (min-width: 744px) {
+    top: 144px;
+    max-width: 420px;
+  }
+}
+
+// TODO: auth variant
+.login-modal__auth-variant {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 32px;
+  width: 100%;
+
+  &-item {
+    @include font(14px, 400, 128.571%);
+    letter-spacing: 0.5px;
+    background-color: transparent;
+    border: none;
+  }
+
+  &-item.first {
+    color: #727272;
+  }
+
+  &-item.second {
+    color: #FFF;
+    text-decoration: underline;
+  }
+}
+
+// TODO: social button
+
+.login-modal__social-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.login-modal__social-box-divider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+  margin: 32px 0 16px;
+
+  color: #727272;
+
+  @include font(14px, 400, 128.571%);
+  letter-spacing: 0.5px;
+
+  &:after, &:before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #353535;
+  }
+
+}
+
+.login-modal__social-button {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 12px 16px 12px 48px;
+  gap: 8px;
+
+
+  color: #1B1B1B;
+  text-align: center;
+
+  @include font(16px, 600, 100%);
+  letter-spacing: 0.5px;
+
+  border-radius: 100px;
+  opacity: 0.8;
+  background: #FFF;
+  @include transition;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @media screen and (min-width: 744px) {
+    padding: 12px 16px 12px 104px;
+  }
+}
+
+
+.login-modal__box {
+  &.auth.active, &.sign-up.active, &.forgot-pass-form.active, &.new-password-pass.active {
+    display: flex;
+  }
+
+  &.auth, &.sign-up, &.forgot-pass-form, &.new-password-pass {
+    display: none;
+  }
+
+
+}
+
+// auth
+.login-modal__box.auth {
+  & .password, & .forgot-pass, & .sign-in {
+    display: none;
+  }
+
+  &.is-hidden {
+    & .password, & .forgot-pass, & .sign-in {
+      display: flex;
+    }
+
+    & .login-modal__social-box, & .continue {
+      display: none;
+    }
+  }
+}
+
+//forgot pass form
+.login-modal__box.forgot-pass-form {
+
+  & .forgot-pass__send-email.is-hidden, & .forgot-pass__resend-email.is-hidden {
+    display: none;
+  }
+}

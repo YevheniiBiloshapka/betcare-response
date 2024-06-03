@@ -126,7 +126,7 @@
   }
   &.secondBlack {
     color: $cl-neutral-100;
-    background: #373737;
+    background: #303030;
     &:hover{
       background: $cl-neutral-800;
     }
@@ -144,4 +144,35 @@
   }
 }
 
+.button-icon{
+  @extend .button;
+  position: relative;
+  $size: 32px;
+  width: $size;
+  height: $size;
+  min-width: $size;
+  min-height: $size;
 
+  &:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    $size: 20px;
+    width: $size;
+    height: $size;
+  }
+  @media screen and (min-width: 1512px) {
+    $size: 40px;
+    width: $size;
+    height: $size;
+    min-width: $size;
+    min-height: $size;
+    &:before{
+      $size: 24px;
+      width: $size;
+      height: $size;
+    }
+  }
+}

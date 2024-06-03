@@ -70,9 +70,11 @@
   }
   @media screen and (min-width: 1728px) {
     background-image: url("../img/reward/1728_rewardsBg.webp");
+    background-size: contain;
     &__container {
       gap: 144px;
       padding: 86px 170px 86px 304px;
+      max-height: 576px;
     }
   }
 }

@@ -1,18 +1,18 @@
 @import "fonts";
+@import 'utils/normalize';
 @import 'utils/variables';
 @import 'utils/scrollbar';
 @import 'utils/mixin';
 @import 'utils/reset';
 @import 'utils/base';
-@import 'utils/normalize';
 
 // ? components
 @import 'components/container';
+@import 'components/accordion';
 @import 'components/button';
+@import 'components/input';
 //@import 'components/modal';
 //@import 'components/select';
-@import 'components/accordion';
-//@import 'components/inputs';
 //main
 
 
@@ -27,7 +27,8 @@
 @import "pages/index/faq";
 
 // header footer
-//@import 'components/header';
+@import 'components/header';
+@import 'components/login-modal';
 @import 'components/footer';
 
 
