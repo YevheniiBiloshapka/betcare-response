@@ -4333,6 +4333,10 @@ input:-webkit-autofill:focus {
     line-height: 24px;
     letter-spacing: 0.66px;
   }
+  .header.scroll .header__container {
+    justify-content: space-between;
+    padding: 16px 40px;
+  }
   .header.scroll .header__menu-list-item--link {
     font-size: 16px;
     font-weight: 300;

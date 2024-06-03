@@ -485,6 +485,10 @@
   }
   //  scroll menu
   .header.scroll{
+    & .header__container{
+      justify-content: space-between;
+      padding: 16px 40px;
+    }
     & .header__menu-list-item--link{
       @include font-body(normal);
       gap: 8px;
