@@ -4164,10 +4164,14 @@ input:-webkit-autofill:focus {
   .header.show-modal .menu-dropdown__link {
     opacity: 1;
     visibility: unset;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 14px;
     font-weight: 300;
     line-height: 18px;
     letter-spacing: 0.6px;
+  }
+  .header.show-modal .menu-dropdown__link:hover {
+    opacity: 0.6;
   }
   .header.scroll .menu__burger {
     display: none;
@@ -4257,6 +4261,12 @@ input:-webkit-autofill:focus {
     border-radius: 8px;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.25);
     transition: max-height 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header.scroll .menu-dropdown__link {
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header.scroll .menu-dropdown__link:hover {
+    opacity: 0.6 !important;
   }
 }
 @media screen and (min-width: 1512px) {
