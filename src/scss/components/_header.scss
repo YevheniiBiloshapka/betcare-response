@@ -24,10 +24,10 @@
   &.scroll{
     background: $cl-neutral-900;
       & .menu__buttons--talk{
-        display: flex;
+        display: none;
       }
       & .menu__buttons--login{
-        display: none;
+        display: flex;
       }
 
   }

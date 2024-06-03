@@ -3886,10 +3886,10 @@ input:-webkit-autofill:focus {
   background: #1B1B1B;
 }
 .header.scroll .menu__buttons--talk {
-  display: flex;
+  display: none;
 }
 .header.scroll .menu__buttons--login {
-  display: none;
+  display: flex;
 }
 .header .button, .header .button-outline, .header .button-icon {
   height: 30px;
