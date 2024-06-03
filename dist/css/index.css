@@ -3977,6 +3977,9 @@ input:-webkit-autofill:focus {
   display: none;
   flex-direction: column;
   gap: 12px;
+  width: 100%;
+  max-width: 319px;
+  margin: 0 auto;
 }
 .header__menu-list-item {
   position: relative;
@@ -4031,6 +4034,31 @@ input:-webkit-autofill:focus {
   transition: all 0.3s ease-in;
   visibility: unset;
 }
+@media screen and (min-width: 834px) {
+  .header__menu-list {
+    max-width: 420px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__menu-list {
+    max-width: 968px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__menu-list {
+    max-width: 968px;
+  }
+}
+@media screen and (min-width: 1512px) {
+  .header__menu-list {
+    max-width: 1071px;
+  }
+}
+@media screen and (min-width: 1728px) {
+  .header__menu-list {
+    max-width: 1135px;
+  }
+}
 
 .menu-dropdown {
   display: flex;
@@ -4060,6 +4088,7 @@ input:-webkit-autofill:focus {
   gap: 8px;
 }
 .menu__buttons--login {
+  display: none;
   font-size: 12px;
   font-weight: 600;
   line-height: 14px;
@@ -4072,7 +4101,7 @@ input:-webkit-autofill:focus {
   font-weight: 600;
   line-height: 14px;
   letter-spacing: 0.5px;
-  display: none;
+  display: flex;
   width: 89px;
 }
 .menu__buttons--deals {

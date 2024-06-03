@@ -119,6 +119,9 @@
   display: none;
   flex-direction: column;
   gap: 12px;
+  width: 100%;
+  max-width: 319px;
+  margin: 0 auto;
 
   &-item{
     position: relative;
@@ -176,6 +179,21 @@
       }
     }
   }
+  @media screen and (min-width: 834px) {
+    max-width: 420px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 968px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 968px;
+  }
+  @media screen and (min-width: 1512px) {
+    max-width: 1071px;
+  }
+  @media screen and (min-width: 1728px) {
+    max-width: 1135px;
+  }
 }
 
 // TODO: Dropdown list
@@ -205,13 +223,14 @@
   align-items: center;
   gap: 8px;
   &--login{
+    display: none ;
     @include font-button(micro);
     z-index: 10000;
     width: 89px;
   }
   &--talk{
     @include font-button(micro);
-    display: none;
+    display: flex;
     width: 89px;
   }
   &--deals{
