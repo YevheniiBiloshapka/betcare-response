@@ -7,7 +7,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #1B1B1B;
+  background-color: $cl-neutral-900;
 
   z-index: 9999;
   @media screen and (min-width: 1200px) {
@@ -18,23 +18,18 @@
   position: absolute;
   top: 12px;
   right: 16px;
-
-  display: flex;
-  width: 40px;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
-  background-color: #353535;
-  border-radius: 100px;
-  opacity: 0.8;
-
-  &:hover {
-
+  &:before{
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12 10.4L5.6 4L4 5.59997L10.4 12L4 18.4L5.6 19.9999L12 13.6L18.4 20L20 18.4L13.6 12L20 5.59997L18.4 4L12 10.4Z' fill='white'/%3E%3C/svg%3E");
   }
 
-  @media screen and (min-width: 744px) {
+  @media screen and (min-width: 834px) {
     top: 20px;
     right: 40px;
+  }
+  @media screen and (min-width: 1512px) {
+    &:before{
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12 10.4L5.6 4L4 5.59997L10.4 12L4 18.4L5.6 19.9999L12 13.6L18.4 20L20 18.4L13.6 12L20 5.59997L18.4 4L12 10.4Z' fill='white'/%3E%3C/svg%3E");
+    }
   }
 }
 
@@ -44,42 +39,24 @@
   flex-direction: column;
   gap: 16px;
   width: 100%;
-
+  &:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    $size: 20px;
+    width: $size;
+    height: $size;
+  }
   & .login-modal__auth-variant {
     margin: 0;
   }
 }
 
 .login-button {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  place-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  text-align: center;
-  padding: 14px 16px;
-
-  border-radius: 100px;
-  border: 2px solid transparent;
-  background: linear-gradient(90deg, rgba(255, 155, 60, 0.80) 0.1%, rgba(255, 79, 64, 0.80) 50%, rgba(219, 50, 120, 0.80) 99.9%) padding-box,
-  linear-gradient(90deg, #FFBC3B 30.89%, #FF4F40 60.43%, #AE1D6E 89.96%) border-box;
-
-  &.resend-email {
-    background: #353535;
-
-    &:hover {
-      background: #403F3F;
-    }
-  }
-
-  color: #F5F5F5;
-  @include font(16px, 600, 100%);
-  letter-spacing: 0.5px;
-
-
+  @include button-medium();
   @media screen and (min-width: 744px) {
-
   }
 }
 
@@ -100,8 +77,7 @@
   &-title {
     color: #FFF;
     text-align: center;
-    @include font(50px, 600, 120%);
-    letter-spacing: 0.5px;
+    @include font-title(h1-mob);
     margin-bottom: 32px;
   }
 
@@ -109,8 +85,7 @@
     color: #FFF;
     text-align: center;
 
-    @include font(16px, 400, 150%);
-    letter-spacing: 0.5px;
+    @include font-body(normal);
     margin-bottom: 32px;
 
     & span {
@@ -121,8 +96,7 @@
   &.forgot-pass-form, &.new-password-pass {
     & .login-modal__box-title {
       color: #FFF;
-      @include font(24px, 600, 133.333%);
-      letter-spacing: 0.5px;
+      @include font-title(h2-mob);
       margin-bottom: 16px;
     }
 
@@ -144,18 +118,17 @@
   width: 100%;
 
   &-item {
-    @include font(14px, 400, 128.571%);
-    letter-spacing: 0.5px;
+    @include font-body(small);
     background-color: transparent;
     border: none;
   }
 
   &-item.first {
-    color: #727272;
+    color: $cl-neutral-600;
   }
 
   &-item.second {
-    color: #FFF;
+    color: $cl-neutral-100;
     text-decoration: underline;
   }
 }
@@ -176,45 +149,29 @@
   gap: 16px;
   margin: 32px 0 16px;
 
-  color: #727272;
+  color: $cl-neutral-600;
 
-  @include font(14px, 400, 128.571%);
-  letter-spacing: 0.5px;
+  @include font-body(small);
 
   &:after, &:before {
     content: "";
     width: 100%;
     height: 1px;
-    background-color: #353535;
+    background-color: $cl-neutral-800;
   }
 
 }
 
 .login-modal__social-button {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  padding: 12px 16px 12px 48px;
-  gap: 8px;
-
-
-  color: #1B1B1B;
-  text-align: center;
-
-  @include font(16px, 600, 100%);
-  letter-spacing: 0.5px;
-
-  border-radius: 100px;
-  opacity: 0.8;
-  background: #FFF;
-  @include transition;
-
-  &:hover {
-    opacity: 1;
+  @include button-medium();
+  & span{
+    padding-left:48px;
+    justify-content: start;
   }
-
-  @media screen and (min-width: 744px) {
-    padding: 12px 16px 12px 104px;
+  @media screen and (min-width: 834px) {
+    & span{
+      padding-left:96px;
+    }
   }
 }
 

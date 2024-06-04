@@ -164,6 +164,8 @@
     &--button {
       @include button-medium;
       max-width: 228px;
+      max-height: 44px !important;
+      height: 44px !important;
     }
   }
   @media screen and (min-width: 1728px) {

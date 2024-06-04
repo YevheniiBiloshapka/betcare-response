@@ -21,6 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;
     width: 100%;
     height: 100%;
     white-space: nowrap;
@@ -41,7 +42,7 @@
 }
 
 @mixin button-medium() {
-  height: 44px;
+  height: 48px;
   padding: 2px;
   & span {
     padding: 0 48px;
