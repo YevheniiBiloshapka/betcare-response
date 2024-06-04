@@ -1970,7 +1970,7 @@ input:-webkit-autofill:focus {
   }
   .vip__list-item.blue:before {
     display: unset;
-    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="204" height="204" viewBox="0 0 204 204" fill="none"><circle opacity="0.4" cx="102" cy="102" r="102" fill="url(#paint0_radial_11849_19002)"/><defs><radialGradient id="paint0_radial_11849_19002" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(102 102) rotate(90) scale(95)"><stop stop-color="#364F6E"/><stop offset="1" stop-color="#426085" stop-opacity="0"/><stop offset="1" stop-color="#364F6E" stop-opacity="0"/></radialGradient></defs></svg>');
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="204" height="204" viewBox="0 0 204 204" fill="none"><circle opacity="0.4" cx="102" cy="102" r="102" fill="url(#paint0_radial_11859_19086)"/><defs><radialGradient id="paint0_radial_11859_19086" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(102 102) rotate(90) scale(102)"><stop stop-color="#364F6E"/><stop offset="1" stop-color="#426085" stop-opacity="0"/><stop offset="1" stop-color="#364F6E" stop-opacity="0"/></radialGradient></defs></svg>');
   }
   .vip__list-item.swPurple {
     border: 1px solid #55237B;
