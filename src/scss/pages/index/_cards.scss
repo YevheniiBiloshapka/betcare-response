@@ -147,26 +147,23 @@
   box-shadow: 2.37px 3.949px 11.848px 0 rgba(91, 7, 48, 0.40);
   img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    border: none;
+    box-shadow: none;
   }
   width: 100%;
   max-width: 414px;
 
   &.active {
     z-index: 2;
-
   }
 
   &.first {
     z-index: 4;
-
-
   }
 
   &.second {
     z-index: 3;
-
-
   }
 
   &.third {
@@ -190,8 +187,9 @@
     border-radius: 17.63px;
   }
   @media screen and (min-width: 1512px) {
-    width: 414.057px;
-    height: 259.789px;
+
+    width: 414px;
+    height: 259.36px;
     border-radius: 24px;
     box-shadow: $shd-card;
   }
