@@ -234,10 +234,8 @@ height: 718px;
       border: 1px solid $cl-other-blue;
       background: $gr-bg-blue;
       &:before{
-        border-radius: 400px;
-        overflow: hidden;
         display: unset;
-        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='205' height='205' viewBox='0 0 204 204' fill='none'%3E%3Ccircle opacity='0.67' cx='102' cy='102' r='102' fill='url(%23paint0_radial_11862_19098)'/%3E%3Cdefs%3E%3CradialGradient id='paint0_radial_11862_19098' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(102 102) rotate(90) scale(102)'%3E%3Cstop stop-color='%23364F6E'/%3E%3Cstop offset='1' stop-color='%23364F6E' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3C/svg%3E");
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='204' height='204' viewBox='0 0 204 204' fill='none'%3E%3Ccircle opacity='0.67' cx='102' cy='102' r='102' fill='url(%23paint0_radial_11725_16557)'/%3E%3Cdefs%3E%3CradialGradient id='paint0_radial_11725_16557' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(102 102) rotate(90) scale(102)'%3E%3Cstop stop-color='%23172B88'/%3E%3Cstop offset='1' stop-color='%23172B88' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3C/svg%3E");
 
       }
     }
