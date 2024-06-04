@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return '<span class="' + className + '"></span>';
       },
     },
-    allowTouchMove: false,
+    // allowTouchMove: false,
     loop: true,
   });
   var galleryThumbs = new Swiper('.gallery-thumbs', {

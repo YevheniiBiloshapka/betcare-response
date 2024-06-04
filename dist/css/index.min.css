@@ -932,13 +932,18 @@ input:-webkit-autofill:focus {
 }
 
 .hero {
-  height: 100vh;
+  height: 90vh;
 }
 .hero .heroPageSwiper {
   height: 100%;
 }
 .hero .swiper-slide-active .hero__slide {
   opacity: 1;
+}
+@media screen and (min-width: 1180px) {
+  .hero {
+    height: 100vh;
+  }
 }
 
 .hero__slide {
