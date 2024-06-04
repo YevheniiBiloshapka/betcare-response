@@ -932,7 +932,7 @@ input:-webkit-autofill:focus {
 }
 
 .hero {
-  height: 100dvh;
+  height: 100vh;
 }
 .hero .heroPageSwiper {
   height: 100%;
