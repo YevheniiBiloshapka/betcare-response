@@ -1,7 +1,15 @@
 <section id="services" class="services">
   <div class="container"> <!--  TODO: Phone-->
     <div class="styled-gallery-top">
-      <img class="styled-gallery-top--phone" src="./img/services/iphone.webp" alt="phone" width="420" loading="lazy">
+      <picture class="styled-gallery-top--phone" >
+        <source   media="(min-width: 1728px)" srcset="./img/services/phoneBg/1728_phone-bg.png 1x, ./img/services/phoneBg/1728_phone-bg@2x.png 2x,./img/services/phoneBg/1728_phone-bg@3x.png 3x"  >
+        <source   media="(min-width: 1512px)" srcset="./img/services/phoneBg/1512_phone-bg.png 1x, ./img/services/phoneBg/1512_phone-bg@2x.png 2x,./img/services/phoneBg/1512_phone-bg@3x.png 3x"  >
+        <source   media="(min-width: 1280px)"  srcset="./img/services/phoneBg/1280_phone-bg.png 1x, ./img/services/phoneBg/1280_phone-bg@2x.png 2x,./img/services/phoneBg/1280_phone-bg@3x.png 3x" >
+        <source   media="(min-width: 1180px)" srcset="./img/services/phoneBg/1180_phone-bg.png 1x, ./img/services/phoneBg/1180_phone-bg@2x.png 2x,./img/services/phoneBg/1180_phone-bg@3x.png 3x"  >
+        <source   media="(min-width: 834px)"  srcset="./img/services/phoneBg/834_phone-bg.png 1x, ./img/services/phoneBg/834_phone-bg@2x.png 2x,./img/services/phoneBg/834_phone-bg@3x.png 3x" >
+        <source   media="(min-width: 375px)" srcset="./img/services/phoneBg/375_phone-bg.png 1x, ./img/services/phoneBg/375_phone-bg@2x.png 2x,./img/services/phoneBg/375_phone-bg@3x.png 3x"  >
+        <img class="styled-gallery-top--phone"  src="./img/services/phoneBg/375_phone-bg.png" srcset="./img/services/phoneBg/375_phone-bg.png 1x, ./img/services/phoneBg/375_phone-bg@2x.png 2x,./img/services/phoneBg/375_phone-bg@3x.png 3x"   alt="first image">
+      </picture>
       <div class="swiper-container gallery-top swiper-iphone">
         <div class="swiper-wrapper">
           <!--   !   Slide 1-->

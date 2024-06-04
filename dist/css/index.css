@@ -3215,7 +3215,8 @@ input:-webkit-autofill:focus {
 }
 .cards {
   position: relative;
-  background-image: url("../img/cards/svgBg/375_cardBg.svg");
+  background-image: -webkit-image-set(url(../img/cards/375_cardBg.png) 1x, url(../img/cards/375_cardBg@2x.png) 2x, url(../img/cards/375_cardBg@3x.png) 3x);
+  background-image: image-set(url(../img/cards/375_cardBg.png) 1x, url(../img/cards/375_cardBg@2x.png) 2x, url(../img/cards/375_cardBg@3x.png) 3x);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -3247,7 +3248,8 @@ input:-webkit-autofill:focus {
 }
 @media screen and (min-width: 834px) {
   .cards {
-    background-image: url("../img/cards/svgBg/834_cardBg.svg");
+    background-image: -webkit-image-set(url(../img/cards/834_cardBg.png) 1x, url(../img/cards/834_cardBg@3x.png) 2x, url(../img/cards/834_cardBg@3x.png) 3x);
+    background-image: image-set(url(../img/cards/834_cardBg.png) 1x, url(../img/cards/834_cardBg@3x.png) 2x, url(../img/cards/834_cardBg@3x.png) 3x);
     background-position: top;
   }
   .cards__container {
@@ -3278,12 +3280,14 @@ input:-webkit-autofill:focus {
 }
 @media screen and (min-width: 1280px) {
   .cards {
-    background-image: url("../img/cards/svgBg/1280_cardBg.svg");
+    background-image: -webkit-image-set(url(../img/cards/1280_cardBg.png) 1x, url(../img/cards/1280_cardBg@2x.png) 2x, url(../img/cards/1280_cardBg@3x.png) 3x);
+    background-image: image-set(url(../img/cards/1280_cardBg.png) 1x, url(../img/cards/1280_cardBg@2x.png) 2x, url(../img/cards/1280_cardBg@3x.png) 3x);
   }
 }
 @media screen and (min-width: 1512px) {
   .cards {
-    background-image: url("../img/cards/svgBg/1512_cardBg.svg");
+    background-image: -webkit-image-set(url(../img/cards/1512_cardBg.png) 1x, url(../img/cards/1512_cardBg@2x.png) 2x, url(../img/cards/1512_cardBg@3x.png) 3x);
+    background-image: image-set(url(../img/cards/1512_cardBg.png) 1x, url(../img/cards/1512_cardBg@2x.png) 2x, url(../img/cards/1512_cardBg@3x.png) 3x);
   }
   .cards__container {
     padding: 80px 151px;
@@ -3311,7 +3315,8 @@ input:-webkit-autofill:focus {
 }
 @media screen and (min-width: 1728px) {
   .cards {
-    background-image: url("../img/cards/svgBg/1728_cardBg.svg");
+    background-image: -webkit-image-set(url(../img/cards/1728_cardBg.png) 1x, url(../img/cards/1728_cardBg@2x.png) 2x, url(../img/cards/1728_cardBg@3x.png) 3x);
+    background-image: image-set(url(../img/cards/1728_cardBg.png) 1x, url(../img/cards/1728_cardBg@2x.png) 2x, url(../img/cards/1728_cardBg@3x.png) 3x);
   }
   .cards__title {
     font-size: 44px;

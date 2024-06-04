@@ -1,9 +1,9 @@
 .cards {
   position: relative;
 
-  //@include retina-bg("../img/cards/bg/375_cardBg.webp","../img/cards/bg/375_cardBg@2x.webp","../img/cards/bg/375_cardBg@3x.webp");
+  @include retina-bg("../img/cards/375_cardBg.png","../img/cards/375_cardBg@2x.png","../img/cards/375_cardBg@3x.png");
 
-  background-image: url("../img/cards/svgBg/375_cardBg.svg");
+
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -36,8 +36,8 @@
   }
 
   @media screen and (min-width: 834px) {
-    background-image: url("../img/cards/svgBg/834_cardBg.svg");
-    //@include retina-bg("../img/cards/bg/834_cardBg.webp","../img/cards/bg/834_cardBg@3x.webp","../img/cards/bg/834_cardBg@3x.webp");
+
+    @include retina-bg("../img/cards/834_cardBg.png","../img/cards/834_cardBg@3x.png","../img/cards/834_cardBg@3x.png");
     background-position: top;
     &__container {
       padding:64px 160px ;
@@ -50,7 +50,7 @@
   @media screen and (min-width: 1180px) {
 
     background-image: url("../img/cards/svgBg/1180_cardBg.svg");
-    //@include retina-bg("../img/cards/bg/1180_cardBg.webp","../img/cards/bg/1180_cardBg@2x.webp","../img/cards/bg/1180_cardBg@3x.webp");
+    //@include retina-bg("../img/cards/1180_cardBg.png","../img/cards/1180_cardBg@2x.png","../img/cards/1180_cardBg@3x.png");
     &__container {
       padding:64px 140px ;
       gap:100px;
@@ -63,12 +63,12 @@
     }
   }
   @media screen and (min-width: 1280px) {
-    //@include retina-bg("../img/cards/bg/1280_cardBg.webp","../img/cards/bg/1280_cardBg@2x.webp","../img/cards/bg/1280_cardBg@3x.webp");
-    background-image: url("../img/cards/svgBg/1280_cardBg.svg");
+    @include retina-bg("../img/cards/1280_cardBg.png","../img/cards/1280_cardBg@2x.png","../img/cards/1280_cardBg@3x.png");
+
   }
   @media screen and (min-width: 1512px) {
-    background-image: url("../img/cards/svgBg/1512_cardBg.svg");
-    //@include retina-bg("../img/cards/bg/1512_cardBg.webp","../img/cards/bg/1512_cardBg@2x.webp","../img/cards/bg/1512_cardBg@3x.webp");
+
+    @include retina-bg("../img/cards/1512_cardBg.png","../img/cards/1512_cardBg@2x.png","../img/cards/1512_cardBg@3x.png");
     &__container {
       padding:80px 151px ;
       gap:113px;
@@ -83,8 +83,8 @@
     }
   }
   @media screen and (min-width: 1728px) {
-    background-image: url("../img/cards/svgBg/1728_cardBg.svg");
-    //@include retina-bg("../img/cards/bg/1728_cardBg.webp","../img/cards/bg/1728_cardBg@2x.webp","../img/cards/bg/1728_cardBg@3x.webp");
+    
+    @include retina-bg("../img/cards/1728_cardBg.png","../img/cards/1728_cardBg@2x.png","../img/cards/1728_cardBg@3x.png");
     &__title {
       @include font-title(h2-lg);
       max-width: 700px;
