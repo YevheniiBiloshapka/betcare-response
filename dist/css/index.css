@@ -4275,7 +4275,7 @@ input:-webkit-autofill:focus {
     content: none;
   }
   .header.scroll .header__menu-list-item:hover .header__menu-list-item--link:before {
-    width: 100%;
+    width: calc(100% - 24px);
   }
   .header.scroll .header__menu-list-item:hover .header__menu-list-item--link:after {
     content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8.00065 8.7272L11.6304 5.33301L12.6673 6.30258L8.00065 10.6663L3.33398 6.30258L4.37086 5.33301L8.00065 8.7272Z" fill="white"/></svg>');
