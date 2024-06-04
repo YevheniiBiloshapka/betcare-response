@@ -134,308 +134,315 @@
   <button class="login-modal--close-button secondBlack button-icon">
   </button>
 
-  <!-- ! auth-form -->
-  <div id="auth-form" class="login-modal__box auth active">
-    <p class="login-modal__box-title">Hello</p>
-    <!--! login form-->
-    <form class="login-modal__auth-form">
-      <!--  !    email-->
-      <div class="input">
-        <input required="" type="text" id="emailLogin" name="email" autocomplete="off" class="input-field">
-        <label for="emailLogin" class="input-label">Your e-mail address</label>
-      </div>
-      <!--  !    password-->
-      <div class="input password">
-        <input required="" type="password" id="password" name="password" autocomplete="off" class="input-field">
-        <label for="password" class="input-label">Password</label>
-        <svg class="password-toggle-icon active" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-             viewBox="0 0 16 16"
-             fill="none">
-          <path
-            d="M0.666626 7.99999C0.666626 7.99999 3.33329 2.66666 7.99996 2.66666C12.6666 2.66666 15.3333 7.99999 15.3333 7.99999C15.3333 7.99999 12.6666 13.3333 7.99996 13.3333C3.33329 13.3333 0.666626 7.99999 0.666626 7.99999Z"
-            stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-          <path
-            d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
-            stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-        <svg class="password-toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-             fill="none">
-          <g clip-path="url(#clip0_11851_6968)">
-            <path
-              d="M11.96 11.96C10.8204 12.8287 9.43276 13.3099 8.00002 13.3333C3.33335 13.3333 0.666687 8.00001 0.666687 8.00001C1.49595 6.4546 2.64611 5.10441 4.04002 4.04001M6.60002 2.82667C7.05891 2.71926 7.52873 2.66557 8.00002 2.66667C12.6667 2.66667 15.3334 8.00001 15.3334 8.00001C14.9287 8.75708 14.4461 9.46983 13.8934 10.1267M9.41335 9.41334C9.23025 9.60984 9.00945 9.76744 8.76412 9.87676C8.51879 9.98607 8.25395 10.0448 7.98541 10.0496C7.71687 10.0543 7.45013 10.0049 7.20109 9.90433C6.95206 9.80374 6.72583 9.65403 6.53592 9.46411C6.346 9.27419 6.19628 9.04797 6.09569 8.79893C5.9951 8.5499 5.9457 8.28315 5.95044 8.01461C5.95518 7.74607 6.01396 7.48124 6.12327 7.23591C6.23258 6.99057 6.39019 6.76977 6.58669 6.58667"
-              stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M0.666687 0.666656L15.3334 15.3333" stroke="#727272" stroke-width="1.2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-          </g>
-          <defs>
-            <clipPath id="clip0_11851_6968">
-              <rect width="16" height="16" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
-      </div>
-      <!-- !    Forgot password?-->
-      <div class="login-modal__auth-variant forgot-pass ">
-        <button id="forgot-pass-change-form" class="login-modal__auth-variant-item second forgot-pass">Forgot
-          password?
-        </button>
-      </div>
-      <!-- ?    button Sign In-->
-      <button id="sign-in" type="button" class="login-button button red sign-in">
-        <span>Sign In</span>
-      </button>
-      <!-- !    button Continue-->
-      <button id="log-in-continue" type="button" class="login-button button red continue">
-        <span>Continue</span>
-      </button>
-    </form>
-    <!--    ?   auth variant-->
-    <div class="login-modal__auth-variant">
-      <p class="login-modal__auth-variant-item first">Don't have an account?</p>
-      <button id="sign-up-change-form" type="button" class="login-modal__auth-variant-item second sign-up">Sign up
-      </button>
-    </div>
-
-    <!-- !    social button-->
-    <div class="login-modal__social-box">
-      <div class="login-modal__social-box-divider">OR</div>
-      <button class="login-modal__social-button button white">
-      <span>  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <g clip-path="url(#clip0_11849_26006)">
-                  <path
-                    d="M23.7663 12.2765C23.7663 11.4608 23.7001 10.6406 23.559 9.83813H12.2402V14.4591H18.722C18.453 15.9495 17.5888 17.2679 16.3233 18.1056V21.104H20.1903C22.4611 19.014 23.7663 15.9274 23.7663 12.2765Z"
-                    fill="#4285F4" />
-                  <path
-                    d="M12.2401 24.0008C15.4766 24.0008 18.2059 22.9382 20.1945 21.1039L16.3276 18.1055C15.2517 18.8375 13.8627 19.252 12.2445 19.252C9.11388 19.252 6.45946 17.1399 5.50705 14.3003H1.5166V17.3912C3.55371 21.4434 7.7029 24.0008 12.2401 24.0008V24.0008Z"
-                    fill="#34A853" />
-                  <path
-                    d="M5.50277 14.3002C5.00011 12.8099 5.00011 11.196 5.50277 9.70569V6.61475H1.51674C-0.185266 10.0055 -0.185266 14.0004 1.51674 17.3912L5.50277 14.3002V14.3002Z"
-                    fill="#FBBC04" />
-                  <path
-                    d="M12.2401 4.74966C13.9509 4.7232 15.6044 5.36697 16.8434 6.54867L20.2695 3.12262C18.1001 1.0855 15.2208 -0.034466 12.2401 0.000808666C7.7029 0.000808666 3.55371 2.55822 1.5166 6.61481L5.50264 9.70575C6.45065 6.86173 9.10947 4.74966 12.2401 4.74966V4.74966Z"
-                    fill="#EA4335" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_11849_26006">
-                    <rect width="24" height="24" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              Continue with Google</span>
-      </button>
-      <button class="login-modal__social-button button white">
-        <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <g clip-path="url(#clip0_11849_26011)">
-                    <path
-                      d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z"
-                      fill="#1877F2" />
-                    <path
-                      d="M16.6711 15.4688L17.2031 12H13.875V9.75C13.875 8.80102 14.34 7.875 15.8306 7.875H17.3438V4.92188C17.3438 4.92188 15.9705 4.6875 14.6576 4.6875C11.9166 4.6875 10.125 6.34875 10.125 9.35625V12H7.07812V15.4688H10.125V23.8542C11.3674 24.0486 12.6326 24.0486 13.875 23.8542V15.4688H16.6711Z"
-                      fill="white" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_11849_26011">
-                      <rect width="24" height="24" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-                Continue with Facebook</span>
-      </button>
-      <button class="login-modal__social-button button white">
-
-        <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path
-            d="M20.8428 17.1449C20.5101 17.9135 20.1163 18.6211 19.66 19.2715C19.0381 20.1583 18.5288 20.7721 18.1364 21.113C17.528 21.6724 16.8762 21.959 16.1782 21.9753C15.6771 21.9753 15.0728 21.8327 14.3693 21.5434C13.6636 21.2555 13.015 21.113 12.422 21.113C11.8 21.113 11.133 21.2555 10.4195 21.5434C9.70493 21.8327 9.12928 21.9834 8.68916 21.9984C8.01981 22.0269 7.35264 21.7322 6.68668 21.113C6.26164 20.7422 5.72999 20.1067 5.09309 19.2063C4.40976 18.2449 3.84796 17.13 3.40784 15.8589C2.93648 14.486 2.7002 13.1565 2.7002 11.8694C2.7002 10.3951 3.01878 9.12345 3.65689 8.05784C4.1584 7.20191 4.82557 6.52672 5.66059 6.03105C6.49562 5.53539 7.39786 5.2828 8.36949 5.26664C8.90114 5.26664 9.59833 5.43109 10.4647 5.75429C11.3287 6.07858 11.8834 6.24303 12.1266 6.24303C12.3085 6.24303 12.9247 6.05074 13.9694 5.66738C14.9573 5.31186 15.7911 5.16466 16.4742 5.22264C18.3251 5.37202 19.7157 6.10167 20.6405 7.41619C18.9851 8.4192 18.1662 9.82403 18.1825 11.6262C18.1975 13.03 18.7067 14.1981 19.7075 15.1256C20.1611 15.5561 20.6676 15.8888 21.2312 16.1251C21.109 16.4795 20.98 16.819 20.8428 17.1449V17.1449ZM16.5978 0.440369C16.5978 1.54062 16.1958 2.56792 15.3946 3.51878C14.4277 4.64917 13.2582 5.30236 11.99 5.19929C11.9738 5.06729 11.9645 4.92837 11.9645 4.78239C11.9645 3.72615 12.4243 2.59576 13.2408 1.67152C13.6485 1.20356 14.167 0.814453 14.7957 0.504058C15.4231 0.198295 16.0166 0.0292007 16.5747 0.000244141C16.591 0.147331 16.5978 0.294426 16.5978 0.440355V0.440369Z"
-            fill="black" />
-        </svg> Continue with Apple</span>
-      </button>
-    </div>
-  </div>
-
-  <!-- ! Sign Up form -->
-  <div id="sign-up-form" class="login-modal__box sign-up">
-    <p class="login-modal__box-title">Welcome</p>
-    <!--! login form-->
-    <form class="login-modal__auth-form">
-      <!--  !    email-->
-      <div class="input">
-        <input required="" type="text" id="emailSignup" name="emailSignup" autocomplete="off" class="input-field">
-        <label for="emailSignup" class="input-label">Your e-mail address</label>
-      </div>
-      <!--  !    password-->
-      <div class="input password">
-        <input required="" type="password" id="passwordSignUp" name="passwordSignUp" autocomplete="off"
-               class="input-field">
-        <label for="passwordSignUp" class="input-label">Password</label>
-        <svg class="password-toggle-icon active" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-             viewBox="0 0 16 16"
-             fill="none">
-          <path
-            d="M0.666626 7.99999C0.666626 7.99999 3.33329 2.66666 7.99996 2.66666C12.6666 2.66666 15.3333 7.99999 15.3333 7.99999C15.3333 7.99999 12.6666 13.3333 7.99996 13.3333C3.33329 13.3333 0.666626 7.99999 0.666626 7.99999Z"
-            stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-          <path
-            d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
-            stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-        <svg class="password-toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-             fill="none">
-          <g clip-path="url(#clip0_11851_6968)">
-            <path
-              d="M11.96 11.96C10.8204 12.8287 9.43276 13.3099 8.00002 13.3333C3.33335 13.3333 0.666687 8.00001 0.666687 8.00001C1.49595 6.4546 2.64611 5.10441 4.04002 4.04001M6.60002 2.82667C7.05891 2.71926 7.52873 2.66557 8.00002 2.66667C12.6667 2.66667 15.3334 8.00001 15.3334 8.00001C14.9287 8.75708 14.4461 9.46983 13.8934 10.1267M9.41335 9.41334C9.23025 9.60984 9.00945 9.76744 8.76412 9.87676C8.51879 9.98607 8.25395 10.0448 7.98541 10.0496C7.71687 10.0543 7.45013 10.0049 7.20109 9.90433C6.95206 9.80374 6.72583 9.65403 6.53592 9.46411C6.346 9.27419 6.19628 9.04797 6.09569 8.79893C5.9951 8.5499 5.9457 8.28315 5.95044 8.01461C5.95518 7.74607 6.01396 7.48124 6.12327 7.23591C6.23258 6.99057 6.39019 6.76977 6.58669 6.58667"
-              stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M0.666687 0.666656L15.3334 15.3333" stroke="#727272" stroke-width="1.2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-          </g>
-          <defs>
-            <clipPath id="clip0_11851_6968">
-              <rect width="16" height="16" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
-      </div>
-
-      <!-- !    button Continue-->
-      <button type="button" class="login-button button red Continue">
-        <span>Sign Up</span>
-      </button>
-    </form>
-    <!--    !   auth variant-->
-    <div class="login-modal__auth-variant">
-      <p class="login-modal__auth-variant-item first already">Already have an account?</p>
-      <button id="auth-change-form" class="login-modal__auth-variant-item second sign-up">Sign in</button>
-    </div>
-
-    <!-- !    social button-->
-    <div class="login-modal__social-box">
-      <div class="login-modal__social-box-divider">OR</div>
-      <button class="login-modal__social-button  button white">
-      <span>  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <g clip-path="url(#clip0_11849_26006)">
-                  <path
-                    d="M23.7663 12.2765C23.7663 11.4608 23.7001 10.6406 23.559 9.83813H12.2402V14.4591H18.722C18.453 15.9495 17.5888 17.2679 16.3233 18.1056V21.104H20.1903C22.4611 19.014 23.7663 15.9274 23.7663 12.2765Z"
-                    fill="#4285F4" />
-                  <path
-                    d="M12.2401 24.0008C15.4766 24.0008 18.2059 22.9382 20.1945 21.1039L16.3276 18.1055C15.2517 18.8375 13.8627 19.252 12.2445 19.252C9.11388 19.252 6.45946 17.1399 5.50705 14.3003H1.5166V17.3912C3.55371 21.4434 7.7029 24.0008 12.2401 24.0008V24.0008Z"
-                    fill="#34A853" />
-                  <path
-                    d="M5.50277 14.3002C5.00011 12.8099 5.00011 11.196 5.50277 9.70569V6.61475H1.51674C-0.185266 10.0055 -0.185266 14.0004 1.51674 17.3912L5.50277 14.3002V14.3002Z"
-                    fill="#FBBC04" />
-                  <path
-                    d="M12.2401 4.74966C13.9509 4.7232 15.6044 5.36697 16.8434 6.54867L20.2695 3.12262C18.1001 1.0855 15.2208 -0.034466 12.2401 0.000808666C7.7029 0.000808666 3.55371 2.55822 1.5166 6.61481L5.50264 9.70575C6.45065 6.86173 9.10947 4.74966 12.2401 4.74966V4.74966Z"
-                    fill="#EA4335" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_11849_26006">
-                    <rect width="24" height="24" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              Continue with Google</span>
-      </button>
-      <button class="login-modal__social-button button white">
-        <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <g clip-path="url(#clip0_11849_26011)">
-                    <path
-                      d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z"
-                      fill="#1877F2" />
-                    <path
-                      d="M16.6711 15.4688L17.2031 12H13.875V9.75C13.875 8.80102 14.34 7.875 15.8306 7.875H17.3438V4.92188C17.3438 4.92188 15.9705 4.6875 14.6576 4.6875C11.9166 4.6875 10.125 6.34875 10.125 9.35625V12H7.07812V15.4688H10.125V23.8542C11.3674 24.0486 12.6326 24.0486 13.875 23.8542V15.4688H16.6711Z"
-                      fill="white" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_11849_26011">
-                      <rect width="24" height="24" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-                Continue with Facebook</span>
-      </button>
-      <button class="login-modal__social-button button white">
-     <span>   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-               <path
-                 d="M20.8428 17.1449C20.5101 17.9135 20.1163 18.6211 19.66 19.2715C19.0381 20.1583 18.5288 20.7721 18.1364 21.113C17.528 21.6724 16.8762 21.959 16.1782 21.9753C15.6771 21.9753 15.0728 21.8327 14.3693 21.5434C13.6636 21.2555 13.015 21.113 12.422 21.113C11.8 21.113 11.133 21.2555 10.4195 21.5434C9.70493 21.8327 9.12928 21.9834 8.68916 21.9984C8.01981 22.0269 7.35264 21.7322 6.68668 21.113C6.26164 20.7422 5.72999 20.1067 5.09309 19.2063C4.40976 18.2449 3.84796 17.13 3.40784 15.8589C2.93648 14.486 2.7002 13.1565 2.7002 11.8694C2.7002 10.3951 3.01878 9.12345 3.65689 8.05784C4.1584 7.20191 4.82557 6.52672 5.66059 6.03105C6.49562 5.53539 7.39786 5.2828 8.36949 5.26664C8.90114 5.26664 9.59833 5.43109 10.4647 5.75429C11.3287 6.07858 11.8834 6.24303 12.1266 6.24303C12.3085 6.24303 12.9247 6.05074 13.9694 5.66738C14.9573 5.31186 15.7911 5.16466 16.4742 5.22264C18.3251 5.37202 19.7157 6.10167 20.6405 7.41619C18.9851 8.4192 18.1662 9.82403 18.1825 11.6262C18.1975 13.03 18.7067 14.1981 19.7075 15.1256C20.1611 15.5561 20.6676 15.8888 21.2312 16.1251C21.109 16.4795 20.98 16.819 20.8428 17.1449V17.1449ZM16.5978 0.440369C16.5978 1.54062 16.1958 2.56792 15.3946 3.51878C14.4277 4.64917 13.2582 5.30236 11.99 5.19929C11.9738 5.06729 11.9645 4.92837 11.9645 4.78239C11.9645 3.72615 12.4243 2.59576 13.2408 1.67152C13.6485 1.20356 14.167 0.814453 14.7957 0.504058C15.4231 0.198295 16.0166 0.0292007 16.5747 0.000244141C16.591 0.147331 16.5978 0.294426 16.5978 0.440355V0.440369Z"
-                 fill="black" />
-             </svg>
-             Continue with Apple</span>
-      </button>
-    </div>
-  </div>
-
-  <!-- ! forgot pass form -->
-  <div id="forgot-pass-form" class="login-modal__box forgot-pass-form ">
-    <!--    ! forgot-pass form send email-->
-    <div id="forgot-send-email" class="forgot-pass__send-email">
-      <p class="login-modal__box-title">Reset your password</p>
-      <p class="login-modal__box-desc">Enter your email address and we will send you instructions to reset your
-        password.</p>
-      <!--! email form-->
+  <div class="login-modal-container">
+     <!-- ! auth-form -->
+    <div id="auth-form" class="login-modal__box auth active">
+      <p class="login-modal__box-title">Hello</p>
+      <!--! login form-->
       <form class="login-modal__auth-form">
         <!--  !    email-->
         <div class="input">
-          <input required="" type="text" id="emailForgotPass" name="emailSignup" autocomplete="off" class="input-field">
-          <label for="emailForgotPass" class="input-label">Your e-mail address</label>
+          <input required="" type="text" id="emailLogin" name="email" autocomplete="off" class="input-field">
+          <label for="emailLogin" class="input-label">Your e-mail address</label>
         </div>
+        <!--  !    password-->
+        <div class="input password">
+          <input required="" type="password" id="password" name="password" autocomplete="off" class="input-field">
+          <label for="password" class="input-label">Password</label>
+          <svg class="password-toggle-icon active" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+               viewBox="0 0 16 16"
+               fill="none">
+            <path
+              d="M0.666626 7.99999C0.666626 7.99999 3.33329 2.66666 7.99996 2.66666C12.6666 2.66666 15.3333 7.99999 15.3333 7.99999C15.3333 7.99999 12.6666 13.3333 7.99996 13.3333C3.33329 13.3333 0.666626 7.99999 0.666626 7.99999Z"
+              stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
+              stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <svg class="password-toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+               viewBox="0 0 16 16"
+               fill="none">
+            <g clip-path="url(#clip0_11851_6968)">
+              <path
+                d="M11.96 11.96C10.8204 12.8287 9.43276 13.3099 8.00002 13.3333C3.33335 13.3333 0.666687 8.00001 0.666687 8.00001C1.49595 6.4546 2.64611 5.10441 4.04002 4.04001M6.60002 2.82667C7.05891 2.71926 7.52873 2.66557 8.00002 2.66667C12.6667 2.66667 15.3334 8.00001 15.3334 8.00001C14.9287 8.75708 14.4461 9.46983 13.8934 10.1267M9.41335 9.41334C9.23025 9.60984 9.00945 9.76744 8.76412 9.87676C8.51879 9.98607 8.25395 10.0448 7.98541 10.0496C7.71687 10.0543 7.45013 10.0049 7.20109 9.90433C6.95206 9.80374 6.72583 9.65403 6.53592 9.46411C6.346 9.27419 6.19628 9.04797 6.09569 8.79893C5.9951 8.5499 5.9457 8.28315 5.95044 8.01461C5.95518 7.74607 6.01396 7.48124 6.12327 7.23591C6.23258 6.99057 6.39019 6.76977 6.58669 6.58667"
+                stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M0.666687 0.666656L15.3334 15.3333" stroke="#727272" stroke-width="1.2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_11851_6968">
+                <rect width="16" height="16" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <!-- !    Forgot password?-->
+        <div class="login-modal__auth-variant forgot-pass ">
+          <button id="forgot-pass-change-form" class="login-modal__auth-variant-item second forgot-pass">Forgot
+            password?
+          </button>
+        </div>
+        <!-- ?    button Sign In-->
+        <button id="sign-in" type="button" class="login-button button red sign-in">
+          <span>Sign In</span>
+        </button>
         <!-- !    button Continue-->
-        <button id="forgot-pass-sent-email" type="button" class="login-button button red continue">
+        <button id="log-in-continue" type="button" class="login-button button red continue">
           <span>Continue</span>
         </button>
       </form>
-    </div>
-    <!--    ! forgot-pass Resend email-->
-    <div id="forgot-resend-email" class="forgot-pass__resend-email is-hidden">
-      <p class="login-modal__box-title">Check Your Email</p>
-      <p class="login-modal__box-desc">Please check the email address <span>[********]@gmail.com </span>for instructions
-        to reset your
-        password.</p>
-      <button id="resend-email" type="button" class="login-button button secondBlack resend-email">
-        <span>Resend e-mail</span>
-      </button>
-    </div>
-  </div>
-
-  <!-- ! new password -->
-  <div id="new-password-form" class="login-modal__box new-password-pass  ">
-
-    <p class="login-modal__box-title">New password</p>
-    <p class="login-modal__box-desc">Please create your new password.</p>
-
-    <form class="login-modal__auth-form">
-
-      <!--  !    password-->
-      <div class="input password">
-        <input required="" type="password" id="newPassword" name="new password" autocomplete="off"
-               class="input-field">
-        <label for="newPassword" class="input-label">New password</label>
-        <svg class="password-toggle-icon active" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-             viewBox="0 0 16 16"
-             fill="none">
-          <path
-            d="M0.666626 7.99999C0.666626 7.99999 3.33329 2.66666 7.99996 2.66666C12.6666 2.66666 15.3333 7.99999 15.3333 7.99999C15.3333 7.99999 12.6666 13.3333 7.99996 13.3333C3.33329 13.3333 0.666626 7.99999 0.666626 7.99999Z"
-            stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-          <path
-            d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
-            stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-        <svg class="password-toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-             fill="none">
-          <g clip-path="url(#clip0_11851_6968)">
-            <path
-              d="M11.96 11.96C10.8204 12.8287 9.43276 13.3099 8.00002 13.3333C3.33335 13.3333 0.666687 8.00001 0.666687 8.00001C1.49595 6.4546 2.64611 5.10441 4.04002 4.04001M6.60002 2.82667C7.05891 2.71926 7.52873 2.66557 8.00002 2.66667C12.6667 2.66667 15.3334 8.00001 15.3334 8.00001C14.9287 8.75708 14.4461 9.46983 13.8934 10.1267M9.41335 9.41334C9.23025 9.60984 9.00945 9.76744 8.76412 9.87676C8.51879 9.98607 8.25395 10.0448 7.98541 10.0496C7.71687 10.0543 7.45013 10.0049 7.20109 9.90433C6.95206 9.80374 6.72583 9.65403 6.53592 9.46411C6.346 9.27419 6.19628 9.04797 6.09569 8.79893C5.9951 8.5499 5.9457 8.28315 5.95044 8.01461C5.95518 7.74607 6.01396 7.48124 6.12327 7.23591C6.23258 6.99057 6.39019 6.76977 6.58669 6.58667"
-              stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M0.666687 0.666656L15.3334 15.3333" stroke="#727272" stroke-width="1.2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-          </g>
-          <defs>
-            <clipPath id="clip0_11851_6968">
-              <rect width="16" height="16" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
+      <!--    ?   auth variant-->
+      <div class="login-modal__auth-variant">
+        <p class="login-modal__auth-variant-item first">Don't have an account?</p>
+        <button id="sign-up-change-form" type="button" class="login-modal__auth-variant-item second sign-up">Sign up
+        </button>
       </div>
-      <button id="confirm-new-pass" type="button" class="login-button button red confirm">
-        <span>Confirm</span>
-      </button>
-    </form>
+
+      <!-- !    social button-->
+      <div class="login-modal__social-box">
+        <div class="login-modal__social-box-divider">OR</div>
+        <button class="login-modal__social-button button white">
+        <span>  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <g clip-path="url(#clip0_11849_26006)">
+                    <path
+                      d="M23.7663 12.2765C23.7663 11.4608 23.7001 10.6406 23.559 9.83813H12.2402V14.4591H18.722C18.453 15.9495 17.5888 17.2679 16.3233 18.1056V21.104H20.1903C22.4611 19.014 23.7663 15.9274 23.7663 12.2765Z"
+                      fill="#4285F4" />
+                    <path
+                      d="M12.2401 24.0008C15.4766 24.0008 18.2059 22.9382 20.1945 21.1039L16.3276 18.1055C15.2517 18.8375 13.8627 19.252 12.2445 19.252C9.11388 19.252 6.45946 17.1399 5.50705 14.3003H1.5166V17.3912C3.55371 21.4434 7.7029 24.0008 12.2401 24.0008V24.0008Z"
+                      fill="#34A853" />
+                    <path
+                      d="M5.50277 14.3002C5.00011 12.8099 5.00011 11.196 5.50277 9.70569V6.61475H1.51674C-0.185266 10.0055 -0.185266 14.0004 1.51674 17.3912L5.50277 14.3002V14.3002Z"
+                      fill="#FBBC04" />
+                    <path
+                      d="M12.2401 4.74966C13.9509 4.7232 15.6044 5.36697 16.8434 6.54867L20.2695 3.12262C18.1001 1.0855 15.2208 -0.034466 12.2401 0.000808666C7.7029 0.000808666 3.55371 2.55822 1.5166 6.61481L5.50264 9.70575C6.45065 6.86173 9.10947 4.74966 12.2401 4.74966V4.74966Z"
+                      fill="#EA4335" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_11849_26006">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Continue with Google</span>
+        </button>
+        <button class="login-modal__social-button button white">
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0_11849_26011)">
+                      <path
+                        d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z"
+                        fill="#1877F2" />
+                      <path
+                        d="M16.6711 15.4688L17.2031 12H13.875V9.75C13.875 8.80102 14.34 7.875 15.8306 7.875H17.3438V4.92188C17.3438 4.92188 15.9705 4.6875 14.6576 4.6875C11.9166 4.6875 10.125 6.34875 10.125 9.35625V12H7.07812V15.4688H10.125V23.8542C11.3674 24.0486 12.6326 24.0486 13.875 23.8542V15.4688H16.6711Z"
+                        fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_11849_26011">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Continue with Facebook</span>
+        </button>
+        <button class="login-modal__social-button button white">
+
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M20.8428 17.1449C20.5101 17.9135 20.1163 18.6211 19.66 19.2715C19.0381 20.1583 18.5288 20.7721 18.1364 21.113C17.528 21.6724 16.8762 21.959 16.1782 21.9753C15.6771 21.9753 15.0728 21.8327 14.3693 21.5434C13.6636 21.2555 13.015 21.113 12.422 21.113C11.8 21.113 11.133 21.2555 10.4195 21.5434C9.70493 21.8327 9.12928 21.9834 8.68916 21.9984C8.01981 22.0269 7.35264 21.7322 6.68668 21.113C6.26164 20.7422 5.72999 20.1067 5.09309 19.2063C4.40976 18.2449 3.84796 17.13 3.40784 15.8589C2.93648 14.486 2.7002 13.1565 2.7002 11.8694C2.7002 10.3951 3.01878 9.12345 3.65689 8.05784C4.1584 7.20191 4.82557 6.52672 5.66059 6.03105C6.49562 5.53539 7.39786 5.2828 8.36949 5.26664C8.90114 5.26664 9.59833 5.43109 10.4647 5.75429C11.3287 6.07858 11.8834 6.24303 12.1266 6.24303C12.3085 6.24303 12.9247 6.05074 13.9694 5.66738C14.9573 5.31186 15.7911 5.16466 16.4742 5.22264C18.3251 5.37202 19.7157 6.10167 20.6405 7.41619C18.9851 8.4192 18.1662 9.82403 18.1825 11.6262C18.1975 13.03 18.7067 14.1981 19.7075 15.1256C20.1611 15.5561 20.6676 15.8888 21.2312 16.1251C21.109 16.4795 20.98 16.819 20.8428 17.1449V17.1449ZM16.5978 0.440369C16.5978 1.54062 16.1958 2.56792 15.3946 3.51878C14.4277 4.64917 13.2582 5.30236 11.99 5.19929C11.9738 5.06729 11.9645 4.92837 11.9645 4.78239C11.9645 3.72615 12.4243 2.59576 13.2408 1.67152C13.6485 1.20356 14.167 0.814453 14.7957 0.504058C15.4231 0.198295 16.0166 0.0292007 16.5747 0.000244141C16.591 0.147331 16.5978 0.294426 16.5978 0.440355V0.440369Z"
+              fill="black" />
+          </svg> Continue with Apple</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ! Sign Up form -->
+    <div id="sign-up-form" class="login-modal__box sign-up">
+      <p class="login-modal__box-title">Welcome</p>
+      <!--! login form-->
+      <form class="login-modal__auth-form">
+        <!--  !    email-->
+        <div class="input">
+          <input required="" type="text" id="emailSignup" name="emailSignup" autocomplete="off" class="input-field">
+          <label for="emailSignup" class="input-label">Your e-mail address</label>
+        </div>
+        <!--  !    password-->
+        <div class="input password">
+          <input required="" type="password" id="passwordSignUp" name="passwordSignUp" autocomplete="off"
+                 class="input-field">
+          <label for="passwordSignUp" class="input-label">Password</label>
+          <svg class="password-toggle-icon active" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+               viewBox="0 0 16 16"
+               fill="none">
+            <path
+              d="M0.666626 7.99999C0.666626 7.99999 3.33329 2.66666 7.99996 2.66666C12.6666 2.66666 15.3333 7.99999 15.3333 7.99999C15.3333 7.99999 12.6666 13.3333 7.99996 13.3333C3.33329 13.3333 0.666626 7.99999 0.666626 7.99999Z"
+              stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
+              stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <svg class="password-toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+               viewBox="0 0 16 16"
+               fill="none">
+            <g clip-path="url(#clip0_11851_6968)">
+              <path
+                d="M11.96 11.96C10.8204 12.8287 9.43276 13.3099 8.00002 13.3333C3.33335 13.3333 0.666687 8.00001 0.666687 8.00001C1.49595 6.4546 2.64611 5.10441 4.04002 4.04001M6.60002 2.82667C7.05891 2.71926 7.52873 2.66557 8.00002 2.66667C12.6667 2.66667 15.3334 8.00001 15.3334 8.00001C14.9287 8.75708 14.4461 9.46983 13.8934 10.1267M9.41335 9.41334C9.23025 9.60984 9.00945 9.76744 8.76412 9.87676C8.51879 9.98607 8.25395 10.0448 7.98541 10.0496C7.71687 10.0543 7.45013 10.0049 7.20109 9.90433C6.95206 9.80374 6.72583 9.65403 6.53592 9.46411C6.346 9.27419 6.19628 9.04797 6.09569 8.79893C5.9951 8.5499 5.9457 8.28315 5.95044 8.01461C5.95518 7.74607 6.01396 7.48124 6.12327 7.23591C6.23258 6.99057 6.39019 6.76977 6.58669 6.58667"
+                stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M0.666687 0.666656L15.3334 15.3333" stroke="#727272" stroke-width="1.2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_11851_6968">
+                <rect width="16" height="16" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+
+        <!-- !    button Continue-->
+        <button type="button" class="login-button button red Continue">
+          <span>Sign Up</span>
+        </button>
+      </form>
+      <!--    !   auth variant-->
+      <div class="login-modal__auth-variant">
+        <p class="login-modal__auth-variant-item first already">Already have an account?</p>
+        <button id="auth-change-form" class="login-modal__auth-variant-item second sign-up">Sign in</button>
+      </div>
+
+      <!-- !    social button-->
+      <div class="login-modal__social-box">
+        <div class="login-modal__social-box-divider">OR</div>
+        <button class="login-modal__social-button  button white">
+        <span>  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <g clip-path="url(#clip0_11849_26006)">
+                    <path
+                      d="M23.7663 12.2765C23.7663 11.4608 23.7001 10.6406 23.559 9.83813H12.2402V14.4591H18.722C18.453 15.9495 17.5888 17.2679 16.3233 18.1056V21.104H20.1903C22.4611 19.014 23.7663 15.9274 23.7663 12.2765Z"
+                      fill="#4285F4" />
+                    <path
+                      d="M12.2401 24.0008C15.4766 24.0008 18.2059 22.9382 20.1945 21.1039L16.3276 18.1055C15.2517 18.8375 13.8627 19.252 12.2445 19.252C9.11388 19.252 6.45946 17.1399 5.50705 14.3003H1.5166V17.3912C3.55371 21.4434 7.7029 24.0008 12.2401 24.0008V24.0008Z"
+                      fill="#34A853" />
+                    <path
+                      d="M5.50277 14.3002C5.00011 12.8099 5.00011 11.196 5.50277 9.70569V6.61475H1.51674C-0.185266 10.0055 -0.185266 14.0004 1.51674 17.3912L5.50277 14.3002V14.3002Z"
+                      fill="#FBBC04" />
+                    <path
+                      d="M12.2401 4.74966C13.9509 4.7232 15.6044 5.36697 16.8434 6.54867L20.2695 3.12262C18.1001 1.0855 15.2208 -0.034466 12.2401 0.000808666C7.7029 0.000808666 3.55371 2.55822 1.5166 6.61481L5.50264 9.70575C6.45065 6.86173 9.10947 4.74966 12.2401 4.74966V4.74966Z"
+                      fill="#EA4335" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_11849_26006">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Continue with Google</span>
+        </button>
+        <button class="login-modal__social-button button white">
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0_11849_26011)">
+                      <path
+                        d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z"
+                        fill="#1877F2" />
+                      <path
+                        d="M16.6711 15.4688L17.2031 12H13.875V9.75C13.875 8.80102 14.34 7.875 15.8306 7.875H17.3438V4.92188C17.3438 4.92188 15.9705 4.6875 14.6576 4.6875C11.9166 4.6875 10.125 6.34875 10.125 9.35625V12H7.07812V15.4688H10.125V23.8542C11.3674 24.0486 12.6326 24.0486 13.875 23.8542V15.4688H16.6711Z"
+                        fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_11849_26011">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Continue with Facebook</span>
+        </button>
+        <button class="login-modal__social-button button white">
+       <span>   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                 <path
+                   d="M20.8428 17.1449C20.5101 17.9135 20.1163 18.6211 19.66 19.2715C19.0381 20.1583 18.5288 20.7721 18.1364 21.113C17.528 21.6724 16.8762 21.959 16.1782 21.9753C15.6771 21.9753 15.0728 21.8327 14.3693 21.5434C13.6636 21.2555 13.015 21.113 12.422 21.113C11.8 21.113 11.133 21.2555 10.4195 21.5434C9.70493 21.8327 9.12928 21.9834 8.68916 21.9984C8.01981 22.0269 7.35264 21.7322 6.68668 21.113C6.26164 20.7422 5.72999 20.1067 5.09309 19.2063C4.40976 18.2449 3.84796 17.13 3.40784 15.8589C2.93648 14.486 2.7002 13.1565 2.7002 11.8694C2.7002 10.3951 3.01878 9.12345 3.65689 8.05784C4.1584 7.20191 4.82557 6.52672 5.66059 6.03105C6.49562 5.53539 7.39786 5.2828 8.36949 5.26664C8.90114 5.26664 9.59833 5.43109 10.4647 5.75429C11.3287 6.07858 11.8834 6.24303 12.1266 6.24303C12.3085 6.24303 12.9247 6.05074 13.9694 5.66738C14.9573 5.31186 15.7911 5.16466 16.4742 5.22264C18.3251 5.37202 19.7157 6.10167 20.6405 7.41619C18.9851 8.4192 18.1662 9.82403 18.1825 11.6262C18.1975 13.03 18.7067 14.1981 19.7075 15.1256C20.1611 15.5561 20.6676 15.8888 21.2312 16.1251C21.109 16.4795 20.98 16.819 20.8428 17.1449V17.1449ZM16.5978 0.440369C16.5978 1.54062 16.1958 2.56792 15.3946 3.51878C14.4277 4.64917 13.2582 5.30236 11.99 5.19929C11.9738 5.06729 11.9645 4.92837 11.9645 4.78239C11.9645 3.72615 12.4243 2.59576 13.2408 1.67152C13.6485 1.20356 14.167 0.814453 14.7957 0.504058C15.4231 0.198295 16.0166 0.0292007 16.5747 0.000244141C16.591 0.147331 16.5978 0.294426 16.5978 0.440355V0.440369Z"
+                   fill="black" />
+               </svg>
+               Continue with Apple</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ! forgot pass form -->
+    <div id="forgot-pass-form" class="login-modal__box forgot-pass-form ">
+      <!--    ! forgot-pass form send email-->
+      <div id="forgot-send-email" class="forgot-pass__send-email">
+        <p class="login-modal__box-title">Reset your password</p>
+        <p class="login-modal__box-desc">Enter your email address and we will send you instructions to reset your
+          password.</p>
+        <!--! email form-->
+        <form class="login-modal__auth-form">
+          <!--  !    email-->
+          <div class="input">
+            <input required="" type="text" id="emailForgotPass" name="emailSignup" autocomplete="off"
+                   class="input-field">
+            <label for="emailForgotPass" class="input-label">Your e-mail address</label>
+          </div>
+          <!-- !    button Continue-->
+          <button id="forgot-pass-sent-email" type="button" class="login-button button red continue">
+            <span>Continue</span>
+          </button>
+        </form>
+      </div>
+      <!--    ! forgot-pass Resend email-->
+      <div id="forgot-resend-email" class="forgot-pass__resend-email is-hidden">
+        <p class="login-modal__box-title">Check Your Email</p>
+        <p class="login-modal__box-desc">Please check the email address <span>[********]@gmail.com </span>for
+          instructions
+          to reset your
+          password.</p>
+        <button id="resend-email" type="button" class="login-button button secondBlack resend-email">
+          <span>Resend e-mail</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ! new password -->
+    <div id="new-password-form" class="login-modal__box new-password-pass  ">
+
+      <p class="login-modal__box-title">New password</p>
+      <p class="login-modal__box-desc">Please create your new password.</p>
+
+      <form class="login-modal__auth-form">
+
+        <!--  !    password-->
+        <div class="input password">
+          <input required="" type="password" id="newPassword" name="new password" autocomplete="off"
+                 class="input-field">
+          <label for="newPassword" class="input-label">New password</label>
+          <svg class="password-toggle-icon active" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+               viewBox="0 0 16 16"
+               fill="none">
+            <path
+              d="M0.666626 7.99999C0.666626 7.99999 3.33329 2.66666 7.99996 2.66666C12.6666 2.66666 15.3333 7.99999 15.3333 7.99999C15.3333 7.99999 12.6666 13.3333 7.99996 13.3333C3.33329 13.3333 0.666626 7.99999 0.666626 7.99999Z"
+              stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
+              stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <svg class="password-toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+               viewBox="0 0 16 16"
+               fill="none">
+            <g clip-path="url(#clip0_11851_6968)">
+              <path
+                d="M11.96 11.96C10.8204 12.8287 9.43276 13.3099 8.00002 13.3333C3.33335 13.3333 0.666687 8.00001 0.666687 8.00001C1.49595 6.4546 2.64611 5.10441 4.04002 4.04001M6.60002 2.82667C7.05891 2.71926 7.52873 2.66557 8.00002 2.66667C12.6667 2.66667 15.3334 8.00001 15.3334 8.00001C14.9287 8.75708 14.4461 9.46983 13.8934 10.1267M9.41335 9.41334C9.23025 9.60984 9.00945 9.76744 8.76412 9.87676C8.51879 9.98607 8.25395 10.0448 7.98541 10.0496C7.71687 10.0543 7.45013 10.0049 7.20109 9.90433C6.95206 9.80374 6.72583 9.65403 6.53592 9.46411C6.346 9.27419 6.19628 9.04797 6.09569 8.79893C5.9951 8.5499 5.9457 8.28315 5.95044 8.01461C5.95518 7.74607 6.01396 7.48124 6.12327 7.23591C6.23258 6.99057 6.39019 6.76977 6.58669 6.58667"
+                stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M0.666687 0.666656L15.3334 15.3333" stroke="#727272" stroke-width="1.2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_11851_6968">
+                <rect width="16" height="16" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <button id="confirm-new-pass" type="button" class="login-button button red confirm">
+          <span>Confirm</span>
+        </button>
+      </form>
+    </div>
   </div>
 </div>
 <!-- ! script modal login-->
@@ -530,7 +537,9 @@
       forgotPassFormBox.classList.remove('active');
     });
 
+    function toggleModalMenu() {
 
+    }
     //  toggle modal
     //!  toggle modal auth
     function toggleModal() {
@@ -545,6 +554,17 @@
 
       forgotResendEmail.classList.add('is-hidden');
       logInFormBox.classList.add('active');
+
+      const body = document.querySelector('body');
+
+
+        body.classList.remove('modal-open');
+        const isHiddenWrapper = loginModal.classList.contains('is-hidden');
+        if (!isHiddenWrapper){
+          body.classList.remove('modal-open');
+        }else {
+          body.classList.add('modal-open');
+        }
 
     }
 
