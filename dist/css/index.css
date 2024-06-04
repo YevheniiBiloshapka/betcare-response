@@ -4299,6 +4299,7 @@ input:-webkit-autofill:focus {
     line-height: 18px;
     letter-spacing: 0.6px;
     width: fit-content;
+    white-space: nowrap;
     align-items: center;
     gap: 8px;
   }
