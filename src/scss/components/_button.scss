@@ -58,7 +58,7 @@
 }
 
 @mixin button-micro() {
-  height: 30px;
+  height: 32px;
   & span {
     padding: 0 16px;
     @include font-button(micro);

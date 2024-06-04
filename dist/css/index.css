@@ -659,8 +659,8 @@ body.modal-open {
 .accordion__item.show .accordion__item--content {
   max-height: 1000px;
   padding-top: 12px;
-  transition: max-height 1.5s;
-  -webkit-transition: max-height 1.5s;
+  transition: max-height 3s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: max-height 3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1280px) {
   .accordion__item.show .accordion__item--content {
@@ -703,8 +703,8 @@ body.modal-open {
   max-height: 0;
   overflow: hidden;
   padding-top: 0;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: max-height 1.5s, padding-top 2.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: max-height 1.5s, padding-top 2.5s cubic-bezier(0.4, 0, 0.2, 1);
   color: #353535;
   font-size: 16px;
   font-weight: 300;
@@ -3949,7 +3949,7 @@ input:-webkit-autofill:focus {
   display: flex;
 }
 .header .button, .header .button-outline, .header .button-icon {
-  height: 30px;
+  height: 32px;
 }
 .header .button span, .header .button-outline span, .header .button-icon span {
   padding: 0 16px;
