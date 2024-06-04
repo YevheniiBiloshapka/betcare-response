@@ -4,7 +4,7 @@
 
   z-index: 0;
   margin-top: -1px;
-  @include retina-bg("../img/reward/375_rewardsBg.webp","../img/reward/375_rewardsBg@2x.webp","../img/reward/375_rewardsBg@3x.webp");
+  @include retina-bg("../img/reward/png/375_rewardsBg.png","../img/reward/png/375_rewardsBg@2x.png","../img/reward/png/375_rewardsBg@3x.png");
 
   background-size: contain;
   background-position:  bottom right;
@@ -27,7 +27,7 @@
     gap: 48px;
   }
   @media screen and (min-width: 834px) {
-    @include retina-bg("../img/reward/834_rewardsBg.webp","../img/reward/834_rewardsBg@2x.webp","../img/reward/834_rewardsBg@3x.webp");
+    @include retina-bg("../img/reward/png/834_rewardsBg.png","../img/reward/png/834_rewardsBg@2x.png","../img/reward/png/834_rewardsBg@3x.png");
     background-size: cover;
     background-position:  bottom;
     &__container {
@@ -35,7 +35,7 @@
     }
   }
   @media screen and (min-width: 1180px) {
-    @include retina-bg("../img/reward/1180_rewardsBg.webp","../img/reward/1180_rewardsBg@2x.webp","../img/reward/1180_rewardsBg@3x.webp");
+    @include retina-bg("../img/reward/png/1180_rewardsBg.png","../img/reward/png/1180_rewardsBg@2x.png","../img/reward/png/1180_rewardsBg@3x.png");
     background-size: 100% 100%;
     background-position:  bottom;
     &__container {
@@ -44,7 +44,7 @@
   }
   @media screen and (min-width: 1280px) {
 
-    @include retina-bg("../img/reward/1280_rewardsBg.webp","../img/reward/1280_rewardsBg@2x.webp","../img/reward/1280_rewardsBg@3x.webp");
+    @include retina-bg("../img/reward/png/1280_rewardsBg.png","../img/reward/png/1280_rewardsBg@2x.png","../img/reward/png/1280_rewardsBg@3x.png");
     background-size: contain;
     background-position:  bottom left;
     &__container {
@@ -63,7 +63,7 @@
     }
   }
   @media screen and (min-width: 1512px) {
-    @include retina-bg("../img/reward/1512_rewardsBg.webp","../img/reward/1512_rewardsBg@2x.webp","../img/reward/1512_rewardsBg@3x.webp");
+    @include retina-bg("../img/reward/png/1512_rewardsBg.png","../img/reward/png/1512_rewardsBg@2x.png","../img/reward/png/1512_rewardsBg@3x.png");
     &__container {
       padding: 80px 120px;
       gap: 162px;
@@ -76,7 +76,7 @@
     }
   }
   @media screen and (min-width: 1728px) {
-    @include retina-bg("../img/reward/1728_rewardsBg.webp","../img/reward/1728_rewardsBg@2x.webp","../img/reward/1728_rewardsBg@3x.webp");
+    @include retina-bg("../img/reward/png/1728_rewardsBg.png","../img/reward/png/1728_rewardsBg@2x.png","../img/reward/png/1728_rewardsBg@3x.png");
     background-size: contain;
     &__container {
       gap: 144px;

@@ -283,6 +283,9 @@
 
 @media screen and (min-width: 1280px){
   // show modal style
+  .header__container{
+    padding: 24px 20px;
+  }
   .header.show-modal{
     & .header__container{
       padding: 20px;
@@ -346,8 +349,9 @@
       visibility: hidden;
     }
     & .header__container{
-      justify-content: space-between;
-      padding: 18.5px 40px;
+      justify-content: start;
+      padding: 18.5px 20px;
+      gap: 100px;
     }
     & .header__menu{
       position: unset;
@@ -383,7 +387,8 @@
           opacity: 1;
           max-width: 100%;
           max-height: 1000px;
-          padding: 24px;
+          padding: 17px 24px 24px;
+
           transition: none;
           &__link{
             white-space: nowrap;
@@ -397,7 +402,7 @@
       @include font-body(small);
       width: fit-content;
       align-items: center;
-      gap: 4px;
+      gap: 8px;
       & span{
         display: none;
         visibility: hidden;
@@ -413,7 +418,7 @@
       &:before{
         content: "";
         position: absolute;
-        bottom: -4px;
+        bottom: -2px;
         left: 0;
         width: 0%;
         height: 2px;
@@ -424,8 +429,8 @@
     & .menu-dropdown{
       position: absolute;
       top: 46px;
-      left: 0;
-
+      left: -24px;
+      gap: 0;
       opacity: 0;
       max-width: 0;
       width: fit-content;
@@ -436,6 +441,7 @@
       box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.25);
       transition: max-height 0.25s cubic-bezier(0.4, 0, 0.2, 1) ;
       &__link{
+        @include font-body(small);
         &:hover{
           opacity: 0.6 !important;
         }
@@ -443,13 +449,17 @@
       }
     }
     & .menu__buttons{
-      padding-right: 56px;
+      margin-left: auto;
+      padding-right: 48px;
     }
     }
 
 }
 
 @media screen and (min-width: 1512px){
+  .header__container{
+    padding: 20px 39px;
+  }
   .header__logo{
     width: 196px;
     height: 40px;
@@ -491,6 +501,7 @@
     }
 
   }
+
   // show modal style
   .header.show-modal {
     & .menu__burger:before {
@@ -517,7 +528,9 @@
     & .header__container{
       justify-content: space-between;
       padding: 16px 40px;
+      gap: 80px;
     }
+
     & .header__menu-list-item--link{
       @include font-body(normal);
       gap: 8px;
@@ -532,7 +545,17 @@
       @include font-body(normal);
     }
     & .menu__buttons{
-      padding-right: 48px;
+      padding-right: 56px;
+    }
+  }
+}
+@media screen and (min-width: 1728px){
+  .header.scroll {
+    & .header__container {
+      gap: 80px;
+    }
+    & .header__menu-list{
+      gap: 56px;
     }
   }
 }
