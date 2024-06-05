@@ -71,19 +71,15 @@
     }
     & .accordion__item--content{
         max-height: 1000px;
-        padding-top: 12px;
         //открытие
-
         $transitionHeight: max-height 2s ease-out;
         -webkit-transition: $transitionHeight;
         -moz-transition: $transitionHeight;
         -o-transition: $transitionHeight;
         transition: $transitionHeight;
+
     }
     @media screen and (min-width: 1280px) {
-        & .accordion__item--content{
-            padding-top: 0;
-        }
     }
 }
 // button
@@ -133,7 +129,7 @@
 .accordion__item--content {
     max-height: 0;
     overflow: hidden;
-    padding-top: 0;
+    &-wrapper{padding-top: 12px;}
     //закрытие
     $transitionHeight: max-height 300ms ease;;
     -webkit-transition: $transitionHeight;
@@ -144,7 +140,9 @@
     color: $cl-neutral-800;
     @include font-body(normal);
     @media screen and (min-width: 1280px) {
+        padding-top: 0;
         max-width: 580px;
+        &-wrapper{padding-top: 0;}
     }
 }
 
