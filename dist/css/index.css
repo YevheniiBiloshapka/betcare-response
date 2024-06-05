@@ -658,10 +658,10 @@ body.modal-open {
 }
 .accordion__item.show .accordion__item--content {
   max-height: 1000px;
-  -webkit-transition: max-height 2s ease-out;
-  -moz-transition: max-height 2s ease-out;
-  -o-transition: max-height 2s ease-out;
-  transition: max-height 2s ease-out;
+  -webkit-transition: max-height 3s ease-out;
+  -moz-transition: max-height 3s ease-out;
+  -o-transition: max-height 3s ease-out;
+  transition: max-height 3s ease-out;
 }
 .accordion__item-header--button {
   position: relative;
@@ -697,10 +697,10 @@ body.modal-open {
 .accordion__item--content {
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: max-height 300ms ease;
-  -moz-transition: max-height 300ms ease;
-  -o-transition: max-height 300ms ease;
-  transition: max-height 300ms ease;
+  -webkit-transition: max-height 0.8s ease;
+  -moz-transition: max-height 0.8s ease;
+  -o-transition: max-height 0.8s ease;
+  transition: max-height 0.8s ease;
   color: #353535;
   font-size: 16px;
   font-weight: 300;

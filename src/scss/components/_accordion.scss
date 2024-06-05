@@ -72,7 +72,7 @@
     & .accordion__item--content{
         max-height: 1000px;
         //открытие
-        $transitionHeight: max-height 2s ease-out;
+        $transitionHeight: max-height 3s ease-out;
         -webkit-transition: $transitionHeight;
         -moz-transition: $transitionHeight;
         -o-transition: $transitionHeight;
@@ -131,7 +131,7 @@
     overflow: hidden;
     &-wrapper{padding-top: 12px;}
     //закрытие
-    $transitionHeight: max-height 300ms ease;;
+    $transitionHeight: max-height 0.8s ease;
     -webkit-transition: $transitionHeight;
     -moz-transition: $transitionHeight;
     -o-transition: $transitionHeight;
