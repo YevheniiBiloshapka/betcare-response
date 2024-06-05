@@ -938,6 +938,7 @@ input:-webkit-autofill:focus {
   height: 90vh;
   z-index: 9998;
   position: relative;
+  background-color: #1B1B1B;
 }
 .hero .heroPageSwiper {
   height: 100%;
