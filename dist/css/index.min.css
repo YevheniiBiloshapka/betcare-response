@@ -2378,7 +2378,7 @@ input:-webkit-autofill:focus {
 }
 @media screen and (min-width: 1512px) {
   .slot__card {
-    height: 180p;
+    height: 180px;
     max-height: 180px;
     border-radius: 24px;
   }
