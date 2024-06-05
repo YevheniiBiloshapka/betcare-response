@@ -1,10 +1,14 @@
 .header{
   position: absolute;
+  top: 0;
   z-index: 9999;
   width: 100%;
   height: 64px;
   // hidden
-  @include transition(all,0.4s);
+  -webkit-animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  //transition: transform 3s ease-in;
+  //@include transition(all,0.4s);
   &.show-modal{
     & .header__menu-list{
       display: flex;
@@ -23,8 +27,14 @@
     }
   }
   &.scroll{
-    position: fixed;
+    z-index: 9997;
+    //position: fixed;
+    transform: translateY(0);
     background: $cl-neutral-900;
+    //animation:scrollAnim 3s linear ;
+    -webkit-animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
       & .menu__buttons--talk{
         display: none;
       }
@@ -33,7 +43,6 @@
       }
 
   }
-
 
   & .button{
     @include button-micro();
@@ -83,7 +92,37 @@
   }
 }
 
-
+@keyframes tracking-in-expand-fwd-top {
+  0% {
+    //-webkit-transform: translateZ(-700px) translateY(-500px);
+    transform:  translateY(-500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    //-webkit-transform: translateZ(0) translateY(0);
+    transform:  translateY(0);
+    opacity: 1;
+  }
+}
+//@-webkit-keyframes tracking-in-expand-fwd-top {
+//  0% {
+//    letter-spacing: -0.5em;
+//    -webkit-transform: translateZ(-700px) translateY(-500px);
+//    transform: translateZ(-700px) translateY(-500px);
+//    opacity: 0;
+//  }
+//  40% {
+//    opacity: 0.6;
+//  }
+//  100% {
+//    -webkit-transform: translateZ(0) translateY(0);
+//    transform: translateZ(0) translateY(0);
+//    opacity: 1;
+//  }
+//}
 
 // TODO: Container
 .header__container{

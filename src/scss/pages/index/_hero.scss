@@ -1,6 +1,7 @@
 .hero {
   height:90vh;
-
+  z-index: 9998;
+  position: relative;
   & .heroPageSwiper {
     height: 100%;
   }
