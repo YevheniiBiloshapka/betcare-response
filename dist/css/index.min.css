@@ -659,8 +659,10 @@ body.modal-open {
 .accordion__item.show .accordion__item--content {
   max-height: 1000px;
   padding-top: 12px;
-  transition: max-height 3s cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: max-height 3s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: max-height 2s ease-out;
+  -moz-transition: max-height 2s ease-out;
+  -o-transition: max-height 2s ease-out;
+  transition: max-height 2s ease-out;
 }
 @media screen and (min-width: 1280px) {
   .accordion__item.show .accordion__item--content {
@@ -703,8 +705,10 @@ body.modal-open {
   max-height: 0;
   overflow: hidden;
   padding-top: 0;
-  -webkit-transition: max-height 1.5s, padding-top 2.5s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: max-height 1.5s, padding-top 2.5s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: max-height 300ms ease;
+  -moz-transition: max-height 300ms ease;
+  -o-transition: max-height 300ms ease;
+  transition: max-height 300ms ease;
   color: #353535;
   font-size: 16px;
   font-weight: 300;
