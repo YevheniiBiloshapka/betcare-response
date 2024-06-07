@@ -1,4 +1,4 @@
-
+import { SlotMachine } from './components/slotMachine.js';
 
 document.addEventListener('DOMContentLoaded', function () {
   var galleryTop = new Swiper('.gallery-top', {
@@ -36,4 +36,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
   galleryTop.controller.control = galleryThumbs;
   galleryThumbs.controller.control = galleryTop;
+  SlotMachine()
 });

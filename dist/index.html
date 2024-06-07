@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-	 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/index.min.css">
-	 <link
-		 rel="stylesheet"
-		 href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-	 />
-	<title>Главная</title>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/index.min.css">
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+	<!--		gsap-->
+		<title>Главная</title>
+	</head>
 
 	<body>
 		<header class="header " data-action="header-wrapper">
@@ -976,611 +977,699 @@
     <h2 class="slot__container--title">We ensure your needs<br/> are met, so you can<br/> <span>focus on the winning.</span></h2>
     <div class="slot-list-box ">
       <p class="slot-list-box--win-text">Your lucky picks:</p>
-      <ul class="slot__cards-list">
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo01.webp" alt="logo 1">
+      <ul id="list1" class="slot__cards-list ">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo10.webp" alt="logo 10">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo01.webp" alt="logo 1">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo10.webp" alt="logo 10">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card  ">
-          <img class="slot__card--cover" src="./img/slots/logo02.webp" alt="logo 2">
+        <li class="slot__card--wrapper  ">
+          <div class="slot__card"> <img class="slot__card--cover" src="./img/slots/logo02.webp" alt="logo 2">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo02.webp" alt="logo 2">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo02.webp" alt="logo 2">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo03.webp" alt="logo 2">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo01.webp" alt="logo 1">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo03.webp" alt="logo 3">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo01.webp" alt="logo 1">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo04.webp" alt="logo 4">
+        <li class="slot__card--wrapper">
+          <div class="slot__card"> <img class="slot__card--cover" src="./img/slots/logo08.webp" alt="logo 8">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo04.webp" alt="logo 4">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo08.webp" alt="logo 8">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo05.webp" alt="logo 5">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo04.webp" alt="logo 4">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo05.webp" alt="logo 5">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo04.webp" alt="logo 4">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo06.webp" alt="logo 6">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo06.webp" alt="logo 6">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo06.webp" alt="logo 6">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo06.webp" alt="logo 6">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo07.webp" alt="logo 7">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo07.webp" alt="logo 7">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo07.webp" alt="logo 7">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo07.webp" alt="logo 7">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo08.webp" alt="logo 8">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo03.webp" alt="logo 2">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo08.webp" alt="logo 8">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo03.webp" alt="logo 3">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo09.webp" alt="logo 9">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo09.webp" alt="logo 9">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo09.webp" alt="logo 9">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo09.webp" alt="logo 9">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo10.webp" alt="logo 10">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo05.webp" alt="logo 5">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo10.webp" alt="logo 10">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo05.webp" alt="logo 5">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
-          </div>
-        </li>
-      </ul>
-      <ul class="slot__cards-list">
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo01.webp" alt="logo 1">
-
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo01.webp" alt="logo 1">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
-              </div>
-            </div>
-            <a class="slot__card--box--button" href="#">Play</a>
-          </div>
-        </li>
-        <li class="slot__card ">
-          <img class="slot__card--cover" src="./img/slots/logo02.webp" alt="logo 2">
-
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo02.webp" alt="logo 2">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
-              </div>
-            </div>
-            <a class="slot__card--box--button" href="#">Play</a>
-          </div>
-        </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo03.webp" alt="logo 2">
-
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo03.webp" alt="logo 3">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
-              </div>
-            </div>
-            <a class="slot__card--box--button" href="#">Play</a>
-          </div>
-        </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo04.webp" alt="logo 4">
-
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo04.webp" alt="logo 4">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
-              </div>
-            </div>
-            <a class="slot__card--box--button" href="#">Play</a>
-          </div>
-        </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo05.webp" alt="logo 5">
-
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo05.webp" alt="logo 5">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
-              </div>
-            </div>
-            <a class="slot__card--box--button" href="#">Play</a>
-          </div>
-        </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo06.webp" alt="logo 6">
-
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo06.webp" alt="logo 6">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
-              </div>
-            </div>
-            <a class="slot__card--box--button" href="#">Play</a>
-          </div>
-        </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo07.webp" alt="logo 7">
-
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo07.webp" alt="logo 7">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
-              </div>
-            </div>
-            <a class="slot__card--box--button" href="#">Play</a>
-          </div>
-        </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo08.webp" alt="logo 8">
-
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo08.webp" alt="logo 8">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
-              </div>
-            </div>
-            <a class="slot__card--box--button" href="#">Play</a>
-          </div>
-        </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo09.webp" alt="logo 9">
-
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo09.webp" alt="logo 9">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
-              </div>
-            </div>
-            <a class="slot__card--box--button" href="#">Play</a>
-          </div>
-        </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo10.webp" alt="logo 10">
-
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo10.webp" alt="logo 10">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
-              </div>
-            </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
       </ul>
-      <ul class="slot__cards-list">
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo01.webp" alt="logo 1">
+      <ul id="list2" class="slot__cards-list ">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo10.webp" alt="logo 10">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo01.webp" alt="logo 1">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo10.webp" alt="logo 10">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card ">
-          <img class="slot__card--cover" src="./img/slots/logo02.webp" alt="logo 2">
+        <li class="slot__card--wrapper  ">
+          <div class="slot__card"> <img class="slot__card--cover" src="./img/slots/logo02.webp" alt="logo 2">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo02.webp" alt="logo 2">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo02.webp" alt="logo 2">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo03.webp" alt="logo 2">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo09.webp" alt="logo 9">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo03.webp" alt="logo 3">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo09.webp" alt="logo 9">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo04.webp" alt="logo 4">
+        <li class="slot__card--wrapper">
+          <div class="slot__card"> <img class="slot__card--cover" src="./img/slots/logo08.webp" alt="logo 8">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo04.webp" alt="logo 4">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo08.webp" alt="logo 8">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo05.webp" alt="logo 5">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo04.webp" alt="logo 4">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo05.webp" alt="logo 5">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo04.webp" alt="logo 4">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo06.webp" alt="logo 6">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo07.webp" alt="logo 7">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo06.webp" alt="logo 6">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo07.webp" alt="logo 7">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo07.webp" alt="logo 7">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo03.webp" alt="logo 2">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo07.webp" alt="logo 7">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo03.webp" alt="logo 3">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo08.webp" alt="logo 8">
+        <li class="slot__card--wrapper  ">
+          <div class="slot__card"> <img class="slot__card--cover" src="./img/slots/logo02.webp" alt="logo 2">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo08.webp" alt="logo 8">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo02.webp" alt="logo 2">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo09.webp" alt="logo 9">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo05.webp" alt="logo 5">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo09.webp" alt="logo 9">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo05.webp" alt="logo 5">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo10.webp" alt="logo 10">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo01.webp" alt="logo 1">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo10.webp" alt="logo 10">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo01.webp" alt="logo 1">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
+          </div>
+        </li>
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo06.webp" alt="logo 6">
+
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo06.webp" alt="logo 6">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
+              </div>
+              <a class="slot__card--box--button" href="#">Play</a>
+            </div>
           </div>
         </li>
       </ul>
-      <ul class="slot__cards-list">
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo01.webp" alt="logo 1">
+      <ul id="list3" class="slot__cards-list ">
+        <li class="slot__card--wrapper  ">
+          <div class="slot__card"> <img class="slot__card--cover" src="./img/slots/logo02.webp" alt="logo 2">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo01.webp" alt="logo 1">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo02.webp" alt="logo 2">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card ">
-          <img class="slot__card--cover" src="./img/slots/logo02.webp" alt="logo 2">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo05.webp" alt="logo 5">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo02.webp" alt="logo 2">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo05.webp" alt="logo 5">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo03.webp" alt="logo 2">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo01.webp" alt="logo 1">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo03.webp" alt="logo 3">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo01.webp" alt="logo 1">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo04.webp" alt="logo 4">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo09.webp" alt="logo 9">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo04.webp" alt="logo 4">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo09.webp" alt="logo 9">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo05.webp" alt="logo 5">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo06.webp" alt="logo 6">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo05.webp" alt="logo 5">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo06.webp" alt="logo 6">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo06.webp" alt="logo 6">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo07.webp" alt="logo 7">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo06.webp" alt="logo 6">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo07.webp" alt="logo 7">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo07.webp" alt="logo 7">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo03.webp" alt="logo 2">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo07.webp" alt="logo 7">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo03.webp" alt="logo 3">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo08.webp" alt="logo 8">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo10.webp" alt="logo 10">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo08.webp" alt="logo 8">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo10.webp" alt="logo 10">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo09.webp" alt="logo 9">
+        <li class="slot__card--wrapper">
+          <div class="slot__card"> <img class="slot__card--cover" src="./img/slots/logo08.webp" alt="logo 8">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo09.webp" alt="logo 9">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo08.webp" alt="logo 8">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
           </div>
         </li>
-        <li class="slot__card">
-          <img class="slot__card--cover" src="./img/slots/logo10.webp" alt="logo 10">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo04.webp" alt="logo 4">
 
-          <div class="slot__card--box">
-            <div class="slot__card--box-info">
-              <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo10.webp" alt="logo 10">
-              <div class="slot__card--box-info--container">
-                <p class="slot__card--box-info--container-rating">4.8</p>
-                <p class="slot__card--box-info--container-name">Title Casino</p>
-                <a class="slot__card--box-info--container-link" href="#">See review</a>
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo04.webp" alt="logo 4">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
               </div>
+              <a class="slot__card--box--button" href="#">Play</a>
             </div>
-            <a class="slot__card--box--button" href="#">Play</a>
+          </div>
+        </li>
+
+      </ul>
+      <ul id="list4" class="slot__cards-list ">
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo07.webp" alt="logo 7">
+
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo07.webp" alt="logo 7">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
+              </div>
+              <a class="slot__card--box--button" href="#">Play</a>
+            </div>
+          </div>
+        </li>
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo05.webp" alt="logo 5">
+
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo05.webp" alt="logo 5">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
+              </div>
+              <a class="slot__card--box--button" href="#">Play</a>
+            </div>
+          </div>
+        </li>
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo10.webp" alt="logo 10">
+
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo10.webp" alt="logo 10">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
+              </div>
+              <a class="slot__card--box--button" href="#">Play</a>
+            </div>
+          </div>
+        </li>
+        <li class="slot__card--wrapper">
+          <div class="slot__card"> <img class="slot__card--cover" src="./img/slots/logo08.webp" alt="logo 8">
+
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo08.webp" alt="logo 8">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
+              </div>
+              <a class="slot__card--box--button" href="#">Play</a>
+            </div>
+          </div>
+        </li>
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo01.webp" alt="logo 1">
+
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo01.webp" alt="logo 1">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
+              </div>
+              <a class="slot__card--box--button" href="#">Play</a>
+            </div>
+          </div>
+        </li>
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo09.webp" alt="logo 9">
+
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo09.webp" alt="logo 9">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
+              </div>
+              <a class="slot__card--box--button" href="#">Play</a>
+            </div>
+          </div>
+        </li>
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo04.webp" alt="logo 4">
+
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo04.webp" alt="logo 4">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
+              </div>
+              <a class="slot__card--box--button" href="#">Play</a>
+            </div>
+          </div>
+        </li>
+        <li class="slot__card--wrapper">
+          <div class="slot__card"> <img class="slot__card--cover" src="./img/slots/logo08.webp" alt="logo 8">
+
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo08.webp" alt="logo 8">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
+              </div>
+              <a class="slot__card--box--button" href="#">Play</a>
+            </div>
+          </div>
+        </li>
+        <li class="slot__card--wrapper">
+          <div class="slot__card">
+            <img class="slot__card--cover" src="./img/slots/logo03.webp" alt="logo 2">
+
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo03.webp" alt="logo 3">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
+              </div>
+              <a class="slot__card--box--button" href="#">Play</a>
+            </div>
+          </div>
+        </li>
+        <li class="slot__card--wrapper">
+          <div class="slot__card"> <img class="slot__card--cover" src="./img/slots/logo02.webp" alt="logo 2">
+
+            <div class="slot__card--box">
+              <div class="slot__card--box-info">
+                <img class="slot__card--box-info--image" loading="lazy" src="./img/slots/logo02.webp" alt="logo 2">
+                <div class="slot__card--box-info--container">
+                  <p class="slot__card--box-info--container-rating">4.8</p>
+                  <p class="slot__card--box-info--container-name">Title Casino</p>
+                  <a class="slot__card--box-info--container-link" href="#">See review</a>
+                </div>
+              </div>
+              <a class="slot__card--box--button" href="#">Play</a>
+            </div>
           </div>
         </li>
       </ul>
@@ -1599,39 +1688,7 @@
 
 </section>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const button = document.getElementById('addActiveButton');
 
-    button.addEventListener('click', function(event) {
-      event.stopPropagation();
-
-      const div = document.querySelector('.slot-list-box');
-      div.classList.add('active');
-
-      const list = document.querySelectorAll('.slot-list-box .slot__cards-list .slot__card:nth-child(2)');
-
-      list.forEach(function(li) {
-        li.classList.add('active');
-      });
-    });
-
-    document.addEventListener('click', function(event) {
-      const div = document.querySelector('.slot-list-box');
-      const activeLi = document.querySelector('.slot-list-box .slot__cards-list .slot__card.active');
-
-      if (!activeLi?.contains(event?.target) && event?.target?.id !== 'addActiveButton') {
-        const allActiveCards = document.querySelectorAll('.slot-list-box .slot__cards-list .slot__card.active');
-
-        allActiveCards.forEach(function(card) {
-          card.classList.remove('active');
-        });
-
-        div.classList.remove('active');
-      }
-    });
-  });
-</script>
 
 			<section class="reward">
   <div class="reward__container container">
@@ -1947,7 +2004,7 @@
 
 </script>
 		</main>
-		<footer class="footer">
+				<footer class="footer">
   <div class="footer__container container">
     <nav class="footer__top-block">
       <ul class="footer__socials" aria-label="social links">
@@ -2020,8 +2077,14 @@
     </div>
   </div>
 </footer>
+
+
 		<script src="js/index.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
 
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 	</body>
 </html>

@@ -13,7 +13,8 @@ export const js = () => {
 			entry:{
 				// Добавить еще страницы
 				index: './src/js/index.js',
-				// home: './src/js/home.js',
+
+				gsap: './src/js/modules/gsap/gsap.js',
 			},
 			output: {
 				filename: '[name].min.js',

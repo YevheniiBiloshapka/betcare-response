@@ -1,6 +1,6 @@
 .slot {
   &__container {
-    padding: 48px 20px;
+    padding: 48px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +25,7 @@
   @media screen and (min-width: 834px) {
 
     &__container {
-      padding: 64px 65px;
+      padding: 64px 0;
       gap: 32px;
 
       &--title {
@@ -66,6 +66,7 @@
 .slot-list-box {
   position: relative;
   display: grid;
+  padding: 0 20px;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   width: 100%;
@@ -94,9 +95,8 @@
   }
 
   &.active {
-    padding-top: 43px;
 
-    & .slot__card:not(.active) {
+    & .slot__card--wrapper:not(.active) {
       pointer-events: none;
       border: none;
       box-shadow: none;
@@ -106,37 +106,33 @@
       }
 
     }
-
-    & .slot-list-box--win-text {
-      display: inline;
-    }
-
     & .slot__cards-list:nth-child(odd), & .slot__cards-list:nth-child(1),& .slot__cards-list:nth-child(2),& .slot__cards-list:nth-child(3),& .slot__cards-list:nth-child(4),& .slot__cards-list:nth-child(5)     {
       margin-top: 0 !important;
+      transition: margin-top 2s ;
     }
   }
-  .slot__cards-list {
+
+  //other
+  & .slot__cards-list {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin-top: -52px;
-
+    //margin-top: -52px;
   }
   & .slot__cards-list:nth-child(3) {
     display: none;
-    margin-top: -10px;
+    //margin-top: -10px;
   }
-
   & .slot__cards-list:nth-child(4) {
     display: none;
   }
-
   & .slot__cards-list:nth-child(odd) {
     margin-top: 0;
   }
 
   @media screen and (min-width: 834px) {
     max-height: 708px;
+    padding: 0 65px;
     grid-template-columns: repeat(3, 1fr);
     gap: 20.96px;
     &:after, &:before {
@@ -144,24 +140,25 @@
     }
     & .slot__cards-list:nth-child(3) {
       display: flex;
-      margin-top: -147px;
+      //margin-top: -147px;
     }
     &.active {
       padding-top: 75px;
     }
     .slot__cards-list {
       gap: 20px;
-      margin-top: -93px;
+      //margin-top: -93px;
     }
 
 
     & .slot__cards-list:nth-child(5) {
-      margin-top: -98px;
+      //margin-top: -98px;
     }
 
   }
   @media screen and (min-width: 1180px) {
     padding: 0 68px;
+
   }
   @media screen and (min-width: 1280px) {
     grid-template-columns: repeat(4, 1fr);
@@ -174,16 +171,16 @@
     }
     .slot__cards-list {
       gap: 17.83px;
-      margin-top: 37px;
+      //margin-top: 37px;
     }
     & .slot__cards-list:nth-child(3) {
-      margin-top: -167px;
+      //margin-top: -167px;
     }
     & .slot__cards-list:nth-child(4) {
       display: flex;
     }
     & .slot__cards-list:nth-child(5) {
-      margin-top: -30px;
+      //margin-top: -30px;
     }
   }
   @media screen and (min-width: 1512px) {
@@ -200,53 +197,119 @@
       margin-top: 17px;
     }
     & .slot__cards-list:nth-child(3) {
-      margin-top: -47px;
+      //margin-top: -47px;
     }
     & .slot__cards-list:nth-child(5) {
-      margin-top: -73px;
+      //margin-top: -73px;
     }
   }
   @media screen and (min-width: 1712px) {
   max-height: 708px;
     .slot__cards-list {
       gap: 24px;
-      margin-top: 60px;
+      //margin-top: 60px;
     }
     & .slot__cards-list:nth-child(3) {
-      margin-top: -4px;
+      //margin-top: -4px;
     }
     & .slot__cards-list:nth-child(5) {
-      margin-top: -30px;
+      //margin-top: -30px;
     }
   }
 }
 
 .slot-list-box--win-text {
-  display: none;
+  display: inline-block;
+  opacity: 0;
+  visibility: hidden;
+
   position: absolute;
-  top: 122px;
+  z-index: -1;
+  top: 70px;
   left: 50%;
-  transform: translateX(-50%);
-  z-index: 50;
+  transform: translateX(-50%) scale(0.6);
+
   white-space: nowrap;
+
+  transition: opacity 0s ease-in, visibility 0s ease-in,transform 0s ease-in;
+
+  &.show {
+
+    opacity: 1;
+    visibility: visible;
+    z-index: 50;
+    transform: translateX(-50%) scale(1);
+    transition: opacity 0.3s ease-in, visibility 0.3s ease-in,transform 0.5s ease-in;
+  }
 
   color: #FFF;
   text-align: center;
 
-  @include font(24px, 600, 133.333%);
-  letter-spacing: 0.5px;
+  @include font-title(h2-mob);
+
   @media screen and (min-width: 834px) {
     top: 160px;
-    font-size: 44px;
-    line-height: 122.727%;
+    @include font-title(h2-lg);
+  }
+  @media screen and (min-width: 1180px) {
+    top: 160px;
   }
   @media screen and (min-width: 1280px) {
-    top: 150px;
-
+    top: 90px;
+  }
+  @media screen and (min-width: 1512px) {
+    top: 130px;
+  }
+  @media screen and (min-width: 1728px) {
+    top: 140px;
   }
 }
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.07);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.slot__card--wrapper{
 
+  &.active.showAnimation{
+    animation: scaleAnimation 0.8s ease forwards;
+  }
+  &.active{
 
+    & .slot__card {
+      z-index: 5;
+      border: 2px solid transparent;
+      background: linear-gradient(#1B1B1B, #1B1B1B) padding-box,
+      $gr-btn-1-stroke border-box;
+      box-shadow: 0 0 10.779px 0 rgba(228, 16, 135, 0.60), 0 0 26.947px 7.186px rgba(255, 145, 43, 0.20);
+
+      & .slot__card--cover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &:hover {
+    & .slot__card{
+      border: 1px solid transparent;
+      background: linear-gradient(#1B1B1B, #1B1B1B) padding-box,
+      $gr-btn-1-stroke border-box;
+
+      animation: rotateY 0.8s ease forwards;
+      &  .slot__card--box {
+
+        opacity: 1;
+      }
+    }
+  }
+
+}
 
 .slot__card {
   position: relative;
@@ -261,29 +324,9 @@
   border: 1px solid #575757;
   box-shadow: $shd-card;
 
-
-  &:hover {
-    border: 1px solid #FFBC3B;
-
-    & .slot__card--box {
-      opacity: 1;
-    }
-  }
-
-  &.active {
-    z-index: 5;
-    border: 2px solid transparent;
-    background: linear-gradient(#1B1B1B, #1B1B1B) padding-box,
-    linear-gradient(90deg, #FFBC3B 30.89%, #FF4F40 60.43%, #AE1D6E 89.96%) border-box;
-
-
-    box-shadow: 0 0 10.779px 0 rgba(228, 16, 135, 0.60), 0 0 26.947px 7.186px rgba(255, 145, 43, 0.20);
-
-    & .slot__card--cover {
-      opacity: 1;
-    }
-  }
-
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  animation: rotateYBack 0.8s ease forwards;
   &--cover {
     opacity: 0.7;
     width: 100%;
@@ -300,7 +343,6 @@
     z-index: 1;
 
     opacity: 0;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -336,6 +378,22 @@
     &--box {
       padding: 12px 12px 16px;
     }
+  }
+}
+@keyframes rotateYBack {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes rotateY {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
   }
 }
 
