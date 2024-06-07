@@ -92,8 +92,10 @@ function verticalLoop(list, speed) {
     }
 
     // Добавляем обработчики событий мыши
-    el.addEventListener("mouseenter", () => tl.timeScale(0));
-    el.addEventListener("mouseleave", () => tl.timeScale(1));
+    el.addEventListener("mouseenter", () =>
+      gsap.to(tl, 0.5, { timeScale: 0,duration:3, ease: "ease" })
+    );
+    el.addEventListener("mouseleave", () => gsap.to(tl, 0.5, { timeScale: 1,duration:3, ease: "ease" }));
 
 
     tl.to(el, {
