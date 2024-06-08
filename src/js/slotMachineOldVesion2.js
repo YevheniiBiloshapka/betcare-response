@@ -1,12 +1,12 @@
-import { getRandomCasinoData } from './slot/cardContentData.js'
-
+import { getRandomCasinoData } from './cardContentData.js'
 export const SlotMachine = () => {
   const button = document.getElementById('addActiveButton');
   const slotBox = document.querySelector('.slot-list-box');
   const slotList = document.querySelectorAll('.slot__cards-list')
   const slotListsArray = [...slotList];
   let speed = 150; // (in pixels per second)
-  let firstIteration = 1
+  let timers = [];
+
   // TODO: Create Scroll list time Line
   const timeLine = slotListsArray.map((list, index) => {
     const scrollDirection = index % 2 ? speed : -speed;
@@ -16,14 +16,16 @@ export const SlotMachine = () => {
 
   // Handle button click
   function handleButtonClick() {
-    firstIteration += 1
-    let delay = 1500;
     const title = document.querySelector('.slot-list-box--win-text')
+    // clear setTimeOut
+    timers.forEach(timerId => clearTimeout(timerId));
+    timers = []; // Reset timers
 
     // TODO: delete active classes
     deleteActiveClasses(title)
     // TODO: replace Content and change speed
-    timeLine.forEach((item, index) => {
+    timeLine.forEach((item,index) => {
+
       const currentList = slotList[index];
       const cardElements = currentList.querySelectorAll('.slot__card--wrapper');
       replaceContent(cardElements)
@@ -33,40 +35,35 @@ export const SlotMachine = () => {
       slotBox.classList.add('active')
     })
 
-    // TODO: остановка с задержкой
-
+    // TODO: stop with delay
     timeLine.forEach((item, index) => {
-      delay += 1000;
-
+      let delay = 1500 + 500 * index;
       const currentList = slotList[index];
       const cardElements = currentList.querySelectorAll('.slot__card--wrapper');
+      const timerId =setTimeout(() => {
+        cardElements.forEach((card, i) => {
 
-      cardElements.forEach((card, i) => {
-        setTimeout(() => {
           const dataAction = card.dataset.action;
           item.to(card, {
             timeScale: 0,
             duration: 1,
-            onComplete: () => {
-              item.pause()
-
-            }
+            onComplete: () => item.pause()
           });
-          if (dataAction === 'win') {
+          if (dataAction === 'win'){
             card.classList.add('active');
           }
           if (index + 1 === timeLine.length) {
             addActiveClass(title);
           }
-        }, delay);
-      });
+
+        });
+      }, delay);
+      timers.push(timerId);
     })
   }
-
   button.addEventListener('click', (event) => handleButtonClick(event));
 };
-
-// replace content function
+// TODO: replace content function
 function replaceContent(list) {
   list.forEach((card, i) => {
     // Заменяем информацию у первых трех блоков
@@ -87,8 +84,7 @@ function replaceContent(list) {
     }
   });
 }
-
-// delete active classes
+//TODO: delete active classes
 function deleteActiveClasses(title) {
   title.classList.remove('show')
   document.querySelectorAll('.slot__card--wrapper').forEach(i => {
@@ -98,7 +94,7 @@ function deleteActiveClasses(title) {
   document.querySelectorAll('.slot__cards-list').forEach(i => i.classList.remove("active"));
 }
 
-// add class to paused
+//TODO: add class to paused
 function addActiveClass(title) {
   title.classList.add('show');
   const activeCards = document.querySelectorAll('[data-action="win"]');
@@ -122,7 +118,9 @@ function verticalLoop(list, speed) {
   const minus = speed < 0 ? "+=" : "-=";
 
 
-  elements.forEach((el, i) => {
+
+
+  elements.forEach((el,i) => {
     const bounds = el.getBoundingClientRect();
     let ratio = Math.abs((bottom - bounds.top) / distance);
     if (speed < 0) {
@@ -131,9 +129,9 @@ function verticalLoop(list, speed) {
 
     // Добавляем обработчики событий мыши
     el.addEventListener("mouseenter", () =>
-      gsap.to(tl, 0.5, { timeScale: 0, duration: 3, ease: "ease" })
+      gsap.to(tl, 0.5, { timeScale: 0,duration:3, ease: "ease" })
     );
-    el.addEventListener("mouseleave", () => gsap.to(tl, 0.5, { timeScale: 1, duration: 3, ease: "ease" }));
+    el.addEventListener("mouseleave", () => gsap.to(tl, 0.5, { timeScale: 1,duration:3, ease: "ease" }));
 
 
     tl.to(el, {
@@ -154,22 +152,3 @@ function verticalLoop(list, speed) {
 
   return tl;
 }
-
-// <li data-action="0" className="slot__card--wrapper"
-//     style="translate: none; rotate: none; scale: none; transform: translate3d(0px, -875.918px, 0px);">
-//   <div className="slot__card">
-//     <img className="slot__card--cover" src="./img/slots/logo06.webp" alt="logo 6" />
-//
-//     <div className="slot__card--box">
-//       <div className="slot__card--box-info">
-//         <img className="slot__card--box-info--image" loading="lazy" src="./img/slots/logo06.webp" alt="logo 6" />
-//         <div className="slot__card--box-info--container">
-//           <p className="slot__card--box-info--container-rating">4.8</p>
-//           <p className="slot__card--box-info--container-name">Title Casino</p>
-//           <a className="slot__card--box-info--container-link" href="#">See review</a>
-//         </div>
-//       </div>
-//       <a className="slot__card--box--button" href="#">Play</a>
-//     </div>
-//   </div>
-// </li>

@@ -11,33 +11,40 @@ export const SlotMachine = () => {
   const timeLine = slotListsArray.map((list, index) => {
     const scrollDirection = index % 2 ? speed : -speed;
     return verticalLoop(list, scrollDirection);
-
   });
 
   // Handle button click
   function handleButtonClick() {
     const title = document.querySelector('.slot-list-box--win-text')
-    timers.forEach(timerId => {
-      clearTimeout(timerId);
-    });
+    // clear setTimeOut
+    timers.forEach(timerId => clearTimeout(timerId));
+    timers = []; // Reset timers
+
     // TODO: delete active classes
     deleteActiveClasses(title)
     // TODO: replace Content and change speed
     timeLine.forEach((item,index) => {
-
       const currentList = slotList[index];
       const cardElements = currentList.querySelectorAll('.slot__card--wrapper');
       replaceContent(cardElements)
-      item.timeScale(8);
-      item.restart()
-      item.resume()
+        gsap.to(item, {
+          timeScale: 8,
+          duration: 1,
+          onComplete: () => {
+            item.restart();
+            // item.resume();
+          }
+        });
+
+      // item.timeScale(8);
+      // item.restart()
+      // item.resume()
       slotBox.classList.add('active')
     })
 
     // TODO: stop with delay
-
     timeLine.forEach((item, index) => {
-      let delay = 1000 + 500 * index;
+      let delay = 1500 + 500 * index;
       const currentList = slotList[index];
       const cardElements = currentList.querySelectorAll('.slot__card--wrapper');
       const timerId =setTimeout(() => {
@@ -47,9 +54,7 @@ export const SlotMachine = () => {
         item.to(card, {
           timeScale: 0,
           duration: 1,
-          onComplete: () => {
-            item.pause()
-          }
+          onComplete: () => item.pause()
         });
         if (dataAction === 'win'){
           card.classList.add('active');
