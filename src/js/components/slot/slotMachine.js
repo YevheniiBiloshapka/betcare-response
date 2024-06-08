@@ -40,7 +40,6 @@ export const SlotMachine = () => {
       let delay = 1000 + 500 * index;
       const currentList = slotList[index];
       const cardElements = currentList.querySelectorAll('.slot__card--wrapper');
-      console.log(delay);
       const timerId =setTimeout(() => {
       cardElements.forEach((card, i) => {
 

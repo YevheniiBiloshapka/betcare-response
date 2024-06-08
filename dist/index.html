@@ -594,16 +594,38 @@
   function toggleModalMenu() {
     const burgerButton = document.querySelector('[data-action="openModal"]');
     const headerWrapper = document.querySelector('[data-action="header-wrapper"]');
+    const header = document.querySelector('header'); // Предполагается, что у вас есть элемент header
     const body = document.querySelector('body');
+
+    // Функция для получения ширины скроллбара
+    function getScrollbarWidth() {
+      const scrollDiv = document.createElement('div');
+      scrollDiv.style.width = '100px';
+      scrollDiv.style.height = '100px';
+      scrollDiv.style.overflow = 'scroll';
+      scrollDiv.style.position = 'absolute';
+      scrollDiv.style.top = '-9999px';
+      document.body.appendChild(scrollDiv);
+
+      const scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+      document.body.removeChild(scrollDiv);
+
+      return scrollbarWidth;
+    }
+
+    const scrollbarWidth = getScrollbarWidth();
 
     burgerButton.addEventListener('click', function() {
       headerWrapper.classList.toggle('show-modal');
-      body.classList.remove('modal-open');
       const isHiddenWrapper = headerWrapper.classList.contains('show-modal');
-      if (!isHiddenWrapper){
-        body.classList.remove('modal-open');
-      }else {
+
+      if (isHiddenWrapper) {
+        body.style.marginRight = `${scrollbarWidth }px`;
+
         body.classList.add('modal-open');
+      } else {
+        body.style.marginRight = '';
+        body.classList.remove('modal-open');
       }
     });
   }
