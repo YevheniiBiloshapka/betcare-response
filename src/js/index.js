@@ -1,4 +1,4 @@
-import { SlotMachine } from './components/slotMachine.js';
+import { SlotMachine } from './components/slot/slotMachine.js';
 
 document.addEventListener('DOMContentLoaded', function () {
   var galleryTop = new Swiper('.gallery-top', {

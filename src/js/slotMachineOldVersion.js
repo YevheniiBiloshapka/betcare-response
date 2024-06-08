@@ -13,47 +13,32 @@ export const SlotMachine = () => {
   });
 
   // Handle button click
-  function handleButtonClick(event) {
+  function handleButtonClick() {
     let delay = 1500;
     const title = document.querySelector('.slot-list-box--win-text')
     // delete active classes
-    title.classList.remove('show')
-    document.querySelectorAll('.slot__card--wrapper').forEach(i => {
-      i.style = '';
-      i.classList.remove('active');
-    });
-    document.querySelectorAll('.slot__cards-list').forEach(i => i.classList.remove("active"));
+    deleteActiveClasses(title)
+
     // возобновление со скоростью
     timeLine.forEach(item => {
       item.timeScale(8);
       item.resume();
+      slotBox.classList.add('active')
     })
     // TODO: остановка с задержкой
-    slotBox.classList.add('active')
     timeLine.forEach((item, index) => {
       delay += 1000;
 
       setTimeout(() => {
         const currentList = slotList[index];
         const cardElements = currentList.querySelectorAll('.slot__card--wrapper');
-        const randomIndex = Math.floor(Math.random() * cardElements.length);
-
-        currentList.classList.add('active')
-
+        const randomIndex = getRandomIndices(cardElements.length)
 
         cardElements.forEach((card, i) => {
           card.style = '';
-
-          if (i === randomIndex) {
-            card.style.order = 2;
-            card.classList.add('active');
-          } else if (i === 1) {
-            card.style.order = randomIndex + 1;
-          } else {
-            card.style.order = i + 1;
-            card.classList.remove('active');
-          }
+          addActiveClass(card,i,randomIndex.first,randomIndex.second)
         })
+
         item.pause();
 
 
@@ -71,7 +56,41 @@ export const SlotMachine = () => {
   button.addEventListener('click', (event) => handleButtonClick(event));
 };
 
+function deleteActiveClasses(title) {
+  title.classList.remove('show')
+  document.querySelectorAll('.slot__card--wrapper').forEach(i => {
+    i.style = '';
+    i.classList.remove('active');
+    i.classList.remove('showAnimation');
+  });
+  document.querySelectorAll('.slot__cards-list').forEach(i => i.classList.remove("active"));
+}
+// get random index
+function getRandomIndices(length) {
+  // Генерируем случайный индекс для элемента с order = 1, исключая первый элемент (индекс 0)
+  const first = Math.floor(Math.random() * (length - 1)) + 1;
 
+  // Генерируем случайный индекс для элемента с order = 2, исключая первый элемент (индекс 0) и randomIndex1
+  let second;
+  do {
+    second = Math.floor(Math.random() * (length - 1)) + 1;
+  } while (second === first);
+
+  return { first, second };
+}
+
+// add class to paused
+function addActiveClass(card,i,random1,random2,) {
+  if (i === random1) {
+    card.style.order = 1;
+  }else if (i === random2) {
+    card.style.order = 2;
+    card.classList.add('active');
+  }  else {
+    card.style.order = i + 10;
+    card.classList.remove('active');
+  }
+}
 //TODO: Vertical loop function
 function verticalLoop(list, speed) {
   let elements = Array.from(list.querySelectorAll(".slot__card--wrapper"));
