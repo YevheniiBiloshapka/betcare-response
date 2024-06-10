@@ -3973,12 +3973,30 @@ input:-webkit-autofill:focus {
   -webkit-animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
+.header .menu__buttons--talk {
+  z-index: 9999;
+}
+.header .header__menu {
+  z-index: 10000;
+}
+.header .menu__buttons--talk .menu__buttons--login, .header .menu__buttons--login {
+  z-index: 10000;
+}
+.header .menu__buttons--talk {
+  z-index: 9999;
+}
 .header.show-modal .header__menu-list {
   display: flex;
 }
 .header.show-modal .header__menu {
   transform: translateX(0);
   visibility: unset;
+}
+.header.show-modal .menu__buttons--login {
+  z-index: 10000;
+}
+.header.show-modal .menu__buttons--talk {
+  display: none;
 }
 .header.show-modal.scroll .menu__buttons--login, .header.show-modal .menu__buttons--login {
   display: flex;
@@ -4022,8 +4040,18 @@ input:-webkit-autofill:focus {
   .header {
     height: 80px;
   }
+  .header .header__menu {
+    z-index: 9996;
+  }
+  .header .menu__buttons--talk, .header .menu__buttons--deals, .header .menu__buttons--login {
+    z-index: 9995;
+  }
+  .header.show-modal .menu__buttons--talk {
+    display: flex;
+  }
   .header.show-modal.scroll .menu__buttons--login, .header.show-modal .menu__buttons--login {
-    display: none;
+    display: flex;
+    z-index: 9995;
   }
   .header.scroll .menu__buttons--talk {
     display: none;
@@ -4308,6 +4336,11 @@ input:-webkit-autofill:focus {
 }
 
 @media screen and (min-width: 1280px) {
+  .header .header__menu {
+    transform: translateY(-150vh);
+    visibility: unset;
+    transition: transform 0.6s ease-in-out;
+  }
   .header__container {
     padding: 24px 20px;
   }
@@ -4368,6 +4401,9 @@ input:-webkit-autofill:focus {
   .header.show-modal .menu-dropdown__link:hover {
     opacity: 0.6;
   }
+  .header.is-hidden .header__menu {
+    transition: unset;
+  }
   .header.scroll .menu__burger {
     display: none;
     visibility: hidden;
@@ -4386,6 +4422,8 @@ input:-webkit-autofill:focus {
     width: fit-content;
     height: fit-content;
     background: transparent;
+    z-index: 10001;
+    transform: unset;
   }
   .header.scroll .header__menu-list {
     display: flex;

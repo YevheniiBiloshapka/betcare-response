@@ -654,12 +654,20 @@
   function addScrollClass() {
     const header = document.querySelector('[data-action="header-wrapper"]');
     const heroSection = document.getElementById('hero');
+    const headerBlock = document.querySelector('.header');
     let lastScrollTop = 0;
 
     function handleScroll() {
       const heroRect = heroSection.getBoundingClientRect();
+      const heroBlockScroll = headerBlock.getBoundingClientRect();
       const heroBottom = heroRect.bottom + window.scrollY - 80;
+      const heroShow = heroBlockScroll.bottom + 10;
       const scrollTop = window.scrollY;
+      if (scrollTop > heroShow) {
+        header.classList.add('is-hidden');
+      } else {
+        header.classList.remove('is-hidden');
+      }
 
       if (scrollTop > heroBottom / 2) {
         header.style.zIndex = '9997';

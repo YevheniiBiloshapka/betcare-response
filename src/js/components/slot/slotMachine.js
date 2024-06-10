@@ -56,6 +56,7 @@ export const SlotMachine = () => {
           duration: 1,
           onComplete: () => item.pause()
         });
+
         if (dataAction === 'win'){
           card.classList.add('active');
         }
