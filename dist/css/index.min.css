@@ -2331,7 +2331,7 @@ input:-webkit-autofill:focus {
 .slot__card--wrapper:hover .slot__card {
   border: 1px solid transparent;
   background: linear-gradient(#1B1B1B, #1B1B1B) padding-box, linear-gradient(90deg, #FFB067 0.1%, #FF4F40 50%, #DB3278 99.9%) border-box;
-  animation: rotateY 0.8s ease forwards;
+  animation: rotateY 0.5s ease forwards;
 }
 .slot__card--wrapper:hover .slot__card .slot__card--box {
   opacity: 1;
@@ -2347,8 +2347,8 @@ input:-webkit-autofill:focus {
   border: 1px solid #575757;
   box-shadow: 3px 5px 15px 0px rgba(91, 7, 48, 0.4);
   transform-style: preserve-3d;
-  transition: transform 2s ease;
-  animation: rotateYBack 0.8s ease forwards;
+  transition: transform 0.9s ease;
+  animation: rotateYBack 2s ease forwards;
 }
 .slot__card--cover {
   opacity: 0.7;

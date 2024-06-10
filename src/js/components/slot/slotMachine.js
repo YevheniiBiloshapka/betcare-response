@@ -4,7 +4,7 @@ export const SlotMachine = () => {
   const slotBox = document.querySelector('.slot-list-box');
   const slotList = document.querySelectorAll('.slot__cards-list')
   const slotListsArray = [...slotList];
-  let speed = 150; // (in pixels per second)
+  let speed = 70; // (in pixels per second)
   let timers = [];
 
   // TODO: Create Scroll list time Line
@@ -28,7 +28,7 @@ export const SlotMachine = () => {
       const cardElements = currentList.querySelectorAll('.slot__card--wrapper');
       replaceContent(cardElements)
         gsap.to(item, {
-          timeScale: 8,
+          timeScale: 16,
           duration: 1,
           onComplete: () => {
             item.restart();
@@ -44,10 +44,10 @@ export const SlotMachine = () => {
 
     // TODO: stop with delay
     timeLine.forEach((item, index) => {
-      let delay = 1500 + 500 * index;
+      let delay = 2000 + 1000 ;
       const currentList = slotList[index];
       const cardElements = currentList.querySelectorAll('.slot__card--wrapper');
-      const timerId =setTimeout(() => {
+      const timerId = setTimeout(() => {
       cardElements.forEach((card, i) => {
 
         const dataAction = card.dataset.action;
@@ -125,9 +125,20 @@ function verticalLoop(list, speed) {
   const plus = speed < 0 ? "-=" : "+=";
   const minus = speed < 0 ? "+=" : "-=";
 
+  // Добавляем обработчики событий мыши
+  list.addEventListener("mouseenter", () =>
+    gsap.to(tl, 0.5, { timeScale: 0,duration:3, ease: "ease" })
+  );
+  list.addEventListener("mouseleave", () => gsap.to(tl, 0.5, { timeScale: 1,duration:3, ease: "ease" }));
 
-
-
+  // Draggable.create(list, {
+  //   type: "y",
+  //   bounds: list.parentNode,
+  //   edgeResistance: 0.65,
+  //   throwProps: true,
+  //   onDrag: updateProgress,
+  //   onThrowUpdate: updateProgress,
+  // });
   elements.forEach((el,i) => {
     const bounds = el.getBoundingClientRect();
     let ratio = Math.abs((bottom - bounds.top) / distance);
@@ -135,11 +146,7 @@ function verticalLoop(list, speed) {
       ratio = 1 - ratio;
     }
 
-    // Добавляем обработчики событий мыши
-    el.addEventListener("mouseenter", () =>
-      gsap.to(tl, 0.5, { timeScale: 0,duration:3, ease: "ease" })
-    );
-    el.addEventListener("mouseleave", () => gsap.to(tl, 0.5, { timeScale: 1,duration:3, ease: "ease" }));
+
 
 
     tl.to(el, {

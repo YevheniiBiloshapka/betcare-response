@@ -301,7 +301,7 @@
       background: linear-gradient(#1B1B1B, #1B1B1B) padding-box,
       $gr-btn-1-stroke border-box;
 
-      animation: rotateY 0.8s ease forwards;
+      animation: rotateY 0.5s ease forwards;
       &  .slot__card--box {
 
         opacity: 1;
@@ -325,8 +325,8 @@
   box-shadow: $shd-card;
 
   transform-style: preserve-3d;
-  transition: transform 2s ease;
-  animation: rotateYBack 0.8s ease forwards;
+  transition: transform .9s ease;
+  animation: rotateYBack 2s ease forwards;
   &--cover {
     opacity: 0.7;
     width: 100%;
