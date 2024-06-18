@@ -2067,6 +2067,17 @@ input:-webkit-autofill:focus {
   }
 }
 
+.fwc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.fwc canvas {
+  height: 100%;
+}
+
 .slot__container {
   padding: 48px 0;
   display: flex;
@@ -3325,7 +3336,8 @@ input:-webkit-autofill:focus {
 }
 @media screen and (min-width: 1180px) {
   .cards {
-    background-image: url("../img/cards/svgBg/1180_cardBg.svg");
+    background-image: -webkit-image-set(url(../img/cards/1180_cardBg.png) 1x, url(../img/cards/1180_cardBg@2x.png) 2x, url(../img/cards/1180_cardBg@3x.png) 3x);
+    background-image: image-set(url(../img/cards/1180_cardBg.png) 1x, url(../img/cards/1180_cardBg@2x.png) 2x, url(../img/cards/1180_cardBg@3x.png) 3x);
   }
   .cards__container {
     padding: 64px 140px;

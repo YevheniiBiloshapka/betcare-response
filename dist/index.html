@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/index.min.css">
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-		/>
-	<!--		gsap-->
-		<title>Главная</title>
-	</head>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/index.min.css">
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+	/>
+	<title>Главная</title>
+</head>
 
-	<body>
-		<header class="header " data-action="header-wrapper">
+<body>
+<header class="header " data-action="header-wrapper">
   <div class="header__container container">
     <a href="#" class="header__logo">
       <svg xmlns="http://www.w3.org/2000/svg" width="235" height="48" viewBox="0 0 235 48" fill="none">
@@ -695,8 +694,8 @@
     addScrollClass()
   });
 </script>
-		<main>
-			<section class="hero" id="hero">
+<main>
+	<section class="hero" id="hero">
   <div class="swiper heroPageSwiper">
     <ul class="swiper-wrapper">
       <!--      slide 1-->
@@ -807,7 +806,7 @@
 </section>
 
 
-			<section id="services" class="services">
+	<section id="services" class="services">
   <div class="container"> <!--  TODO: Phone-->
     <div class="styled-gallery-top">
       <picture class="styled-gallery-top--phone" >
@@ -966,7 +965,7 @@
 </section>
 
 
-			<section class="vip">
+	<section class="vip">
   <div class="vip__container container">
     <div class="vip__content info">
       <div class="vip__content-text">
@@ -1002,12 +1001,14 @@
     </ul>
   </div>
 </section>
-			<section class="slot">
+	<section class="slot">
   <div class="container slot__container">
     <h2 class="slot__container--title">We ensure your needs<br/> are met, so you can<br/> <span>focus on the winning.</span></h2>
     <div class="slot-list-box ">
+      <div class="fwc">
+      </div>
       <p class="slot-list-box--win-text">Your lucky picks:</p>
-      <ul id="list1" class="slot__cards-list ">
+      <ul id="list1" class="slot__cards-list list-1">
         <li data-action="0" class="slot__card--wrapper">
           <div class="slot__card">
             <img class="slot__card--cover" src="./img/slots/logo10.webp" alt="logo 10">
@@ -1720,7 +1721,7 @@
 
 
 
-			<section class="reward">
+	<section class="reward">
   <div class="reward__container container">
     <ul class=" reward-block">
       <li class="reward-block__item">
@@ -1779,7 +1780,7 @@
     </div>
   </div>
 </section>
-			<section class="cards">
+	<section class="cards">
   <div class="cards__container container">
     <h2 class="cards__title">
       Become one of the 100 first <br /> customers with <span>free access.</span>
@@ -1835,7 +1836,7 @@
 
   </div>
 </section>
-			<section class="features">
+	<section class="features">
   <div class="features__container container">
     <h2 class="features__title">
       All features <span>at one touch</span>
@@ -1874,7 +1875,7 @@
     </div>
   </div>
 </section>
-			<section class="faq">
+	<section class="faq">
   <div class="faq__container container">
     <h2 class="faq__title">Got questions?<br/> <span class="faq__sub-title">We’ve got answers!</span></h2>
     <ul class="accordion faq__container--accordion">
@@ -2033,8 +2034,8 @@
 
 
 </script>
-		</main>
-				<footer class="footer">
+</main>
+<footer class="footer">
   <div class="footer__container container">
     <nav class="footer__top-block">
       <ul class="footer__socials" aria-label="social links">
@@ -2107,14 +2108,16 @@
     </div>
   </div>
 </footer>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>-->
 
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ThrowPropsPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-		<script src="js/index.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+<script src="js/index.min.js"></script>
 
-		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-	</body>
+</body>
 </html>

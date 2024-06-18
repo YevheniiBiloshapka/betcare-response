@@ -1,9 +1,20 @@
-import { getRandomCasinoData } from './cardContentData.js'
+import { getRandomCasinoData } from './cardContentData.js';
+import { Fireworks } from 'fireworks-js';
+
+const container = document.querySelector('.fwc ')
+const fireworks = new Fireworks(container, { /* options */ })
+
+let rolling = false;
+let current = 0;
+document.querySelectorAll('.slot__cards-list').forEach((el) => {
+  isElementDisplayNone(el) === true ? el.classList.add('hidden') : '';
+});
+const slotList = document.querySelectorAll('.slot__cards-list:not(.hidden)');
+const slotListsArray = [...slotList];
+
 export const SlotMachine = () => {
   const button = document.getElementById('addActiveButton');
   const slotBox = document.querySelector('.slot-list-box');
-  const slotList = document.querySelectorAll('.slot__cards-list')
-  const slotListsArray = [...slotList];
   let speed = 70; // (in pixels per second)
   let timers = [];
 
@@ -13,64 +24,102 @@ export const SlotMachine = () => {
     return verticalLoop(list, scrollDirection);
   });
 
-  // Handle button click
+  function reset() {
+    fireworks.stop();
+    rolling = false;
+    current = 0;
+    document.querySelectorAll('[data-action="win"]').forEach((el) => {
+      el.classList.remove('active');
+      el.setAttribute('data-action', 0);
+    });
+    document.querySelector('.slot-list-box').classList.add('active');
+    const title = document.querySelector('.slot-list-box--win-text');
+    title.classList.remove('show');
+    slotList.forEach((list) => {
+      const newWin = getRandomChildElement(list);
+      newWin.setAttribute('data-action', 'win');
+    });
+  }
+
+  function getRandomChildElement(parentElement) {
+    let children = parentElement.children; // Get all child elements
+    let randomIndex = Math.floor(Math.random() * children.length); // Generate a random index
+    return children[randomIndex]; // Return the random child element
+  }
+
   function handleButtonClick() {
-    const title = document.querySelector('.slot-list-box--win-text')
+    reset();
+
+    timeLine.forEach((tl, index) => {
+      tl.resume();
+      const delay = index + 2;
+      tl.timeScale(16);
+
+      gsap.delayedCall(delay, () => {
+        tl.timeScale(7);
+        rolling = true;
+      });
+    });
+  }
+
+  function handleButtonClickBackup() {
+    const title = document.querySelector('.slot-list-box--win-text');
     // clear setTimeOut
     timers.forEach(timerId => clearTimeout(timerId));
     timers = []; // Reset timers
 
     // TODO: delete active classes
-    deleteActiveClasses(title)
+    deleteActiveClasses(title);
     // TODO: replace Content and change speed
-    timeLine.forEach((item,index) => {
+    timeLine.forEach((item, index) => {
       const currentList = slotList[index];
       const cardElements = currentList.querySelectorAll('.slot__card--wrapper');
-      replaceContent(cardElements)
-        gsap.to(item, {
-          timeScale: 16,
-          duration: 1,
-          onComplete: () => {
-            item.restart();
-            // item.resume();
-          }
-        });
+      replaceContent(cardElements);
+      gsap.to(item, {
+        timeScale: 16,
+        duration: 1,
+        onComplete: () => {
+          item.restart();
+          // item.resume();
+        },
+      });
 
       // item.timeScale(8);
       // item.restart()
       // item.resume()
-      slotBox.classList.add('active')
-    })
+      slotBox.classList.add('active');
+    });
 
     // TODO: stop with delay
     timeLine.forEach((item, index) => {
-      let delay = 2000 + 1000 ;
+      let delay = 0;
       const currentList = slotList[index];
       const cardElements = currentList.querySelectorAll('.slot__card--wrapper');
       const timerId = setTimeout(() => {
-      cardElements.forEach((card, i) => {
+        cardElements.forEach((card, i) => {
+          const dataAction = card.dataset.action;
+          item.to(card, {
+            timeScale: 0,
+            duration: 1,
+            onComplete: () => item.pause(),
+          });
 
-        const dataAction = card.dataset.action;
-        item.to(card, {
-          timeScale: 0,
-          duration: 1,
-          onComplete: () => item.pause()
+          if (dataAction === 'win') {
+            card.classList.add('active');
+          }
+          if (index + 1 === timeLine.length) {
+            addActiveClass(title);
+          }
+
         });
-
-        if (dataAction === 'win'){
-          card.classList.add('active');
-        }
-        if (index + 1 === timeLine.length) {
-          addActiveClass(title);
-        }
-
-      });
       }, delay);
       timers.push(timerId);
-    })
+    });
   }
+
   button.addEventListener('click', (event) => handleButtonClick(event));
 };
+
 // TODO: replace content function
 function replaceContent(list) {
   list.forEach((card, i) => {
@@ -92,14 +141,15 @@ function replaceContent(list) {
     }
   });
 }
+
 //TODO: delete active classes
 function deleteActiveClasses(title) {
-  title.classList.remove('show')
+  title.classList.remove('show');
   document.querySelectorAll('.slot__card--wrapper').forEach(i => {
     i.classList.remove('active');
     i.classList.remove('showAnimation');
   });
-  document.querySelectorAll('.slot__cards-list').forEach(i => i.classList.remove("active"));
+  document.querySelectorAll('.slot__cards-list').forEach(i => i.classList.remove('active'));
 }
 
 //TODO: add class to paused
@@ -114,56 +164,158 @@ function addActiveClass(title) {
 
 //TODO: Vertical loop function
 function verticalLoop(list, speed) {
-  let elements = Array.from(list.querySelectorAll(".slot__card--wrapper"));
+  const tl = gsap.timeline({ repeat: -1 });
+  dragObserver(list, tl);
+  scrollObserver(list, tl);
+  marquee(speed, list, tl);
+
+  return tl;
+}
+
+
+function dragObserver(list, tl) {
+  list.querySelectorAll('.slot__card--wrapper').forEach((el) => {
+    el.addEventListener('mousedown', function() {
+      tl.pause();
+    });
+
+    el.addEventListener('mouseup', function() {
+      tl.play();
+    });
+  });
+}
+
+function marquee(speed, list, tl) {
+  let elements = Array.from(list.querySelectorAll('.slot__card--wrapper'));
   const firstBounds = elements[0].getBoundingClientRect();
   const lastBounds = elements[elements.length - 1].getBoundingClientRect();
   const top = firstBounds.top - firstBounds.height - Math.abs(elements[1].getBoundingClientRect().top - firstBounds.bottom);
   const bottom = lastBounds.top;
   const distance = bottom - top;
   const duration = Math.abs(distance / speed);
-  const tl = gsap.timeline({ repeat: -1 });
-  const plus = speed < 0 ? "-=" : "+=";
-  const minus = speed < 0 ? "+=" : "-=";
+  const plus = speed < 0 ? '-=' : '+=';
+  const minus = speed < 0 ? '+=' : '-=';
 
-  // Добавляем обработчики событий мыши
-  list.addEventListener("mouseenter", () =>
-    gsap.to(tl, 0.5, { timeScale: 0,duration:3, ease: "ease" })
-  );
-  list.addEventListener("mouseleave", () => gsap.to(tl, 0.5, { timeScale: 1,duration:3, ease: "ease" }));
-
-  // Draggable.create(list, {
-  //   type: "y",
-  //   bounds: list.parentNode,
-  //   edgeResistance: 0.65,
-  //   throwProps: true,
-  //   onDrag: updateProgress,
-  //   onThrowUpdate: updateProgress,
-  // });
-  elements.forEach((el,i) => {
+  elements.forEach((el, i) => {
     const bounds = el.getBoundingClientRect();
     let ratio = Math.abs((bottom - bounds.top) / distance);
     if (speed < 0) {
       ratio = 1 - ratio;
     }
 
-
-
-
     tl.to(el, {
       y: plus + distance * ratio,
       duration: duration * ratio,
-      ease: "none"
+      ease: 'none',
+      roundProps: { y: 1 },
     }, 0);
 
     tl.fromTo(el, {
-      y: minus + distance
+      y: minus + distance,
     }, {
       y: plus + (1 - ratio) * distance,
-      ease: "none",
+      ease: 'none',
       duration: (1 - ratio) * duration,
-      immediateRender: false
+      immediateRender: false,
+      roundProps: { y: 1 },
+      onUpdate: function() {
+        checkWinPosition(tl, speed);
+      },
     }, duration * ratio);
   });
 
-  return tl;
+
+  function checkWinPosition(tl, speed) {
+    const winElement = list.querySelector('[data-action="win"]');
+    if (winElement) {
+      const index = slotListsArray.indexOf(list);
+      const elPos = getOffsetFromMiddleToParentTop(winElement);
+      const pxOff = speed > 0 ? 60 : -60;
+      const diff = pxOff > 0 ? elPos > pxOff : elPos < pxOff;
+
+      if (index === current) {
+        if (rolling === true && diff) {
+          tl.timeScale(10);
+        }
+
+        if (rolling === true && (elPos > -3 && elPos < 3)) {
+          tl.pause(); // Pause the timeline
+          winElement.classList.add('active');
+          current++;
+
+          if (current === slotList.length) {
+            const title = document.querySelector('.slot-list-box--win-text');
+            setTimeout(function() {
+              title.classList.add('show');
+              fireworks.start()
+            }, 1000);
+          }
+        }
+      }
+    }
+  }
+}
+
+function scrollObserver(list, tl) {
+  let isScrolling = false;
+
+  function updateAnimationSpeed(scrollSpeed) {
+    const speedMultiplier = 1 + Math.abs(scrollSpeed); // Adjust multiplier based on scroll speed
+    gsap.to(tl, 0.5, { timeScale: speedMultiplier, duration: 3, ease: 'ease' });
+  }
+
+// Add event listener for mouseenter
+  list.addEventListener('mouseenter', () => {
+    isScrolling = true; // Set scrolling flag to true when mouse enters
+    window.addEventListener('wheel', scrollHandler, { passive: false }); // Add scroll event listener
+  });
+
+// Add event listener for mouseleave
+  list.addEventListener('mouseleave', () => {
+    isScrolling = false; // Reset scrolling flag to false when mouse leaves
+    window.removeEventListener('wheel', scrollHandler); // Remove scroll event listener
+    gsap.to(tl, 0.5, { timeScale: 1, duration: 3, ease: 'ease' });
+  });
+
+// Scroll event handler
+  function scrollHandler(event) {
+    event.preventDefault(); // Prevent default scroll behavior
+    const scrollSpeed = event.deltaY; // Get scroll speed
+    console.log(scrollSpeed);
+    updateAnimationSpeed(scrollSpeed); // Update animation speed based on scroll speed
+  }
+}
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function getOffsetFromMiddleToParentTop(element) {
+  const parent = element.parentElement;
+  const containerHalfHeight = document.querySelector('.slot-list-box').getBoundingClientRect().height / 2;
+
+  // Get the bounding rectangle of the element and the parent
+  const elementRect = element.getBoundingClientRect();
+  const parentRect = parent.getBoundingClientRect();
+
+  // Calculate the middle point of the element
+  const elementMiddleY = elementRect.top + (elementRect.height / 2);
+
+  // Calculate the top offset of the parent container relative to the viewport
+  const parentTop = parentRect.top;
+
+  // Calculate the offset from the middle of the element to the top of the parent container
+  const offset = elementMiddleY - parentTop;
+
+  return Math.round(offset) - containerHalfHeight;
+}
+
+function isElementDisplayNone(el) {
+  // Get the computed style of the element
+  const computedStyle = window.getComputedStyle(el);
+
+  // Check if the display property is 'none'
+  return computedStyle.display === 'none';
 }

@@ -14,6 +14,7 @@
 	"author": "FLS",
 	"license": "ISC",
 	"dependencies": {
+		"fireworks-js": "^2.10.7",
 		"gulp-cli": "^2.3.0"
 	},
 	"devDependencies": {

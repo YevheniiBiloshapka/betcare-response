@@ -48,9 +48,8 @@
     }
   }
   @media screen and (min-width: 1180px) {
+    @include retina-bg("../img/cards/1180_cardBg.png","../img/cards/1180_cardBg@2x.png","../img/cards/1180_cardBg@3x.png");
 
-    background-image: url("../img/cards/svgBg/1180_cardBg.svg");
-    //@include retina-bg("../img/cards/1180_cardBg.png","../img/cards/1180_cardBg@2x.png","../img/cards/1180_cardBg@3x.png");
     &__container {
       padding:64px 140px ;
       gap:100px;
