@@ -238,7 +238,7 @@
 
   position: absolute;
   z-index: -1;
-  top: 70px;
+  top: 120px;
   left: 50%;
   transform: translateX(-50%) scale(0.6);
 
@@ -261,20 +261,20 @@
   @include font-title(h2-mob);
 
   @media screen and (min-width: 834px) {
-    top: 160px;
+    top: 240px;
     @include font-title(h2-lg);
   }
   @media screen and (min-width: 1180px) {
     top: 160px;
   }
   @media screen and (min-width: 1280px) {
-    top: 90px;
+    top: 155px;
   }
   @media screen and (min-width: 1512px) {
-    top: 130px;
+    top: 155px;
   }
   @media screen and (min-width: 1728px) {
-    top: 140px;
+    top: 200px;
   }
 }
 @keyframes scaleAnimation {
