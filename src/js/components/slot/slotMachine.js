@@ -1,8 +1,8 @@
 import { getRandomCasinoData } from './cardContentData.js';
 import { Fireworks } from 'fireworks-js';
 
-const container = document.querySelector('.fwc ')
-const fireworks = new Fireworks(container, { /* options */ })
+const container = document.querySelector('.fwc ');
+const fireworks = new Fireworks(container, { /* options */ });
 
 let rolling = false;
 let current = 0;
@@ -44,11 +44,18 @@ export const SlotMachine = () => {
   function getRandomChildElement(parentElement) {
     let children = parentElement.children; // Get all child elements
     let randomIndex = Math.floor(Math.random() * children.length); // Generate a random index
-    return children[randomIndex]; // Return the random child element
+    const randomChild = children[randomIndex];
+
+    if(pointReached(randomChild) < 600 && pointReached(randomChild) > -600){
+      return  getRandomChildElement(parentElement);
+    }
+
+    return randomChild; // Return the random child element
   }
 
   function handleButtonClick() {
     reset();
+    current = 0;
 
     timeLine.forEach((tl, index) => {
       tl.resume();
@@ -56,7 +63,6 @@ export const SlotMachine = () => {
       tl.timeScale(16);
 
       gsap.delayedCall(delay, () => {
-        tl.timeScale(7);
         rolling = true;
       });
     });
@@ -229,31 +235,71 @@ function marquee(speed, list, tl) {
     const winElement = list.querySelector('[data-action="win"]');
     if (winElement) {
       const index = slotListsArray.indexOf(list);
-      const elPos = getOffsetFromMiddleToParentTop(winElement);
-      const pxOff = speed > 0 ? 60 : -60;
-      const diff = pxOff > 0 ? elPos > pxOff : elPos < pxOff;
 
       if (index === current) {
-        if (rolling === true && diff) {
-          tl.timeScale(10);
+        if (speed < 0) {
+          const offsetFromMiddle = ofTopMiddle(winElement);
+
+          if (offsetFromMiddle > -30 && offsetFromMiddle < 0) {
+            tl.timeScale(1);
+          }
+        } else if (speed > 0) {
+          const offsetFromMiddle = ofBottomMiddle(winElement);
+
+          if (offsetFromMiddle < 30 && offsetFromMiddle > 0) {
+            tl.timeScale(1);
+          }
         }
 
-        if (rolling === true && (elPos > -3 && elPos < 3)) {
-          tl.pause(); // Pause the timeline
+        const reached = pointReached(winElement);
+        if (reached < 1 && reached > -1) {
+          tl.pause();
           winElement.classList.add('active');
           current++;
 
           if (current === slotList.length) {
             const title = document.querySelector('.slot-list-box--win-text');
-            setTimeout(function() {
-              title.classList.add('show');
-              fireworks.start()
-            }, 1000);
+            title.classList.add('show');
+            fireworks.start();
           }
         }
+
+        // if (rolling === true && diff) {
+        //   tl.timeScale(1);
+        // }
+
+        // if (rolling === true && (elPos > -2 && elPos < 2)) {
+        //   tl.pause(); // Pause the timeline
+        //   winElement.classList.add('active');
+        //   current++;
+        //
+        //   if (current === slotList.length) {
+        //     const title = document.querySelector('.slot-list-box--win-text');
+        //     setTimeout(function() {
+        //       title.classList.add('show');
+        //       fireworks.start()
+        //     }, 1000);
+        //   }
+        // }
       }
     }
   }
+}
+
+function ofTopMiddle(el) {
+  const elOffset = (el.getBoundingClientRect().top + document.documentElement.scrollTop).toFixed(0);
+  const container = document.querySelector('.slot-list-box');
+  const containerMiddleOffset = (container.getBoundingClientRect().top + document.documentElement.scrollTop + (container.getBoundingClientRect().height / 2)).toFixed(0);
+
+  return elOffset - containerMiddleOffset;
+}
+
+function ofBottomMiddle(el) {
+  const elOffset = (el.getBoundingClientRect().bottom + document.documentElement.scrollTop).toFixed(0);
+  const container = document.querySelector('.slot-list-box');
+  const containerMiddleOffset = (container.getBoundingClientRect().top + document.documentElement.scrollTop + (container.getBoundingClientRect().height / 2)).toFixed(0);
+
+  return elOffset - containerMiddleOffset;
 }
 
 function scrollObserver(list, tl) {
@@ -292,24 +338,12 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function getOffsetFromMiddleToParentTop(element) {
-  const parent = element.parentElement;
-  const containerHalfHeight = document.querySelector('.slot-list-box').getBoundingClientRect().height / 2;
+function pointReached(el) {
+  const elOffset = ((el.getBoundingClientRect().top + document.documentElement.scrollTop) + (el.getBoundingClientRect().height / 2));
+  const container = document.querySelector('.slot-list-box');
+  const containerMiddleOffset = (container.getBoundingClientRect().top + document.documentElement.scrollTop + (container.getBoundingClientRect().height / 2));
 
-  // Get the bounding rectangle of the element and the parent
-  const elementRect = element.getBoundingClientRect();
-  const parentRect = parent.getBoundingClientRect();
-
-  // Calculate the middle point of the element
-  const elementMiddleY = elementRect.top + (elementRect.height / 2);
-
-  // Calculate the top offset of the parent container relative to the viewport
-  const parentTop = parentRect.top;
-
-  // Calculate the offset from the middle of the element to the top of the parent container
-  const offset = elementMiddleY - parentTop;
-
-  return Math.round(offset) - containerHalfHeight;
+  return elOffset - containerMiddleOffset;
 }
 
 function isElementDisplayNone(el) {
