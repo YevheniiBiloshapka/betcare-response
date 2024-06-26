@@ -30,6 +30,7 @@ export const SlotMachine = () => {
     current = 0;
     document.querySelectorAll('[data-action="win"]').forEach((el) => {
       el.classList.remove('active');
+      el.classList.remove('active-win');
       el.setAttribute('data-action', 0);
     });
     document.querySelector('.slot-list-box').classList.add('active');
@@ -353,3 +354,11 @@ function isElementDisplayNone(el) {
   // Check if the display property is 'none'
   return computedStyle.display === 'none';
 }
+
+document.querySelectorAll('.slot__card--wrapper').forEach((el) => {
+    el.addEventListener('mouseover', function() {
+      if(document.querySelector('.slot-list-box').classList.contains('active')){
+        el.classList.add('active-win');
+      }
+    })
+})

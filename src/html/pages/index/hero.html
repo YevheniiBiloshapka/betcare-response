@@ -1,110 +1,171 @@
 <section class="hero" id="hero">
-  <div class="swiper heroPageSwiper">
-    <ul class="swiper-wrapper">
-      <!--      slide 1-->
-      <li class="swiper-slide hero__slide red">
-        <div class="hero__slide red">
-          <picture class="hero__slide-img ">
-            <source   media="(min-width: 1728px)" srcset="./img/hero/red1728.png 1x, ./img/hero/red1728@2x.png 2x,./img/hero/red1728@3x.png 3x"  >
-            <source   media="(min-width: 1512px)" srcset="./img/hero/red1512.png 1x, ./img/hero/red1512@2x.png 2x, ./img/hero/red1512@3x.png 3x"  >
-            <source   media="(min-width: 1280px)"  srcset="./img/hero/red1280.png 1x,./img/hero/red1280@2x.png 2x,./img/hero/red1280@3x.png 3x" >
-            <source   media="(min-width: 1180px)" srcset="./img/hero/red1180.png 1x,./img/hero/red1180@2x.png 2x,./img/hero/red1180@3x.png 3x"  >
-            <source   media="(min-width: 834px)"  srcset="./img/hero/red834.png 1x,./img/hero/red834@2x.png 2x,./img/hero/red834@3x.png 3x" >
-            <source   media="(min-width: 375px)" srcset="./img/hero/red375.png 1x,./img/hero/red375@2x.png 2x,./img/hero/red375@3x.png 3x"  >
-            <img class="hero__slide-img " src="./img/hero/red375.png" srcset="./img/hero/red375.png 1x,./img/hero/red375@2x.png 2x,./img/hero/red375@3x.png 3x"   alt="first image">
-          </picture>
+  <div>
+    <picture class="hero__slide-img active red ">
+      <source media="(min-width: 1728px)" srcset="
+              ./img/hero/red1728.png 1x,
+              ./img/hero/red1728@2x.png 2x,
+              ./img/hero/red1728@3x.png 3x
+            ">
+      <source media="(min-width: 1512px)" srcset="
+              ./img/hero/red1512.png 1x,
+              ./img/hero/red1512@2x.png 2x,
+              ./img/hero/red1512@3x.png 3x
+            ">
+      <source media="(min-width: 1280px)" srcset="
+              ./img/hero/red1280.png 1x,
+              ./img/hero/red1280@2x.png 2x,
+              ./img/hero/red1280@3x.png 3x
+            ">
+      <source media="(min-width: 1180px)"
+              srcset="./img/hero/red1180.png 1x,./img/hero/red1180@2x.png 2x,./img/hero/red1180@3x.png 3x">
+      <source media="(min-width: 834px)"
+              srcset="./img/hero/red834.png 1x,./img/hero/red834@2x.png 2x,./img/hero/red834@3x.png 3x">
+      <source media="(min-width: 375px)"
+              srcset="./img/hero/red375.png 1x,./img/hero/red375@2x.png 2x,./img/hero/red375@3x.png 3x">
+      <img class="hero__slide-img " src="./img/hero/red375.png"
+           srcset="./img/hero/red375.png 1x,./img/hero/red375@2x.png 2x,./img/hero/red375@3x.png 3x" alt="first image">
+    </picture>
 
-          <div class="hero__info-box">
-            <h1 class="hero__info-box--title">We care.<br class="hero__info-box--title-first" /> You win.<br /><span>Personal<br class="span-br" /> VIP Concierge 24/7</span>
-            </h1>
-            <a href="#" class="hero__info-box--button button red"><span>Let’s talk!</span></a>
-          </div>
+    <picture class="hero__slide-img next purple">
+      <source srcset="./img/hero/purple1728.png 1x,./img/hero/purple1728@2x.png 2x,./img/hero/purple1728@3x.png 3x"
+              media="(min-width: 1728px)">
+      <source srcset="./img/hero/purple1512.png 1x, ./img/hero/purple1512@2x.png 2x,./img/hero/purple1512@3x.png 3x"
+              media="(min-width: 1512px)">
+      <source srcset="./img/hero/purple1280.png 1x, ./img/hero/purple1280@2x.png 2x,./img/hero/purple1280@3x.png 3x"
+              media="(min-width: 1280px)">
+      <source srcset="./img/hero/purple1180.png 1x, ./img/hero/purple1180@2x.png 2x,./img/hero/purple1180@3x.png 3x"
+              media="(min-width: 1180px)">
+      <source srcset="./img/hero/purple834.png 1x, ./img/hero/purple834@2x.png 2x, ./img/hero/purple834@3x.png 3x"
+              media="(min-width: 834px)">
+      <source srcset="./img/hero/purple375.png 1x,./img/hero/purple375@2x.png 2x,./img/hero/purple375@3x.png 3x"
+              media="(min-width: 375px)">
+      <img class="hero__slide-img " src="./img/hero/purple1728.png"
+           srcset="./img/hero/purple375.png 1x,./img/hero/purple375@2x.png 2x,./img/hero/purple375@3x.png 3x"
+           alt="second image">
+    </picture>
 
-          <div class="hero__scroll-button">
-            <p>Scroll</p>
-            <a class="hero__scroll-button-link" href="#services"><span></span></a>
-          </div>
+    <picture class="hero__slide-img orange">
+      <source srcset="./img/hero/orange1728.png 1x,./img/hero/orange1728@2x.png 2x,./img/hero/orange1728@3x.png 3x"
+              media="(min-width: 1728px)">
+      <source srcset="./img/hero/orange1512.png 1x, ./img/hero/orange1512@2x.png 2x,./img/hero/orange1512@3x.png 3x"
+              media="(min-width: 1512px)">
+      <source srcset="./img/hero/orange1280.png 1x,./img/hero/orange1280@2x.png 2x,./img/hero/orange1280@3x.png 3x"
+              media="(min-width: 1280px)">
+      <source srcset="./img/hero/orange1180.png 1x,./img/hero/orange1180@2x.png 2x,./img/hero/orange1180@3x.png 3x"
+              media="(min-width: 1180px)">
+      <source srcset="./img/hero/orange834.png 1x,./img/hero/orange834@2x.png 2x,./img/hero/orange834@3x.png 3x"
+              media="(min-width: 834px)">
+      <source srcset="./img/hero/orange375.png 1x, ./img/hero/orange375@2x.png 2x, ./img/hero/orange375@3x.png 3x"
+              media="(min-width: 375px)">
+      <img class="hero__slide-img " src="./img/hero/orange1728.png "
+           srcset="./img/hero/orange375.png 1x, ./img/hero/orange375@2x.png 2x, ./img/hero/orange375@3x.png 3x"
+           alt="second image">
+    </picture>
+
+    <picture class="hero__slide-img green">
+      <source srcset="./img/hero/green1728.png 1x,./img/hero/green1728@2x.png 2x,./img/hero/green1728@3x.png 3x"
+              media="(min-width: 1728px)">
+      <source srcset="./img/hero/green1512.png 1x,./img/hero/green1512@2x.png 2x,./img/hero/green1512@3x.png 3x"
+              media="(min-width: 1512px)">
+      <source srcset="./img/hero/green1280.png 1x, ./img/hero/green1280@2x.png 2x,./img/hero/green1280@3x.png 3x"
+              media="(min-width: 1280px)">
+      <source srcset="./img/hero/green1180.png 1x,./img/hero/green1180@2x.png 2x,./img/hero/green1180@3x.png 3x"
+              media="(min-width: 1180px)">
+      <source srcset="./img/hero/green834.png 1x,./img/hero/green834@2x.png 2x,./img/hero/green834@3x.png 3x"
+              media="(min-width: 834px)">
+      <source srcset="./img/hero/green375.png 1x, ./img/hero/green375@2x.png 2x,./img/hero/green375@3x.png 3x"
+              media="(min-width: 375px)">
+      <img class="hero__slide-img " src="./img/hero/green1728.png"
+           srcset="./img/hero/green375.png 1x, ./img/hero/green375@2x.png 2x,./img/hero/green375@3x.png 3x"
+           alt="second image">
+    </picture>
+
+    <div class="hero__info-box">
+      <h1 class="hero__info-box--title">We care.
+        <br class="hero__info-box--title-first" /> You win.<br />
+        <div>
+              <span class="red active">
+                Personal<br class="span-br first" />
+                VIP Concierge<br class="span-br second" />
+                24/7</span>
+          <span class="purple next">
+                Your Unique<br class="span-br first" />
+                VIP Loyalty <br class="span-br second" />
+                Program</span>
+          <span class="orange">
+                Exclusive<br class="span-br first" />
+                VIP <br class="span-br second" />
+                Offers
+              </span>
+          <span class="green">
+                Honest<br class="span-br second" />
+                VIP Programs <br class="span-br first" />
+                Reviews
+              </span>
+
         </div>
+      </h1>
+      <div id="hero__button-wrap">
+        <a href="#" class="hero__info-box--button button">
+          <span class="active">Let’s talk!</span>
+          <span>Activate Account</span>
+          <span>Exclusive Deals</span>
+          <span>VIP Reviews</span>
+        </a>
+        <div id="hero__buttonBG">
+          <svg height="100%" viewBox="0 0 228 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-      </li>
-      <!--      slide 2-->
-      <li class="swiper-slide ">
-        <div class="hero__slide purple">
+            <defs>
+              <linearGradient id="hover-red" x1="0" y1="22" x2="228" y2="22" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#ff9b3c" />
 
-          <picture class="hero__slide-img ">
-            <source   srcset="./img/hero/purple1728.png 1x,./img/hero/purple1728@2x.png 2x,./img/hero/purple1728@3x.png 3x" media="(min-width: 1728px)">
-            <source   srcset="./img/hero/purple1512.png 1x, ./img/hero/purple1512@2x.png 2x,./img/hero/purple1512@3x.png 3x" media="(min-width: 1512px)">
-            <source   srcset="./img/hero/purple1280.png 1x, ./img/hero/purple1280@2x.png 2x,./img/hero/purple1280@3x.png 3x" media="(min-width: 1280px)">
-            <source   srcset="./img/hero/purple1180.png 1x, ./img/hero/purple1180@2x.png 2x,./img/hero/purple1180@3x.png 3x" media="(min-width: 1180px)">
-            <source   srcset="./img/hero/purple834.png 1x, ./img/hero/purple834@2x.png 2x, ./img/hero/purple834@3x.png 3x" media="(min-width: 834px)">
-            <source   srcset="./img/hero/purple375.png 1x,./img/hero/purple375@2x.png 2x,./img/hero/purple375@3x.png 3x" media="(min-width: 375px)">
-            <img class="hero__slide-img " src="./img/hero/purple1728.png" srcset="./img/hero/purple375.png 1x,./img/hero/purple375@2x.png 2x,./img/hero/purple375@3x.png 3x" alt="second image">
-          </picture>
-          <div class="hero__info-box">
-            <h2 class="hero__info-box--title">We care.<br class="hero__info-box--title-first" />You win.<br />
-              <span>Your Unique<br class="span-br" /> VIP Loyalty Program</span>
-            </h2>
-            <a href="#" class="hero__info-box--button button purple"><span>Activate Account</span></a>
-          </div>
-          <div class="hero__scroll-button">
-            <p>Scroll</p>
-            <a class="hero__scroll-button-link" href="#services"><span></span></a>
-          </div>
+                <stop offset="0.5" stop-color="#ff4f40" />
+                <stop offset="1" stop-color="#db3278" />
+              </linearGradient>
+              <linearGradient id="paint0_linear_1131_22" x1="0" y1="22" x2="228" y2="22"
+                              gradientUnits="userSpaceOnUse">
+                <stop class="svg__gradient svg__gradient_1" offset="0" stop-color="#DEA037" />
+                <stop class="svg__gradient svg__gradient_2" offset="0.5" stop-color="#DD5318">
+                  <animate attributeName="offset" values="0.4;0.6;0.4" dur="20s" repeatCount="indefinite"></animate>
+                </stop>
+                <stop class="svg__gradient svg__gradient_3" offset="1" stop-color="#DE1F1B" />
+                <animateTransform attributeName="gradientTransform" type="rotate"
+                                  values="0 114 11; 15 114 11; -15 114 11; 0 114 11" dur="20s" repeatCount="indefinite" />
+              </linearGradient>
+              <linearGradient id="svg-stroke" x1="0" y1="22" x2="228" y2="22" gradientUnits="userSpaceOnUse">
+                <stop class="svg__stroke svg__stroke_1" stop-color="#FFCA62" />
+                <stop class="svg__stroke svg__stroke_2" offset="0.48" stop-color="#DF5012" />
+                <stop class="svg__stroke svg__stroke_3" offset="1" stop-color="#C40C0C" />
+              </linearGradient>
+
+            </defs>
+            <rect x="1" y="1" width="226" height="46" rx="23" fill="url(#paint0_linear_1131_22)"
+                  stroke="url(#svg-stroke)" stroke-width="2" />
+          </svg>
         </div>
-      </li>
-      <!--      slide 3-->
-      <li class="swiper-slide ">
-        <div class="hero__slide orange">
-          <picture class="hero__slide-img ">
-            <source   srcset="./img/hero/orange1728.png 1x,./img/hero/orange1728@2x.png 2x,./img/hero/orange1728@3x.png 3x" media="(min-width: 1728px)">
-            <source   srcset="./img/hero/orange1512.png 1x, ./img/hero/orange1512@2x.png 2x,./img/hero/orange1512@3x.png 3x" media="(min-width: 1512px)">
-            <source   srcset="./img/hero/orange1280.png 1x,./img/hero/orange1280@2x.png 2x,./img/hero/orange1280@3x.png 3x" media="(min-width: 1280px)">
-            <source   srcset="./img/hero/orange1180.png 1x,./img/hero/orange1180@2x.png 2x,./img/hero/orange1180@3x.png 3x" media="(min-width: 1180px)">
-            <source   srcset="./img/hero/orange834.png 1x,./img/hero/orange834@2x.png 2x,./img/hero/orange834@3x.png 3x" media="(min-width: 834px)">
-            <source   srcset="./img/hero/orange375.png 1x, ./img/hero/orange375@2x.png 2x, ./img/hero/orange375@3x.png 3x" media="(min-width: 375px)">
-            <img class="hero__slide-img " src="./img/hero/orange1728.png " srcset="./img/hero/orange375.png 1x, ./img/hero/orange375@2x.png 2x, ./img/hero/orange375@3x.png 3x" alt="second image">
-          </picture>
-          <div class="hero__info-box">
-            <h2 class="hero__info-box--title">
-              We care.<br class="hero__info-box--title-first" />You win.<br />
-              <span>Exclusive<br class="span-br" /> VIP <br class="span-br" />Offers</span>
-            </h2>
+      </div>
+    </div>
 
-            <a href="#" class="hero__info-box--button button orange"><span>Exclusive Deals</span></a>
+    <div class="hero__scroll-button">
+      <p>Scroll</p>
+      <a class="hero__scroll-button-link" href="#services">
+        <span></span>
+        <svg width="100%" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-          </div>
-          <div class="hero__scroll-button">
-            <p>Scroll</p>
-            <a class="hero__scroll-button-link" href="#services"><span></span></a>
-          </div>
-        </div>
-      </li>
-      <!--      slide 4-->
-      <li class="swiper-slide ">
-        <div class="hero__slide green">
-          <picture class="hero__slide-img ">
-            <source   srcset="./img/hero/green1728.png 1x,./img/hero/green1728@2x.png 2x,./img/hero/green1728@3x.png 3x" media="(min-width: 1728px)" >
-            <source   srcset="./img/hero/green1512.png 1x,./img/hero/green1512@2x.png 2x,./img/hero/green1512@3x.png 3x" media="(min-width: 1512px)">
-            <source   srcset="./img/hero/green1280.png 1x, ./img/hero/green1280@2x.png 2x,./img/hero/green1280@3x.png 3x" media="(min-width: 1280px)">
-            <source   srcset="./img/hero/green1180.png 1x,./img/hero/green1180@2x.png 2x,./img/hero/green1180@3x.png 3x" media="(min-width: 1180px)">
-            <source   srcset="./img/hero/green834.png 1x,./img/hero/green834@2x.png 2x,./img/hero/green834@3x.png 3x" media="(min-width: 834px)">
-            <source   srcset="./img/hero/green375.png 1x, ./img/hero/green375@2x.png 2x,./img/hero/green375@3x.png 3x" media="(min-width: 375px)">
-            <img class="hero__slide-img " src="./img/hero/green1728.png" srcset="./img/hero/green375.png 1x, ./img/hero/green375@2x.png 2x,./img/hero/green375@3x.png 3x" alt="second image">
-          </picture>
-          <div class="hero__info-box">
-            <h2 class="hero__info-box--title">We care.<br class="hero__info-box--title-first" />You win.<br />
-              <span>Honest<br class="span-br" /> VIP Programs Reviews</span>
-            </h2>
-            <a href="#" class="hero__info-box--button button green"><span>VIP Reviews</span></a>
-          </div>
-          <div class="hero__scroll-button">
-            <p>Scroll</p>
-            <a class="hero__scroll-button-link" href="#services"><span></span></a>
-          </div>
-        </div>
-      </li>
-    </ul>
+          <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2 20C2 30 10 38 20 38C30 38 38 30 38 20C38 10 30 2 20 2C10 2 2 10 2 20ZM20 0C9 0 0 9 0 20C0 31 9 40 20 40C31 40 40 31 40 20C40 9 31 0 20 0Z"
+                fill="url(#paint0_linear_164_3603)" />
+
+          <defs>
+            <linearGradient id="paint0_linear_164_3603" x1="1" y1="1" x2="32" y2="40"
+                            gradientUnits="userSpaceOnUse">
+              <stop class="svg__scroll svg__scroll_1" offset="0.1" stop-color="#E1126E" />
+              <stop class="svg__scroll svg__scroll_2" offset="0.5" stop-color="#FF996E" />
+              <stop class="svg__scroll svg__scroll_3" offset="0.9" stop-color="#FF4A4A" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </a>
+    </div>
   </div>
-
 </section>
-

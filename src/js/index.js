@@ -1,4 +1,5 @@
 import { SlotMachine } from './components/slot/slotMachine.js';
+import heroTick from './components/part-hero.js'
 
 document.addEventListener('DOMContentLoaded', function () {
   var galleryTop = new Swiper('.gallery-top', {
@@ -24,17 +25,18 @@ document.addEventListener('DOMContentLoaded', function () {
     allowTouchMove: false,
     loop: true,
   });
-  var heroSwiper = new Swiper('.heroPageSwiper', {
-    effect: 'fade',
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    allowTouchMove: false,
-    loop: true,
-  });
+  // var heroSwiper = new Swiper('.heroPageSwiper', {
+  //   effect: 'fade',
+  //   autoplay: {
+  //     delay: 3000,
+  //     disableOnInteraction: false,
+  //   },
+  //   allowTouchMove: false,
+  //   loop: true,
+  // });
 
   galleryTop.controller.control = galleryThumbs;
   galleryThumbs.controller.control = galleryTop;
   SlotMachine()
+  heroTick()
 });

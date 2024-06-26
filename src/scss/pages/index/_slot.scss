@@ -238,7 +238,7 @@
 
   position: absolute;
   z-index: -1;
-  top: 120px;
+  top: 110px;
   left: 50%;
   transform: translateX(-50%) scale(0.6);
 
@@ -261,20 +261,20 @@
   @include font-title(h2-mob);
 
   @media screen and (min-width: 834px) {
-    top: 240px;
+    top: 160px;
     @include font-title(h2-lg);
   }
   @media screen and (min-width: 1180px) {
     top: 160px;
   }
   @media screen and (min-width: 1280px) {
-    top: 155px;
+    top: 90px;
   }
   @media screen and (min-width: 1512px) {
-    top: 155px;
+    top: 130px;
   }
   @media screen and (min-width: 1728px) {
-    top: 200px;
+    top: 140px;
   }
 }
 @keyframes scaleAnimation {
@@ -308,7 +308,7 @@
     }
   }
 
-  &:hover {
+  &:hover, &.active-win {
     & .slot__card{
       border: 1px solid transparent;
       background: linear-gradient(#1B1B1B, #1B1B1B) padding-box,
