@@ -26,7 +26,6 @@ export const SlotMachine = () => {
 
   function reset() {
     fireworks.stop();
-    rolling = false;
     current = 0;
     document.querySelectorAll('[data-action="win"]').forEach((el) => {
       el.classList.remove('active');
@@ -64,7 +63,6 @@ export const SlotMachine = () => {
       tl.timeScale(16);
 
       gsap.delayedCall(delay, () => {
-        rolling = true;
       });
     });
   }
@@ -233,8 +231,9 @@ function marquee(speed, list, tl) {
 
 
   function checkWinPosition(tl, speed) {
+    if(document.querySelector('.slot-list-box').classList.contains('active')){
     const winElement = list.querySelector('[data-action="win"]');
-    if (winElement && rolling) {
+    if (winElement) {
       const index = slotListsArray.indexOf(list);
 
       if (index === current) {
@@ -283,6 +282,7 @@ function marquee(speed, list, tl) {
         //   }
         // }
       }
+    }
     }
   }
 }
