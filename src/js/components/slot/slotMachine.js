@@ -234,7 +234,7 @@ function marquee(speed, list, tl) {
 
   function checkWinPosition(tl, speed) {
     const winElement = list.querySelector('[data-action="win"]');
-    if (winElement) {
+    if (winElement && rolling) {
       const index = slotListsArray.indexOf(list);
 
       if (index === current) {
