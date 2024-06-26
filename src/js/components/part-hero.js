@@ -29,7 +29,7 @@
       function heroTick() {
         prev = current;
         current++
-        if (current == heroBG.length) {
+        if (current === heroBG.length) {
           current = 0
         }
         heroBG[current].classList.add("active")
@@ -40,9 +40,9 @@
         heroBtnTxt[prev].classList.remove("active")
         heroScroll.style.cssText = heroScrollBG[current];
         heroScroll.style.transition = "transform 1s linear";
-        if (current == 3) {
+        if (current === 3) {
           heroScroll.style.transform = "rotate(" + 180 * 1 + "deg)"
-        } else if (current == 0) {
+        } else if (current === 0) {
           heroScroll.style.transform = "rotate(" + 180 * 2 + "deg)"
         } else {
           heroScroll.style.transform = "rotate(" + 180 * current + "deg)"
@@ -50,7 +50,7 @@
 
 
         //has to be bigger than CSS animation time
-        setTimeout(update, 1500)
+        setTimeout(update, 700)
         //half a time for text
         setTimeout(showTxt,750)
 
@@ -62,13 +62,13 @@
           heroBG[prev].classList.remove("active")
           heroBG[current].classList.remove("next")
           heroSpan[current].classList.remove("next")
-          if (current == 2 || current == 0) {
+          if (current === 2 || current === 0) {
             heroScroll.style.transition = "transform 0s linear";
             heroScroll.style.transform = "rotate(0deg)"
           }
 
           next = current + 1
-          if (next == heroBG.length) {
+          if (next === heroBG.length) {
             next = 0
           }
           heroBG[next].classList.add("next")
