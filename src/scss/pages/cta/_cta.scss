@@ -205,6 +205,9 @@ $colors: (
 
 .cta-aside--box {
   background: linear-gradient(180deg, #FFF 96.87%, rgba(255, 255, 255, 0.00) 106.38%);
+
+  backdrop-filter: blur(4px);
+  
   padding: 24px 0 24px;
   z-index: 0;
 }
