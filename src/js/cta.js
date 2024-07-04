@@ -58,12 +58,12 @@ var swiper = new Swiper('.cta-swiper', {
 document.addEventListener('DOMContentLoaded', function () {
   const swiperWrapper = document.querySelector('.swiper-wrapper');
   const ctaBlock = document.querySelector('.cta-swiper');
-  if (!swiperWrapper && !ctaBlock){
+
     const swiperSlides = swiperWrapper.querySelectorAll('.swiper-slide');
     if (swiperSlides.length > 3) {
       ctaBlock.classList.add('is-hidden');
     }
-  }
+
 
   copyButton()
   Accordion()

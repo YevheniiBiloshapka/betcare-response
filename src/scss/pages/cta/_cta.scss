@@ -545,7 +545,8 @@ $colors: (
         z-index: 50;
         width: 70px;
         height: 100%;
-        background: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0.00) 90%);
+        background: linear-gradient(270deg, #FFF 14.55%, rgba(255, 255, 255, 0.00) 100%);
+        
       }
     }
     & .swiper-slide {
@@ -605,9 +606,7 @@ $colors: (
     max-width: 869px;
     $imgBoxWidth: 260px;
     $imgBoxHeight: 534.91px;
-    &.is-hidden:after{
-      display: none;
-    }
+
     &--box{
       max-width:260px ;
     }
@@ -649,10 +648,7 @@ $colors: (
   }
   @media screen and (min-width: 1728px){
     max-width: 869px;
-    &.is-hidden:after{
-      display: flex;
-      right: -1px;
-    }
+
   }
 }
 

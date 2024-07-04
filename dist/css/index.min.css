@@ -4943,7 +4943,7 @@ picture.hero__slide-img.next {
     z-index: 50;
     width: 70px;
     height: 100%;
-    background: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0) 90%);
+    background: linear-gradient(270deg, #FFF 14.55%, rgba(255, 255, 255, 0) 100%);
   }
   .cta-swiper .swiper-slide {
     gap: 16px;
@@ -4997,9 +4997,6 @@ picture.hero__slide-img.next {
   .cta-swiper {
     max-width: 869px;
   }
-  .cta-swiper.is-hidden:after {
-    display: none;
-  }
   .cta-swiper--box {
     max-width: 260px;
   }
@@ -5042,10 +5039,6 @@ picture.hero__slide-img.next {
 @media screen and (min-width: 1728px) {
   .cta-swiper {
     max-width: 869px;
-  }
-  .cta-swiper.is-hidden:after {
-    display: flex;
-    right: -1px;
   }
 }
 
