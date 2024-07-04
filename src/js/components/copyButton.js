@@ -7,11 +7,13 @@ function copyButton() {
     const textElement = document.querySelector('[data-target="buttonText"]');
     const copyButton = document.querySelector('[data-action="copyButton"]');
     const copyIcon = document.querySelector('[data-target="copyIcon"]');
-
-    // Сохраняем исходный текст
+    
     const originalText = textElement.textContent;
 
     const textToCopy = originalText;
+    if (textElement.classList.contains('copied')) {
+      return;
+    }
     navigator.clipboard.writeText(textToCopy).then(() => {
       textElement.textContent = 'copied';
       textElement.classList.add('copied');
