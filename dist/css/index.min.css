@@ -5105,6 +5105,8 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 834px) {
   .cta-header-scroll {
+    display: none;
+    visibility: hidden;
     padding: 16px 40px;
   }
 }

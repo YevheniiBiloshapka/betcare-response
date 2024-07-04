@@ -7,7 +7,7 @@ function copyButton() {
     const textElement = document.querySelector('[data-target="buttonText"]');
     const copyButton = document.querySelector('[data-action="copyButton"]');
     const copyIcon = document.querySelector('[data-target="copyIcon"]');
-    
+
     const originalText = textElement.textContent;
 
     const textToCopy = originalText;

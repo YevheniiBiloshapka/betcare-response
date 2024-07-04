@@ -709,6 +709,8 @@ $colors: (
   }
 
   @media screen and (min-width: 834px) {
+    display: none;
+    visibility: hidden;
     padding: 16px 40px;
   }
   @media screen and (min-width: 1280px) {
