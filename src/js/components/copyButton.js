@@ -34,7 +34,7 @@ function copyButton() {
         textElement.classList.remove('copied');
         copyIcon.classList.remove('copied');
         copiedIcon.parentNode.replaceChild(copyIcon, copiedIcon);
-      }, 3000);
+      }, 2000);
     });
 
   });

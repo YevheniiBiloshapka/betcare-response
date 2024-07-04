@@ -2,7 +2,10 @@
 .cta-header{
   position: fixed !important;
   transition: transform 0.3s ease-in-out;
-  transform: translateY(0);
+  &.scroll{
+    animation: none !important;
+    -webkit-animation: none !important;
+  }
   @media screen and (min-width: 1280px) {
     &.header.scroll .menu__buttons{
       padding-right: 0;
@@ -24,7 +27,7 @@
   top: 64px;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 9996;
   @media screen and (min-width: 834px) {
     top: 80px;
   }

@@ -1,6 +1,6 @@
 import {Header} from './components/header.js'
 import copyButton from './components/copyButton.js'
-import ctaScrollableBlock from './components/ctaScrollableBlock.js'
+
 function Accordion() {
   const accordionHeader = document.querySelectorAll('[data-action="accordion-header"]');
   accordionHeader.forEach(header => {
@@ -65,6 +65,6 @@ document.addEventListener('DOMContentLoaded', function () {
   copyButton()
   Accordion()
   Header()
-  ctaScrollableBlock()
+
 });
 

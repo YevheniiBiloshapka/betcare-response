@@ -540,7 +540,6 @@ body.white {
 }
 
 main {
-  overflow-x: hidden;
   position: relative;
   width: 100%;
 }
@@ -4538,11 +4537,52 @@ picture.hero__slide-img.next {
   }
 }
 
+.cta-aside {
+  position: relative;
+}
+@media screen and (min-width: 834px) {
+  .cta-aside .cta-aside--box {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 128px;
+    z-index: 2;
+    padding: 24px 0 40px;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .cta-aside .cta-aside--box {
+    top: 128px;
+  }
+}
+@media screen and (min-width: 834px) {
+  .cta-aside .cta-aside--table {
+    position: sticky;
+    top: 108px;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .cta-aside .cta-aside--table {
+    top: 255px;
+  }
+}
+@media screen and (min-width: 1512px) {
+  .cta-aside .cta-aside--table {
+    top: 240px;
+  }
+}
+@media screen and (min-width: 1728px) {
+  .cta-aside .cta-aside--table {
+    top: 260px;
+  }
+}
+
 .cta-aside--box {
-  background-color: #fff;
+  background: linear-gradient(180deg, #FFF 93.71%, rgba(255, 255, 255, 0) 100%);
   padding: 24px 0 24px;
   z-index: 0;
 }
+
 .cta-aside--header {
   display: flex;
   gap: 16px;
@@ -4702,6 +4742,20 @@ picture.hero__slide-img.next {
   .cta-aside--offer-title {
     font-size: 44px;
     line-height: 122.727%;
+  }
+}
+@media screen and (min-width: 1512px) {
+  .cta-aside--offer-button {
+    height: 64px;
+    padding: 2px;
+    max-width: 191px;
+  }
+  .cta-aside--offer-button span {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    padding: 0 56px;
   }
 }
 
@@ -6144,7 +6198,10 @@ picture.hero__slide-img.next {
 .cta-header {
   position: fixed !important;
   transition: transform 0.3s ease-in-out;
-  transform: translateY(0);
+}
+.cta-header.scroll {
+  animation: none !important;
+  -webkit-animation: none !important;
 }
 @media screen and (min-width: 1280px) {
   .cta-header.header.scroll .menu__buttons {
@@ -6167,7 +6224,7 @@ picture.hero__slide-img.next {
   top: 64px;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 9996;
 }
 @media screen and (min-width: 834px) {
   .cta-links {

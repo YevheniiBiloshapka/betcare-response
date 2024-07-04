@@ -240,10 +240,10 @@ function ctaHeaderShow() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
     if (scrollTop > lastScrollTop) {
-      ctaHeader.style.transform = 'translateY(-100%)';
+      // ctaHeader.style.transform = 'translateY(-100%)';
       ctaHeaderScroll.style.transform = 'translateY(0)';
     } else {
-      ctaHeader.style.transform = 'translateY(0)';
+      // ctaHeader.style.transform = 'translateY(0)';
       ctaHeaderScroll.style.transform = 'translateY(-100%)';
     }
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
