@@ -4557,28 +4557,28 @@ picture.hero__slide-img.next {
 @media screen and (min-width: 834px) {
   .cta-aside .cta-aside--table {
     position: sticky;
-    top: 108px;
+    top: 45px;
     z-index: 1;
   }
 }
 @media screen and (min-width: 1280px) {
   .cta-aside .cta-aside--table {
-    top: 255px;
+    top: 195px;
   }
 }
 @media screen and (min-width: 1512px) {
   .cta-aside .cta-aside--table {
-    top: 240px;
+    top: 169px;
   }
 }
 @media screen and (min-width: 1728px) {
   .cta-aside .cta-aside--table {
-    top: 260px;
+    top: 193px;
   }
 }
 
 .cta-aside--box {
-  background: linear-gradient(180deg, #FFF 93.71%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, #FFF 96.87%, rgba(255, 255, 255, 0) 106.38%);
   padding: 24px 0 24px;
   z-index: 0;
 }
@@ -5766,6 +5766,9 @@ picture.hero__slide-img.next {
 
 .cta table.centred-table thead tr th, .cta table.centred-table tbody tr td {
   text-align: center;
+}
+.cta table.centred-table tbody tr td {
+  font-weight: 300 !important;
 }
 .cta table.centred-table thead tr th:last-child, .cta table.centred-table tbody tr td:last-child {
   text-align: start;
