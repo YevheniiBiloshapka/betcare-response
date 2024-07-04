@@ -11,16 +11,16 @@
   font-weight: $fw;
   line-height: $lh;
 }
-@mixin font-title($key) {
+@mixin font-title($key, $important: false) {
   $font-styles: map-get($font-title, $key);
   @each $property, $value in $font-styles {
-    #{$property}: $value;
+    #{$property}: $value #{if($important, '!important', '')};
   }
 }
-@mixin font-body($key) {
+@mixin font-body($key, $important: false) {
   $font-styles: map-get($font-body, $key);
   @each $property, $value in $font-styles {
-    #{$property}: $value;
+    #{$property}: $value #{if($important, '!important', '')};
   }
 }
 @mixin font-button($key) {

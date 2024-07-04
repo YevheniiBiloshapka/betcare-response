@@ -1,3 +1,37 @@
+
+.cta-header{
+  position: fixed !important;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(0);
+  @media screen and (min-width: 1280px) {
+    &.header.scroll .menu__buttons{
+      padding-right: 0;
+    }
+  }
+}
+.cta-header-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  //width: 100%;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-100%);
+}
+.cta-links{
+  position: fixed;
+  top: 64px;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  @media screen and (min-width: 834px) {
+    top: 80px;
+  }
+}
+
+
+
 .header{
   position: absolute;
   top: 0;
@@ -333,6 +367,7 @@
     display: none;
   }
   @media screen and (min-width: 834px) {
+    gap: 16px;
     &--login{
       width: 67px;
       display: flex;

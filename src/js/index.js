@@ -1,6 +1,6 @@
 import { SlotMachine } from './components/slot/slotMachine.js';
 import heroTick from './components/part-hero.js'
-
+import {Header} from './components/header.js'
 document.addEventListener('DOMContentLoaded', function () {
   var galleryTop = new Swiper('.gallery-top', {
     navigation: {
@@ -25,18 +25,11 @@ document.addEventListener('DOMContentLoaded', function () {
     allowTouchMove: false,
     loop: true,
   });
-  // var heroSwiper = new Swiper('.heroPageSwiper', {
-  //   effect: 'fade',
-  //   autoplay: {
-  //     delay: 3000,
-  //     disableOnInteraction: false,
-  //   },
-  //   allowTouchMove: false,
-  //   loop: true,
-  // });
+
 
   galleryTop.controller.control = galleryThumbs;
   galleryThumbs.controller.control = galleryTop;
+  Header()
   SlotMachine()
   heroTick()
 });

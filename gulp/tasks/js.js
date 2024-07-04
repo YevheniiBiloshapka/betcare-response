@@ -13,6 +13,7 @@ export const js = () => {
 			entry:{
 				// Добавить еще страницы
 				index: './src/js/index.js',
+				cta: './src/js/cta.js',
 
 				gsap: './src/js/modules/gsap/gsap.js',
 			},
