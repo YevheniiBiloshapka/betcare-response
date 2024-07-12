@@ -148,3 +148,25 @@
 
 
 
+.accordion.black{
+    & .accordion__item{
+        background:  linear-gradient($cl-neutral-900, $cl-neutral-900) padding-box,
+        linear-gradient($cl-neutral-900, $cl-neutral-900) border-box;
+        &--header-title {
+            color: $cl-neutral-200;
+        }
+        box-shadow: 3px 5px 15px 0px rgba(91, 7, 48, 0.40);
+    }
+    & .accordion__item.show{
+        border: 2px solid transparent;
+        background: linear-gradient($cl-neutral-900, $cl-neutral-900) padding-box,
+        linear-gradient(90deg, #FFBC3B 0.23%, #FF6051 50.08%, #FF4AB0 99.94%, #FF4AAC 99.94%) border-box;
+    }
+    & .accordion__item-header--button{
+        background: $cl-neutral-900;
+        border: 1px solid $cl-magenta-900;
+    }
+    & .accordion__item--content {
+        color: $cl-neutral-200;
+    }
+}

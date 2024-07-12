@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/index.min.css">
+	<title>Главная</title>
+</head>
+
+<body>
+<header class="header @@headerClass " data-action="header-wrapper">
+  <div class="header__container container">
+    <a href="#" class="header__logo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="235" height="48" viewBox="0 0 235 48" fill="none">
+        <path
+          d="M35.5623 22.2045L30.3413 19.1922L40.9695 4L53.2262 11.0717L44.2765 23.8647L49.4974 26.877L38.8692 42.0692L26.6135 34.9981L14.3571 42.0698L3.72879 26.8775L8.94955 23.8653L0 11.0726L12.2568 4.00089L22.885 19.1931L17.6641 22.2053L26.6129 34.9968L35.5623 22.2045Z"
+          fill="url(#paint0_linear_11702_4882)" />
+        <path
+          d="M59.6254 22.2049L54.4046 19.1927L65.0328 4.00049L77.2895 11.0722L68.34 23.8649L73.5608 26.8771L62.9325 42.0693L50.6758 34.9976L59.6254 22.2049Z"
+          fill="url(#paint1_linear_11702_4882)" />
+        <path
+          d="M235 25.1072C235 25.7906 234.954 26.4055 234.863 26.9522H221.017C221.13 28.3187 221.61 29.3892 222.454 30.1636C223.297 30.938 224.333 31.3252 225.564 31.3252C227.342 31.3252 228.607 30.5622 229.359 29.0361H234.521C233.974 30.8583 232.926 32.3615 231.376 33.5458C229.826 34.7074 227.922 35.2882 225.667 35.2882C223.843 35.2882 222.203 34.8896 220.744 34.0925C219.308 33.2726 218.18 32.1223 217.359 30.6418C216.561 29.1614 216.163 27.4532 216.163 25.5172C216.163 23.5584 216.561 21.8388 217.359 20.3584C218.157 18.8779 219.274 17.739 220.709 16.9419C222.145 16.1447 223.797 15.7461 225.667 15.7461C227.467 15.7461 229.074 16.1333 230.487 16.9077C231.922 17.6821 233.028 18.7868 233.803 20.2217C234.601 21.6338 235 23.2624 235 25.1072ZM230.043 23.7406C230.02 22.5107 229.576 21.5314 228.709 20.8025C227.843 20.0508 226.784 19.675 225.53 19.675C224.345 19.675 223.342 20.0395 222.521 20.7683C221.724 21.4743 221.234 22.4651 221.051 23.7406H230.043Z"
+          fill="white" />
+        <path
+          d="M209.325 34.9811L202.899 26.9182V34.9811H198.112V9.69922H202.899V24.0826L209.257 16.0538H215.48L207.138 25.5516L215.548 34.9811H209.325Z"
+          fill="white" />
+        <path
+          d="M174.396 25.4489C174.396 23.5356 174.772 21.8388 175.524 20.3584C176.298 18.8779 177.336 17.739 178.635 16.9419C179.957 16.1447 181.427 15.7461 183.045 15.7461C184.458 15.7461 185.689 16.0308 186.737 16.6002C187.808 17.1696 188.663 17.8871 189.301 18.7525V16.0536H194.122V34.9808H189.301V32.2135C188.686 33.1017 187.831 33.842 186.737 34.4342C185.666 35.0036 184.424 35.2882 183.011 35.2882C181.415 35.2882 179.957 34.8783 178.635 34.0583C177.336 33.2384 176.298 32.0882 175.524 30.6077C174.772 29.1045 174.396 27.3849 174.396 25.4489ZM189.301 25.5172C189.301 24.3556 189.074 23.3648 188.618 22.5449C188.161 21.7021 187.547 21.0644 186.772 20.6316C185.996 20.1762 185.164 19.9483 184.276 19.9483C183.387 19.9483 182.567 20.1648 181.815 20.5975C181.062 21.0302 180.447 21.6679 179.968 22.5107C179.513 23.3307 179.285 24.31 179.285 25.4489C179.285 26.5877 179.513 27.5899 179.968 28.4553C180.447 29.2981 181.062 29.9472 181.815 30.4027C182.589 30.8583 183.41 31.086 184.276 31.086C185.164 31.086 185.996 30.8697 186.772 30.4368C187.547 29.9813 188.161 29.3436 188.618 28.5237C189.074 27.6809 189.301 26.6788 189.301 25.5172Z"
+          fill="white" />
+        <path
+          d="M168.628 19.9821V29.1382C168.628 29.7759 168.776 30.2429 169.072 30.5389C169.392 30.8123 169.915 30.9489 170.644 30.9489H172.867V34.9803H169.859C165.824 34.9803 163.808 33.0216 163.808 29.104V19.9821H161.552V16.0531H163.808V11.3726H168.628V16.0531H172.867V19.9821H168.628Z"
+          fill="white" />
+        <path
+          d="M151.145 35.2212C149.482 35.2212 147.978 34.9364 146.634 34.3671C145.312 33.7977 144.263 32.9776 143.488 31.9072C142.713 30.8367 142.314 29.5726 142.292 28.1149H147.419C147.488 29.0943 147.83 29.8687 148.445 30.4381C149.083 31.0075 149.949 31.2923 151.043 31.2923C152.16 31.2923 153.038 31.0303 153.676 30.5065C154.314 29.9598 154.634 29.2537 154.634 28.3883C154.634 27.6822 154.416 27.1013 153.984 26.6459C153.551 26.1904 153.003 25.8373 152.343 25.5867C151.705 25.3134 150.815 25.0174 149.676 24.6985C148.126 24.243 146.861 23.7988 145.881 23.366C144.924 22.9106 144.092 22.2386 143.386 21.3504C142.701 20.4393 142.36 19.2322 142.36 17.7289C142.36 16.3167 142.713 15.0868 143.419 14.0391C144.126 12.9914 145.117 12.1942 146.394 11.6476C147.67 11.0782 149.129 10.7935 150.77 10.7935C153.231 10.7935 155.226 11.397 156.753 12.6042C158.302 13.7886 159.157 15.4512 159.317 17.5922H154.051C154.007 16.7723 153.653 16.1004 152.992 15.5765C152.353 15.0299 151.5 14.7566 150.428 14.7566C149.493 14.7566 148.741 14.9957 148.172 15.474C147.625 15.9523 147.351 16.6469 147.351 17.558C147.351 18.1957 147.556 18.731 147.967 19.1637C148.399 19.5738 148.924 19.9154 149.54 20.1888C150.177 20.4393 151.066 20.7353 152.206 21.077C153.756 21.5326 155.02 21.9881 156 22.4436C156.98 22.8992 157.824 23.5824 158.53 24.4935C159.237 25.4046 159.591 26.6003 159.591 28.0807C159.591 29.3563 159.259 30.5406 158.599 31.6339C157.937 32.7271 156.969 33.6041 155.693 34.2646C154.416 34.9023 152.901 35.2212 151.145 35.2212Z"
+          fill="white" />
+        <path
+          d="M125.207 18.7868C125.823 17.9212 126.666 17.2037 127.737 16.6344C128.831 16.0422 130.073 15.7461 131.463 15.7461C133.082 15.7461 134.54 16.1447 135.839 16.9419C137.161 17.739 138.199 18.8779 138.95 20.3584C139.725 21.816 140.113 23.5129 140.113 25.4489C140.113 27.3849 139.725 29.1045 138.95 30.6077C138.199 32.0882 137.161 33.2384 135.839 34.0583C134.54 34.8783 133.082 35.2882 131.463 35.2882C130.073 35.2882 128.842 35.0036 127.771 34.4342C126.723 33.8647 125.868 33.1472 125.207 32.2818V44.0002H120.421V16.0536H125.207V18.7868ZM135.224 25.4489C135.224 24.31 134.984 23.3307 134.506 22.5107C134.05 21.6679 133.435 21.0302 132.659 20.5975C131.908 20.1648 131.087 19.9483 130.199 19.9483C129.333 19.9483 128.512 20.1762 127.737 20.6316C126.985 21.0644 126.37 21.7021 125.891 22.5449C125.435 23.3876 125.207 24.3783 125.207 25.5172C125.207 26.656 125.435 27.6468 125.891 28.4895C126.37 29.3323 126.985 29.9813 127.737 30.4368C128.512 30.8697 129.333 31.086 130.199 31.086C131.087 31.086 131.908 30.8583 132.659 30.4027C133.435 29.9472 134.05 29.2981 134.506 28.4553C134.984 27.6126 135.224 26.6105 135.224 25.4489Z"
+          fill="white" />
+        <path
+          d="M114.016 13.7988C113.173 13.7988 112.466 13.5369 111.897 13.013C111.35 12.4664 111.076 11.7945 111.076 10.9973C111.076 10.2001 111.35 9.53961 111.897 9.01575C112.466 8.46912 113.173 8.1958 114.016 8.1958C114.86 8.1958 115.555 8.46912 116.102 9.01575C116.671 9.53961 116.956 10.2001 116.956 10.9973C116.956 11.7945 116.671 12.4664 116.102 13.013C115.555 13.5369 114.86 13.7988 114.016 13.7988ZM116.375 16.0537V34.9809H111.589V16.0537H116.375Z"
+          fill="white" />
+        <path
+          d="M109.403 11.1328L100.651 34.9797H94.8389L86.0869 11.1328H91.215L97.779 30.0942L104.309 11.1328H109.403Z"
+          fill="white" />
+        <defs>
+          <linearGradient id="paint0_linear_11702_4882" x1="3.30158e-09" y1="12.4107" x2="77.2861" y2="11.9502"
+                          gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFBC3B" />
+            <stop offset="0.5" stop-color="#FF6051" />
+            <stop offset="1" stop-color="#FF4AAC" />
+          </linearGradient>
+          <linearGradient id="paint1_linear_11702_4882" x1="0.000774978" y1="12.411" x2="77.2868" y2="11.9504"
+                          gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFBC3B" />
+            <stop offset="0.5" stop-color="#FF6051" />
+            <stop offset="1" stop-color="#FF4AAC" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </a>
+    <nav class="header__menu ">
+      <ul class="header__menu-list">
+        <li class="header__menu-list-item ">
+          <a href="#" class="header__menu-list-item--link">
+            Online Casinos
+            <span/>
+          </a>
+          <div class="menu-dropdown">
+            <a class="menu-dropdown__link" href="">High Stakes VIP Casinos</a>
+            <a class="menu-dropdown__link" href="">New VIP Casinos</a>
+            <a class="menu-dropdown__link" href="">High Payout VIP Casinos</a>
+            <a class="menu-dropdown__link" href="">Fast Payout VIP</a>
+            <a class="menu-dropdown__link" href="">VIP Highest Withdraw</a>
+            <a class="menu-dropdown__link" href="">VIP Casino Apps</a>
+            <a class="menu-dropdown__link" href="">Live VIP Casinos</a>
+          </div>
+        </li>
+        <li class="header__menu-list-item">
+          <a href="#" class="header__menu-list-item--link">
+            Bonuses
+            <span/>
+          </a>
+          <div class="menu-dropdown">
+            <a class="menu-dropdown__link" href="">VIP Welcome Bonuses</a>
+            <a class="menu-dropdown__link" href="">VIP Exclusive Bonuses</a>
+            <a class="menu-dropdown__link" href="">VIP Free Spins</a>
+            <a class="menu-dropdown__link" href="">VIP Rewards</a>
+            <a class="menu-dropdown__link" href="">VIP Loyalty Bonuses</a>
+            <a class="menu-dropdown__link" href="">Highroller Bonuses</a>
+          </div>
+        </li>
+        <li class="header__menu-list-item">
+          <a href="#" class="header__menu-list-item--link">
+            Banking
+            <span/>
+          </a>
+          <div class="menu-dropdown">
+            <a class="menu-dropdown__link" href="">VIP Banking Options</a>
+            <a class="menu-dropdown__link" href="">Visa</a>
+            <a class="menu-dropdown__link" href="">Mastercard</a>
+            <a class="menu-dropdown__link" href="">Crypto</a>
+            <a class="menu-dropdown__link" href="">Bitcoin</a>
+            <a class="menu-dropdown__link" href="">USDT</a>
+          </div>
+        </li>
+        <li class="header__menu-list-item">
+          <a href="#" class="header__menu-list-item--link">
+            VIP Reviews
+            <span/>
+          </a>
+          <div class="menu-dropdown">
+            <a class="menu-dropdown__link" href="">*brand* VIP Program</a>
+            <a class="menu-dropdown__link" href="">All VIP Programs</a>
+          </div>
+        </li>
+        <li class="header__menu-list-item">
+          <a href="#" class="header__menu-list-item--link">
+            Casino Games
+            <span/>
+          </a>
+          <div class="menu-dropdown">
+            <a class="menu-dropdown__link" href="">High Limit Sots</a>
+            <a class="menu-dropdown__link" href="">High Limit Roulette</a>
+            <a class="menu-dropdown__link" href="">High limit Blackjack</a>
+            <a class="menu-dropdown__link" href="">High limit Poker</a>
+            <a class="menu-dropdown__link" href="">High limit Live Dealer</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!-- ! button-->
+    <div class="menu__buttons">
+      <a href="/" class="menu__buttons--talk button white"><span>Let’s Talk!</span></a>
+      <a href="/" class="menu__buttons--deals button white"><span>Exclusive Deals</span></a>
+      <button type="button" class="menu__buttons--login button white"><span>Log In</span></button>
+      <button class="menu__burger button-icon secondBlack " aria-label="menu-burger" data-action="openModal">
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ! login modal-->
+<div class="login-modal">
+  <button class="login-modal--close-button secondBlack button-icon">
+  </button>
+
+  <div class="login-modal-container">
+     <!-- ! auth-form -->
+    <div id="auth-form" class="login-modal__box auth active">
+      <p class="login-modal__box-title">Hello</p>
+      <!--! login form-->
+      <form class="login-modal__auth-form">
+        <!--  !    email-->
+        <div class="input">
+          <input required="" type="text" id="emailLogin" name="email" autocomplete="off" class="input-field">
+          <label for="emailLogin" class="input-label">Your e-mail address</label>
+        </div>
+        <!--  !    password-->
+        <div class="input password">
+          <input required="" type="password" id="password" name="password" autocomplete="off" class="input-field">
+          <label for="password" class="input-label">Password</label>
+          <svg class="password-toggle-icon active" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+               viewBox="0 0 16 16"
+               fill="none">
+            <path
+              d="M0.666626 7.99999C0.666626 7.99999 3.33329 2.66666 7.99996 2.66666C12.6666 2.66666 15.3333 7.99999 15.3333 7.99999C15.3333 7.99999 12.6666 13.3333 7.99996 13.3333C3.33329 13.3333 0.666626 7.99999 0.666626 7.99999Z"
+              stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
+              stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <svg class="password-toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+               viewBox="0 0 16 16"
+               fill="none">
+            <g clip-path="url(#clip0_11851_6968)">
+              <path
+                d="M11.96 11.96C10.8204 12.8287 9.43276 13.3099 8.00002 13.3333C3.33335 13.3333 0.666687 8.00001 0.666687 8.00001C1.49595 6.4546 2.64611 5.10441 4.04002 4.04001M6.60002 2.82667C7.05891 2.71926 7.52873 2.66557 8.00002 2.66667C12.6667 2.66667 15.3334 8.00001 15.3334 8.00001C14.9287 8.75708 14.4461 9.46983 13.8934 10.1267M9.41335 9.41334C9.23025 9.60984 9.00945 9.76744 8.76412 9.87676C8.51879 9.98607 8.25395 10.0448 7.98541 10.0496C7.71687 10.0543 7.45013 10.0049 7.20109 9.90433C6.95206 9.80374 6.72583 9.65403 6.53592 9.46411C6.346 9.27419 6.19628 9.04797 6.09569 8.79893C5.9951 8.5499 5.9457 8.28315 5.95044 8.01461C5.95518 7.74607 6.01396 7.48124 6.12327 7.23591C6.23258 6.99057 6.39019 6.76977 6.58669 6.58667"
+                stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M0.666687 0.666656L15.3334 15.3333" stroke="#727272" stroke-width="1.2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_11851_6968">
+                <rect width="16" height="16" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <!-- !    Forgot password?-->
+        <div class="login-modal__auth-variant forgot-pass ">
+          <button id="forgot-pass-change-form" class="login-modal__auth-variant-item second forgot-pass">Forgot
+            password?
+          </button>
+        </div>
+        <!-- ?    button Sign In-->
+        <button id="sign-in" type="button" class="login-button button red sign-in">
+          <span>Sign In</span>
+        </button>
+        <!-- !    button Continue-->
+        <button id="log-in-continue" type="button" class="login-button button red continue">
+          <span>Continue</span>
+        </button>
+      </form>
+      <!--    ?   auth variant-->
+      <div class="login-modal__auth-variant">
+        <p class="login-modal__auth-variant-item first">Don't have an account?</p>
+        <button id="sign-up-change-form" type="button" class="login-modal__auth-variant-item second sign-up">Sign up
+        </button>
+      </div>
+
+      <!-- !    social button-->
+      <div class="login-modal__social-box">
+        <div class="login-modal__social-box-divider">OR</div>
+        <button class="login-modal__social-button button white">
+        <span>  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <g clip-path="url(#clip0_11849_26006)">
+                    <path
+                      d="M23.7663 12.2765C23.7663 11.4608 23.7001 10.6406 23.559 9.83813H12.2402V14.4591H18.722C18.453 15.9495 17.5888 17.2679 16.3233 18.1056V21.104H20.1903C22.4611 19.014 23.7663 15.9274 23.7663 12.2765Z"
+                      fill="#4285F4" />
+                    <path
+                      d="M12.2401 24.0008C15.4766 24.0008 18.2059 22.9382 20.1945 21.1039L16.3276 18.1055C15.2517 18.8375 13.8627 19.252 12.2445 19.252C9.11388 19.252 6.45946 17.1399 5.50705 14.3003H1.5166V17.3912C3.55371 21.4434 7.7029 24.0008 12.2401 24.0008V24.0008Z"
+                      fill="#34A853" />
+                    <path
+                      d="M5.50277 14.3002C5.00011 12.8099 5.00011 11.196 5.50277 9.70569V6.61475H1.51674C-0.185266 10.0055 -0.185266 14.0004 1.51674 17.3912L5.50277 14.3002V14.3002Z"
+                      fill="#FBBC04" />
+                    <path
+                      d="M12.2401 4.74966C13.9509 4.7232 15.6044 5.36697 16.8434 6.54867L20.2695 3.12262C18.1001 1.0855 15.2208 -0.034466 12.2401 0.000808666C7.7029 0.000808666 3.55371 2.55822 1.5166 6.61481L5.50264 9.70575C6.45065 6.86173 9.10947 4.74966 12.2401 4.74966V4.74966Z"
+                      fill="#EA4335" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_11849_26006">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Continue with Google</span>
+        </button>
+        <button class="login-modal__social-button button white">
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0_11849_26011)">
+                      <path
+                        d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z"
+                        fill="#1877F2" />
+                      <path
+                        d="M16.6711 15.4688L17.2031 12H13.875V9.75C13.875 8.80102 14.34 7.875 15.8306 7.875H17.3438V4.92188C17.3438 4.92188 15.9705 4.6875 14.6576 4.6875C11.9166 4.6875 10.125 6.34875 10.125 9.35625V12H7.07812V15.4688H10.125V23.8542C11.3674 24.0486 12.6326 24.0486 13.875 23.8542V15.4688H16.6711Z"
+                        fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_11849_26011">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Continue with Facebook</span>
+        </button>
+        <button class="login-modal__social-button button white">
+
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M20.8428 17.1449C20.5101 17.9135 20.1163 18.6211 19.66 19.2715C19.0381 20.1583 18.5288 20.7721 18.1364 21.113C17.528 21.6724 16.8762 21.959 16.1782 21.9753C15.6771 21.9753 15.0728 21.8327 14.3693 21.5434C13.6636 21.2555 13.015 21.113 12.422 21.113C11.8 21.113 11.133 21.2555 10.4195 21.5434C9.70493 21.8327 9.12928 21.9834 8.68916 21.9984C8.01981 22.0269 7.35264 21.7322 6.68668 21.113C6.26164 20.7422 5.72999 20.1067 5.09309 19.2063C4.40976 18.2449 3.84796 17.13 3.40784 15.8589C2.93648 14.486 2.7002 13.1565 2.7002 11.8694C2.7002 10.3951 3.01878 9.12345 3.65689 8.05784C4.1584 7.20191 4.82557 6.52672 5.66059 6.03105C6.49562 5.53539 7.39786 5.2828 8.36949 5.26664C8.90114 5.26664 9.59833 5.43109 10.4647 5.75429C11.3287 6.07858 11.8834 6.24303 12.1266 6.24303C12.3085 6.24303 12.9247 6.05074 13.9694 5.66738C14.9573 5.31186 15.7911 5.16466 16.4742 5.22264C18.3251 5.37202 19.7157 6.10167 20.6405 7.41619C18.9851 8.4192 18.1662 9.82403 18.1825 11.6262C18.1975 13.03 18.7067 14.1981 19.7075 15.1256C20.1611 15.5561 20.6676 15.8888 21.2312 16.1251C21.109 16.4795 20.98 16.819 20.8428 17.1449V17.1449ZM16.5978 0.440369C16.5978 1.54062 16.1958 2.56792 15.3946 3.51878C14.4277 4.64917 13.2582 5.30236 11.99 5.19929C11.9738 5.06729 11.9645 4.92837 11.9645 4.78239C11.9645 3.72615 12.4243 2.59576 13.2408 1.67152C13.6485 1.20356 14.167 0.814453 14.7957 0.504058C15.4231 0.198295 16.0166 0.0292007 16.5747 0.000244141C16.591 0.147331 16.5978 0.294426 16.5978 0.440355V0.440369Z"
+              fill="black" />
+          </svg> Continue with Apple</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ! Sign Up form -->
+    <div id="sign-up-form" class="login-modal__box sign-up">
+      <p class="login-modal__box-title">Welcome</p>
+      <!--! login form-->
+      <form class="login-modal__auth-form">
+        <!--  !    email-->
+        <div class="input">
+          <input required="" type="text" id="emailSignup" name="emailSignup" autocomplete="off" class="input-field">
+          <label for="emailSignup" class="input-label">Your e-mail address</label>
+        </div>
+        <!--  !    password-->
+        <div class="input password">
+          <input required="" type="password" id="passwordSignUp" name="passwordSignUp" autocomplete="off"
+                 class="input-field">
+          <label for="passwordSignUp" class="input-label">Password</label>
+          <svg class="password-toggle-icon active" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+               viewBox="0 0 16 16"
+               fill="none">
+            <path
+              d="M0.666626 7.99999C0.666626 7.99999 3.33329 2.66666 7.99996 2.66666C12.6666 2.66666 15.3333 7.99999 15.3333 7.99999C15.3333 7.99999 12.6666 13.3333 7.99996 13.3333C3.33329 13.3333 0.666626 7.99999 0.666626 7.99999Z"
+              stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
+              stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <svg class="password-toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+               viewBox="0 0 16 16"
+               fill="none">
+            <g clip-path="url(#clip0_11851_6968)">
+              <path
+                d="M11.96 11.96C10.8204 12.8287 9.43276 13.3099 8.00002 13.3333C3.33335 13.3333 0.666687 8.00001 0.666687 8.00001C1.49595 6.4546 2.64611 5.10441 4.04002 4.04001M6.60002 2.82667C7.05891 2.71926 7.52873 2.66557 8.00002 2.66667C12.6667 2.66667 15.3334 8.00001 15.3334 8.00001C14.9287 8.75708 14.4461 9.46983 13.8934 10.1267M9.41335 9.41334C9.23025 9.60984 9.00945 9.76744 8.76412 9.87676C8.51879 9.98607 8.25395 10.0448 7.98541 10.0496C7.71687 10.0543 7.45013 10.0049 7.20109 9.90433C6.95206 9.80374 6.72583 9.65403 6.53592 9.46411C6.346 9.27419 6.19628 9.04797 6.09569 8.79893C5.9951 8.5499 5.9457 8.28315 5.95044 8.01461C5.95518 7.74607 6.01396 7.48124 6.12327 7.23591C6.23258 6.99057 6.39019 6.76977 6.58669 6.58667"
+                stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M0.666687 0.666656L15.3334 15.3333" stroke="#727272" stroke-width="1.2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_11851_6968">
+                <rect width="16" height="16" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+
+        <!-- !    button Continue-->
+        <button type="button" class="login-button button red Continue">
+          <span>Sign Up</span>
+        </button>
+      </form>
+      <!--    !   auth variant-->
+      <div class="login-modal__auth-variant">
+        <p class="login-modal__auth-variant-item first already">Already have an account?</p>
+        <button id="auth-change-form" class="login-modal__auth-variant-item second sign-up">Sign in</button>
+      </div>
+
+      <!-- !    social button-->
+      <div class="login-modal__social-box">
+        <div class="login-modal__social-box-divider">OR</div>
+        <button class="login-modal__social-button  button white">
+        <span>  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <g clip-path="url(#clip0_11849_26006)">
+                    <path
+                      d="M23.7663 12.2765C23.7663 11.4608 23.7001 10.6406 23.559 9.83813H12.2402V14.4591H18.722C18.453 15.9495 17.5888 17.2679 16.3233 18.1056V21.104H20.1903C22.4611 19.014 23.7663 15.9274 23.7663 12.2765Z"
+                      fill="#4285F4" />
+                    <path
+                      d="M12.2401 24.0008C15.4766 24.0008 18.2059 22.9382 20.1945 21.1039L16.3276 18.1055C15.2517 18.8375 13.8627 19.252 12.2445 19.252C9.11388 19.252 6.45946 17.1399 5.50705 14.3003H1.5166V17.3912C3.55371 21.4434 7.7029 24.0008 12.2401 24.0008V24.0008Z"
+                      fill="#34A853" />
+                    <path
+                      d="M5.50277 14.3002C5.00011 12.8099 5.00011 11.196 5.50277 9.70569V6.61475H1.51674C-0.185266 10.0055 -0.185266 14.0004 1.51674 17.3912L5.50277 14.3002V14.3002Z"
+                      fill="#FBBC04" />
+                    <path
+                      d="M12.2401 4.74966C13.9509 4.7232 15.6044 5.36697 16.8434 6.54867L20.2695 3.12262C18.1001 1.0855 15.2208 -0.034466 12.2401 0.000808666C7.7029 0.000808666 3.55371 2.55822 1.5166 6.61481L5.50264 9.70575C6.45065 6.86173 9.10947 4.74966 12.2401 4.74966V4.74966Z"
+                      fill="#EA4335" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_11849_26006">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Continue with Google</span>
+        </button>
+        <button class="login-modal__social-button button white">
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0_11849_26011)">
+                      <path
+                        d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z"
+                        fill="#1877F2" />
+                      <path
+                        d="M16.6711 15.4688L17.2031 12H13.875V9.75C13.875 8.80102 14.34 7.875 15.8306 7.875H17.3438V4.92188C17.3438 4.92188 15.9705 4.6875 14.6576 4.6875C11.9166 4.6875 10.125 6.34875 10.125 9.35625V12H7.07812V15.4688H10.125V23.8542C11.3674 24.0486 12.6326 24.0486 13.875 23.8542V15.4688H16.6711Z"
+                        fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_11849_26011">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Continue with Facebook</span>
+        </button>
+        <button class="login-modal__social-button button white">
+       <span>   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                 <path
+                   d="M20.8428 17.1449C20.5101 17.9135 20.1163 18.6211 19.66 19.2715C19.0381 20.1583 18.5288 20.7721 18.1364 21.113C17.528 21.6724 16.8762 21.959 16.1782 21.9753C15.6771 21.9753 15.0728 21.8327 14.3693 21.5434C13.6636 21.2555 13.015 21.113 12.422 21.113C11.8 21.113 11.133 21.2555 10.4195 21.5434C9.70493 21.8327 9.12928 21.9834 8.68916 21.9984C8.01981 22.0269 7.35264 21.7322 6.68668 21.113C6.26164 20.7422 5.72999 20.1067 5.09309 19.2063C4.40976 18.2449 3.84796 17.13 3.40784 15.8589C2.93648 14.486 2.7002 13.1565 2.7002 11.8694C2.7002 10.3951 3.01878 9.12345 3.65689 8.05784C4.1584 7.20191 4.82557 6.52672 5.66059 6.03105C6.49562 5.53539 7.39786 5.2828 8.36949 5.26664C8.90114 5.26664 9.59833 5.43109 10.4647 5.75429C11.3287 6.07858 11.8834 6.24303 12.1266 6.24303C12.3085 6.24303 12.9247 6.05074 13.9694 5.66738C14.9573 5.31186 15.7911 5.16466 16.4742 5.22264C18.3251 5.37202 19.7157 6.10167 20.6405 7.41619C18.9851 8.4192 18.1662 9.82403 18.1825 11.6262C18.1975 13.03 18.7067 14.1981 19.7075 15.1256C20.1611 15.5561 20.6676 15.8888 21.2312 16.1251C21.109 16.4795 20.98 16.819 20.8428 17.1449V17.1449ZM16.5978 0.440369C16.5978 1.54062 16.1958 2.56792 15.3946 3.51878C14.4277 4.64917 13.2582 5.30236 11.99 5.19929C11.9738 5.06729 11.9645 4.92837 11.9645 4.78239C11.9645 3.72615 12.4243 2.59576 13.2408 1.67152C13.6485 1.20356 14.167 0.814453 14.7957 0.504058C15.4231 0.198295 16.0166 0.0292007 16.5747 0.000244141C16.591 0.147331 16.5978 0.294426 16.5978 0.440355V0.440369Z"
+                   fill="black" />
+               </svg>
+               Continue with Apple</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ! forgot pass form -->
+    <div id="forgot-pass-form" class="login-modal__box forgot-pass-form ">
+      <!--    ! forgot-pass form send email-->
+      <div id="forgot-send-email" class="forgot-pass__send-email">
+        <p class="login-modal__box-title">Reset your password</p>
+        <p class="login-modal__box-desc">Enter your email address and we will send you instructions to reset your
+          password.</p>
+        <!--! email form-->
+        <form class="login-modal__auth-form">
+          <!--  !    email-->
+          <div class="input">
+            <input required="" type="text" id="emailForgotPass" name="emailSignup" autocomplete="off"
+                   class="input-field">
+            <label for="emailForgotPass" class="input-label">Your e-mail address</label>
+          </div>
+          <!-- !    button Continue-->
+          <button id="forgot-pass-sent-email" type="button" class="login-button button red continue">
+            <span>Continue</span>
+          </button>
+        </form>
+      </div>
+      <!--    ! forgot-pass Resend email-->
+      <div id="forgot-resend-email" class="forgot-pass__resend-email is-hidden">
+        <p class="login-modal__box-title">Check Your Email</p>
+        <p class="login-modal__box-desc">Please check the email address <span>[********]@gmail.com </span>for
+          instructions
+          to reset your
+          password.</p>
+        <button id="resend-email" type="button" class="login-button button secondBlack resend-email">
+          <span>Resend e-mail</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ! new password -->
+    <div id="new-password-form" class="login-modal__box new-password-pass  ">
+
+      <p class="login-modal__box-title">New password</p>
+      <p class="login-modal__box-desc">Please create your new password.</p>
+
+      <form class="login-modal__auth-form">
+
+        <!--  !    password-->
+        <div class="input password">
+          <input required="" type="password" id="newPassword" name="new password" autocomplete="off"
+                 class="input-field">
+          <label for="newPassword" class="input-label">New password</label>
+          <svg class="password-toggle-icon active" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+               viewBox="0 0 16 16"
+               fill="none">
+            <path
+              d="M0.666626 7.99999C0.666626 7.99999 3.33329 2.66666 7.99996 2.66666C12.6666 2.66666 15.3333 7.99999 15.3333 7.99999C15.3333 7.99999 12.6666 13.3333 7.99996 13.3333C3.33329 13.3333 0.666626 7.99999 0.666626 7.99999Z"
+              stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
+              stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <svg class="password-toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+               viewBox="0 0 16 16"
+               fill="none">
+            <g clip-path="url(#clip0_11851_6968)">
+              <path
+                d="M11.96 11.96C10.8204 12.8287 9.43276 13.3099 8.00002 13.3333C3.33335 13.3333 0.666687 8.00001 0.666687 8.00001C1.49595 6.4546 2.64611 5.10441 4.04002 4.04001M6.60002 2.82667C7.05891 2.71926 7.52873 2.66557 8.00002 2.66667C12.6667 2.66667 15.3334 8.00001 15.3334 8.00001C14.9287 8.75708 14.4461 9.46983 13.8934 10.1267M9.41335 9.41334C9.23025 9.60984 9.00945 9.76744 8.76412 9.87676C8.51879 9.98607 8.25395 10.0448 7.98541 10.0496C7.71687 10.0543 7.45013 10.0049 7.20109 9.90433C6.95206 9.80374 6.72583 9.65403 6.53592 9.46411C6.346 9.27419 6.19628 9.04797 6.09569 8.79893C5.9951 8.5499 5.9457 8.28315 5.95044 8.01461C5.95518 7.74607 6.01396 7.48124 6.12327 7.23591C6.23258 6.99057 6.39019 6.76977 6.58669 6.58667"
+                stroke="#727272" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M0.666687 0.666656L15.3334 15.3333" stroke="#727272" stroke-width="1.2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_11851_6968">
+                <rect width="16" height="16" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <button id="confirm-new-pass" type="button" class="login-button button red confirm">
+          <span>Confirm</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<main>
+<section class="about-us--hero">
+	<div class="container about-us--hero__container">
+		<picture class="about-us--hero--symbol">
+		<source   media="(min-width: 1728px)" srcset="./img/aboutUs/hero/375_symbol@1.png 1x, ./img/aboutUs/hero/375_symbol@2.png 2x,./img/aboutUs/hero/375_symbol@3.png 3x"  >
+		<source   media="(min-width: 1512px)" srcset="./img/aboutUs/hero/1512_symbol@1.png 1x, ./img/aboutUs/hero/1512_symbol@2.png 2x,./img/aboutUs/hero/1512_symbol@3.png 3x">
+		<source   media="(min-width: 1280px)"  srcset="./img/aboutUs/hero/1280_symbol@1.png 1x, ./img/aboutUs/hero/1280_symbol@2.png 2x,./img/aboutUs/hero/1280_symbol@3.png 3x" >
+		<source   media="(min-width: 1180px)" srcset="./img/aboutUs/hero/1180_symbol@1.png 1x, ./img/aboutUs/hero/1180_symbol@2.png 2x,./img/aboutUs/hero/1180_symbol@3.png 3x"  >
+		<source   media="(min-width: 834px)"  srcset="./img/aboutUs/hero/834_symbol@1.png 1x, ./img/aboutUs/hero/834_symbol@2.png 2x,./img/aboutUs/hero/834_symbol@3.png 3x" >
+		<source   media="(min-width: 375px)" srcset="./img/aboutUs/hero/375_symbol@1.png 1x, ./img/aboutUs/hero/375_symbol@2.png 2x,./img/aboutUs/hero/375_symbol@3.png 3x"  >
+		<img class="styled-gallery-top--phone"  srcset="./img/aboutUs/hero/375_symbol@1.png 1x, ./img/aboutUs/hero/375_symbol@2.png 2x,./img/aboutUs/hero/375_symbol@3.png 3x" src="./img/aboutUs/hero/375_symbol@1.png"  alt="first image" width="343">
+		</picture>
+		<h1 class="about-us--hero--title">About VipStake</h1>
+		<p class="about-us--hero--desc">Some small discription. Maecenas duis auctor dignissim fermentum. Egestas felis dictum risus augue facilisis
+			viverra ipsum sit. Dissatisfied with the present state of casino comparison sites, we decided to disrupt the
+			entire industry, and so, VipStake was born.
+		</p>
+		<p class="about-us--hero--desc"> Everything you see on VipStake is researched by experts and backed by real data. We do this because we believe
+			that the casino industry deserves better and, more importantly, so do its users.</p>
+	</div>
+</section>
+	<section class="our-mission container">
+		<h2 class="our-mission--title">Our mission</h2>
+		<p class="our-mission--desc">To create the best, the most transparent, and the most people-focused gambling review site on the entire web.</p>
+		<ul class="our-mission--list">
+			<li class="our-mission--item">
+				<h3 class="our-mission--item__title">
+					<span class="our-mission--item--icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9186 3.11463C11.9585 3.05855 12.0417 3.05855 12.0816 3.11463L16.424 9.22352C16.4525 9.26367 16.4475 9.31864 16.4123 9.35304L12.9667 12.7137C12.9264 12.7529 12.9264 12.8176 12.9667 12.8568L17.3859 17.1669C17.4046 17.1851 17.4296 17.1953 17.4557 17.1953H19.9181C19.9656 17.1953 20.0066 17.1619 20.0161 17.1154L21.8802 8.00234C21.9002 7.90463 21.7805 7.84108 21.7107 7.91236L15.6052 14.1519C15.5659 14.1921 15.5012 14.192 15.462 14.1517L14.732 13.4011C14.6942 13.3622 14.6943 13.3002 14.7322 13.2615L23.7626 4.03296C23.8323 3.96168 23.952 4.02523 23.932 4.12294L21.0161 18.3777C21.0066 18.4243 20.9657 18.4577 20.9182 18.4577H16.9635C16.9374 18.4577 16.9123 18.4475 16.8937 18.4293L12.0698 13.7246C12.031 13.6867 11.969 13.6867 11.9302 13.7246L7.10651 18.4293C7.08783 18.4475 7.06277 18.4577 7.03668 18.4577H3.08201C3.0345 18.4577 2.99355 18.4243 2.98403 18.3777L0.0681381 4.12294C0.0481516 4.02523 0.167833 3.96168 0.237583 4.03296L9.26794 13.2615C9.30589 13.3002 9.30598 13.3622 9.26815 13.4011L8.53816 14.1517C8.49898 14.192 8.4343 14.1921 8.395 14.1519L2.28942 7.91236C2.21967 7.84108 2.09999 7.90463 2.11998 8.00234L3.98409 17.1154C3.99361 17.1619 4.03456 17.1953 4.08207 17.1953H6.54442C6.57051 17.1953 6.59556 17.1851 6.61424 17.1669L11.0333 12.8569C11.0735 12.8176 11.0735 12.7529 11.0333 12.7137L7.58752 9.35304C7.55224 9.31863 7.54729 9.26366 7.57583 9.22351L11.9186 3.11463ZM11.9301 11.8459C11.969 11.8838 12.0309 11.8838 12.0698 11.8459L14.7809 9.20166C14.8162 9.16726 14.8212 9.11229 14.7926 9.07213L12.0816 5.25819C12.0417 5.20211 11.9584 5.2021 11.9186 5.25819L9.20723 9.07214C9.17868 9.1123 9.18364 9.16727 9.21891 9.20167L11.9301 11.8459ZM20.9916 20.9C20.9916 20.9552 20.9469 21 20.8916 21L3.10015 21C3.04492 21 3.00015 20.9552 3.00015 20.9L3.00015 19.8376C3.00015 19.7824 3.04492 19.7376 3.10015 19.7376L20.8916 19.7376C20.9469 19.7376 20.9916 19.7824 20.9916 19.8376V20.9Z" fill="#DE3768"/>
+</svg>
+				</span>Serve the user</h3>
+				<p class="our-mission--item--desc">Read transparent, data-driven reviews, news, and blogs, with reliable insights from our expert reporters.</p>
+			</li>
+			<li class="our-mission--item">
+				<h3 class="our-mission--item__title">
+					<span class="our-mission--item--icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M16.0344 7.89469C16.3257 8.14687 16.3574 8.58747 16.1052 8.8788L11.1501 14.6033C11.0241 14.7488 10.8436 14.8359 10.6512 14.8438C10.4589 14.8517 10.2719 14.7798 10.1343 14.6451L7.93403 12.4894C7.6588 12.2198 7.65426 11.7781 7.9239 11.5028C8.19355 11.2276 8.63526 11.223 8.91049 11.4927L10.5807 13.129L15.0503 7.96557C15.3024 7.67424 15.743 7.6425 16.0344 7.89469Z" fill="#DE3768"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7128 2.06184C11.8954 1.97939 12.1046 1.97939 12.2871 2.06184C15.846 3.6691 17.4444 4.18287 21.3851 4.88976C21.7013 4.94649 21.9379 5.21188 21.9582 5.53254C22.7136 17.5062 12.9973 21.6528 12.2606 21.9495C12.0934 22.0168 11.9066 22.0168 11.7394 21.9495C11.0027 21.6528 1.28638 17.5062 2.04184 5.53254C2.06207 5.21188 2.29868 4.94649 2.61493 4.88976C6.55562 4.18287 8.15402 3.6691 11.7128 2.06184ZM3.40762 6.16359C3.0616 15.9627 10.417 19.8266 12 20.5429C13.583 19.8266 20.9384 15.9627 20.5924 6.16359C17.0219 5.50138 15.3012 4.94226 12 3.46272C8.69875 4.94226 6.97813 5.50138 3.40762 6.16359Z" fill="#DE3768"/>
+</svg>
+				</span>
+					Promote responsible gambling
+				</h3>
+				<p class="our-mission--item--desc">We advocate for fair, safe, and responsible play, and we partner with ethical organizations that share these values.</p>
+			</li>
+			<li class="our-mission--item">
+				<h3 class="our-mission--item__title">
+					<span class="our-mission--item--icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M22.8656 9.06861L17.644 3.18837C17.5915 3.12917 17.5267 3.08173 17.454 3.04924C17.3813 3.01675 17.3024 2.99997 17.2226 3.00002H6.77949C6.70003 2.99939 6.62134 3.01546 6.54867 3.04715C6.476 3.07883 6.41102 3.12541 6.35804 3.18378L1.1365 9.06402C1.04641 9.16655 0.997838 9.29821 1.00007 9.43382C1.00231 9.56942 1.0552 9.69946 1.14862 9.79905L11.5917 20.8245C11.6441 20.8799 11.7074 20.924 11.7778 20.9542C11.8483 20.9844 11.9242 21 12.001 21C12.0778 21 12.1538 20.9844 12.2242 20.9542C12.2947 20.924 12.358 20.8799 12.4104 20.8245L22.8535 9.79905C22.9456 9.69974 22.9977 9.57064 22.9999 9.43609C23.0022 9.30155 22.9544 9.17084 22.8656 9.06861ZM7.14687 9.98281L10.373 17.9294L2.84562 9.98281H7.14687ZM15.6505 9.98281L12.001 18.9722L8.35155 9.98281H15.6505ZM8.64433 8.88026L12.001 4.47008L15.3577 8.88026H8.64433ZM16.8552 9.98281H21.1565L13.629 17.9294L16.8552 9.98281ZM21.2115 8.88026H16.7564L13.1199 4.10256H16.969L21.2115 8.88026ZM7.03311 4.10256H10.8821L7.2457 8.88026H2.79061L7.03311 4.10256Z" fill="#DE3768"/>
+</svg>
+				</span>
+					Unwavering integrity
+				</h3>
+				<p class="our-mission--item--desc">Our scores are data-backed. If we call an online casino or sportsbook the best, we’ll back up that claim.</p>
+			</li>
+			<li class="our-mission--item">
+				<h3 class="our-mission--item__title">
+					<span class="our-mission--item--icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.25C12.4142 5.25 12.75 5.58579 12.75 6V7.5C12.75 7.91421 12.4142 8.25 12 8.25C11.5858 8.25 11.25 7.91421 11.25 7.5V6C11.25 5.58579 11.5858 5.25 12 5.25ZM6.16623 7.66623C6.45913 7.37334 6.934 7.37334 7.22689 7.66623L8.28767 8.72701C8.58057 9.01991 8.58057 9.49478 8.28767 9.78767C7.99478 10.0806 7.51991 10.0806 7.22701 9.78767L6.16623 8.72689C5.87334 8.434 5.87334 7.95913 6.16623 7.66623ZM17.8338 7.66623C18.1267 7.95913 18.1267 8.434 17.8338 8.72689L16.773 9.78767C16.4801 10.0806 16.0052 10.0806 15.7123 9.78767C15.4194 9.49478 15.4194 9.01991 15.7123 8.72701L16.7731 7.66623C17.066 7.37334 17.5409 7.37334 17.8338 7.66623ZM3.75 13.5C3.75 13.0858 4.08579 12.75 4.5 12.75H6C6.41421 12.75 6.75 13.0858 6.75 13.5C6.75 13.9142 6.41421 14.25 6 14.25H4.5C4.08579 14.25 3.75 13.9142 3.75 13.5ZM17.25 13.5C17.25 13.0858 17.5858 12.75 18 12.75H19.5C19.9142 12.75 20.25 13.0858 20.25 13.5C20.25 13.9142 19.9142 14.25 19.5 14.25H18C17.5858 14.25 17.25 13.9142 17.25 13.5Z" fill="#DE3768"/>
+  <path d="M14.7736 10.8703L12.5471 14.4094C12.456 14.5356 12.3452 14.6464 12.219 14.7375C11.9142 14.9501 11.5378 15.034 11.1716 14.9708C10.8054 14.9077 10.4789 14.7027 10.2629 14.4003C10.0469 14.0979 9.95889 13.7225 10.0179 13.3557C10.077 12.9888 10.2784 12.66 10.5783 12.4406L14.1174 10.2141C14.1978 10.158 14.2935 10.1279 14.3916 10.1279C14.4897 10.1279 14.5854 10.158 14.6658 10.2141C14.7669 10.287 14.8349 10.397 14.8551 10.52C14.8753 10.6429 14.846 10.7689 14.7736 10.8703Z" fill="#DE3768"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.20003 13.1173V13.1199C2.1949 15.5369 3.06963 17.873 4.66069 19.6922C4.71582 19.7531 4.73482 19.7755 4.74591 19.7887C4.75132 19.7951 4.75484 19.7992 4.75976 19.8045C4.78655 19.8291 4.80961 19.8496 4.82944 19.8666C4.82973 19.8666 4.83002 19.8666 4.83031 19.8666L4.84286 19.8666C6.63153 17.7626 9.30708 16.9333 12 16.9333C14.6931 16.9333 17.3718 17.7659 19.1571 19.8666L19.1697 19.8666L19.1791 19.8666C19.1905 19.8555 19.203 19.8428 19.2169 19.8285L19.2193 19.826C19.2388 19.8061 19.2452 19.7987 19.2585 19.7832C19.2719 19.7678 19.2921 19.7443 19.3393 19.6922C20.9304 17.873 21.8051 15.5369 21.8 13.1199L21.8 13.1173C21.8 7.62609 17.4002 3.2 12 3.2C6.5998 3.2 2.20003 7.62609 2.20003 13.1173ZM20.2353 20.4905C20.2164 20.5113 20.1984 20.5317 20.1806 20.552C20.1472 20.5898 20.1145 20.6269 20.0781 20.6642C19.6876 21.0666 19.5185 21.0666 19.1697 21.0666C18.8209 21.0666 18.6 21.0666 18.2562 20.6596C16.7699 18.8992 14.475 18.1333 12 18.1333C9.52501 18.1333 7.23334 18.896 5.74376 20.6596C5.40002 21.0666 5.17406 21.0666 4.83031 21.0666C4.48656 21.0666 4.35502 21.0666 3.92189 20.6642C3.8866 20.6286 3.85345 20.5909 3.81965 20.5524C3.80165 20.5319 3.78347 20.5112 3.76469 20.4905C1.97715 18.4508 0.994273 15.8295 1.00003 13.1173C1.00003 6.9752 5.92526 2 12 2C18.0747 2 23 6.9752 23 13.1173C23.0057 15.8295 22.0228 18.4508 20.2353 20.4905Z" fill="#DE3768"/>
+</svg>
+				</span>
+					Raising the bar
+				</h3>
+				<p class="our-mission--item--desc">Stay in the loop with the most up-to-date, accurate, and in-depth analyses from the industry’s top talent.</p>
+			</li>
+		</ul>
+	</section>
+	<section class="benefits-about">
+		<ul class="benefits-about--list">
+			<li class="benefits-about--item">
+				<p class="benefits-about--item--title">500</p>
+				<p class="benefits-about--item--desc">casinos reviewed
+					per month</p>
+			</li>
+			<li class="benefits-about--item">
+				<p class="benefits-about--item--title">4</p>
+				<p class="benefits-about--item--desc">hours spent on average on one casino review</p>
+			</li>
+			<li class="benefits-about--item">
+				<p class="benefits-about--item--title">10 601</p>
+				<p class="benefits-about--item--desc">complaints we helped to resolve</p>
+			</li>
+			<li class="benefits-about--item">
+				<p class="benefits-about--item--title">458</p>
+				<p class="benefits-about--item--desc">casino changed their T&Cs thanks to us</p>
+			</li>
+			<li class="benefits-about--item">
+				<p class="benefits-about--item--title">6 656</p>
+				<p class="benefits-about--item--desc">reviewed casinos in our  database</p>
+			</li>
+			<li class="benefits-about--item">
+				<p class="benefits-about--item--title">2 000+</p>
+				<p class="benefits-about--item--desc">hours spent creating educational content</p>
+			</li>
+		</ul>
+	</section>
+	<section class="we-are container">
+			<h2 class="we-are--title">Who we are</h2>
+			<div class="we-are--top">
+			<div class="we-are--top--text-box">
+				<p class="we-are--top--desc">We are a group of people who have worked in the casino industry for a long
+				time and want to see a change in
+				direction to the shady way things have been done for years. All of us, from our content writers to our designers
+				to our tech team, are united in bringing users the best and most honest gaming experience online.</p>
+				<p class="we-are--top--desc mg">We don’t just research articles and then stick the word “best” in front of
+					everything here, we actually spend
+					hours and hours researching and sifting through information that most people wouldn’t dream of looking for. We
+					don’t treat our site as a production factory either — everything we publish takes time and is looked at by
+					several experts before it makes it onto our site.</p>
+			</div>
+			<div class="we-are--centre">
+				<p class="we-are--centre--title">Our strengths</p>
+				<div class="we-are--centre__buttons">
+					<a href="#" class="button red"><span>VIP Support Service</span></a>
+					<a href="#" class="button purple"><span>VIP Saving Program</span></a>
+					<a href="#" class="button orange"><span>Exclusive offers</span></a>
+					<a href="#" class="button green"><span>VIP Program Review</span></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="we-are--bottom">
+			<div class="we-are--bottom__reports">
+				<h3 class="we-are--bottom__reports--title">Reporters at VipStake</h3>
+				<p class="we-are--bottom__reports--desc">The VipStake team is at the forefront of everything that we do. It’s a diverse group of great minds all with
+					a common goal — to create the best sportsbook and casino information platform for our users. Meet our
+					team!</p>
+			</div>
+			<ul class="we-are--bottom__list">
+				<li class="we-are--bottom__item">
+					<img class="we-are--bottom__item--img" src="./img/aboutUs/photo1.png" alt="Sophia Vargas">
+					<div class="we-are--bottom__item--info">
+						<p class="we-are--bottom__item--name">Sophia Vargas</p>
+						<p class="we-are--bottom__item--desc">Content team lead</p>
+						<div class="we-are--bottom__item--socials">
+							<a class="we-are--bottom__item--social-link" href="linkedin">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<path d="M18.335 18.339H15.67V14.162C15.67 13.166 15.65 11.884 14.28 11.884C12.891 11.884 12.679 12.968 12.679 14.089V18.339H10.013V9.75H12.573V10.92H12.608C12.966 10.246 13.836 9.533 15.136 9.533C17.836 9.533 18.336 11.311 18.336 13.624V18.339H18.335ZM7.003 8.575C6.79956 8.57526 6.59806 8.53537 6.41006 8.45761C6.22207 8.37984 6.05127 8.26574 5.90746 8.12184C5.76365 7.97793 5.64965 7.80706 5.57201 7.61901C5.49437 7.43097 5.4546 7.22944 5.455 7.026C5.4552 6.71983 5.54618 6.4206 5.71644 6.16615C5.8867 5.91169 6.12859 5.71343 6.41153 5.59645C6.69447 5.47947 7.00574 5.44902 7.30598 5.50894C7.60622 5.56886 7.88196 5.71647 8.09831 5.93311C8.31466 6.14974 8.46191 6.42566 8.52145 6.72598C8.58099 7.0263 8.55013 7.33753 8.43278 7.62032C8.31544 7.9031 8.11687 8.14474 7.86219 8.31467C7.60751 8.4846 7.30817 8.5752 7.002 8.575H7.003ZM8.339 18.339H5.666V9.75H8.34V18.339H8.339ZM19.67 3H4.329C3.593 3 3 3.58 3 4.297V19.703C3 20.42 3.594 21 4.328 21H19.666C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3H19.669H19.67Z" />
+								</svg>
+							</a>
+							<a class="we-are--bottom__item--social-link" href="youtube">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<path d="M19.606 6.995C19.53 6.697 19.314 6.472 19.067 6.403C18.63 6.28 16.5 6 12 6C7.5 6 5.372 6.28 4.931 6.403C4.687 6.471 4.471 6.696 4.394 6.995C4.285 7.419 4 9.196 4 12C4 14.804 4.285 16.58 4.394 17.006C4.47 17.303 4.686 17.528 4.932 17.596C5.372 17.72 7.5 18 12 18C16.5 18 18.629 17.72 19.069 17.597C19.313 17.529 19.529 17.304 19.606 17.005C19.715 16.581 20 14.8 20 12C20 9.2 19.715 7.42 19.606 6.995ZM21.543 6.498C22 8.28 22 12 22 12C22 12 22 15.72 21.543 17.502C21.289 18.487 20.546 19.262 19.605 19.524C17.896 20 12 20 12 20C12 20 6.107 20 4.395 19.524C3.45 19.258 2.708 18.484 2.457 17.502C2 15.72 2 12 2 12C2 12 2 8.28 2.457 6.498C2.711 5.513 3.454 4.738 4.395 4.476C6.107 4 12 4 12 4C12 4 17.896 4 19.605 4.476C20.55 4.742 21.292 5.516 21.543 6.498V6.498ZM10 15.5V8.5L16 12L10 15.5Z" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li class="we-are--bottom__item">
+					<img class="we-are--bottom__item--img" src="./img/aboutUs/photo2.png" alt="Sophia Vargas">
+					<div class="we-are--bottom__item--info">
+						<p class="we-are--bottom__item--name">Wade Warren</p>
+						<p class="we-are--bottom__item--desc">Content editor</p>
+						<div class="we-are--bottom__item--socials">
+							<a class="we-are--bottom__item--social-link" href="linkedin">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<path d="M18.335 18.339H15.67V14.162C15.67 13.166 15.65 11.884 14.28 11.884C12.891 11.884 12.679 12.968 12.679 14.089V18.339H10.013V9.75H12.573V10.92H12.608C12.966 10.246 13.836 9.533 15.136 9.533C17.836 9.533 18.336 11.311 18.336 13.624V18.339H18.335ZM7.003 8.575C6.79956 8.57526 6.59806 8.53537 6.41006 8.45761C6.22207 8.37984 6.05127 8.26574 5.90746 8.12184C5.76365 7.97793 5.64965 7.80706 5.57201 7.61901C5.49437 7.43097 5.4546 7.22944 5.455 7.026C5.4552 6.71983 5.54618 6.4206 5.71644 6.16615C5.8867 5.91169 6.12859 5.71343 6.41153 5.59645C6.69447 5.47947 7.00574 5.44902 7.30598 5.50894C7.60622 5.56886 7.88196 5.71647 8.09831 5.93311C8.31466 6.14974 8.46191 6.42566 8.52145 6.72598C8.58099 7.0263 8.55013 7.33753 8.43278 7.62032C8.31544 7.9031 8.11687 8.14474 7.86219 8.31467C7.60751 8.4846 7.30817 8.5752 7.002 8.575H7.003ZM8.339 18.339H5.666V9.75H8.34V18.339H8.339ZM19.67 3H4.329C3.593 3 3 3.58 3 4.297V19.703C3 20.42 3.594 21 4.328 21H19.666C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3H19.669H19.67Z" />
+								</svg>
+							</a>
+							<a class="we-are--bottom__item--social-link" href="facebook">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<path d="M12 2C6.477 2 2 6.477 2 12C2 16.991 5.657 21.128 10.438 21.879V14.89H7.898V12H10.438V9.797C10.438 7.291 11.93 5.907 14.215 5.907C15.309 5.907 16.453 6.102 16.453 6.102V8.562H15.193C13.95 8.562 13.563 9.333 13.563 10.124V12H16.336L15.893 14.89H13.563V21.879C18.343 21.129 22 16.99 22 12C22 6.477 17.523 2 12 2Z" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li class="we-are--bottom__item">
+					<img class="we-are--bottom__item--img" src="./img/aboutUs/photo3.png" alt="Sophia Vargas">
+					<div class="we-are--bottom__item--info">
+						<p class="we-are--bottom__item--name">Jerome Bell</p>
+						<p class="we-are--bottom__item--desc">Marketing Coordinator</p>
+						<div class="we-are--bottom__item--socials">
+							<a class="we-are--bottom__item--social-link" href="facebook">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<path d="M12 2C6.477 2 2 6.477 2 12C2 16.991 5.657 21.128 10.438 21.879V14.89H7.898V12H10.438V9.797C10.438 7.291 11.93 5.907 14.215 5.907C15.309 5.907 16.453 6.102 16.453 6.102V8.562H15.193C13.95 8.562 13.563 9.333 13.563 10.124V12H16.336L15.893 14.89H13.563V21.879C18.343 21.129 22 16.99 22 12C22 6.477 17.523 2 12 2Z" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li class="we-are--bottom__item">
+					<img class="we-are--bottom__item--img" src="./img/aboutUs/photo4.png" alt="Sophia Vargas">
+					<div class="we-are--bottom__item--info">
+						<p class="we-are--bottom__item--name">Eleanor Pena</p>
+						<p class="we-are--bottom__item--desc">Technical analytics</p>
+						<div class="we-are--bottom__item--socials">
+							<a class="we-are--bottom__item--social-link" href="linkedin">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<path d="M18.335 18.339H15.67V14.162C15.67 13.166 15.65 11.884 14.28 11.884C12.891 11.884 12.679 12.968 12.679 14.089V18.339H10.013V9.75H12.573V10.92H12.608C12.966 10.246 13.836 9.533 15.136 9.533C17.836 9.533 18.336 11.311 18.336 13.624V18.339H18.335ZM7.003 8.575C6.79956 8.57526 6.59806 8.53537 6.41006 8.45761C6.22207 8.37984 6.05127 8.26574 5.90746 8.12184C5.76365 7.97793 5.64965 7.80706 5.57201 7.61901C5.49437 7.43097 5.4546 7.22944 5.455 7.026C5.4552 6.71983 5.54618 6.4206 5.71644 6.16615C5.8867 5.91169 6.12859 5.71343 6.41153 5.59645C6.69447 5.47947 7.00574 5.44902 7.30598 5.50894C7.60622 5.56886 7.88196 5.71647 8.09831 5.93311C8.31466 6.14974 8.46191 6.42566 8.52145 6.72598C8.58099 7.0263 8.55013 7.33753 8.43278 7.62032C8.31544 7.9031 8.11687 8.14474 7.86219 8.31467C7.60751 8.4846 7.30817 8.5752 7.002 8.575H7.003ZM8.339 18.339H5.666V9.75H8.34V18.339H8.339ZM19.67 3H4.329C3.593 3 3 3.58 3 4.297V19.703C3 20.42 3.594 21 4.328 21H19.666C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3H19.669H19.67Z" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="asked-faq">
+		 <div class="container asked-faq__container">
+			 <h2 class="asked-faq--title">Frequently asked questions for casino</h2>
+			 <ul class="accordion  black">
+				 <li class="accordion__item" data-action="accordion-item">
+					 <div class="accordion__item--header" data-action="accordion-header">
+						 <h3 class="accordion__item--header-title">
+							 What is a VIP or high roller program?
+						 </h3>
+						 <button class="accordion__item-header--button"></button>
+					 </div>
+					 <div class="accordion__item--content">
+						 <div class="accordion__item--content-wrapper">
+							 <p>A VIP or high roller program is a casino loyalty program where casinos reward their most valuable
+								 customers by offering specific bonuses, free spins, gifts, and much more. Many casino rewards sites operate
+								 a tiered VIP system, although only the players depositing the largest sums are considered true high rollers.
+							 </p>
+						 </div>
+					 </div>
+				 </li>
+				 <li class="accordion__item" data-action="accordion-item">
+					 <div class="accordion__item--header" data-action="accordion-header">
+						 <h3 class="accordion__item--header-title">
+							 How do I join a casino rewards VIP program?
+						 </h3>
+						 <button class="accordion__item-header--button">
+						 </button>
+					 </div>
+					 <div class="accordion__item--content">
+						 <div class="accordion__item--content-wrapper"> <p>A VIP or high roller program is a casino loyalty program where casinos reward their most valuable
+							 customers by offering specific bonuses, free spins, gifts, and much more. Many casino rewards sites operate
+							 a tiered VIP system, although only the players depositing the largest sums are considered true high rollers.
+						 </p></div>
+					 </div>
+				 </li>
+				 <li class="accordion__item" data-action="accordion-item">
+					 <div class="accordion__item--header" data-action="accordion-header">
+						 <h3 class="accordion__item--header-title">
+							 What are the benefits of becoming a high roller?
+						 </h3>
+						 <button class="accordion__item-header--button">
+						 </button>
+					 </div>
+					 <div class="accordion__item--content">
+						 <div class="accordion__item--content-wrapper"> <p>A VIP or high roller program is a casino loyalty program where casinos reward their most valuable
+							 customers by offering specific bonuses, free spins, gifts, and much more. Many casino rewards sites operate
+							 a tiered VIP system, although only the players depositing the largest sums are considered true high rollers.
+						 </p></div>
+					 </div>
+				 </li>
+				 <li class="accordion__item" data-action="accordion-item">
+					 <div class="accordion__item--header" data-action="accordion-header">
+						 <h3 class="accordion__item--header-title">
+							 Which online casinos offer the best VIP programs?
+						 </h3>
+						 <button class="accordion__item-header--button">
+
+						 </button>
+					 </div>
+					 <div class="accordion__item--content">
+						 <div class="accordion__item--content-wrapper"> <p>A VIP or high roller program is a casino loyalty program where casinos reward their most valuable
+							 customers by offering specific bonuses, free spins, gifts, and much more. Many casino rewards sites operate
+							 a tiered VIP system, although only the players depositing the largest sums are considered true high rollers.
+						 </p></div>
+					 </div>
+				 </li>
+				 <li class="accordion__item" data-action="accordion-item">
+					 <div class="accordion__item--header" data-action="accordion-header">
+						 <h3 class="accordion__item--header-title">
+							 How much do high rollers gamble?
+						 </h3>
+						 <button class="accordion__item-header--button">
+						 </button>
+					 </div>
+					 <div class="accordion__item--content">
+						 <div class="accordion__item--content-wrapper"> <p>A VIP or high roller program is a casino loyalty program where casinos reward their most valuable
+							 customers by offering specific bonuses, free spins, gifts, and much more. Many casino rewards sites operate
+							 a tiered VIP system, although only the players depositing the largest sums are considered true high rollers.
+						 </p></div>
+					 </div>
+				 </li>
+				 <li class="accordion__item" data-action="accordion-item">
+					 <div class="accordion__item--header" data-action="accordion-header">
+						 <h3 class="accordion__item--header-title">
+							 How do high roller rules differ from regular play?
+						 </h3>
+						 <button class="accordion__item-header--button">
+						 </button>
+					 </div>
+					 <div class="accordion__item--content">
+						 <div class="accordion__item--content-wrapper"> <p>A VIP or high roller program is a casino loyalty program where casinos reward their most valuable
+							 customers by offering specific bonuses, free spins, gifts, and much more. Many casino rewards sites operate
+							 a tiered VIP system, although only the players depositing the largest sums are considered true high rollers.
+						 </p></div>
+					 </div>
+				 </li>
+				 <li class="accordion__item" data-action="accordion-item">
+					 <div class="accordion__item--header" data-action="accordion-header">
+						 <h3 class="accordion__item--header-title">
+							 Why are high rollers called whales?
+						 </h3>
+						 <button class="accordion__item-header--button">
+						 </button>
+					 </div>
+					 <div class="accordion__item--content">
+						 <div class="accordion__item--content-wrapper"> <p>A VIP or high roller program is a casino loyalty program where casinos reward their most valuable
+							 customers by offering specific bonuses, free spins, gifts, and much more. Many casino rewards sites operate
+							 a tiered VIP system, although only the players depositing the largest sums are considered true high rollers.
+						 </p></div>
+					 </div>
+				 </li>
+				 <li class="accordion__item" data-action="accordion-item">
+					 <div class="accordion__item--header" data-action="accordion-header">
+						 <h3 class="accordion__item--header-title">
+							 Is it worth playing high limit slots?
+						 </h3>
+						 <button class="accordion__item-header--button">
+						 </button>
+					 </div>
+					 <div class="accordion__item--content">
+						 <div class="accordion__item--content-wrapper"> <p>A VIP or high roller program is a casino loyalty program where casinos reward their most valuable
+							 customers by offering specific bonuses, free spins, gifts, and much more. Many casino rewards sites operate
+							 a tiered VIP system, although only the players depositing the largest sums are considered true high rollers.
+						 </p></div>
+					 </div>
+				 </li>
+			 </ul>
+		 </div>
+	</section>
+	<section class="container contact-about">
+		<h2 class="contact-about--title">Contact information</h2>
+		<div class="contact-about__wrapper">
+			<div class="contact-about--box">
+				<p class="contact-about__subtitle">For casinos contact</p>
+				<a class="contact-about__item" href="mailto:vipstake@casino.com">
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+		  <path fill-rule="evenodd" clip-rule="evenodd"
+						d="M3.33341 4.3335C2.96903 4.3335 2.66675 4.63578 2.66675 5.00016V15.0002C2.66675 15.3645 2.96903 15.6668 3.33341 15.6668H16.6667C17.0311 15.6668 17.3334 15.3645 17.3334 15.0002V5.00016C17.3334 4.63578 17.0311 4.3335 16.6667 4.3335H3.33341ZM0.666748 5.00016C0.666748 3.53121 1.86446 2.3335 3.33341 2.3335H16.6667C18.1357 2.3335 19.3334 3.53121 19.3334 5.00016V15.0002C19.3334 16.4691 18.1357 17.6668 16.6667 17.6668H3.33341C1.86446 17.6668 0.666748 16.4691 0.666748 15.0002V5.00016Z"
+						fill="#DE3768" />
+		  <path fill-rule="evenodd" clip-rule="evenodd"
+						d="M0.847358 4.42662C1.16407 3.97417 1.7876 3.86414 2.24005 4.18085L9.99992 9.61276L17.7598 4.18085C18.2122 3.86414 18.8358 3.97417 19.1525 4.42662C19.4692 4.87907 19.3592 5.5026 18.9067 5.81932L10.5734 11.6527C10.2291 11.8937 9.77078 11.8937 9.42646 11.6527L1.09313 5.81932C0.640678 5.5026 0.530643 4.87907 0.847358 4.42662Z"
+						fill="#DE3768" />
+		</svg>
+						</span>
+					E-mail: vipstake@casino.com
+				</a>
+				<a class="contact-about__item" href="tel:+14753838339">
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M10.8337 1.32265C10.5075 2.16581 10.8427 2.61755 12.0165 2.9158C14.9852 3.67041 16.6127 5.38034 17.2976 8.46423C17.6461 10.0338 19.008 9.6236 19 7.95166C18.9847 4.7497 15.6714 1.36654 12.2303 1.03851C11.2663 0.946883 10.9546 1.01002 10.8337 1.32265ZM0.923656 2.40348C-1.66659 4.56464 1.49627 12.36 6.6167 16.4343C10.0278 19.1486 15.6331 20.8023 17.3593 19.6037C19.5348 18.0927 18.5288 12.2873 16.0892 12.2755C15.7711 12.274 14.9536 12.1051 14.2725 11.9003C12.9598 11.5052 12.0682 11.6631 11.1969 12.4449C10.6167 12.9657 10.0962 12.6667 8.42361 10.8523L7.09199 9.40749L7.74201 8.64159C8.76325 7.43806 8.12591 3.5395 6.71067 2.33239C5.65785 1.43481 2.03162 1.47922 0.923656 2.40348ZM5.4694 3.8724C6.28587 4.93271 6.42255 7.14007 5.71662 7.87081C4.56051 9.0674 4.87581 10.0489 7.20252 12.4939C9.66411 15.0807 10.8963 15.5321 12.165 14.313L12.9859 13.5242L14.6367 14.0062L16.2875 14.4883V16.2708V18.0534L15.2521 17.979C11.4091 17.7025 6.70886 14.7511 4.39147 11.1593C2.70468 8.54456 1.53459 4.70684 2.18668 3.92759C2.58275 3.45429 5.11449 3.41168 5.4694 3.8724ZM11.1332 4.4014C10.4803 4.8747 10.7133 5.66268 11.631 6.08618C12.7366 6.59644 13.295 7.13622 13.8676 8.24837C14.4573 9.39414 15.0074 9.6793 15.564 9.1272C17.0582 7.64571 12.8498 3.15707 11.1332 4.4014Z"
+											fill="#DE3768" />
+							</svg>
+						</span>
+					For calls: +1 475 383 83 39
+				</a>
+				<a class="contact-about__item" href="tel:+14738283821">
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+								<g clip-path="url(#clip0_12043_83220)">
+									<path
+										d="M17.0854 2.91005C16.164 1.98398 15.0665 1.24972 13.8569 0.750108C12.6473 0.250493 11.3499 -0.0044801 10.0402 5.95695e-05C4.55276 5.95695e-05 0.0804022 4.45005 0.0804022 9.91003C0.0804022 11.66 0.542714 13.36 1.40704 14.86L0 20L5.27638 18.62C6.73367 19.41 8.37186 19.83 10.0402 19.83C15.5276 19.83 20 15.38 20 9.92003C20 7.27004 18.9648 4.78005 17.0854 2.91005ZM10.0402 18.15C8.55276 18.15 7.09548 17.75 5.81909 17L5.51759 16.82L2.38191 17.64L3.21608 14.6L3.01508 14.29C2.18869 12.977 1.74989 11.4593 1.74874 9.91003C1.74874 5.37004 5.46734 1.67005 10.0301 1.67005C12.2412 1.67005 14.3216 2.53005 15.8794 4.09005C16.6507 4.85401 17.262 5.7627 17.6778 6.76346C18.0936 7.76422 18.3056 8.83714 18.3015 9.92003C18.3216 14.46 14.603 18.15 10.0402 18.15ZM14.5829 11.99C14.3317 11.87 13.1055 11.27 12.8844 11.18C12.6533 11.1 12.4925 11.06 12.3216 11.3C12.1508 11.55 11.6784 12.11 11.5377 12.27C11.397 12.44 11.2462 12.46 10.995 12.33C10.7437 12.21 9.9397 11.94 8.99497 11.1C8.25126 10.44 7.75879 9.63003 7.60804 9.38003C7.46734 9.13003 7.58794 9.00003 7.71859 8.87003C7.82914 8.76003 7.96985 8.58003 8.09045 8.44003C8.21105 8.30003 8.26131 8.19003 8.34171 8.03004C8.42211 7.86004 8.38191 7.72004 8.32161 7.60004C8.26131 7.48004 7.75879 6.26004 7.55779 5.76004C7.35678 5.28004 7.14573 5.34004 6.99497 5.33004H6.51256C6.34171 5.33004 6.0804 5.39004 5.84925 5.64004C5.62814 5.89004 4.98492 6.49004 4.98492 7.71004C4.98492 8.93003 5.8794 10.11 6 10.27C6.1206 10.44 7.75879 12.94 10.2513 14.01C10.8442 14.27 11.3065 14.42 11.6683 14.53C12.2613 14.72 12.804 14.69 13.2362 14.63C13.7186 14.56 14.7136 14.03 14.9146 13.45C15.1256 12.87 15.1256 12.38 15.0553 12.27C14.9849 12.16 14.8342 12.11 14.5829 11.99Z"
+										fill="#DE3768" />
+								</g>
+								<defs>
+									<clipPath id="clip0_12043_83220">
+										<rect width="20" height="20" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</span>
+					WhatsApp: +1 473 828 38 21
+				</a>
+			</div>
+			<div class="contact-about--box">
+				<p class="contact-about__subtitle">For players contact</p>
+				<a class="contact-about__item" href="mailto:vipstake@casino.com">
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+		  <path fill-rule="evenodd" clip-rule="evenodd"
+						d="M3.33341 4.3335C2.96903 4.3335 2.66675 4.63578 2.66675 5.00016V15.0002C2.66675 15.3645 2.96903 15.6668 3.33341 15.6668H16.6667C17.0311 15.6668 17.3334 15.3645 17.3334 15.0002V5.00016C17.3334 4.63578 17.0311 4.3335 16.6667 4.3335H3.33341ZM0.666748 5.00016C0.666748 3.53121 1.86446 2.3335 3.33341 2.3335H16.6667C18.1357 2.3335 19.3334 3.53121 19.3334 5.00016V15.0002C19.3334 16.4691 18.1357 17.6668 16.6667 17.6668H3.33341C1.86446 17.6668 0.666748 16.4691 0.666748 15.0002V5.00016Z"
+						fill="#DE3768" />
+		  <path fill-rule="evenodd" clip-rule="evenodd"
+						d="M0.847358 4.42662C1.16407 3.97417 1.7876 3.86414 2.24005 4.18085L9.99992 9.61276L17.7598 4.18085C18.2122 3.86414 18.8358 3.97417 19.1525 4.42662C19.4692 4.87907 19.3592 5.5026 18.9067 5.81932L10.5734 11.6527C10.2291 11.8937 9.77078 11.8937 9.42646 11.6527L1.09313 5.81932C0.640678 5.5026 0.530643 4.87907 0.847358 4.42662Z"
+						fill="#DE3768" />
+		</svg>
+						</span>
+					E-mail: vipstake@casino.com
+				</a>
+				<a class="contact-about__item" href="tel:+14753838339">
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M10.8337 1.32265C10.5075 2.16581 10.8427 2.61755 12.0165 2.9158C14.9852 3.67041 16.6127 5.38034 17.2976 8.46423C17.6461 10.0338 19.008 9.6236 19 7.95166C18.9847 4.7497 15.6714 1.36654 12.2303 1.03851C11.2663 0.946883 10.9546 1.01002 10.8337 1.32265ZM0.923656 2.40348C-1.66659 4.56464 1.49627 12.36 6.6167 16.4343C10.0278 19.1486 15.6331 20.8023 17.3593 19.6037C19.5348 18.0927 18.5288 12.2873 16.0892 12.2755C15.7711 12.274 14.9536 12.1051 14.2725 11.9003C12.9598 11.5052 12.0682 11.6631 11.1969 12.4449C10.6167 12.9657 10.0962 12.6667 8.42361 10.8523L7.09199 9.40749L7.74201 8.64159C8.76325 7.43806 8.12591 3.5395 6.71067 2.33239C5.65785 1.43481 2.03162 1.47922 0.923656 2.40348ZM5.4694 3.8724C6.28587 4.93271 6.42255 7.14007 5.71662 7.87081C4.56051 9.0674 4.87581 10.0489 7.20252 12.4939C9.66411 15.0807 10.8963 15.5321 12.165 14.313L12.9859 13.5242L14.6367 14.0062L16.2875 14.4883V16.2708V18.0534L15.2521 17.979C11.4091 17.7025 6.70886 14.7511 4.39147 11.1593C2.70468 8.54456 1.53459 4.70684 2.18668 3.92759C2.58275 3.45429 5.11449 3.41168 5.4694 3.8724ZM11.1332 4.4014C10.4803 4.8747 10.7133 5.66268 11.631 6.08618C12.7366 6.59644 13.295 7.13622 13.8676 8.24837C14.4573 9.39414 15.0074 9.6793 15.564 9.1272C17.0582 7.64571 12.8498 3.15707 11.1332 4.4014Z"
+											fill="#DE3768" />
+							</svg>
+						</span>
+					For calls: +1 475 383 83 39
+				</a>
+				<a class="contact-about__item" href="tel:+14738283821">
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+								<g clip-path="url(#clip0_12043_83220)">
+									<path
+										d="M17.0854 2.91005C16.164 1.98398 15.0665 1.24972 13.8569 0.750108C12.6473 0.250493 11.3499 -0.0044801 10.0402 5.95695e-05C4.55276 5.95695e-05 0.0804022 4.45005 0.0804022 9.91003C0.0804022 11.66 0.542714 13.36 1.40704 14.86L0 20L5.27638 18.62C6.73367 19.41 8.37186 19.83 10.0402 19.83C15.5276 19.83 20 15.38 20 9.92003C20 7.27004 18.9648 4.78005 17.0854 2.91005ZM10.0402 18.15C8.55276 18.15 7.09548 17.75 5.81909 17L5.51759 16.82L2.38191 17.64L3.21608 14.6L3.01508 14.29C2.18869 12.977 1.74989 11.4593 1.74874 9.91003C1.74874 5.37004 5.46734 1.67005 10.0301 1.67005C12.2412 1.67005 14.3216 2.53005 15.8794 4.09005C16.6507 4.85401 17.262 5.7627 17.6778 6.76346C18.0936 7.76422 18.3056 8.83714 18.3015 9.92003C18.3216 14.46 14.603 18.15 10.0402 18.15ZM14.5829 11.99C14.3317 11.87 13.1055 11.27 12.8844 11.18C12.6533 11.1 12.4925 11.06 12.3216 11.3C12.1508 11.55 11.6784 12.11 11.5377 12.27C11.397 12.44 11.2462 12.46 10.995 12.33C10.7437 12.21 9.9397 11.94 8.99497 11.1C8.25126 10.44 7.75879 9.63003 7.60804 9.38003C7.46734 9.13003 7.58794 9.00003 7.71859 8.87003C7.82914 8.76003 7.96985 8.58003 8.09045 8.44003C8.21105 8.30003 8.26131 8.19003 8.34171 8.03004C8.42211 7.86004 8.38191 7.72004 8.32161 7.60004C8.26131 7.48004 7.75879 6.26004 7.55779 5.76004C7.35678 5.28004 7.14573 5.34004 6.99497 5.33004H6.51256C6.34171 5.33004 6.0804 5.39004 5.84925 5.64004C5.62814 5.89004 4.98492 6.49004 4.98492 7.71004C4.98492 8.93003 5.8794 10.11 6 10.27C6.1206 10.44 7.75879 12.94 10.2513 14.01C10.8442 14.27 11.3065 14.42 11.6683 14.53C12.2613 14.72 12.804 14.69 13.2362 14.63C13.7186 14.56 14.7136 14.03 14.9146 13.45C15.1256 12.87 15.1256 12.38 15.0553 12.27C14.9849 12.16 14.8342 12.11 14.5829 11.99Z"
+										fill="#DE3768" />
+								</g>
+								<defs>
+									<clipPath id="clip0_12043_83220">
+										<rect width="20" height="20" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</span>
+					WhatsApp: +1 473 828 38 21
+				</a>
+			</div>
+		</div>
+	</section>
+</main>
+
+<footer class="footer">
+  <div class="footer__container container">
+    <nav class="footer__top-block">
+      <ul class="footer__socials" aria-label="social links">
+        <li>
+          <a href="#" class="footer__socials-icon facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path
+                d="M15.9998 2.66675C8.63584 2.66675 2.6665 8.63608 2.6665 16.0001C2.6665 22.6547 7.5425 28.1707 13.9172 29.1721V19.8534H10.5305V16.0001H13.9172V13.0627C13.9172 9.72141 15.9065 7.87608 18.9532 7.87608C20.4118 7.87608 21.9372 8.13608 21.9372 8.13608V11.4161H20.2572C18.5998 11.4161 18.0838 12.4441 18.0838 13.4987V16.0001H21.7812L21.1905 19.8534H18.0838V29.1721C24.4572 28.1721 29.3332 22.6534 29.3332 16.0001C29.3332 8.63608 23.3638 2.66675 15.9998 2.66675Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="footer__socials-icon instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path
+                d="M15.9998 12.0001C14.939 12.0001 13.9216 12.4215 13.1714 13.1717C12.4213 13.9218 11.9998 14.9392 11.9998 16.0001C11.9998 17.0609 12.4213 18.0784 13.1714 18.8285C13.9216 19.5787 14.939 20.0001 15.9998 20.0001C17.0607 20.0001 18.0781 19.5787 18.8283 18.8285C19.5784 18.0784 19.9998 17.0609 19.9998 16.0001C19.9998 14.9392 19.5784 13.9218 18.8283 13.1717C18.0781 12.4215 17.0607 12.0001 15.9998 12.0001ZM15.9998 9.33341C17.7679 9.33341 19.4636 10.0358 20.7139 11.286C21.9641 12.5363 22.6665 14.232 22.6665 16.0001C22.6665 17.7682 21.9641 19.4639 20.7139 20.7141C19.4636 21.9644 17.7679 22.6667 15.9998 22.6667C14.2317 22.6667 12.536 21.9644 11.2858 20.7141C10.0355 19.4639 9.33317 17.7682 9.33317 16.0001C9.33317 14.232 10.0355 12.5363 11.2858 11.286C12.536 10.0358 14.2317 9.33341 15.9998 9.33341V9.33341ZM24.6665 9.00008C24.6665 9.44211 24.4909 9.86603 24.1784 10.1786C23.8658 10.4912 23.4419 10.6667 22.9998 10.6667C22.5578 10.6667 22.1339 10.4912 21.8213 10.1786C21.5088 9.86603 21.3332 9.44211 21.3332 9.00008C21.3332 8.55805 21.5088 8.13413 21.8213 7.82157C22.1339 7.50901 22.5578 7.33341 22.9998 7.33341C23.4419 7.33341 23.8658 7.50901 24.1784 7.82157C24.4909 8.13413 24.6665 8.55805 24.6665 9.00008V9.00008ZM15.9998 5.33341C12.7012 5.33341 12.1625 5.34275 10.6278 5.41075C9.5825 5.46008 8.88117 5.60008 8.2305 5.85341C7.65184 6.07741 7.2345 6.34541 6.7905 6.79075C6.37318 7.19395 6.05231 7.68619 5.85184 8.23075C5.5985 8.88408 5.4585 9.58408 5.4105 10.6281C5.34117 12.1001 5.33317 12.6147 5.33317 16.0001C5.33317 19.2987 5.3425 19.8374 5.4105 21.3721C5.45984 22.4161 5.59984 23.1187 5.85184 23.7681C6.0785 24.3481 6.34517 24.7654 6.78784 25.2081C7.23717 25.6561 7.6545 25.9241 8.22784 26.1454C8.8865 26.4001 9.58784 26.5414 10.6278 26.5894C12.0998 26.6587 12.6145 26.6667 15.9998 26.6667C19.2985 26.6667 19.8372 26.6574 21.3718 26.5894C22.4145 26.5401 23.1172 26.4001 23.7678 26.1481C24.3452 25.9227 24.7652 25.6547 25.2078 25.2121C25.6572 24.7627 25.9252 24.3454 26.1465 23.7721C26.3998 23.1147 26.5412 22.4121 26.5892 21.3721C26.6585 19.9001 26.6665 19.3854 26.6665 16.0001C26.6665 12.7014 26.6572 12.1627 26.5892 10.6281C26.5398 9.58542 26.3998 8.88141 26.1465 8.23075C25.9456 7.68675 25.6253 7.1947 25.2092 6.79075C24.8061 6.37321 24.3139 6.0523 23.7692 5.85208C23.1158 5.59875 22.4145 5.45875 21.3718 5.41075C19.8998 5.34141 19.3852 5.33341 15.9998 5.33341ZM15.9998 2.66675C19.6225 2.66675 20.0745 2.68008 21.4958 2.74675C22.9158 2.81341 23.8825 3.03608 24.7332 3.36675C25.6132 3.70541 26.3545 4.16408 27.0958 4.90408C27.7738 5.57061 28.2984 6.37687 28.6332 7.26675C28.9625 8.11608 29.1865 9.08408 29.2532 10.5041C29.3158 11.9254 29.3332 12.3774 29.3332 16.0001C29.3332 19.6227 29.3198 20.0747 29.2532 21.4961C29.1865 22.9161 28.9625 23.8827 28.6332 24.7334C28.2994 25.6238 27.7747 26.4302 27.0958 27.0961C26.4291 27.7738 25.6229 28.2984 24.7332 28.6334C23.8838 28.9627 22.9158 29.1867 21.4958 29.2534C20.0745 29.3161 19.6225 29.3334 15.9998 29.3334C12.3772 29.3334 11.9252 29.3201 10.5038 29.2534C9.08384 29.1867 8.11717 28.9627 7.2665 28.6334C6.37627 28.2994 5.56987 27.7747 4.90384 27.0961C4.22571 26.4297 3.70108 25.6234 3.3665 24.7334C3.03584 23.8841 2.81317 22.9161 2.7465 21.4961C2.68384 20.0747 2.6665 19.6227 2.6665 16.0001C2.6665 12.3774 2.67984 11.9254 2.7465 10.5041C2.81317 9.08275 3.03584 8.11741 3.3665 7.26675C3.70015 6.37632 4.22491 5.56984 4.90384 4.90408C5.57007 4.22572 6.37641 3.70105 7.2665 3.36675C8.11717 3.03608 9.0825 2.81341 10.5038 2.74675C11.9252 2.68408 12.3772 2.66675 15.9998 2.66675Z"
+              />
+              <defs>
+
+                <radialGradient id="instagram-gradient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(7.74984 29.3873) rotate(-90) scale(26.4286 24.5807)">
+                  <stop stop-color="#FFDD55" />
+                  <stop offset="0.1" stop-color="#FFDD55" />
+                  <stop offset="0.5" stop-color="#FF543E" />
+                  <stop offset="1" stop-color="#C837AB" />
+                </radialGradient>
+              </defs>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="footer__socials-icon linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path
+                d="M24.4467 24.452H20.8933V18.8827C20.8933 17.5547 20.8667 15.8453 19.04 15.8453C17.188 15.8453 16.9053 17.2907 16.9053 18.7853V24.452H13.3507V13H16.764V14.56H16.8107C17.288 13.6613 18.448 12.7107 20.1813 12.7107C23.7813 12.7107 24.448 15.0813 24.448 18.1653V24.452H24.4467ZM9.33733 11.4333C9.06607 11.4337 8.79741 11.3805 8.54675 11.2768C8.29609 11.1731 8.06836 11.021 7.87661 10.8291C7.68486 10.6372 7.53287 10.4094 7.42935 10.1587C7.32582 9.90795 7.27281 9.63926 7.27333 9.368C7.2736 8.95978 7.39491 8.5608 7.62192 8.22153C7.84894 7.88225 8.17146 7.61791 8.54871 7.46194C8.92595 7.30596 9.34098 7.26536 9.74131 7.34525C10.1416 7.42515 10.5093 7.62197 10.7977 7.91081C11.0862 8.19965 11.2826 8.56755 11.3619 8.96798C11.4413 9.3684 11.4002 9.78338 11.2437 10.1604C11.0872 10.5375 10.8225 10.8597 10.4829 11.0862C10.1434 11.3128 9.74422 11.4336 9.336 11.4333H9.33733ZM11.1187 24.452H7.55467V13H11.12V24.452H11.1187ZM26.2267 4H5.772C4.79067 4 4 4.77333 4 5.72933V26.2707C4 27.2267 4.792 28 5.77067 28H26.2213C27.2 28 28 27.2267 28 26.2707V5.72933C28 4.77333 27.2 4 26.2213 4H26.2253H26.2267Z"
+              />
+
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="footer__socials-icon youtube">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path
+                d="M26.1412 9.32658C26.0398 8.92925 25.7518 8.62925 25.4225 8.53725C24.8398 8.37325 21.9998 7.99992 15.9998 7.99992C9.99984 7.99992 7.1625 8.37325 6.5745 8.53725C6.24917 8.62792 5.96117 8.92792 5.8585 9.32658C5.71317 9.89192 5.33317 12.2613 5.33317 15.9999C5.33317 19.7386 5.71317 22.1066 5.8585 22.6746C5.95984 23.0706 6.24784 23.3706 6.57584 23.4613C7.1625 23.6266 9.99984 23.9999 15.9998 23.9999C21.9998 23.9999 24.8385 23.6266 25.4252 23.4626C25.7505 23.3719 26.0385 23.0719 26.1412 22.6732C26.2865 22.1079 26.6665 19.7333 26.6665 15.9999C26.6665 12.2666 26.2865 9.89325 26.1412 9.32658ZM28.7238 8.66392C29.3332 11.0399 29.3332 15.9999 29.3332 15.9999C29.3332 15.9999 29.3332 20.9599 28.7238 23.3359C28.3852 24.6493 27.3945 25.6826 26.1398 26.0319C23.8612 26.6666 15.9998 26.6666 15.9998 26.6666C15.9998 26.6666 8.1425 26.6666 5.85984 26.0319C4.59984 25.6773 3.6105 24.6453 3.27584 23.3359C2.6665 20.9599 2.6665 15.9999 2.6665 15.9999C2.6665 15.9999 2.6665 11.0399 3.27584 8.66392C3.6145 7.35059 4.60517 6.31725 5.85984 5.96792C8.1425 5.33325 15.9998 5.33325 15.9998 5.33325C15.9998 5.33325 23.8612 5.33325 26.1398 5.96792C27.3998 6.32259 28.3892 7.35459 28.7238 8.66392V8.66392ZM13.3332 20.6666V11.3333L21.3332 15.9999L13.3332 20.6666Z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <ul class="footer__links">
+        <li><a href="#">News</a></li>
+        <li><a href="#">Tricks&Tips</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Term of use</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </nav>
+    <div class="footer__bottom-block">
+      <img src="./img/footer/18plus.svg" alt="18+" height="52">
+      <img src="./img/footer/gameCare.svg" alt="game care" height="52">
+      <img src="./img/footer/BeGambleAware.svg" alt="bg gable aware" height="52">
+      <img src="./img/footer/GLI.svg" alt="GLI" height="52">
+      <img src="./img/footer/MGA.svg" alt="MGA" height="52">
+      <img src="./img/footer/eCOGRA.webp" alt="eCogra" height="52">
+      <img src="./img/footer/GAMB.webp" alt="GAMB" height="52">
+      <img src="./img/footer/GPWA.webp" alt="GPWA" height="52">
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/aboutUs.min.js"></script>
+
+</body>
+</html>

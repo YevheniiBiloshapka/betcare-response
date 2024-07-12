@@ -1,0 +1,136 @@
+.our-mission{
+  padding: 24px 24px 48px;
+  &--title{
+    text-align: center;
+    @include font-title(h1-mob);
+    background: $gr-text-1;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 12px;
+
+  }
+  &--desc{
+    color: $cl-neutral-400;
+    text-align: center;
+    max-width: 314px;
+    margin: 0 auto 24px;
+    @include font-body(normal);
+  }
+  @media screen and (min-width: 834px) {
+    padding: 64px;
+    &--title{
+      @include font-title(h1-sm);
+      margin-bottom: 12px;
+    }
+    &--desc{
+      max-width: fit-content;
+      margin: 0 0 48px;
+      @include font-body(big);
+    }
+  }
+  @media screen and (min-width: 1180px) {
+    &--title{
+      margin-bottom: 24px;
+    }
+    &--desc{
+      max-width: 600px;
+      margin: 0 auto 40px;
+      @include font-body(big);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 64px 80px;
+  }
+  @media screen and (min-width: 1512px) {
+    padding: 80px 120px;
+    &--title{
+      @include font-title(h1-md);
+      margin-bottom: 24px;
+    }
+    &--desc{
+      max-width: 800px;
+      @include font-body(large);
+    }
+  }
+  @media screen and (min-width: 1728px) {
+    padding: 80px 200px;
+    &--title{
+      @include font-title(h1-lg);
+    }
+  }
+}
+.our-mission--list{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  @media screen and (min-width: 834px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+
+  }
+  @media screen and (min-width: 1180px) {
+    gap: 32px 64px ;
+  }
+  @media screen and (min-width: 1512px) {
+    gap: 40px 80px ;
+  }
+  @media screen and (min-width: 1728px) {
+
+  }
+}
+.our-mission--item{
+  &__title{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+    color: $cl-magenta-800;
+    @include font-body(big-bold)
+  }
+  &--desc{
+    color: $cl-neutral-400;
+
+    @include font-body(normal);
+  }
+
+  @media screen and (min-width: 1180px) {
+    &__title{
+      gap: 8px;
+
+      @include font-body(large-bold)
+    }
+    &--icon{
+      & svg{
+        width: 32px;
+        height: 32px;
+      }
+    }
+    &--desc{
+      @include font-body(big);
+    }
+  }
+
+  @media screen and (min-width: 1512px) {
+    &__title{
+      gap: 12px;
+      @include font-title(h2-md);
+      margin-bottom: 8px;
+    }
+    &--icon{
+      & svg{
+        width: 40px;
+        height: 40px;
+      }
+    }
+    &--desc{
+      @include font-body(large);
+    }
+  }
+  @media screen and (min-width: 1728px) {
+    &__title{
+
+    }
+  }
+}

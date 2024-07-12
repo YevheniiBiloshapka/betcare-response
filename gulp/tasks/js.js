@@ -14,6 +14,7 @@ export const js = () => {
 				// Добавить еще страницы
 				index: './src/js/index.js',
 				cta: './src/js/cta.js',
+				aboutUs: './src/js/aboutUs.js',
 
 				gsap: './src/js/modules/gsap/gsap.js',
 			},

@@ -1,0 +1,69 @@
+.asked-faq{
+  position: relative;
+  padding: 48px 24px;
+
+  @include retina-bg("../img/aboutUs/askedFAQ/375_askedFAQ@1.png","../img/aboutUs/askedFAQ/375_askedFAQ@2.png","../img/aboutUs/askedFAQ/375_askedFAQ@3.png");
+  background-position: top right;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &--title{
+    color: $cl-magenta-100;
+    text-align: center;
+    @include font-title(h2-mob);
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 834px) {
+    padding: 64px;
+    background-size: contain;
+    @include retina-bg("../img/aboutUs/askedFAQ/834_askedFAQ@1.png","../img/aboutUs/askedFAQ/834_askedFAQ@2.png","../img/aboutUs/askedFAQ/834_askedFAQ@3.png");
+  }
+  @media screen and (min-width:1180px) {
+    background-position: top left;
+    background-size: cover;
+
+    @include retina-bg("../img/aboutUs/askedFAQ/1180_askedFAQ@1.png","../img/aboutUs/askedFAQ/1180_askedFAQ@2.png","../img/aboutUs/askedFAQ/1180_askedFAQ@3.png");
+  }
+  @media screen and (min-width:1280px) {
+    padding: 64px 80px;
+    @include retina-bg("../img/aboutUs/askedFAQ/1280_askedFAQ@1.png","../img/aboutUs/askedFAQ/1280_askedFAQ@2.png","../img/aboutUs/askedFAQ/1280_askedFAQ@3.png");
+    &--title{
+      margin-top: 20px;
+      text-align: start;
+      @include font-title(h2-sm);
+      margin-bottom: 0;
+    }
+    &__container{
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 64px;
+    }
+  }
+  @media screen and (min-width:1512px) {
+    padding: 80px 120px;
+
+    @include retina-bg("../img/aboutUs/askedFAQ/1512_askedFAQ@1.png","../img/aboutUs/askedFAQ/1512_askedFAQ@2.png","../img/aboutUs/askedFAQ/1512_askedFAQ@3.png");
+
+    &--title{
+      margin-top: 0;
+      @include font-title(h2-md);
+    }
+    &__container{
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 80px;
+    }
+  }
+  @media screen and (min-width:1728px) {
+    padding: 80px 200px;
+
+    @include retina-bg("../img/aboutUs/askedFAQ/1728_askedFAQ@1.png","../img/aboutUs/askedFAQ/1728_askedFAQ@2.png","../img/aboutUs/askedFAQ/1728_askedFAQ@3.png");
+
+    &--title{
+      margin-top: 0;
+      @include font-title(h2-lg);
+    }
+
+  }
+}

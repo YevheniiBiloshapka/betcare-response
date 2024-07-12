@@ -1,0 +1,94 @@
+.contact-about{
+  display: flex;
+  flex-direction: column;
+  padding: 48px 24px;
+  gap: 40px;
+
+  &--title{
+    text-align: center;
+
+    @include font-title(h2-mob);
+    background: $gr-text-5;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__subtitle{
+    color: $cl-neutral-100;
+    text-align: center;
+    @include font-body(big-bold);
+  }
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+  }
+  &--box{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  @media screen and (min-width:834px) {
+    padding: 64px;
+    &--title{
+      @include font-title(h2-sm);
+    }
+    &__subtitle{
+      text-align: start;
+    }
+    &__wrapper{
+      display: flex;
+      flex-direction: row;
+      gap: 64px;
+      margin: 0 auto;
+    }
+    &--box{
+      width: fit-content;
+      margin: 0;
+    }
+  }
+
+  @media screen and (min-width:1280px) {
+    padding: 64px 80px;
+    gap: 32px;
+    &__subtitle{
+      @include font-body(large-bold);
+    }
+    &__wrapper{
+      gap: 64px;
+    }
+  }
+  @media screen and (min-width:1512px) {
+    padding: 80px 120px;
+    &--title{
+      @include font-title(h2-md);
+    }
+    &__wrapper{
+      gap: 80px;
+    }
+  }
+  @media screen and (min-width:1728px) {
+    padding: 80px 200px;
+    &--title{
+      @include font-title(h2-lg);
+    }
+  }
+}
+
+.contact-about__item{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: $cl-neutral-400;
+  @include font-body(normal);
+  @media screen and (min-width:1512px) {
+    gap: 16px;
+    @include font-body(large);
+    & svg{
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
