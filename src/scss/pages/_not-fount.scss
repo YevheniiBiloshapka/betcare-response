@@ -1,0 +1,65 @@
+
+.not-fount{
+  position: relative;
+min-height: 100dvh;
+  &__wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;transform: translate(-50%,-50%);
+  }
+  &__title{
+    text-align: center;
+    font-size: 160px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.5px;
+
+    background: $gr-text-5;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0px;
+  }
+  &__desc{
+    color: $cl-neutral-300;
+    text-align: center;
+   @include font-body(big-bold);
+    margin-bottom: 48px;
+  }
+  & .button{
+    max-width: 129px;
+    margin: 0 auto;
+  }
+@media screen and (min-width: 834px) {
+  &__title{
+    font-size: 240px;
+    letter-spacing: 0.5px;
+    margin-bottom: -6px;
+  }
+  &__desc{
+    @include font-body(large-bold);
+  }
+}
+  @media screen and (min-width: 1180px) {
+
+    &__desc{
+      max-width: 423px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &__title{
+      font-size: 320px;
+      letter-spacing: 0.5px;
+      margin-bottom: -12px;
+    }
+    &__desc{
+      max-width: 623px;
+
+    }
+    & .button{
+        @include button-medium();
+      max-width: 187px;
+    }
+  }
+}

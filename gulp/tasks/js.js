@@ -15,6 +15,7 @@ export const js = () => {
 				index: './src/js/index.js',
 				cta: './src/js/cta.js',
 				aboutUs: './src/js/aboutUs.js',
+				404: './src/js/404.js',
 
 				gsap: './src/js/modules/gsap/gsap.js',
 			},
