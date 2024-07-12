@@ -6854,13 +6854,26 @@ picture.hero__slide-img.next {
 }
 .we-are--centre__buttons .button, .we-are--centre__buttons .button-outline, .we-are--centre__buttons .button-icon {
   border-radius: 8px;
+  padding: 2px;
   height: 48px;
+}
+.we-are--centre__buttons .button.red, .we-are--centre__buttons .red.button-outline, .we-are--centre__buttons .red.button-icon {
+  background: linear-gradient(145deg, #E1126E 13.59%, #FF996E 54.92%, #FF4A4A 78.53%);
+}
+.we-are--centre__buttons .button.purple, .we-are--centre__buttons .purple.button-outline, .we-are--centre__buttons .purple.button-icon {
+  background: linear-gradient(140deg, #3B5EFF 16.92%, #A09EFF 52.46%, #A838FF 87.99%);
+}
+.we-are--centre__buttons .button.orange, .we-are--centre__buttons .orange.button-outline, .we-are--centre__buttons .orange.button-icon {
+  background: linear-gradient(133deg, #FE5A14 12.34%, #FFBC3B 50.76%, #FF1919 86.85%);
+}
+.we-are--centre__buttons .button.green, .we-are--centre__buttons .green.button-outline, .we-are--centre__buttons .green.button-icon {
+  background: linear-gradient(138deg, #237427 8.16%, #E5F1AF 43.64%, #A4D35F 94.7%);
 }
 .we-are--centre__buttons .button span, .we-are--centre__buttons .button-outline span, .we-are--centre__buttons .button-icon span {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.6px;
-  height: 46px;
+  height: 44px;
   border-radius: 8px;
   background: #1B1B1B;
 }
@@ -6893,7 +6906,7 @@ picture.hero__slide-img.next {
     height: 60px;
   }
   .we-are--centre__buttons .button span, .we-are--centre__buttons .button-outline span, .we-are--centre__buttons .button-icon span {
-    height: 58px;
+    height: 55px;
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;

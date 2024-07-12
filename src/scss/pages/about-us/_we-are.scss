@@ -111,12 +111,25 @@
   gap: 8px;
   & .button{
     border-radius: 8px;
+    padding: 2px;
     height: 48px;
+    &.red{
+      background: $gr-dg-1;
+    }
+    &.purple{
+      background: $gr-dg-2;
+    }
+    &.orange{
+      background: $gr-dg-3;
+    }
+    &.green{
+      background: $gr-dg-4;
+    }
     & span{
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 0.6px;
-      height: 46px;
+      height: 44px;
       border-radius: 8px;
       background: #1B1B1B;
     }
@@ -145,9 +158,10 @@
     gap: 16px;
     & .button{
       border-radius: 8px;
+
       height: 60px;
       & span{
-        height: 58px;
+        height: 55px;
         @include font-body(large-bold);
       }
     }
