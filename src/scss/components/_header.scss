@@ -12,6 +12,8 @@
     }
   }
 }
+
+
 .cta-header-scroll {
   position: fixed;
   top: 0;
@@ -33,7 +35,10 @@
   }
 }
 
-
+.header.blackBg{
+  background-color: $cl-neutral-900;
+  position: fixed;
+}
 
 .header{
   position: absolute;

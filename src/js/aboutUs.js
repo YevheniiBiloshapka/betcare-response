@@ -1,4 +1,4 @@
-import heroTick from './components/part-hero.js'
+
 import {Header} from './components/header.js'
 
 

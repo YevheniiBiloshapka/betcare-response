@@ -1,0 +1,123 @@
+.legal-document{
+  padding: 88px 16px;
+  background-color: #fff;
+  & .legal-document__fast-link{
+    display: none;
+    visibility: hidden;
+  }
+  @media screen and (min-width:834px){
+
+    padding: 104px 64px;
+  }
+  @media screen and (min-width:1180px){
+
+    padding: 104px 64px;
+  }
+  @media screen and (min-width:1280px){
+    padding: 112px 80px;
+    &__wrapper{
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 64px;
+    }
+    & .legal-document__fast-link{
+       display: flex;
+      visibility: unset;
+    }
+  }
+  @media screen and (min-width:1512px){
+    padding: 112px 120px;
+  }
+  @media screen and (min-width:1728px){
+    padding: 112px 200px;
+  }
+}
+.legal-document__title{
+  color: $cl-magenta-900;
+@include font-title(h2-mob);
+  padding-bottom: 4px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #FFD7E4;
+
+
+  @media screen and (min-width:1280px){
+    text-align: center;
+    @include font-title(h1-sm);
+    margin-bottom: 48px;
+    border-bottom: none;
+  }
+  @media screen and (min-width:1512px){
+    @include font-title(h1-md);
+  }
+  @media screen and (min-width:1728px){
+    @include font-title(h1-lg);
+    margin-bottom: 64px;
+  }
+}
+
+.legal-document__accordion{
+  @media screen and (min-width:1280px) {
+    gap: 64px;
+    & .accordion__item, & .accordion__item.show {
+      padding: 0;
+      background-color: transparent;
+      box-shadow: none;
+      border: none;
+    }
+    & .accordion__item-header--button {
+      visibility: hidden;
+      display: none;
+      opacity: 0;
+    }
+    & .accordion__item--content {
+      display: flex;
+      max-height: fit-content;
+      width: 100%;
+      max-width: fit-content;
+
+    }
+    & .accordion__item--content-wrapper {
+      width: 100%;
+
+      & p:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+    & .accordion__item--header-title {
+      padding-bottom: 4px;
+      border-bottom: 1px solid #FFD7E4;
+      margin-bottom: 16px;
+      color: $cl-magenta-900;
+      @include font-body(big-bold);
+    }
+  }
+  @media screen and (min-width:1512px) {
+    & .accordion__item--header-title {
+      @include font-body(large-bold);
+    }
+  }
+}
+
+.legal-document__fast-link{
+  position: sticky;
+  top: 128px;
+
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  gap: 4px;
+  & a, & a:target{
+    padding: 8px 0;
+    color: $cl-neutral-600;
+   @include font-body(normal);
+    @include transition();
+
+    &:hover, &.active{
+      color: $cl-magenta-900;
+    }
+    &.active{
+      color: $cl-magenta-900;
+      font-weight: 600;
+    }
+  }
+}
