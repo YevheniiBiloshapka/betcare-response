@@ -87,9 +87,6 @@ function authForm() {
     forgotPassFormBox.classList.remove('active');
   });
 
-  function toggleModalMenu() {
-
-  }
   //  toggle modal
   //!  toggle modal auth
   function toggleModal() {
@@ -122,12 +119,12 @@ function authForm() {
   authModalButtonClose.addEventListener('click', toggleModal);
 }
 // TODO: HeaderMenu open modal nav
-function headerToggleModalMeni (){
+function headerToggleModalMenu (){
   function toggleModalMenu() {
     const burgerButton = document.querySelector('[data-action="openModal"]');
     const headerWrapper = document.querySelector('[data-action="header-wrapper"]');
-    const header = document.querySelector('header'); // Предполагается, что у вас есть элемент header
     const body = document.querySelector('body');
+    const html = document.querySelector('html'); // Добавлено для манипуляции с элементом html
 
     // Функция для получения ширины скроллбара
     function getScrollbarWidth() {
@@ -152,16 +149,18 @@ function headerToggleModalMeni (){
       const isHiddenWrapper = headerWrapper.classList.contains('show-modal');
 
       if (isHiddenWrapper) {
-        body.style.marginRight = `${scrollbarWidth }px`;
-
+        body.style.marginRight = `${scrollbarWidth}px`;
         body.classList.add('modal-open');
+        html.style.overflowY = 'hidden'; // Добавлено для скрытия вертикальной прокрутки
       } else {
         body.style.marginRight = '';
         body.classList.remove('modal-open');
+        html.style.overflowY = ''; // Убираем стиль overflow-y при закрытии модального окна
       }
     });
   }
-  // !  toggle dropdown menu
+
+  // ! toggle dropdown menu
   function toggleDropdownMenu() {
     const links = document.querySelectorAll('.header__menu-list-item--link > span');
     links.forEach(function(span) {
@@ -182,6 +181,7 @@ function headerToggleModalMeni (){
       });
     });
   }
+
   // ! addScrollClass
   function addScrollClass() {
     const header = document.querySelector('[data-action="header-wrapper"]');
@@ -189,43 +189,48 @@ function headerToggleModalMeni (){
     const headerBlock = document.querySelector('.header');
     let lastScrollTop = 0;
 
-    if(heroSection){
-    function handleScroll() {
-      const heroRect = heroSection.getBoundingClientRect();
-      const heroBlockScroll = headerBlock.getBoundingClientRect();
-      const heroBottom = heroRect.bottom + window.scrollY - 80;
-      const heroShow = heroBlockScroll.bottom + 10;
-      const scrollTop = window.scrollY;
-      if (scrollTop > heroShow) {
-        header.classList.add('is-hidden');
-      } else {
-        header.classList.remove('is-hidden');
+    if (heroSection) {
+      function handleScroll() {
+        if (header.classList.contains('show-modal')) {
+          return;
+        }
+
+        const heroRect = heroSection.getBoundingClientRect();
+        const heroBlockScroll = headerBlock.getBoundingClientRect();
+        const heroBottom = heroRect.bottom + window.scrollY - 80;
+        const heroShow = heroBlockScroll.bottom + 10;
+        const scrollTop = window.scrollY;
+
+        if (scrollTop > heroShow) {
+          header.classList.add('is-hidden');
+        } else {
+          header.classList.remove('is-hidden');
+        }
+
+        if (scrollTop > heroBottom / 2) {
+          header.style.zIndex = '9997';
+          header.style.position = 'fixed';
+        } else {
+          header.style.zIndex = '9999';
+          header.style.position = 'absolute';
+        }
+
+        if (scrollTop > heroBottom) {
+          header.classList.add('scroll');
+        } else {
+          header.classList.remove('scroll');
+        }
+
+        lastScrollTop = scrollTop;
       }
 
-      if (scrollTop > heroBottom / 2) {
-        header.style.zIndex = '9997';
-        header.style.position = 'fixed';
-      }else {
-        header.style.zIndex = '9999';
-        header.style.position = 'absolute';
-      }
-
-      if (scrollTop > heroBottom) {
-        header.classList.add('scroll');
-      } else {
-        header.classList.remove('scroll');
-      }
-
-      lastScrollTop = scrollTop;
-    }
-
-    window.addEventListener('scroll', handleScroll);
+      window.addEventListener('scroll', handleScroll);
     }
   }
 
-  toggleDropdownMenu()
-  toggleModalMenu()
-  addScrollClass()
+  toggleDropdownMenu();
+  toggleModalMenu();
+  addScrollClass();
 }
 
 function ctaHeaderShow() {
@@ -254,6 +259,6 @@ function ctaHeaderShow() {
 export const Header = ()=>{
   modalLogin()
   authForm()
-  headerToggleModalMeni()
+  headerToggleModalMenu()
   ctaHeaderShow()
 }

@@ -7673,8 +7673,7 @@ picture.hero__slide-img.next {
 }
 .header.show-modal .header__menu {
   opacity: 1;
-  height: calc(100dvh - 400px);
-  overflow-y: hidden;
+  height: 100dvh;
   visibility: unset;
   display: flex;
   animation-name: open;
@@ -7764,6 +7763,9 @@ picture.hero__slide-img.next {
   .header {
     height: 80px;
   }
+  .header.scroll .header__menu {
+    opacity: 1;
+  }
   .header.show-modal .header__menu {
     opacity: 1;
     height: 100dvh;
@@ -7843,7 +7845,7 @@ picture.hero__slide-img.next {
   flex-direction: column;
   padding: 65px 24px 0 32px;
   width: 100%;
-  height: 100dvh;
+  height: 100vh;
   background-color: #1B1B1B;
 }
 @media screen and (min-width: 834px) {
@@ -7871,7 +7873,7 @@ picture.hero__slide-img.next {
   }
   100% {
     display: flex;
-    height: 100dvh;
+    height: 100vh;
     visibility: visible;
     transform: translateX(0);
   }
@@ -7884,7 +7886,7 @@ picture.hero__slide-img.next {
   }
   100% {
     display: flex;
-    height: 100dvh;
+    height: 100vh;
     visibility: visible;
     transform: translateY(0);
   }

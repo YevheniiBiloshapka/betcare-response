@@ -74,8 +74,9 @@
     }
     & .header__menu{
       opacity: 1;
-      height: calc(100dvh - 400px);
-      overflow-y: hidden;
+      height: 100dvh;
+      //height: calc(100dvh - 100px);
+      //overflow-y: hidden;
       visibility: unset;
       display: flex;
 
@@ -174,7 +175,9 @@
   }
   @media screen and (min-width: 1280px) {
     height: 80px;
-
+    &.scroll .header__menu{
+      opacity: 1;
+    }
     &.show-modal{
 
       & .header__menu{
@@ -266,8 +269,7 @@
   flex-direction: column;
   padding: 65px 24px 0 32px;
   width: 100%;
-
-  height: 100dvh;
+  height: 100vh;
 
 
   background-color: $cl-neutral-900;
@@ -277,6 +279,7 @@
   @media screen and (min-width: 1180px) {
     padding: 125px 380px 0 380px;
   }@media screen and (min-width: 1280px) {
+
   transform: translateY(-150vh);
   transition: transform 0.6s ease-in-out,visibility 0.5s ease;
   }
@@ -289,7 +292,7 @@
   }
   100% {
     display: flex;
-    height: 100dvh;
+    height: 100vh;
     visibility: visible;
     transform: translateX(0);
   }
@@ -302,7 +305,7 @@
   }
   100% {
     display: flex;
-    height: 100dvh;
+    height: 100vh;
     visibility: visible;
     transform: translateY(0);
   }
