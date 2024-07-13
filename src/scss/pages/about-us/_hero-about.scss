@@ -2,11 +2,12 @@
   position: relative;
   padding-top: 188px;
   padding-bottom: 110px;
+  z-index: 9998;
 
   @include retina-bg("../img/aboutUs/hero/375_aboutUsHero@1.png","../img/aboutUs/hero/375_aboutUsHero@2.png","../img/aboutUs/hero/375_aboutUsHero@3.png");
   background-size: cover;
   background-repeat: no-repeat;
-
+  background-color: #1B1B1B;
   @media screen and (min-width: 834px) {
     padding-top: 401px;
     padding-bottom: 203px;
@@ -35,7 +36,7 @@
 }
 
 .about-us--hero__container{
-z-index: 0;
+  z-index: 0;
   padding: 0 16px;
   @media screen and (min-width: 834px) {
     padding: 0 64px;

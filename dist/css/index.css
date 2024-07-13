@@ -6259,10 +6259,12 @@ picture.hero__slide-img.next {
   position: relative;
   padding-top: 188px;
   padding-bottom: 110px;
+  z-index: 9998;
   background-image: -webkit-image-set(url(../img/aboutUs/hero/375_aboutUsHero@1.png) 1x, url(../img/aboutUs/hero/375_aboutUsHero@2.png) 2x, url(../img/aboutUs/hero/375_aboutUsHero@3.png) 3x);
   background-image: image-set(url(../img/aboutUs/hero/375_aboutUsHero@1.png) 1x, url(../img/aboutUs/hero/375_aboutUsHero@2.png) 2x, url(../img/aboutUs/hero/375_aboutUsHero@3.png) 3x);
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #1B1B1B;
 }
 @media screen and (min-width: 834px) {
   .about-us--hero {

@@ -186,6 +186,7 @@ function headerToggleModalMenu (){
   function addScrollClass() {
     const header = document.querySelector('[data-action="header-wrapper"]');
     const heroSection = document.getElementById('hero');
+
     const headerBlock = document.querySelector('.header');
     let lastScrollTop = 0;
 
