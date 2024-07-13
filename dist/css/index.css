@@ -6255,60 +6255,98 @@ picture.hero__slide-img.next {
     background-position-x: -20%;
   }
 }
+.first__screen-bg {
+  position: relative;
+  background-color: #1B1B1B;
+}
+.first__screen-bg-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 9996;
+  transform: translateX(-50%);
+  min-width: 320px;
+  min-height: 737px;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  object-fit: cover;
+}
+@media screen and (min-width: 834px) {
+  .first__screen-bg-img {
+    min-width: 834px;
+    min-height: 1254px;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .first__screen-bg-img {
+    min-width: 1180px;
+    min-height: 960px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .first__screen-bg-img {
+    min-width: 1280px;
+    min-height: 960px;
+  }
+}
+@media screen and (min-width: 1512px) {
+  .first__screen-bg-img {
+    min-width: 1512px;
+    min-height: 960px;
+  }
+}
+@media screen and (min-width: 1728px) {
+  .first__screen-bg-img {
+    width: 1728px;
+    height: 1200px;
+  }
+}
+
+.our-mission {
+  position: relative;
+  z-index: 0;
+}
+
 .about-us--hero {
   position: relative;
+  z-index: 9996;
   padding-top: 188px;
   padding-bottom: 110px;
-  z-index: 9998;
-  background-image: -webkit-image-set(url(../img/aboutUs/hero/375_aboutUsHero@1.png) 1x, url(../img/aboutUs/hero/375_aboutUsHero@2.png) 2x, url(../img/aboutUs/hero/375_aboutUsHero@3.png) 3x);
-  background-image: image-set(url(../img/aboutUs/hero/375_aboutUsHero@1.png) 1x, url(../img/aboutUs/hero/375_aboutUsHero@2.png) 2x, url(../img/aboutUs/hero/375_aboutUsHero@3.png) 3x);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #1B1B1B;
 }
 @media screen and (min-width: 834px) {
   .about-us--hero {
     padding-top: 401px;
     padding-bottom: 203px;
-    background-image: -webkit-image-set(url(../img/aboutUs/hero/834_aboutUsHero@1.png) 1x, url(../img/aboutUs/hero/834_aboutUsHero@2.png) 2x, url(../img/aboutUs/hero/834_aboutUsHero@3.png) 3x);
-    background-image: image-set(url(../img/aboutUs/hero/834_aboutUsHero@1.png) 1x, url(../img/aboutUs/hero/834_aboutUsHero@2.png) 2x, url(../img/aboutUs/hero/834_aboutUsHero@3.png) 3x);
   }
 }
 @media screen and (min-width: 1180px) {
   .about-us--hero {
     padding-top: 277px;
     padding-bottom: 159px;
-    background-image: -webkit-image-set(url(../img/aboutUs/hero/1180_aboutUsHero@1.png) 1x, url(../img/aboutUs/hero/1180_aboutUsHero@2.png) 2x, url(../img/aboutUs/hero/1180_aboutUsHero@3.png) 3x);
-    background-image: image-set(url(../img/aboutUs/hero/1180_aboutUsHero@1.png) 1x, url(../img/aboutUs/hero/1180_aboutUsHero@2.png) 2x, url(../img/aboutUs/hero/1180_aboutUsHero@3.png) 3x);
   }
 }
 @media screen and (min-width: 1280px) {
   .about-us--hero {
     padding-top: 234px;
     padding-bottom: 102px;
-    background-image: -webkit-image-set(url(../img/aboutUs/hero/1280_aboutUsHero@1.png) 1x, url(../img/aboutUs/hero/1280_aboutUsHero@2.png) 2x, url(../img/aboutUs/hero/1280_aboutUsHero@3.png) 3x);
-    background-image: image-set(url(../img/aboutUs/hero/1280_aboutUsHero@1.png) 1x, url(../img/aboutUs/hero/1280_aboutUsHero@2.png) 2x, url(../img/aboutUs/hero/1280_aboutUsHero@3.png) 3x);
   }
 }
 @media screen and (min-width: 1512px) {
   .about-us--hero {
     padding-top: 275px;
     padding-bottom: 145px;
-    background-image: -webkit-image-set(url(../img/aboutUs/hero/1512_aboutUsHero@1.png) 1x, url(../img/aboutUs/hero/1512_aboutUsHero@2.png) 2x, url(../img/aboutUs/hero/1512_aboutUsHero@3.png) 3x);
-    background-image: image-set(url(../img/aboutUs/hero/1512_aboutUsHero@1.png) 1x, url(../img/aboutUs/hero/1512_aboutUsHero@2.png) 2x, url(../img/aboutUs/hero/1512_aboutUsHero@3.png) 3x);
   }
 }
 @media screen and (min-width: 1728px) {
   .about-us--hero {
     padding-top: 323px;
     padding-bottom: 205px;
-    background-image: -webkit-image-set(url(../img/aboutUs/hero/1728_aboutUsHero@1.png) 1x, url(../img/aboutUs/hero/1728_aboutUsHero@2.png) 2x, url(../img/aboutUs/hero/1728_aboutUsHero@3.png) 3x);
-    background-image: image-set(url(../img/aboutUs/hero/1728_aboutUsHero@1.png) 1x, url(../img/aboutUs/hero/1728_aboutUsHero@2.png) 2x, url(../img/aboutUs/hero/1728_aboutUsHero@3.png) 3x);
   }
 }
 
 .about-us--hero__container {
-  z-index: 0;
+  z-index: 10000;
   padding: 0 16px;
 }
 @media screen and (min-width: 834px) {
