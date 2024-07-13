@@ -7673,6 +7673,8 @@ picture.hero__slide-img.next {
 }
 .header.show-modal .header__menu {
   opacity: 1;
+  height: calc(100dvh - 400px);
+  overflow-y: hidden;
   visibility: unset;
   display: flex;
   animation-name: open;
@@ -7764,6 +7766,7 @@ picture.hero__slide-img.next {
   }
   .header.show-modal .header__menu {
     opacity: 1;
+    height: 100dvh;
     visibility: unset;
     display: flex;
     animation-name: openVertical;

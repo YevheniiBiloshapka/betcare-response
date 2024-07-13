@@ -74,7 +74,8 @@
     }
     & .header__menu{
       opacity: 1;
-      //transform: translateX(0);
+      height: calc(100dvh - 400px);
+      overflow-y: hidden;
       visibility: unset;
       display: flex;
 
@@ -178,7 +179,7 @@
 
       & .header__menu{
           opacity: 1;
-
+          height: 100dvh;
           visibility: unset;
           display: flex;
 
