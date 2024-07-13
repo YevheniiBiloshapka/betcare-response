@@ -210,10 +210,8 @@ function headerToggleModalMenu (){
 
         if (scrollTop > heroBottom / 2) {
           header.style.zIndex = '9997';
-          header.style.position = 'fixed';
         } else {
           header.style.zIndex = '9999';
-          header.style.position = 'absolute';
         }
 
         if (scrollTop > heroBottom) {

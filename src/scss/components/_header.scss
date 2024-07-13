@@ -41,7 +41,7 @@
 }
 
 .header{
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 9999;
   width: 100%;
@@ -757,7 +757,7 @@
       @include font-body(normal);
     }
     & .menu__buttons{
-      padding-right: 56px;
+      padding-right: 55px;
     }
   }
 }

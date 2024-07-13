@@ -7686,7 +7686,7 @@ picture.hero__slide-img.next {
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 9999;
   width: 100%;
@@ -8384,7 +8384,7 @@ picture.hero__slide-img.next {
     letter-spacing: 0.66px;
   }
   .header.scroll .menu__buttons {
-    padding-right: 56px;
+    padding-right: 55px;
   }
 }
 @media screen and (min-width: 1728px) {
