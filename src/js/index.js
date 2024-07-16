@@ -1,6 +1,7 @@
 import { SlotMachine } from './components/slot/slotMachine.js';
-import heroTick from './components/part-hero.js'
-import {Header} from './components/header.js'
+import heroTick from './components/part-hero.js';
+import { Header } from './components/header.js';
+
 document.addEventListener('DOMContentLoaded', function () {
   var galleryTop = new Swiper('.gallery-top', {
     navigation: {
@@ -15,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
         return '<span class="' + className + '"></span>';
       },
     },
-    // allowTouchMove: false,
     loop: true,
     on: {
       slideChangeTransitionStart: function () {
@@ -36,8 +36,11 @@ document.addEventListener('DOMContentLoaded', function () {
             activeSlideVideo.removeEventListener('seeked', onSeeked);
           });
 
-          // Добавляем обработчик события для перезапуска видео после завершения
-          activeSlideVideo.addEventListener('timeupdate', handleTimeUpdate);
+          // Добавляем обработчик события для остановки видео после завершения
+          activeSlideVideo.addEventListener('ended', function onEnded() {
+            activeSlideVideo.pause();
+            activeSlideVideo.removeEventListener('ended', onEnded);
+          });
         }
       },
       init: function () {
@@ -49,25 +52,26 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   });
+
   function handleTimeUpdate(event) {
     const video = event.target;
     if (video.currentTime >= video.duration) {
       video.currentTime = 0; // Сброс времени на начало
-      video.play(); // Перезапуск видео
+      video.pause(); // Остановка видео
     }
   }
+
   var galleryThumbs = new Swiper('.gallery-thumbs', {
     slidesPerView: 1,
     slideToClickedSlide: true,
-
     allowTouchMove: false,
     loop: true,
   });
 
-
   galleryTop.controller.control = galleryThumbs;
   galleryThumbs.controller.control = galleryTop;
-  Header()
-  SlotMachine()
-  heroTick()
+
+  Header();
+  SlotMachine();
+  heroTick();
 });
