@@ -1754,6 +1754,8 @@ picture.hero__slide-img.next {
 .styled-gallery-top .swiper-slide {
   height: 518px;
   width: 311px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
 }
 .styled-gallery-top .gallery-top iframe {
   position: absolute;
@@ -1958,7 +1960,7 @@ picture.hero__slide-img.next {
   letter-spacing: 0.5px;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) translate3d(0, 0, 0);
   white-space: nowrap;
   color: #C2C2C2;
   opacity: 0.5;

@@ -81,6 +81,8 @@
   & .swiper-slide {
     height: $height;
     width: $width;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
   }
   & .gallery-top iframe  {
     position: absolute;
@@ -293,7 +295,7 @@
     @include font-title(h2-mob);
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%)  translate3d(0, 0, 0);
     white-space: nowrap;
     color: $cl-neutral-300;
     opacity: 0.5;
