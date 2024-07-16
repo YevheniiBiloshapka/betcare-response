@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     maxBackfaceHiddenSlides:true,
     effect: 'fade',
+    // allowTouchMove: false,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
