@@ -23,23 +23,16 @@ document.addEventListener('DOMContentLoaded', function () {
         videos.forEach((video) => {
           video.pause();
           video.currentTime = 0;
-
-          video.removeEventListener('timeupdate', handleTimeUpdate);
         });
 
         let activeSlideVideo = this.slides[this.activeIndex].querySelector('video');
         if (activeSlideVideo) {
           activeSlideVideo.pause();
           activeSlideVideo.currentTime = 0;
-          activeSlideVideo.addEventListener('seeked', function onSeeked() {
+          activeSlideVideo.load(); // Добавляем загрузку видео перед воспроизведением
+          activeSlideVideo.addEventListener('loadeddata', function onLoadedData() {
             activeSlideVideo.play();
-            activeSlideVideo.removeEventListener('seeked', onSeeked);
-          });
-
-          // Добавляем обработчик события для остановки видео после завершения
-          activeSlideVideo.addEventListener('ended', function onEnded() {
-            activeSlideVideo.pause();
-            activeSlideVideo.removeEventListener('ended', onEnded);
+            activeSlideVideo.removeEventListener('loadeddata', onLoadedData);
           });
         }
       },
@@ -47,19 +40,15 @@ document.addEventListener('DOMContentLoaded', function () {
         // Воспроизведение первого видео при загрузке
         let activeSlideVideo = this.slides[this.activeIndex].querySelector('video');
         if (activeSlideVideo) {
-          activeSlideVideo.play();
+          activeSlideVideo.load(); // Добавляем загрузку видео перед воспроизведением
+          activeSlideVideo.addEventListener('loadeddata', function onLoadedData() {
+            activeSlideVideo.play();
+            activeSlideVideo.removeEventListener('loadeddata', onLoadedData);
+          });
         }
       }
     }
   });
-
-  function handleTimeUpdate(event) {
-    const video = event.target;
-    if (video.currentTime >= video.duration) {
-      video.currentTime = 0; // Сброс времени на начало
-      video.pause(); // Остановка видео
-    }
-  }
 
   var galleryThumbs = new Swiper('.gallery-thumbs', {
     slidesPerView: 1,
