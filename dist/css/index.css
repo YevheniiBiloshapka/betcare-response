@@ -1782,7 +1782,6 @@ picture.hero__slide-img.next {
   height: 518px;
   width: 301px;
   left: 50%;
-  background: linear-gradient(165deg, #361B26 0%, #1E1B1C 46.76%, #3D1A2A 100.56%);
   transform: translateX(-50%);
   border-radius: 60px 60px 0 0;
 }
