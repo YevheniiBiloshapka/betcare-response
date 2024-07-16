@@ -16,6 +16,17 @@
   padding-top: 72px;
   height: 840px;
 }
+  & .swiper-wrapper{
+    -webkit-transform-style: preserve-3d;
+  }
+  & .swiper-slide {
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+  }
+  & .swiper-wrapper {
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateZ(0);
+  }
 
   @media screen and (min-width: 834px) {
     & .container{

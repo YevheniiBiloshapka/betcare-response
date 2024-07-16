@@ -1690,6 +1690,17 @@ picture.hero__slide-img.next {
   padding-top: 72px;
   height: 840px;
 }
+.services .swiper-wrapper {
+  -webkit-transform-style: preserve-3d;
+}
+.services .swiper-slide {
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+.services .swiper-wrapper {
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: translateZ(0);
+}
 @media screen and (min-width: 834px) {
   .services {
     background-image: url("../img/services/834_serviceBg.webp");

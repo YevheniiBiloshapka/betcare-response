@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nextEl: '.services-slider-nav-next',
       prevEl: '.services-slider-nav-prev',
     },
+    maxBackfaceHiddenSlides:true,
     effect: 'fade',
     pagination: {
       el: '.swiper-pagination',
@@ -55,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
     slideToClickedSlide: true,
     allowTouchMove: false,
     loop: true,
+    maxBackfaceHiddenSlides:true,
   });
 
   galleryTop.controller.control = galleryThumbs;
