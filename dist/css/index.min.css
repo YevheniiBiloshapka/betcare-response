@@ -1690,17 +1690,6 @@ picture.hero__slide-img.next {
   padding-top: 72px;
   height: 840px;
 }
-.services .swiper-wrapper {
-  -webkit-transform-style: preserve-3d;
-}
-.services .swiper-slide {
-  -webkit-transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-}
-.services .swiper-wrapper {
-  -webkit-transform-style: preserve-3d;
-  -webkit-transform: translateZ(0);
-}
 @media screen and (min-width: 834px) {
   .services {
     background-image: url("../img/services/834_serviceBg.webp");
@@ -1762,6 +1751,17 @@ picture.hero__slide-img.next {
   min-height: 518px;
   z-index: 66;
 }
+.styled-gallery-top .swiper-wrapper {
+  -webkit-transform-style: preserve-3d;
+}
+.styled-gallery-top .swiper-slide {
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+.styled-gallery-top .swiper-wrapper {
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: translateZ(0);
+}
 .styled-gallery-top .swiper-slide {
   height: 518px;
   width: 311px;
@@ -1780,8 +1780,9 @@ picture.hero__slide-img.next {
   position: absolute;
   bottom: 0;
   height: 518px;
-  width: 311px;
+  width: 301px;
   left: 50%;
+  background: linear-gradient(165deg, #361B26 0%, #1E1B1C 46.76%, #3D1A2A 100.56%);
   transform: translateX(-50%);
   border-radius: 60px 60px 0 0;
 }
@@ -1803,7 +1804,7 @@ picture.hero__slide-img.next {
   .styled-gallery-top .gallery-top video {
     border-radius: 70px 70px 0 0;
     height: 700px;
-    width: 420px;
+    width: 410px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -1826,7 +1827,7 @@ picture.hero__slide-img.next {
   .styled-gallery-top .gallery-top video {
     border-radius: 60px 60px 0 0;
     height: 521px;
-    width: 312px;
+    width: 301px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1851,7 +1852,7 @@ picture.hero__slide-img.next {
   }
   .styled-gallery-top .gallery-top video {
     height: 652px;
-    width: 392px;
+    width: 381px;
   }
 }
 @media screen and (min-width: 1728px) {
@@ -1872,7 +1873,7 @@ picture.hero__slide-img.next {
   .styled-gallery-top .gallery-top video {
     border-radius: 75px 75px 0 0;
     height: 700px;
-    width: 420px;
+    width: 409px;
   }
 }
 
