@@ -1790,7 +1790,7 @@ picture.hero__slide-img.next {
   .styled-gallery-top .gallery-top video {
     border-radius: 70px 70px 0 0;
     height: 700px;
-    width: 420px;
+    width: 420px 422px;
     left: 50%;
     transform: translateX(-50%);
   }

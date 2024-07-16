@@ -118,7 +118,7 @@
     & .gallery-top video {
       border-radius: 70px 70px 0 0;
       height: $height;
-      width: $width;
+      width: $width calc($width + 2px );
       left: 50%;
       transform: translateX(-50%);
     }
