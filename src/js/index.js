@@ -23,12 +23,17 @@ document.addEventListener('DOMContentLoaded', function () {
         videos.forEach((video) => {
           video.pause();
           video.currentTime = 0;
-       
+
         });
 
         let activeSlideVideo = this.slides[this.activeIndex].querySelector('video');
         if (activeSlideVideo) {
-          activeSlideVideo.play();
+          activeSlideVideo.pause();
+          activeSlideVideo.currentTime = 0;
+          activeSlideVideo.addEventListener('seeked', function onSeeked() {
+            activeSlideVideo.play();
+            activeSlideVideo.removeEventListener('seeked', onSeeked);
+          });
         }
       }
     }
