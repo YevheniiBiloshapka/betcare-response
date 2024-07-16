@@ -23,8 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
         videos.forEach((video) => {
           video.pause();
           video.currentTime = 0;
-          video.muted = true; 
-          video.setAttribute('playsinline', '');
+       
         });
 
         let activeSlideVideo = this.slides[this.activeIndex].querySelector('video');
