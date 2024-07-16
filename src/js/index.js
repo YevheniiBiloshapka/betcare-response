@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
           video.pause();
           video.currentTime = 0;
 
+          video.removeEventListener('timeupdate', handleTimeUpdate);
         });
 
         let activeSlideVideo = this.slides[this.activeIndex].querySelector('video');
@@ -34,10 +35,27 @@ document.addEventListener('DOMContentLoaded', function () {
             activeSlideVideo.play();
             activeSlideVideo.removeEventListener('seeked', onSeeked);
           });
+
+          // Добавляем обработчик события для перезапуска видео после завершения
+          activeSlideVideo.addEventListener('timeupdate', handleTimeUpdate);
+        }
+      },
+      init: function () {
+        // Воспроизведение первого видео при загрузке
+        let activeSlideVideo = this.slides[this.activeIndex].querySelector('video');
+        if (activeSlideVideo) {
+          activeSlideVideo.play();
         }
       }
     }
   });
+  function handleTimeUpdate(event) {
+    const video = event.target;
+    if (video.currentTime >= video.duration) {
+      video.currentTime = 0; // Сброс времени на начало
+      video.play(); // Перезапуск видео
+    }
+  }
   var galleryThumbs = new Swiper('.gallery-thumbs', {
     slidesPerView: 1,
     slideToClickedSlide: true,
