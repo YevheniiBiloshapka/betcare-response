@@ -17,6 +17,20 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     // allowTouchMove: false,
     loop: true,
+    on: {
+      slideChangeTransitionStart: function () {
+        let videos = document.querySelectorAll('.swiper-slide video');
+        videos.forEach((video) => {
+          video.pause();
+          video.currentTime = 0; // Перезапуск видео с начала
+        });
+
+        let activeSlideVideo = this.slides[this.activeIndex].querySelector('video');
+        if (activeSlideVideo) {
+          activeSlideVideo.play();
+        }
+      }
+    }
   });
   var galleryThumbs = new Swiper('.gallery-thumbs', {
     slidesPerView: 1,

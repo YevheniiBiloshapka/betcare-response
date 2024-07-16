@@ -177,3 +177,28 @@
     }
   }
 }
+
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 2px 0;
+
+
+  color:  #FFF;
+
+  cursor: pointer;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  text-decoration-line: underline;
+  @include transition();
+  &:hover{
+    opacity: 0.8;
+    text-decoration-line: underline;
+  }
+}

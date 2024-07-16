@@ -57,6 +57,7 @@
 .about-us--hero{
   position: relative;
   z-index: 9996;
+  height:100vh;
 
   padding-top: 188px;
   padding-bottom: 110px;
@@ -70,6 +71,7 @@
   @media screen and (min-width:1180px) {
     padding-top: 277px;
     padding-bottom: 159px;
+
   }
   @media screen and (min-width:1280px) {
     padding-top: 234px;

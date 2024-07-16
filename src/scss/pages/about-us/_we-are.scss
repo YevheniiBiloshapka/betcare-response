@@ -125,6 +125,11 @@
     &.green{
       background: $gr-dg-4;
     }
+    &:hover{
+      & span{
+        background: #1B1B1B;
+      }
+    }
     & span{
       font-size: 16px;
       line-height: 24px;
@@ -160,6 +165,7 @@
       border-radius: 8px;
 
       height: 60px;
+
       & span{
         height: 55px;
         @include font-body(large-bold);
