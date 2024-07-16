@@ -22,7 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
         let videos = document.querySelectorAll('.swiper-slide video');
         videos.forEach((video) => {
           video.pause();
-          video.currentTime = 0; // Перезапуск видео с начала
+          video.currentTime = 0;
+          video.muted = true; 
+          video.setAttribute('playsinline', '');
         });
 
         let activeSlideVideo = this.slides[this.activeIndex].querySelector('video');
