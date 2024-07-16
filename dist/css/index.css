@@ -6305,6 +6305,27 @@ picture.hero__slide-img.next {
     background-position-x: -20%;
   }
 }
+.cta a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 2px 0;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  text-decoration-line: underline;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cta a:hover {
+  opacity: 0.8;
+  text-decoration-line: underline;
+}
+
 .first__screen-bg {
   position: relative;
   background-color: #1B1B1B;
