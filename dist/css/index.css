@@ -6180,6 +6180,7 @@ picture.hero__slide-img.next {
 .cta address {
   display: flex;
   flex-direction: column;
+  align-items: start;
   gap: 8px;
   margin-bottom: 24px;
   font-style: normal;
