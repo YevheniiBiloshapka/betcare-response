@@ -6202,12 +6202,8 @@ picture.hero__slide-img.next {
   }
 }
 @media screen and (min-width: 1280px) {
-  .cta .level-list {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-  }
   .cta .level-list li {
-    flex: 1;
+    flex: 1 0 calc(20% - 16px);
   }
   .cta .level-list li p {
     font-size: 14px !important;

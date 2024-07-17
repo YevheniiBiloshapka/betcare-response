@@ -1608,11 +1608,10 @@ $colors: (
     }
   }
   @media screen and (min-width: 1280px) {
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
+
 
     & li {
-      flex: 1;
+      flex: 1 0 calc(100% / 5 - 16px);
       & p {
         @include font-body(small-bold, true);
       }
