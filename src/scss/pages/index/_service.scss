@@ -158,6 +158,13 @@
 
     transform: translateX(-50%);
     border-radius:60px 60px 0 0;
+    &::-webkit-media-controls {
+      display: none !important;
+      opacity: 0;
+    }
+    &::-webkit-media-controls-start-playback-button {
+      display: none !important;
+    }
   }
   @media screen and (min-width: 834px) {
     $width:420px;
