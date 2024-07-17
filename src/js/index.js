@@ -8,9 +8,17 @@ document.addEventListener('DOMContentLoaded', function () {
       nextEl: '.services-slider-nav-next',
       prevEl: '.services-slider-nav-prev',
     },
+    slidesPerView: 1,
+    // effect: "none",
+    // speed:0,
     maxBackfaceHiddenSlides:true,
     effect: 'fade',
-    // allowTouchMove: false,
+    fadeEffect: {
+      crossFade: false
+    },
+    // effect: 'fade',
+    loop: true,
+
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -18,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return '<span class="' + className + '"></span>';
       },
     },
-    loop: true,
+
     on: {
       slideChangeTransitionStart: function () {
         let videos = document.querySelectorAll('.swiper-slide video');

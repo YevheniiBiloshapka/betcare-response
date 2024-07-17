@@ -1,7 +1,7 @@
 .cards {
   position: relative;
 
-  @include retina-bg("../img/cards/375_cardBg.png","../img/cards/375_cardBg@2x.png","../img/cards/375_cardBg@3x.png");
+  @include retina-bg("/img/cards/375_cardBg.png","/img/cards/375_cardBg@2x.png","/img/cards/375_cardBg@3x.png");
 
 
   background-size: cover;
@@ -37,7 +37,7 @@
 
   @media screen and (min-width: 834px) {
 
-    @include retina-bg("../img/cards/834_cardBg.png","../img/cards/834_cardBg@3x.png","../img/cards/834_cardBg@3x.png");
+    @include retina-bg("/img/cards/834_cardBg.png","/img/cards/834_cardBg@3x.png","/img/cards/834_cardBg@3x.png");
     background-position: top;
     &__container {
       padding:64px 160px ;
@@ -48,7 +48,7 @@
     }
   }
   @media screen and (min-width: 1180px) {
-    @include retina-bg("../img/cards/1180_cardBg.png","../img/cards/1180_cardBg@2x.png","../img/cards/1180_cardBg@3x.png");
+    @include retina-bg("/img/cards/1180_cardBg.png","/img/cards/1180_cardBg@2x.png","/img/cards/1180_cardBg@3x.png");
 
     &__container {
       padding:64px 140px ;
@@ -62,12 +62,12 @@
     }
   }
   @media screen and (min-width: 1280px) {
-    @include retina-bg("../img/cards/1280_cardBg.png","../img/cards/1280_cardBg@2x.png","../img/cards/1280_cardBg@3x.png");
+    @include retina-bg("/img/cards/1280_cardBg.png","/img/cards/1280_cardBg@2x.png","/img/cards/1280_cardBg@3x.png");
 
   }
   @media screen and (min-width: 1512px) {
 
-    @include retina-bg("../img/cards/1512_cardBg.png","../img/cards/1512_cardBg@2x.png","../img/cards/1512_cardBg@3x.png");
+    @include retina-bg("/img/cards/1512_cardBg.png","/img/cards/1512_cardBg@2x.png","/img/cards/1512_cardBg@3x.png");
     &__container {
       padding:80px 151px ;
       gap:113px;
@@ -83,7 +83,7 @@
   }
   @media screen and (min-width: 1728px) {
     
-    @include retina-bg("../img/cards/1728_cardBg.png","../img/cards/1728_cardBg@2x.png","../img/cards/1728_cardBg@3x.png");
+    @include retina-bg("/img/cards/1728_cardBg.png","/img/cards/1728_cardBg@2x.png","/img/cards/1728_cardBg@3x.png");
     &__title {
       @include font-title(h2-lg);
       max-width: 700px;

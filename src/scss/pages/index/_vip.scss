@@ -1,30 +1,30 @@
 .vip{
   position: relative;
-  @include retina-bg("../img/vip/png/375_vipBg.png","../img/vip/png/375_vipBg@2x.png","../img/vip/png/375_vipBg@3x.png");
+  @include retina-bg("/img/vip/png/375_vipBg.png","/img/vip/png/375_vipBg@2x.png","/img/vip/png/375_vipBg@3x.png");
   background-position: top right;
   background-size: contain;
   background-repeat: no-repeat;
 height: 718px;
 
   @media screen and (min-width: 834px) {
-    @include retina-bg("../img/vip/png/834_vipBg.png","../img/vip/png/834_vipBg@2x.png","../img/vip/png/834_vipBg@3x.png");
+    @include retina-bg("/img/vip/png/834_vipBg.png","/img/vip/png/834_vipBg@2x.png","/img/vip/png/834_vipBg@3x.png");
     height: 898px;
   }
   @media screen and (min-width: 1180px) {
     height: 532px;
-    @include retina-bg("../img/vip/png/1180_vipBg.png","../img/vip/png/1180_vipBg@2x.png","../img/vip/png/1180_vipBg@3x.png");
+    @include retina-bg("/img/vip/png/1180_vipBg.png","/img/vip/png/1180_vipBg@2x.png","/img/vip/png/1180_vipBg@3x.png");
   }
   @media screen and (min-width: 1280px) {
     height: 510px;
-    @include retina-bg("../img/vip/png/1280_vipBg.png","../img/vip/png/1280_vipBg@2x.png","../img/vip/png/1280_vipBg@3x.png");
+    @include retina-bg("/img/vip/png/1280_vipBg.png","/img/vip/png/1280_vipBg@2x.png","/img/vip/png/1280_vipBg@3x.png");
   }
   @media screen and (min-width: 1512px) {
     height: 644px;
-    @include retina-bg("../img/vip/png/1512_vipBg.png","../img/vip/png/1512_vipBg@2x.png","../img/vip/png/1512_vipBg@3x.png");
+    @include retina-bg("/img/vip/png/1512_vipBg.png","/img/vip/png/1512_vipBg@2x.png","/img/vip/png/1512_vipBg@3x.png");
   }
   @media screen and (min-width: 1728px) {
     height: 650px;
-    @include retina-bg("../img/vip/png/1728_vipBg.png","../img/vip/png/1728_vipBg@2x.png","../img/vip/png/1728_vipBg@3x.png");
+    @include retina-bg("/img/vip/png/1728_vipBg.png","/img/vip/png/1728_vipBg@2x.png","/img/vip/png/1728_vipBg@3x.png");
   }
 }
 .vip__container{

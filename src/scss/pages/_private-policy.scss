@@ -1,7 +1,7 @@
 .legal-document{
   padding: 88px 16px;
   background-color: #fff;
-  @include retina-bg("../img/cookies/375@1.png","../img/cookies/375@2.png","../img/cookies/375@3.png");
+  @include retina-bg("/img/cookies/375@1.png","/img/cookies/375@2.png","/img/cookies/375@3.png");
   background-size: cover;
   background-position: top;
 
@@ -11,11 +11,11 @@
     visibility: hidden;
   }
   @media screen and (min-width:834px){
-    @include retina-bg("../img/cookies/834@1.png","../img/cookies/834@2.png","../img/cookies/834@3.png");
+    @include retina-bg("/img/cookies/834@1.png","/img/cookies/834@2.png","/img/cookies/834@3.png");
     padding: 104px 64px;
   }
   @media screen and (min-width:1180px){
-    @include retina-bg("../img/cookies/1180@1.png","../img/cookies/1180@2.png","../img/cookies/1180@3.png");
+    @include retina-bg("/img/cookies/1180@1.png","/img/cookies/1180@2.png","/img/cookies/1180@3.png");
     background-position: bottom;
     padding: 104px 64px;
   }

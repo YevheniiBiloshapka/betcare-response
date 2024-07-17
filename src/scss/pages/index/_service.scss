@@ -1,7 +1,7 @@
 .services {
   overflow: hidden;
   position: relative;
-  background-image: url("../img/services/375_serviceBg.webp");
+  background-image: url("/img/services/375_serviceBg.webp");
 
   background-position: bottom;
   background-size: cover;
@@ -23,7 +23,7 @@
       padding-top: 144px;
       height: 1137px;
     }
-    background-image: url("../img/services/834_serviceBg.webp");
+    background-image: url("/img/services/834_serviceBg.webp");
   }
   @media screen and (min-width: 1180px) {
 
@@ -35,7 +35,7 @@
       align-items: start;
       justify-content: start;
     }
-    background-image: url("../img/services/1180_serviceBg.webp");
+    background-image: url("/img/services/1180_serviceBg.webp");
   }
   @media screen and (min-width: 1280px) {
 
@@ -43,7 +43,7 @@
       padding-top: 202.56px;
       height: 720px;
     }
-    background-image: url("../img/services/1280_serviceBg.webp");
+    background-image: url("/img/services/1280_serviceBg.webp");
   }
   @media screen and (min-width: 1512px) {
 
@@ -51,7 +51,7 @@
       padding-top: 162.71px;
       height: 813px;
     }
-    background-image: url("../img/services/1512_serviceBg.webp");
+    background-image: url("/img/services/1512_serviceBg.webp");
   }
   @media screen and (min-width: 1728px) {
 
@@ -59,7 +59,7 @@
       padding-top: 200.76px;
       height: 900px;
     }
-    background-image: url("../img/services/1728_serviceBg.webp");
+    background-image: url("/img/services/1728_serviceBg.webp");
   }
 }
 
@@ -71,6 +71,7 @@
 // TODO: galary top
 .styled-gallery-top {
   position: relative;
+  overflow: hidden;
   width: 100%;
   $width:311px;
   $height: 518px;
@@ -103,21 +104,21 @@
     height: 100%;
     background-size: contain;
     z-index: 0;
-    @include retina-bg("../img/services/phoneBg/375_phoneNoBg.png","../img/services/phoneBg/375_phoneNoBg@2x.png","../img/services/phoneBg/375_phoneNoBg@3x.png");
+    @include retina-bg("/img/services/phoneBg/375_phoneNoBg.png","/img/services/phoneBg/375_phoneNoBg@2x.png","/img/services/phoneBg/375_phoneNoBg@3x.png");
     @media screen and (min-width: 834px) {
-      @include retina-bg("../img/services/phoneBg/834_phoneNoBg.png","../img/services/phoneBg/834_phoneNoBg@2x.png","../img/services/phoneBg/834_phoneNoBg@3x.png");
+      @include retina-bg("/img/services/phoneBg/834_phoneNoBg.png","/img/services/phoneBg/834_phoneNoBg@2x.png","/img/services/phoneBg/834_phoneNoBg@3x.png");
     }
     @media screen and (min-width: 1180px) {
-      @include retina-bg("../img/services/phoneBg/1180_phoneNoBg.png","../img/services/phoneBg/1180_phoneNoBg@2x.png","../img/services/phoneBg/1180_phoneNoBg@3x.png");
+      @include retina-bg("/img/services/phoneBg/1180_phoneNoBg.png","/img/services/phoneBg/1180_phoneNoBg@2x.png","/img/services/phoneBg/1180_phoneNoBg@3x.png");
     }
     @media screen and (min-width: 1280px) {
-      @include retina-bg("../img/services/phoneBg/1280_phoneNoBg.png","../img/services/phoneBg/1280_phoneNoBg@2x.png","../img/services/phoneBg/1280_phoneNoBg@3x.png");
+      @include retina-bg("/img/services/phoneBg/1280_phoneNoBg.png","/img/services/phoneBg/1280_phoneNoBg@2x.png","/img/services/phoneBg/1280_phoneNoBg@3x.png");
     }
     @media screen and (min-width: 1512px) {
-      @include retina-bg("../img/services/phoneBg/1512_phoneNoBg.png","../img/services/phoneBg/1512_phoneNoBg@2x.png","../img/services/phoneBg/1512_phoneNoBg@3x.png");
+      @include retina-bg("/img/services/phoneBg/1512_phoneNoBg.png","/img/services/phoneBg/1512_phoneNoBg@2x.png","/img/services/phoneBg/1512_phoneNoBg@3x.png");
     }
     @media screen and (min-width: 1728px) {
-      @include retina-bg("../img/services/phoneBg/1728_phoneNoBg.png","../img/services/phoneBg/1728_phoneNoBg@2x.png","../img/services/phoneBg/1728_phoneNoBg@3x.png");
+      @include retina-bg("/img/services/phoneBg/1728_phoneNoBg.png","/img/services/phoneBg/1728_phoneNoBg@2x.png","/img/services/phoneBg/1728_phoneNoBg@3x.png");
     }
   }
   & .swiper-slide--bg-grad{
@@ -131,6 +132,13 @@
     width:  calc($width - 10px);
     background: linear-gradient(165deg, #361B26 0%, #1E1B1C 46.76%, #3D1A2A 100.56%);
     border-radius:60px 60px 0 0;
+
+    &.slide_3{
+      background-image: url("/files/servicesVideo/screen3_375x2.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
   & .gallery-top iframe  {
     position: absolute;
@@ -178,6 +186,8 @@
       border-radius: 70px 70px 0 0;
       height: $height;
       width:  calc($width - 10px);
+      &.slide_3{
+        background-image: url("/files/servicesVideo/screen3_834x2.png");}
     }
   }
   @media screen and (min-width: 1180px) {
@@ -206,10 +216,17 @@
       border-radius: 60px 60px 0 0;
       height: $height;
       width:  calc($width - 11px);
+      &.slide_3{
+        background-image: url("/files/servicesVideo/screen3_1180x2.png");}
     }
   }
   @media screen and (min-width: 1280px) {
     margin-left: 220px;
+    & .swiper-slide--bg-grad {
+      &.slide_3 {
+        background-image: url("/files/servicesVideo/screen3_1280x2.png");
+      }
+    }
   }
   @media screen and (min-width: 1512px) {
     margin-left: 196px;
@@ -235,6 +252,9 @@
     & .swiper-slide--bg-grad{
       height: $height;
       width:  calc($width - 11px);
+      &.slide_3 {
+        background-image: url("/files/servicesVideo/screen3_1512x2.png");
+      }
     }
   }
   @media screen and (min-width: 1728px) {
@@ -263,6 +283,9 @@
       height: $height;
       width:  calc($width - 11px);
       border-radius: 75px 75px 0 0;
+      &.slide_3 {
+        background-image: url("/files/servicesVideo/screen3_1728x2.png");
+      }
     }
   }
 }
