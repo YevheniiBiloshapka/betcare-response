@@ -118,23 +118,23 @@ $colors: (
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
-    @include retina-bg("../img/cta/bg/375_bgCtaBottom@1.png","../img/cta/bg/375_bgCtaBottom@2.png","../img/cta/bg/375_bgCtaBottom@3.png");
+    @include retina-bg("..../img/cta/bg/375_bgCtaBottom@1.png","..../img/cta/bg/375_bgCtaBottom@2.png","..../img/cta/bg/375_bgCtaBottom@3.png");
 
     @media screen and (min-width: 834px) {
-      @include retina-bg("../img/cta/bg/834_bgCtaBottom@1.png","../img/cta/bg/834_bgCtaBottom@2.png","../img/cta/bg/834_bgCtaBottom@3.png");
+      @include retina-bg("..../img/cta/bg/834_bgCtaBottom@1.png","..../img/cta/bg/834_bgCtaBottom@2.png","..../img/cta/bg/834_bgCtaBottom@3.png");
       max-height: 875px;
     }
     @media screen and (min-width: 1180px) {
-      @include retina-bg("../img/cta/bg/1180_bgCtaBottom@1.png","../img/cta/bg/1180_bgCtaBottom@2.png","../img/cta/bg/1180_bgCtaBottom@3.png");
+      @include retina-bg("..../img/cta/bg/1180_bgCtaBottom@1.png","..../img/cta/bg/1180_bgCtaBottom@2.png","..../img/cta/bg/1180_bgCtaBottom@3.png");
     }
     @media screen and (min-width: 1280px) {
-      @include retina-bg("../img/cta/bg/1280_bgCtaBottom@1.png","../img/cta/bg/1280_bgCtaBottom@2.png","../img/cta/bg/1280_bgCtaBottom@3.png");
+      @include retina-bg("..../img/cta/bg/1280_bgCtaBottom@1.png","..../img/cta/bg/1280_bgCtaBottom@2.png","..../img/cta/bg/1280_bgCtaBottom@3.png");
     }
     @media screen and (min-width: 1512px) {
-      @include retina-bg("../img/cta/bg/1512_bgCtaBottom@1.png","../img/cta/bg/1512_bgCtaBottom@2.png","../img/cta/bg/1512_bgCtaBottom@3.png");
+      @include retina-bg("..../img/cta/bg/1512_bgCtaBottom@1.png","..../img/cta/bg/1512_bgCtaBottom@2.png","..../img/cta/bg/1512_bgCtaBottom@3.png");
     }
     @media screen and (min-width: 1728px) {
-      @include retina-bg("../img/cta/bg/1728_bgCtaBottom@1.png","../img/cta/bg/1728_bgCtaBottom@2.png","../img/cta/bg/1728_bgCtaBottom@3.png");
+      @include retina-bg("..../img/cta/bg/1728_bgCtaBottom@1.png","..../img/cta/bg/1728_bgCtaBottom@2.png","..../img/cta/bg/1728_bgCtaBottom@3.png");
     }
   }
 
@@ -448,24 +448,24 @@ $colors: (
 
     width: 100%;
     height: 100%;
-    @include retina-bg("../img/cta/phoneBg/375_ctaSliderPhone@1.png","../img/cta/phoneBg/375_ctaSliderPhone@2.png","../img/cta/phoneBg/375_ctaSliderPhone@3.png");
+    @include retina-bg("..../img/cta/phoneBg/375_ctaSliderPhone@1.png","..../img/cta/phoneBg/375_ctaSliderPhone@2.png","..../img/cta/phoneBg/375_ctaSliderPhone@3.png");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
     @media screen and (min-width: 834px) {
-      @include retina-bg("../img/cta/phoneBg/834_ctaSliderPhone@1.png","../img/cta/phoneBg/834_ctaSliderPhone@2.png","../img/cta/phoneBg/834_ctaSliderPhone@3.png");
+      @include retina-bg("..../img/cta/phoneBg/834_ctaSliderPhone@1.png","..../img/cta/phoneBg/834_ctaSliderPhone@2.png","..../img/cta/phoneBg/834_ctaSliderPhone@3.png");
     }
     @media screen and (min-width: 1180px) {
-      @include retina-bg("../img/cta/phoneBg/1180_ctaSliderPhone@1.png","../img/cta/phoneBg/1180_ctaSliderPhone@2.png","../img/cta/phoneBg/1180_ctaSliderPhone@3.png");
+      @include retina-bg("..../img/cta/phoneBg/1180_ctaSliderPhone@1.png","..../img/cta/phoneBg/1180_ctaSliderPhone@2.png","..../img/cta/phoneBg/1180_ctaSliderPhone@3.png");
     }
     @media screen and (min-width: 1280px) {
-      @include retina-bg("../img/cta/phoneBg/1280_ctaSliderPhone@1.png","../img/cta/phoneBg/1280_ctaSliderPhone@2.png","../img/cta/phoneBg/1280_ctaSliderPhone@3.png");
+      @include retina-bg("..../img/cta/phoneBg/1280_ctaSliderPhone@1.png","..../img/cta/phoneBg/1280_ctaSliderPhone@2.png","..../img/cta/phoneBg/1280_ctaSliderPhone@3.png");
     }
     @media screen and (min-width: 1512px) {
-      @include retina-bg("../img/cta/phoneBg/1512_ctaSliderPhone@1.png","../img/cta/phoneBg/1512_ctaSliderPhone@2.png","../img/cta/phoneBg/1512_ctaSliderPhone@3.png");
+      @include retina-bg("..../img/cta/phoneBg/1512_ctaSliderPhone@1.png","..../img/cta/phoneBg/1512_ctaSliderPhone@2.png","..../img/cta/phoneBg/1512_ctaSliderPhone@3.png");
     }
     @media screen and (min-width: 1728px) {
-      @include retina-bg("../img/cta/phoneBg/1728_ctaSliderPhone@1.png","../img/cta/phoneBg/1728_ctaSliderPhone@2.png","../img/cta/phoneBg/1728_ctaSliderPhone@3.png");
+      @include retina-bg("..../img/cta/phoneBg/1728_ctaSliderPhone@1.png","..../img/cta/phoneBg/1728_ctaSliderPhone@2.png","..../img/cta/phoneBg/1728_ctaSliderPhone@3.png");
     }
   }
   &--img {

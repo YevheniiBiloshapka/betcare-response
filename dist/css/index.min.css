@@ -1676,7 +1676,7 @@ picture.hero__slide-img.next {
 .services {
   overflow: hidden;
   position: relative;
-  background-image: url("/img/services/375_serviceBg.webp");
+  background-image: url("../img/services/375_serviceBg.webp");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1688,24 +1688,24 @@ picture.hero__slide-img.next {
   align-items: center;
   justify-content: start;
   padding-top: 72px;
-  height: 840px;
+  height: 838px;
 }
 @media screen and (min-width: 834px) {
   .services {
-    background-image: url("/img/services/834_serviceBg.webp");
+    background-image: url("../img/services/834_serviceBg.webp");
   }
   .services .container {
     padding-top: 144px;
-    height: 1137px;
+    height: 1135px;
   }
 }
 @media screen and (min-width: 1180px) {
   .services {
-    background-image: url("/img/services/1180_serviceBg.webp");
+    background-image: url("../img/services/1180_serviceBg.webp");
   }
   .services .container {
     padding-top: 170.56px;
-    height: 688px;
+    height: 686px;
     flex-direction: row;
     align-items: start;
     justify-content: start;
@@ -1713,29 +1713,29 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 1280px) {
   .services {
-    background-image: url("/img/services/1280_serviceBg.webp");
+    background-image: url("../img/services/1280_serviceBg.webp");
   }
   .services .container {
     padding-top: 202.56px;
-    height: 720px;
+    height: 718px;
   }
 }
 @media screen and (min-width: 1512px) {
   .services {
-    background-image: url("/img/services/1512_serviceBg.webp");
+    background-image: url("../img/services/1512_serviceBg.webp");
   }
   .services .container {
     padding-top: 162.71px;
-    height: 813px;
+    height: 811px;
   }
 }
 @media screen and (min-width: 1728px) {
   .services {
-    background-image: url("/img/services/1728_serviceBg.webp");
+    background-image: url("../img/services/1728_serviceBg.webp");
   }
   .services .container {
     padding-top: 200.76px;
-    height: 900px;
+    height: 898px;
   }
 }
 
@@ -1775,37 +1775,37 @@ picture.hero__slide-img.next {
   height: 100%;
   background-size: contain;
   z-index: 0;
-  background-image: -webkit-image-set(url(/img/services/phoneBg/375_phoneNoBg.png) 1x, url(/img/services/phoneBg/375_phoneNoBg@2x.png) 2x, url(/img/services/phoneBg/375_phoneNoBg@3x.png) 3x);
-  background-image: image-set(url(/img/services/phoneBg/375_phoneNoBg.png) 1x, url(/img/services/phoneBg/375_phoneNoBg@2x.png) 2x, url(/img/services/phoneBg/375_phoneNoBg@3x.png) 3x);
+  background-image: -webkit-image-set(url(../img/services/phoneBg/375_phoneNoBg.png) 1x, url(../img/services/phoneBg/375_phoneNoBg@2x.png) 2x, url(../img/services/phoneBg/375_phoneNoBg@3x.png) 3x);
+  background-image: image-set(url(../img/services/phoneBg/375_phoneNoBg.png) 1x, url(../img/services/phoneBg/375_phoneNoBg@2x.png) 2x, url(../img/services/phoneBg/375_phoneNoBg@3x.png) 3x);
 }
 @media screen and (min-width: 834px) {
   .styled-gallery-top .swiper-slide--bg {
-    background-image: -webkit-image-set(url(/img/services/phoneBg/834_phoneNoBg.png) 1x, url(/img/services/phoneBg/834_phoneNoBg@2x.png) 2x, url(/img/services/phoneBg/834_phoneNoBg@3x.png) 3x);
-    background-image: image-set(url(/img/services/phoneBg/834_phoneNoBg.png) 1x, url(/img/services/phoneBg/834_phoneNoBg@2x.png) 2x, url(/img/services/phoneBg/834_phoneNoBg@3x.png) 3x);
+    background-image: -webkit-image-set(url(../img/services/phoneBg/834_phoneNoBg.png) 1x, url(../img/services/phoneBg/834_phoneNoBg@2x.png) 2x, url(../img/services/phoneBg/834_phoneNoBg@3x.png) 3x);
+    background-image: image-set(url(../img/services/phoneBg/834_phoneNoBg.png) 1x, url(../img/services/phoneBg/834_phoneNoBg@2x.png) 2x, url(../img/services/phoneBg/834_phoneNoBg@3x.png) 3x);
   }
 }
 @media screen and (min-width: 1180px) {
   .styled-gallery-top .swiper-slide--bg {
-    background-image: -webkit-image-set(url(/img/services/phoneBg/1180_phoneNoBg.png) 1x, url(/img/services/phoneBg/1180_phoneNoBg@2x.png) 2x, url(/img/services/phoneBg/1180_phoneNoBg@3x.png) 3x);
-    background-image: image-set(url(/img/services/phoneBg/1180_phoneNoBg.png) 1x, url(/img/services/phoneBg/1180_phoneNoBg@2x.png) 2x, url(/img/services/phoneBg/1180_phoneNoBg@3x.png) 3x);
+    background-image: -webkit-image-set(url(../img/services/phoneBg/1180_phoneNoBg.png) 1x, url(../img/services/phoneBg/1180_phoneNoBg@2x.png) 2x, url(../img/services/phoneBg/1180_phoneNoBg@3x.png) 3x);
+    background-image: image-set(url(../img/services/phoneBg/1180_phoneNoBg.png) 1x, url(../img/services/phoneBg/1180_phoneNoBg@2x.png) 2x, url(../img/services/phoneBg/1180_phoneNoBg@3x.png) 3x);
   }
 }
 @media screen and (min-width: 1280px) {
   .styled-gallery-top .swiper-slide--bg {
-    background-image: -webkit-image-set(url(/img/services/phoneBg/1280_phoneNoBg.png) 1x, url(/img/services/phoneBg/1280_phoneNoBg@2x.png) 2x, url(/img/services/phoneBg/1280_phoneNoBg@3x.png) 3x);
-    background-image: image-set(url(/img/services/phoneBg/1280_phoneNoBg.png) 1x, url(/img/services/phoneBg/1280_phoneNoBg@2x.png) 2x, url(/img/services/phoneBg/1280_phoneNoBg@3x.png) 3x);
+    background-image: -webkit-image-set(url(../img/services/phoneBg/1280_phoneNoBg.png) 1x, url(../img/services/phoneBg/1280_phoneNoBg@2x.png) 2x, url(../img/services/phoneBg/1280_phoneNoBg@3x.png) 3x);
+    background-image: image-set(url(../img/services/phoneBg/1280_phoneNoBg.png) 1x, url(../img/services/phoneBg/1280_phoneNoBg@2x.png) 2x, url(../img/services/phoneBg/1280_phoneNoBg@3x.png) 3x);
   }
 }
 @media screen and (min-width: 1512px) {
   .styled-gallery-top .swiper-slide--bg {
-    background-image: -webkit-image-set(url(/img/services/phoneBg/1512_phoneNoBg.png) 1x, url(/img/services/phoneBg/1512_phoneNoBg@2x.png) 2x, url(/img/services/phoneBg/1512_phoneNoBg@3x.png) 3x);
-    background-image: image-set(url(/img/services/phoneBg/1512_phoneNoBg.png) 1x, url(/img/services/phoneBg/1512_phoneNoBg@2x.png) 2x, url(/img/services/phoneBg/1512_phoneNoBg@3x.png) 3x);
+    background-image: -webkit-image-set(url(../img/services/phoneBg/1512_phoneNoBg.png) 1x, url(../img/services/phoneBg/1512_phoneNoBg@2x.png) 2x, url(../img/services/phoneBg/1512_phoneNoBg@3x.png) 3x);
+    background-image: image-set(url(../img/services/phoneBg/1512_phoneNoBg.png) 1x, url(../img/services/phoneBg/1512_phoneNoBg@2x.png) 2x, url(../img/services/phoneBg/1512_phoneNoBg@3x.png) 3x);
   }
 }
 @media screen and (min-width: 1728px) {
   .styled-gallery-top .swiper-slide--bg {
-    background-image: -webkit-image-set(url(/img/services/phoneBg/1728_phoneNoBg.png) 1x, url(/img/services/phoneBg/1728_phoneNoBg@2x.png) 2x, url(/img/services/phoneBg/1728_phoneNoBg@3x.png) 3x);
-    background-image: image-set(url(/img/services/phoneBg/1728_phoneNoBg.png) 1x, url(/img/services/phoneBg/1728_phoneNoBg@2x.png) 2x, url(/img/services/phoneBg/1728_phoneNoBg@3x.png) 3x);
+    background-image: -webkit-image-set(url(../img/services/phoneBg/1728_phoneNoBg.png) 1x, url(../img/services/phoneBg/1728_phoneNoBg@2x.png) 2x, url(../img/services/phoneBg/1728_phoneNoBg@3x.png) 3x);
+    background-image: image-set(url(../img/services/phoneBg/1728_phoneNoBg.png) 1x, url(../img/services/phoneBg/1728_phoneNoBg@2x.png) 2x, url(../img/services/phoneBg/1728_phoneNoBg@3x.png) 3x);
   }
 }
 .styled-gallery-top .swiper-slide--bg-grad {
@@ -1820,7 +1820,7 @@ picture.hero__slide-img.next {
   border-radius: 60px 60px 0 0;
 }
 .styled-gallery-top .swiper-slide--bg-grad.slide_3 {
-  background-image: url("/files/servicesVideo/screen3_375x2.png");
+  background-image: url("../files/servicesVideo/screen3_375x2.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -1871,7 +1871,7 @@ picture.hero__slide-img.next {
     width: 410px;
   }
   .styled-gallery-top .swiper-slide--bg-grad.slide_3 {
-    background-image: url("/files/servicesVideo/screen3_834x2.png");
+    background-image: url("../files/servicesVideo/screen3_834x2.png");
   }
 }
 @media screen and (min-width: 1180px) {
@@ -1900,7 +1900,7 @@ picture.hero__slide-img.next {
     width: 301px;
   }
   .styled-gallery-top .swiper-slide--bg-grad.slide_3 {
-    background-image: url("/files/servicesVideo/screen3_1180x2.png");
+    background-image: url("../files/servicesVideo/screen3_1180x2.png");
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1908,7 +1908,7 @@ picture.hero__slide-img.next {
     margin-left: 220px;
   }
   .styled-gallery-top .swiper-slide--bg-grad.slide_3 {
-    background-image: url("/files/servicesVideo/screen3_1280x2.png");
+    background-image: url("../files/servicesVideo/screen3_1280x2.png");
   }
 }
 @media screen and (min-width: 1512px) {
@@ -1935,7 +1935,7 @@ picture.hero__slide-img.next {
     width: 381px;
   }
   .styled-gallery-top .swiper-slide--bg-grad.slide_3 {
-    background-image: url("/files/servicesVideo/screen3_1512x2.png");
+    background-image: url("../files/servicesVideo/screen3_1512x2.png");
   }
 }
 @media screen and (min-width: 1728px) {
@@ -1964,7 +1964,7 @@ picture.hero__slide-img.next {
     border-radius: 75px 75px 0 0;
   }
   .styled-gallery-top .swiper-slide--bg-grad.slide_3 {
-    background-image: url("/files/servicesVideo/screen3_1728x2.png");
+    background-image: url("../files/servicesVideo/screen3_1728x2.png");
   }
 }
 
@@ -2284,8 +2284,8 @@ picture.hero__slide-img.next {
 
 .vip {
   position: relative;
-  background-image: -webkit-image-set(url(/img/vip/png/375_vipBg.png) 1x, url(/img/vip/png/375_vipBg@2x.png) 2x, url(/img/vip/png/375_vipBg@3x.png) 3x);
-  background-image: image-set(url(/img/vip/png/375_vipBg.png) 1x, url(/img/vip/png/375_vipBg@2x.png) 2x, url(/img/vip/png/375_vipBg@3x.png) 3x);
+  background-image: -webkit-image-set(url(../img/vip/png/375_vipBg.png) 1x, url(../img/vip/png/375_vipBg@2x.png) 2x, url(../img/vip/png/375_vipBg@3x.png) 3x);
+  background-image: image-set(url(../img/vip/png/375_vipBg.png) 1x, url(../img/vip/png/375_vipBg@2x.png) 2x, url(../img/vip/png/375_vipBg@3x.png) 3x);
   background-position: top right;
   background-size: contain;
   background-repeat: no-repeat;
@@ -2293,37 +2293,37 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 834px) {
   .vip {
-    background-image: -webkit-image-set(url(/img/vip/png/834_vipBg.png) 1x, url(/img/vip/png/834_vipBg@2x.png) 2x, url(/img/vip/png/834_vipBg@3x.png) 3x);
-    background-image: image-set(url(/img/vip/png/834_vipBg.png) 1x, url(/img/vip/png/834_vipBg@2x.png) 2x, url(/img/vip/png/834_vipBg@3x.png) 3x);
+    background-image: -webkit-image-set(url(../img/vip/png/834_vipBg.png) 1x, url(../img/vip/png/834_vipBg@2x.png) 2x, url(../img/vip/png/834_vipBg@3x.png) 3x);
+    background-image: image-set(url(../img/vip/png/834_vipBg.png) 1x, url(../img/vip/png/834_vipBg@2x.png) 2x, url(../img/vip/png/834_vipBg@3x.png) 3x);
     height: 898px;
   }
 }
 @media screen and (min-width: 1180px) {
   .vip {
     height: 532px;
-    background-image: -webkit-image-set(url(/img/vip/png/1180_vipBg.png) 1x, url(/img/vip/png/1180_vipBg@2x.png) 2x, url(/img/vip/png/1180_vipBg@3x.png) 3x);
-    background-image: image-set(url(/img/vip/png/1180_vipBg.png) 1x, url(/img/vip/png/1180_vipBg@2x.png) 2x, url(/img/vip/png/1180_vipBg@3x.png) 3x);
+    background-image: -webkit-image-set(url(../img/vip/png/1180_vipBg.png) 1x, url(../img/vip/png/1180_vipBg@2x.png) 2x, url(../img/vip/png/1180_vipBg@3x.png) 3x);
+    background-image: image-set(url(../img/vip/png/1180_vipBg.png) 1x, url(../img/vip/png/1180_vipBg@2x.png) 2x, url(../img/vip/png/1180_vipBg@3x.png) 3x);
   }
 }
 @media screen and (min-width: 1280px) {
   .vip {
     height: 510px;
-    background-image: -webkit-image-set(url(/img/vip/png/1280_vipBg.png) 1x, url(/img/vip/png/1280_vipBg@2x.png) 2x, url(/img/vip/png/1280_vipBg@3x.png) 3x);
-    background-image: image-set(url(/img/vip/png/1280_vipBg.png) 1x, url(/img/vip/png/1280_vipBg@2x.png) 2x, url(/img/vip/png/1280_vipBg@3x.png) 3x);
+    background-image: -webkit-image-set(url(../img/vip/png/1280_vipBg.png) 1x, url(../img/vip/png/1280_vipBg@2x.png) 2x, url(../img/vip/png/1280_vipBg@3x.png) 3x);
+    background-image: image-set(url(../img/vip/png/1280_vipBg.png) 1x, url(../img/vip/png/1280_vipBg@2x.png) 2x, url(../img/vip/png/1280_vipBg@3x.png) 3x);
   }
 }
 @media screen and (min-width: 1512px) {
   .vip {
     height: 644px;
-    background-image: -webkit-image-set(url(/img/vip/png/1512_vipBg.png) 1x, url(/img/vip/png/1512_vipBg@2x.png) 2x, url(/img/vip/png/1512_vipBg@3x.png) 3x);
-    background-image: image-set(url(/img/vip/png/1512_vipBg.png) 1x, url(/img/vip/png/1512_vipBg@2x.png) 2x, url(/img/vip/png/1512_vipBg@3x.png) 3x);
+    background-image: -webkit-image-set(url(../img/vip/png/1512_vipBg.png) 1x, url(../img/vip/png/1512_vipBg@2x.png) 2x, url(../img/vip/png/1512_vipBg@3x.png) 3x);
+    background-image: image-set(url(../img/vip/png/1512_vipBg.png) 1x, url(../img/vip/png/1512_vipBg@2x.png) 2x, url(../img/vip/png/1512_vipBg@3x.png) 3x);
   }
 }
 @media screen and (min-width: 1728px) {
   .vip {
     height: 650px;
-    background-image: -webkit-image-set(url(/img/vip/png/1728_vipBg.png) 1x, url(/img/vip/png/1728_vipBg@2x.png) 2x, url(/img/vip/png/1728_vipBg@3x.png) 3x);
-    background-image: image-set(url(/img/vip/png/1728_vipBg.png) 1x, url(/img/vip/png/1728_vipBg@2x.png) 2x, url(/img/vip/png/1728_vipBg@3x.png) 3x);
+    background-image: -webkit-image-set(url(../img/vip/png/1728_vipBg.png) 1x, url(../img/vip/png/1728_vipBg@2x.png) 2x, url(../img/vip/png/1728_vipBg@3x.png) 3x);
+    background-image: image-set(url(../img/vip/png/1728_vipBg.png) 1x, url(../img/vip/png/1728_vipBg@2x.png) 2x, url(../img/vip/png/1728_vipBg@3x.png) 3x);
   }
 }
 
@@ -3545,8 +3545,8 @@ picture.hero__slide-img.next {
   width: 100vw;
   z-index: 0;
   margin-top: -1px;
-  background-image: -webkit-image-set(url(/img/reward/png/375_rewardsBg.png) 1x, url(/img/reward/png/375_rewardsBg@2x.png) 2x, url(/img/reward/png/375_rewardsBg@3x.png) 3x);
-  background-image: image-set(url(/img/reward/png/375_rewardsBg.png) 1x, url(/img/reward/png/375_rewardsBg@2x.png) 2x, url(/img/reward/png/375_rewardsBg@3x.png) 3x);
+  background-image: -webkit-image-set(url(../img/reward/png/375_rewardsBg.png) 1x, url(../img/reward/png/375_rewardsBg@2x.png) 2x, url(../img/reward/png/375_rewardsBg@3x.png) 3x);
+  background-image: image-set(url(../img/reward/png/375_rewardsBg.png) 1x, url(../img/reward/png/375_rewardsBg@2x.png) 2x, url(../img/reward/png/375_rewardsBg@3x.png) 3x);
   background-size: contain;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -3568,8 +3568,8 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 834px) {
   .reward {
-    background-image: -webkit-image-set(url(/img/reward/png/834_rewardsBg.png) 1x, url(/img/reward/png/834_rewardsBg@2x.png) 2x, url(/img/reward/png/834_rewardsBg@3x.png) 3x);
-    background-image: image-set(url(/img/reward/png/834_rewardsBg.png) 1x, url(/img/reward/png/834_rewardsBg@2x.png) 2x, url(/img/reward/png/834_rewardsBg@3x.png) 3x);
+    background-image: -webkit-image-set(url(../img/reward/png/834_rewardsBg.png) 1x, url(../img/reward/png/834_rewardsBg@2x.png) 2x, url(../img/reward/png/834_rewardsBg@3x.png) 3x);
+    background-image: image-set(url(../img/reward/png/834_rewardsBg.png) 1x, url(../img/reward/png/834_rewardsBg@2x.png) 2x, url(../img/reward/png/834_rewardsBg@3x.png) 3x);
     background-size: cover;
     background-position: bottom;
   }
@@ -3579,8 +3579,8 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 1180px) {
   .reward {
-    background-image: -webkit-image-set(url(/img/reward/png/1180_rewardsBg.png) 1x, url(/img/reward/png/1180_rewardsBg@2x.png) 2x, url(/img/reward/png/1180_rewardsBg@3x.png) 3x);
-    background-image: image-set(url(/img/reward/png/1180_rewardsBg.png) 1x, url(/img/reward/png/1180_rewardsBg@2x.png) 2x, url(/img/reward/png/1180_rewardsBg@3x.png) 3x);
+    background-image: -webkit-image-set(url(../img/reward/png/1180_rewardsBg.png) 1x, url(../img/reward/png/1180_rewardsBg@2x.png) 2x, url(../img/reward/png/1180_rewardsBg@3x.png) 3x);
+    background-image: image-set(url(../img/reward/png/1180_rewardsBg.png) 1x, url(../img/reward/png/1180_rewardsBg@2x.png) 2x, url(../img/reward/png/1180_rewardsBg@3x.png) 3x);
     background-size: 100% 100%;
     background-position: bottom;
   }
@@ -3590,8 +3590,8 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 1280px) {
   .reward {
-    background-image: -webkit-image-set(url(/img/reward/png/1280_rewardsBg.png) 1x, url(/img/reward/png/1280_rewardsBg@2x.png) 2x, url(/img/reward/png/1280_rewardsBg@3x.png) 3x);
-    background-image: image-set(url(/img/reward/png/1280_rewardsBg.png) 1x, url(/img/reward/png/1280_rewardsBg@2x.png) 2x, url(/img/reward/png/1280_rewardsBg@3x.png) 3x);
+    background-image: -webkit-image-set(url(../img/reward/png/1280_rewardsBg.png) 1x, url(../img/reward/png/1280_rewardsBg@2x.png) 2x, url(../img/reward/png/1280_rewardsBg@3x.png) 3x);
+    background-image: image-set(url(../img/reward/png/1280_rewardsBg.png) 1x, url(../img/reward/png/1280_rewardsBg@2x.png) 2x, url(../img/reward/png/1280_rewardsBg@3x.png) 3x);
     background-size: contain;
     background-position: bottom left;
   }
@@ -3612,8 +3612,8 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 1512px) {
   .reward {
-    background-image: -webkit-image-set(url(/img/reward/png/1512_rewardsBg.png) 1x, url(/img/reward/png/1512_rewardsBg@2x.png) 2x, url(/img/reward/png/1512_rewardsBg@3x.png) 3x);
-    background-image: image-set(url(/img/reward/png/1512_rewardsBg.png) 1x, url(/img/reward/png/1512_rewardsBg@2x.png) 2x, url(/img/reward/png/1512_rewardsBg@3x.png) 3x);
+    background-image: -webkit-image-set(url(../img/reward/png/1512_rewardsBg.png) 1x, url(../img/reward/png/1512_rewardsBg@2x.png) 2x, url(../img/reward/png/1512_rewardsBg@3x.png) 3x);
+    background-image: image-set(url(../img/reward/png/1512_rewardsBg.png) 1x, url(../img/reward/png/1512_rewardsBg@2x.png) 2x, url(../img/reward/png/1512_rewardsBg@3x.png) 3x);
   }
   .reward__container {
     padding: 80px 120px;
@@ -3628,8 +3628,8 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 1728px) {
   .reward {
-    background-image: -webkit-image-set(url(/img/reward/png/1728_rewardsBg.png) 1x, url(/img/reward/png/1728_rewardsBg@2x.png) 2x, url(/img/reward/png/1728_rewardsBg@3x.png) 3x);
-    background-image: image-set(url(/img/reward/png/1728_rewardsBg.png) 1x, url(/img/reward/png/1728_rewardsBg@2x.png) 2x, url(/img/reward/png/1728_rewardsBg@3x.png) 3x);
+    background-image: -webkit-image-set(url(../img/reward/png/1728_rewardsBg.png) 1x, url(../img/reward/png/1728_rewardsBg@2x.png) 2x, url(../img/reward/png/1728_rewardsBg@3x.png) 3x);
+    background-image: image-set(url(../img/reward/png/1728_rewardsBg.png) 1x, url(../img/reward/png/1728_rewardsBg@2x.png) 2x, url(../img/reward/png/1728_rewardsBg@3x.png) 3x);
     background-size: contain;
   }
   .reward__container {
@@ -3899,8 +3899,8 @@ picture.hero__slide-img.next {
 }
 .cards {
   position: relative;
-  background-image: -webkit-image-set(url(/img/cards/375_cardBg.png) 1x, url(/img/cards/375_cardBg@2x.png) 2x, url(/img/cards/375_cardBg@3x.png) 3x);
-  background-image: image-set(url(/img/cards/375_cardBg.png) 1x, url(/img/cards/375_cardBg@2x.png) 2x, url(/img/cards/375_cardBg@3x.png) 3x);
+  background-image: -webkit-image-set(url(../img/cards/375_cardBg.png) 1x, url(../img/cards/375_cardBg@2x.png) 2x, url(../img/cards/375_cardBg@3x.png) 3x);
+  background-image: image-set(url(../img/cards/375_cardBg.png) 1x, url(../img/cards/375_cardBg@2x.png) 2x, url(../img/cards/375_cardBg@3x.png) 3x);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -3932,8 +3932,8 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 834px) {
   .cards {
-    background-image: -webkit-image-set(url(/img/cards/834_cardBg.png) 1x, url(/img/cards/834_cardBg@3x.png) 2x, url(/img/cards/834_cardBg@3x.png) 3x);
-    background-image: image-set(url(/img/cards/834_cardBg.png) 1x, url(/img/cards/834_cardBg@3x.png) 2x, url(/img/cards/834_cardBg@3x.png) 3x);
+    background-image: -webkit-image-set(url(../img/cards/834_cardBg.png) 1x, url(../img/cards/834_cardBg@3x.png) 2x, url(../img/cards/834_cardBg@3x.png) 3x);
+    background-image: image-set(url(../img/cards/834_cardBg.png) 1x, url(../img/cards/834_cardBg@3x.png) 2x, url(../img/cards/834_cardBg@3x.png) 3x);
     background-position: top;
   }
   .cards__container {
@@ -3949,8 +3949,8 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 1180px) {
   .cards {
-    background-image: -webkit-image-set(url(/img/cards/1180_cardBg.png) 1x, url(/img/cards/1180_cardBg@2x.png) 2x, url(/img/cards/1180_cardBg@3x.png) 3x);
-    background-image: image-set(url(/img/cards/1180_cardBg.png) 1x, url(/img/cards/1180_cardBg@2x.png) 2x, url(/img/cards/1180_cardBg@3x.png) 3x);
+    background-image: -webkit-image-set(url(../img/cards/1180_cardBg.png) 1x, url(../img/cards/1180_cardBg@2x.png) 2x, url(../img/cards/1180_cardBg@3x.png) 3x);
+    background-image: image-set(url(../img/cards/1180_cardBg.png) 1x, url(../img/cards/1180_cardBg@2x.png) 2x, url(../img/cards/1180_cardBg@3x.png) 3x);
   }
   .cards__container {
     padding: 64px 140px;
@@ -3965,14 +3965,14 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 1280px) {
   .cards {
-    background-image: -webkit-image-set(url(/img/cards/1280_cardBg.png) 1x, url(/img/cards/1280_cardBg@2x.png) 2x, url(/img/cards/1280_cardBg@3x.png) 3x);
-    background-image: image-set(url(/img/cards/1280_cardBg.png) 1x, url(/img/cards/1280_cardBg@2x.png) 2x, url(/img/cards/1280_cardBg@3x.png) 3x);
+    background-image: -webkit-image-set(url(../img/cards/1280_cardBg.png) 1x, url(../img/cards/1280_cardBg@2x.png) 2x, url(../img/cards/1280_cardBg@3x.png) 3x);
+    background-image: image-set(url(../img/cards/1280_cardBg.png) 1x, url(../img/cards/1280_cardBg@2x.png) 2x, url(../img/cards/1280_cardBg@3x.png) 3x);
   }
 }
 @media screen and (min-width: 1512px) {
   .cards {
-    background-image: -webkit-image-set(url(/img/cards/1512_cardBg.png) 1x, url(/img/cards/1512_cardBg@2x.png) 2x, url(/img/cards/1512_cardBg@3x.png) 3x);
-    background-image: image-set(url(/img/cards/1512_cardBg.png) 1x, url(/img/cards/1512_cardBg@2x.png) 2x, url(/img/cards/1512_cardBg@3x.png) 3x);
+    background-image: -webkit-image-set(url(../img/cards/1512_cardBg.png) 1x, url(../img/cards/1512_cardBg@2x.png) 2x, url(../img/cards/1512_cardBg@3x.png) 3x);
+    background-image: image-set(url(../img/cards/1512_cardBg.png) 1x, url(../img/cards/1512_cardBg@2x.png) 2x, url(../img/cards/1512_cardBg@3x.png) 3x);
   }
   .cards__container {
     padding: 80px 151px;
@@ -4000,8 +4000,8 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 1728px) {
   .cards {
-    background-image: -webkit-image-set(url(/img/cards/1728_cardBg.png) 1x, url(/img/cards/1728_cardBg@2x.png) 2x, url(/img/cards/1728_cardBg@3x.png) 3x);
-    background-image: image-set(url(/img/cards/1728_cardBg.png) 1x, url(/img/cards/1728_cardBg@2x.png) 2x, url(/img/cards/1728_cardBg@3x.png) 3x);
+    background-image: -webkit-image-set(url(../img/cards/1728_cardBg.png) 1x, url(../img/cards/1728_cardBg@2x.png) 2x, url(../img/cards/1728_cardBg@3x.png) 3x);
+    background-image: image-set(url(../img/cards/1728_cardBg.png) 1x, url(../img/cards/1728_cardBg@2x.png) 2x, url(../img/cards/1728_cardBg@3x.png) 3x);
   }
   .cards__title {
     font-size: 44px;
@@ -4115,7 +4115,7 @@ picture.hero__slide-img.next {
 }
 .features {
   position: relative;
-  background-image: url("/img/features/375_featuresBg.webp");
+  background-image: url("../img/features/375_featuresBg.webp");
   background-color: #FFF;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4148,7 +4148,7 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 834px) {
   .features {
-    background-image: url("/img/features/834_featuresBg.webp");
+    background-image: url("../img/features/834_featuresBg.webp");
   }
   .features__container {
     padding: 71px 207px 0;
@@ -4166,7 +4166,7 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 1180px) {
   .features {
-    background-image: url("/img/features/1180_featuresBg.webp");
+    background-image: url("../img/features/1180_featuresBg.webp");
   }
   .features__container {
     padding: 64px 175px 0;
@@ -4185,7 +4185,7 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 1280px) {
   .features {
-    background-image: url("/img/features/1280_featuresBg.webp");
+    background-image: url("../img/features/1280_featuresBg.webp");
   }
   .features__container {
     padding: 64px 225px 0;
@@ -4193,7 +4193,7 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 1512px) {
   .features {
-    background-image: url("/img/features/1512_featuresBg.webp");
+    background-image: url("../img/features/1512_featuresBg.webp");
   }
   .features__container {
     padding: 83px 267px 0 240px;
@@ -4212,7 +4212,7 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 1728px) {
   .features {
-    background-image: url("/img/features/1728_featuresBg.webp");
+    background-image: url("../img/features/1728_featuresBg.webp");
   }
   .features__container {
     padding: 80px 324px 0 368px;
@@ -4233,7 +4233,7 @@ picture.hero__slide-img.next {
 .features__video-block {
   width: 311px;
   height: 430px;
-  background-image: url("/img/features/phone/375_phoneBg.webp");
+  background-image: url("../img/features/phone/375_phoneBg.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
@@ -4246,35 +4246,35 @@ picture.hero__slide-img.next {
   .features__video-block {
     width: 420px;
     height: 569px;
-    background-image: url("/img/features/phone/834_phoneBg.webp");
+    background-image: url("../img/features/phone/834_phoneBg.webp");
   }
 }
 @media screen and (min-width: 1180px) {
   .features__video-block {
     width: 384px;
     height: 532px;
-    background-image: url("/img/features/phone/1180_phoneBg.webp");
+    background-image: url("../img/features/phone/1180_phoneBg.webp");
   }
 }
 @media screen and (min-width: 1280px) {
   .features__video-block {
     width: 384px;
     height: 532px;
-    background-image: url("/img/features/phone/1280_phoneBg.webp");
+    background-image: url("../img/features/phone/1280_phoneBg.webp");
   }
 }
 @media screen and (min-width: 1512px) {
   .features__video-block {
     width: 390px;
     height: 548px;
-    background-image: url("/img/features/phone/1512_phoneBg.webp");
+    background-image: url("../img/features/phone/1512_phoneBg.webp");
   }
 }
 @media screen and (min-width: 1728px) {
   .features__video-block {
     width: 474px;
     height: 645px;
-    background-image: url("/img/features/phone/1728_phoneBg.webp");
+    background-image: url("../img/features/phone/1728_phoneBg.webp");
   }
 }
 
@@ -4389,7 +4389,7 @@ picture.hero__slide-img.next {
 }
 .faq {
   position: relative;
-  background-image: url("/img/faq/375_faqBg.webp");
+  background-image: url("../img/faq/375_faqBg.webp");
   background-color: #FFF;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4420,7 +4420,7 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 834px) {
   .faq {
-    background-image: url("/img/faq/834_faqBg.webp");
+    background-image: url("../img/faq/834_faqBg.webp");
   }
   .faq__container {
     gap: 49px;
@@ -4435,7 +4435,7 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 1180px) {
   .faq {
-    background-image: url("/img/faq/1180_faqBg.webp");
+    background-image: url("../img/faq/1180_faqBg.webp");
   }
   .faq__container {
     gap: 33px;
@@ -4443,7 +4443,7 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 1280px) {
   .faq {
-    background-image: url("/img/faq/1280_faqBg.webp");
+    background-image: url("../img/faq/1280_faqBg.webp");
   }
   .faq__container {
     flex-direction: row;
@@ -4462,7 +4462,7 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 1512px) {
   .faq {
-    background-image: url("/img/faq/1512_faqBg.webp");
+    background-image: url("../img/faq/1512_faqBg.webp");
   }
   .faq__container {
     gap: 117px;
@@ -4481,7 +4481,7 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 1728px) {
   .faq {
-    background-image: url("/img/faq/1728_faqBg.webp");
+    background-image: url("../img/faq/1728_faqBg.webp");
   }
   .faq__container {
     gap: 117px;
@@ -4681,38 +4681,38 @@ picture.hero__slide-img.next {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
-  background-image: -webkit-image-set(url(../img/cta/bg/375_bgCtaBottom@1.png) 1x, url(../img/cta/bg/375_bgCtaBottom@2.png) 2x, url(../img/cta/bg/375_bgCtaBottom@3.png) 3x);
-  background-image: image-set(url(../img/cta/bg/375_bgCtaBottom@1.png) 1x, url(../img/cta/bg/375_bgCtaBottom@2.png) 2x, url(../img/cta/bg/375_bgCtaBottom@3.png) 3x);
+  background-image: -webkit-image-set(url(..../img/cta/bg/375_bgCtaBottom@1.png) 1x, url(..../img/cta/bg/375_bgCtaBottom@2.png) 2x, url(..../img/cta/bg/375_bgCtaBottom@3.png) 3x);
+  background-image: image-set(url(..../img/cta/bg/375_bgCtaBottom@1.png) 1x, url(..../img/cta/bg/375_bgCtaBottom@2.png) 2x, url(..../img/cta/bg/375_bgCtaBottom@3.png) 3x);
 }
 @media screen and (min-width: 834px) {
   .cta__container:after {
-    background-image: -webkit-image-set(url(../img/cta/bg/834_bgCtaBottom@1.png) 1x, url(../img/cta/bg/834_bgCtaBottom@2.png) 2x, url(../img/cta/bg/834_bgCtaBottom@3.png) 3x);
-    background-image: image-set(url(../img/cta/bg/834_bgCtaBottom@1.png) 1x, url(../img/cta/bg/834_bgCtaBottom@2.png) 2x, url(../img/cta/bg/834_bgCtaBottom@3.png) 3x);
+    background-image: -webkit-image-set(url(..../img/cta/bg/834_bgCtaBottom@1.png) 1x, url(..../img/cta/bg/834_bgCtaBottom@2.png) 2x, url(..../img/cta/bg/834_bgCtaBottom@3.png) 3x);
+    background-image: image-set(url(..../img/cta/bg/834_bgCtaBottom@1.png) 1x, url(..../img/cta/bg/834_bgCtaBottom@2.png) 2x, url(..../img/cta/bg/834_bgCtaBottom@3.png) 3x);
     max-height: 875px;
   }
 }
 @media screen and (min-width: 1180px) {
   .cta__container:after {
-    background-image: -webkit-image-set(url(../img/cta/bg/1180_bgCtaBottom@1.png) 1x, url(../img/cta/bg/1180_bgCtaBottom@2.png) 2x, url(../img/cta/bg/1180_bgCtaBottom@3.png) 3x);
-    background-image: image-set(url(../img/cta/bg/1180_bgCtaBottom@1.png) 1x, url(../img/cta/bg/1180_bgCtaBottom@2.png) 2x, url(../img/cta/bg/1180_bgCtaBottom@3.png) 3x);
+    background-image: -webkit-image-set(url(..../img/cta/bg/1180_bgCtaBottom@1.png) 1x, url(..../img/cta/bg/1180_bgCtaBottom@2.png) 2x, url(..../img/cta/bg/1180_bgCtaBottom@3.png) 3x);
+    background-image: image-set(url(..../img/cta/bg/1180_bgCtaBottom@1.png) 1x, url(..../img/cta/bg/1180_bgCtaBottom@2.png) 2x, url(..../img/cta/bg/1180_bgCtaBottom@3.png) 3x);
   }
 }
 @media screen and (min-width: 1280px) {
   .cta__container:after {
-    background-image: -webkit-image-set(url(../img/cta/bg/1280_bgCtaBottom@1.png) 1x, url(../img/cta/bg/1280_bgCtaBottom@2.png) 2x, url(../img/cta/bg/1280_bgCtaBottom@3.png) 3x);
-    background-image: image-set(url(../img/cta/bg/1280_bgCtaBottom@1.png) 1x, url(../img/cta/bg/1280_bgCtaBottom@2.png) 2x, url(../img/cta/bg/1280_bgCtaBottom@3.png) 3x);
+    background-image: -webkit-image-set(url(..../img/cta/bg/1280_bgCtaBottom@1.png) 1x, url(..../img/cta/bg/1280_bgCtaBottom@2.png) 2x, url(..../img/cta/bg/1280_bgCtaBottom@3.png) 3x);
+    background-image: image-set(url(..../img/cta/bg/1280_bgCtaBottom@1.png) 1x, url(..../img/cta/bg/1280_bgCtaBottom@2.png) 2x, url(..../img/cta/bg/1280_bgCtaBottom@3.png) 3x);
   }
 }
 @media screen and (min-width: 1512px) {
   .cta__container:after {
-    background-image: -webkit-image-set(url(../img/cta/bg/1512_bgCtaBottom@1.png) 1x, url(../img/cta/bg/1512_bgCtaBottom@2.png) 2x, url(../img/cta/bg/1512_bgCtaBottom@3.png) 3x);
-    background-image: image-set(url(../img/cta/bg/1512_bgCtaBottom@1.png) 1x, url(../img/cta/bg/1512_bgCtaBottom@2.png) 2x, url(../img/cta/bg/1512_bgCtaBottom@3.png) 3x);
+    background-image: -webkit-image-set(url(..../img/cta/bg/1512_bgCtaBottom@1.png) 1x, url(..../img/cta/bg/1512_bgCtaBottom@2.png) 2x, url(..../img/cta/bg/1512_bgCtaBottom@3.png) 3x);
+    background-image: image-set(url(..../img/cta/bg/1512_bgCtaBottom@1.png) 1x, url(..../img/cta/bg/1512_bgCtaBottom@2.png) 2x, url(..../img/cta/bg/1512_bgCtaBottom@3.png) 3x);
   }
 }
 @media screen and (min-width: 1728px) {
   .cta__container:after {
-    background-image: -webkit-image-set(url(../img/cta/bg/1728_bgCtaBottom@1.png) 1x, url(../img/cta/bg/1728_bgCtaBottom@2.png) 2x, url(../img/cta/bg/1728_bgCtaBottom@3.png) 3x);
-    background-image: image-set(url(../img/cta/bg/1728_bgCtaBottom@1.png) 1x, url(../img/cta/bg/1728_bgCtaBottom@2.png) 2x, url(../img/cta/bg/1728_bgCtaBottom@3.png) 3x);
+    background-image: -webkit-image-set(url(..../img/cta/bg/1728_bgCtaBottom@1.png) 1x, url(..../img/cta/bg/1728_bgCtaBottom@2.png) 2x, url(..../img/cta/bg/1728_bgCtaBottom@3.png) 3x);
+    background-image: image-set(url(..../img/cta/bg/1728_bgCtaBottom@1.png) 1x, url(..../img/cta/bg/1728_bgCtaBottom@2.png) 2x, url(..../img/cta/bg/1728_bgCtaBottom@3.png) 3x);
   }
 }
 @media screen and (min-width: 834px) {
@@ -5054,40 +5054,40 @@ picture.hero__slide-img.next {
   z-index: 2;
   width: 100%;
   height: 100%;
-  background-image: -webkit-image-set(url(../img/cta/phoneBg/375_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/375_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/375_ctaSliderPhone@3.png) 3x);
-  background-image: image-set(url(../img/cta/phoneBg/375_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/375_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/375_ctaSliderPhone@3.png) 3x);
+  background-image: -webkit-image-set(url(..../img/cta/phoneBg/375_ctaSliderPhone@1.png) 1x, url(..../img/cta/phoneBg/375_ctaSliderPhone@2.png) 2x, url(..../img/cta/phoneBg/375_ctaSliderPhone@3.png) 3x);
+  background-image: image-set(url(..../img/cta/phoneBg/375_ctaSliderPhone@1.png) 1x, url(..../img/cta/phoneBg/375_ctaSliderPhone@2.png) 2x, url(..../img/cta/phoneBg/375_ctaSliderPhone@3.png) 3x);
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
 }
 @media screen and (min-width: 834px) {
   .cta-swiper--screen {
-    background-image: -webkit-image-set(url(../img/cta/phoneBg/834_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/834_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/834_ctaSliderPhone@3.png) 3x);
-    background-image: image-set(url(../img/cta/phoneBg/834_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/834_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/834_ctaSliderPhone@3.png) 3x);
+    background-image: -webkit-image-set(url(..../img/cta/phoneBg/834_ctaSliderPhone@1.png) 1x, url(..../img/cta/phoneBg/834_ctaSliderPhone@2.png) 2x, url(..../img/cta/phoneBg/834_ctaSliderPhone@3.png) 3x);
+    background-image: image-set(url(..../img/cta/phoneBg/834_ctaSliderPhone@1.png) 1x, url(..../img/cta/phoneBg/834_ctaSliderPhone@2.png) 2x, url(..../img/cta/phoneBg/834_ctaSliderPhone@3.png) 3x);
   }
 }
 @media screen and (min-width: 1180px) {
   .cta-swiper--screen {
-    background-image: -webkit-image-set(url(../img/cta/phoneBg/1180_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/1180_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/1180_ctaSliderPhone@3.png) 3x);
-    background-image: image-set(url(../img/cta/phoneBg/1180_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/1180_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/1180_ctaSliderPhone@3.png) 3x);
+    background-image: -webkit-image-set(url(..../img/cta/phoneBg/1180_ctaSliderPhone@1.png) 1x, url(..../img/cta/phoneBg/1180_ctaSliderPhone@2.png) 2x, url(..../img/cta/phoneBg/1180_ctaSliderPhone@3.png) 3x);
+    background-image: image-set(url(..../img/cta/phoneBg/1180_ctaSliderPhone@1.png) 1x, url(..../img/cta/phoneBg/1180_ctaSliderPhone@2.png) 2x, url(..../img/cta/phoneBg/1180_ctaSliderPhone@3.png) 3x);
   }
 }
 @media screen and (min-width: 1280px) {
   .cta-swiper--screen {
-    background-image: -webkit-image-set(url(../img/cta/phoneBg/1280_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/1280_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/1280_ctaSliderPhone@3.png) 3x);
-    background-image: image-set(url(../img/cta/phoneBg/1280_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/1280_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/1280_ctaSliderPhone@3.png) 3x);
+    background-image: -webkit-image-set(url(..../img/cta/phoneBg/1280_ctaSliderPhone@1.png) 1x, url(..../img/cta/phoneBg/1280_ctaSliderPhone@2.png) 2x, url(..../img/cta/phoneBg/1280_ctaSliderPhone@3.png) 3x);
+    background-image: image-set(url(..../img/cta/phoneBg/1280_ctaSliderPhone@1.png) 1x, url(..../img/cta/phoneBg/1280_ctaSliderPhone@2.png) 2x, url(..../img/cta/phoneBg/1280_ctaSliderPhone@3.png) 3x);
   }
 }
 @media screen and (min-width: 1512px) {
   .cta-swiper--screen {
-    background-image: -webkit-image-set(url(../img/cta/phoneBg/1512_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/1512_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/1512_ctaSliderPhone@3.png) 3x);
-    background-image: image-set(url(../img/cta/phoneBg/1512_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/1512_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/1512_ctaSliderPhone@3.png) 3x);
+    background-image: -webkit-image-set(url(..../img/cta/phoneBg/1512_ctaSliderPhone@1.png) 1x, url(..../img/cta/phoneBg/1512_ctaSliderPhone@2.png) 2x, url(..../img/cta/phoneBg/1512_ctaSliderPhone@3.png) 3x);
+    background-image: image-set(url(..../img/cta/phoneBg/1512_ctaSliderPhone@1.png) 1x, url(..../img/cta/phoneBg/1512_ctaSliderPhone@2.png) 2x, url(..../img/cta/phoneBg/1512_ctaSliderPhone@3.png) 3x);
   }
 }
 @media screen and (min-width: 1728px) {
   .cta-swiper--screen {
-    background-image: -webkit-image-set(url(../img/cta/phoneBg/1728_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/1728_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/1728_ctaSliderPhone@3.png) 3x);
-    background-image: image-set(url(../img/cta/phoneBg/1728_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/1728_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/1728_ctaSliderPhone@3.png) 3x);
+    background-image: -webkit-image-set(url(..../img/cta/phoneBg/1728_ctaSliderPhone@1.png) 1x, url(..../img/cta/phoneBg/1728_ctaSliderPhone@2.png) 2x, url(..../img/cta/phoneBg/1728_ctaSliderPhone@3.png) 3x);
+    background-image: image-set(url(..../img/cta/phoneBg/1728_ctaSliderPhone@1.png) 1x, url(..../img/cta/phoneBg/1728_ctaSliderPhone@2.png) 2x, url(..../img/cta/phoneBg/1728_ctaSliderPhone@3.png) 3x);
   }
 }
 .cta-swiper--img {
@@ -6827,8 +6827,8 @@ picture.hero__slide-img.next {
 .benefits-about {
   position: relative;
   padding: 48px 24px;
-  background-image: -webkit-image-set(url(/img/aboutUs/aboutUsBenefits/375_aboutUsBenefits@1.png) 1x, url(/img/aboutUs/aboutUsBenefits/375_aboutUsBenefits@2.png) 2x, url(/img/aboutUs/aboutUsBenefits/375_aboutUsBenefits@3.png) 3x);
-  background-image: image-set(url(/img/aboutUs/aboutUsBenefits/375_aboutUsBenefits@1.png) 1x, url(/img/aboutUs/aboutUsBenefits/375_aboutUsBenefits@2.png) 2x, url(/img/aboutUs/aboutUsBenefits/375_aboutUsBenefits@3.png) 3x);
+  background-image: -webkit-image-set(url(../img/aboutUs/aboutUsBenefits/375_aboutUsBenefits@1.png) 1x, url(../img/aboutUs/aboutUsBenefits/375_aboutUsBenefits@2.png) 2x, url(../img/aboutUs/aboutUsBenefits/375_aboutUsBenefits@3.png) 3x);
+  background-image: image-set(url(../img/aboutUs/aboutUsBenefits/375_aboutUsBenefits@1.png) 1x, url(../img/aboutUs/aboutUsBenefits/375_aboutUsBenefits@2.png) 2x, url(../img/aboutUs/aboutUsBenefits/375_aboutUsBenefits@3.png) 3x);
   background-position: top right;
   background-size: cover;
   background-repeat: no-repeat;
@@ -6837,35 +6837,35 @@ picture.hero__slide-img.next {
   .benefits-about {
     padding: 64px;
     background-size: contain;
-    background-image: -webkit-image-set(url(/img/aboutUs/aboutUsBenefits/834_aboutUsBenefits@1.png) 1x, url(/img/aboutUs/aboutUsBenefits/834_aboutUsBenefits@2.png) 2x, url(/img/aboutUs/aboutUsBenefits/834_aboutUsBenefits@3.png) 3x);
-    background-image: image-set(url(/img/aboutUs/aboutUsBenefits/834_aboutUsBenefits@1.png) 1x, url(/img/aboutUs/aboutUsBenefits/834_aboutUsBenefits@2.png) 2x, url(/img/aboutUs/aboutUsBenefits/834_aboutUsBenefits@3.png) 3x);
+    background-image: -webkit-image-set(url(../img/aboutUs/aboutUsBenefits/834_aboutUsBenefits@1.png) 1x, url(../img/aboutUs/aboutUsBenefits/834_aboutUsBenefits@2.png) 2x, url(../img/aboutUs/aboutUsBenefits/834_aboutUsBenefits@3.png) 3x);
+    background-image: image-set(url(../img/aboutUs/aboutUsBenefits/834_aboutUsBenefits@1.png) 1x, url(../img/aboutUs/aboutUsBenefits/834_aboutUsBenefits@2.png) 2x, url(../img/aboutUs/aboutUsBenefits/834_aboutUsBenefits@3.png) 3x);
   }
 }
 @media screen and (min-width: 1180px) {
   .benefits-about {
-    background-image: -webkit-image-set(url(/img/aboutUs/aboutUsBenefits/1180_aboutUsBenefits@1.png) 1x, url(/img/aboutUs/aboutUsBenefits/1180_aboutUsBenefits@2.png) 2x, url(/img/aboutUs/aboutUsBenefits/1180_aboutUsBenefits@3.png) 3x);
-    background-image: image-set(url(/img/aboutUs/aboutUsBenefits/1180_aboutUsBenefits@1.png) 1x, url(/img/aboutUs/aboutUsBenefits/1180_aboutUsBenefits@2.png) 2x, url(/img/aboutUs/aboutUsBenefits/1180_aboutUsBenefits@3.png) 3x);
+    background-image: -webkit-image-set(url(../img/aboutUs/aboutUsBenefits/1180_aboutUsBenefits@1.png) 1x, url(../img/aboutUs/aboutUsBenefits/1180_aboutUsBenefits@2.png) 2x, url(../img/aboutUs/aboutUsBenefits/1180_aboutUsBenefits@3.png) 3x);
+    background-image: image-set(url(../img/aboutUs/aboutUsBenefits/1180_aboutUsBenefits@1.png) 1x, url(../img/aboutUs/aboutUsBenefits/1180_aboutUsBenefits@2.png) 2x, url(../img/aboutUs/aboutUsBenefits/1180_aboutUsBenefits@3.png) 3x);
   }
 }
 @media screen and (min-width: 1280px) {
   .benefits-about {
     padding: 64px 80px;
-    background-image: -webkit-image-set(url(/img/aboutUs/aboutUsBenefits/1280_aboutUsBenefits@1.png) 1x, url(/img/aboutUs/aboutUsBenefits/1280_aboutUsBenefits@2.png) 2x, url(/img/aboutUs/aboutUsBenefits/1280_aboutUsBenefits@3.png) 3x);
-    background-image: image-set(url(/img/aboutUs/aboutUsBenefits/1280_aboutUsBenefits@1.png) 1x, url(/img/aboutUs/aboutUsBenefits/1280_aboutUsBenefits@2.png) 2x, url(/img/aboutUs/aboutUsBenefits/1280_aboutUsBenefits@3.png) 3x);
+    background-image: -webkit-image-set(url(../img/aboutUs/aboutUsBenefits/1280_aboutUsBenefits@1.png) 1x, url(../img/aboutUs/aboutUsBenefits/1280_aboutUsBenefits@2.png) 2x, url(../img/aboutUs/aboutUsBenefits/1280_aboutUsBenefits@3.png) 3x);
+    background-image: image-set(url(../img/aboutUs/aboutUsBenefits/1280_aboutUsBenefits@1.png) 1x, url(../img/aboutUs/aboutUsBenefits/1280_aboutUsBenefits@2.png) 2x, url(../img/aboutUs/aboutUsBenefits/1280_aboutUsBenefits@3.png) 3x);
   }
 }
 @media screen and (min-width: 1512px) {
   .benefits-about {
     padding: 80px 120px;
-    background-image: -webkit-image-set(url(/img/aboutUs/aboutUsBenefits/1512_aboutUsBenefits@1.png) 1x, url(/img/aboutUs/aboutUsBenefits/1512_aboutUsBenefits@2.png) 2x, url(/img/aboutUs/aboutUsBenefits/1512_aboutUsBenefits@3.png) 3x);
-    background-image: image-set(url(/img/aboutUs/aboutUsBenefits/1512_aboutUsBenefits@1.png) 1x, url(/img/aboutUs/aboutUsBenefits/1512_aboutUsBenefits@2.png) 2x, url(/img/aboutUs/aboutUsBenefits/1512_aboutUsBenefits@3.png) 3x);
+    background-image: -webkit-image-set(url(../img/aboutUs/aboutUsBenefits/1512_aboutUsBenefits@1.png) 1x, url(../img/aboutUs/aboutUsBenefits/1512_aboutUsBenefits@2.png) 2x, url(../img/aboutUs/aboutUsBenefits/1512_aboutUsBenefits@3.png) 3x);
+    background-image: image-set(url(../img/aboutUs/aboutUsBenefits/1512_aboutUsBenefits@1.png) 1x, url(../img/aboutUs/aboutUsBenefits/1512_aboutUsBenefits@2.png) 2x, url(../img/aboutUs/aboutUsBenefits/1512_aboutUsBenefits@3.png) 3x);
   }
 }
 @media screen and (min-width: 1728px) {
   .benefits-about {
     padding: 80px 200px;
-    background-image: -webkit-image-set(url(/img/aboutUs/aboutUsBenefits/1728_aboutUsBenefits@1.png) 1x, url(/img/aboutUs/aboutUsBenefits/1728_aboutUsBenefits@2.png) 2x, url(/img/aboutUs/aboutUsBenefits/1728_aboutUsBenefits@3.png) 3x);
-    background-image: image-set(url(/img/aboutUs/aboutUsBenefits/1728_aboutUsBenefits@1.png) 1x, url(/img/aboutUs/aboutUsBenefits/1728_aboutUsBenefits@2.png) 2x, url(/img/aboutUs/aboutUsBenefits/1728_aboutUsBenefits@3.png) 3x);
+    background-image: -webkit-image-set(url(../img/aboutUs/aboutUsBenefits/1728_aboutUsBenefits@1.png) 1x, url(../img/aboutUs/aboutUsBenefits/1728_aboutUsBenefits@2.png) 2x, url(../img/aboutUs/aboutUsBenefits/1728_aboutUsBenefits@3.png) 3x);
+    background-image: image-set(url(../img/aboutUs/aboutUsBenefits/1728_aboutUsBenefits@1.png) 1x, url(../img/aboutUs/aboutUsBenefits/1728_aboutUsBenefits@2.png) 2x, url(../img/aboutUs/aboutUsBenefits/1728_aboutUsBenefits@3.png) 3x);
   }
 }
 
@@ -7370,8 +7370,8 @@ picture.hero__slide-img.next {
 .asked-faq {
   position: relative;
   padding: 48px 24px;
-  background-image: -webkit-image-set(url(/img/aboutUs/askedFAQ/375_askedFAQ@1.png) 1x, url(/img/aboutUs/askedFAQ/375_askedFAQ@2.png) 2x, url(/img/aboutUs/askedFAQ/375_askedFAQ@3.png) 3x);
-  background-image: image-set(url(/img/aboutUs/askedFAQ/375_askedFAQ@1.png) 1x, url(/img/aboutUs/askedFAQ/375_askedFAQ@2.png) 2x, url(/img/aboutUs/askedFAQ/375_askedFAQ@3.png) 3x);
+  background-image: -webkit-image-set(url(../img/aboutUs/askedFAQ/375_askedFAQ@1.png) 1x, url(../img/aboutUs/askedFAQ/375_askedFAQ@2.png) 2x, url(../img/aboutUs/askedFAQ/375_askedFAQ@3.png) 3x);
+  background-image: image-set(url(../img/aboutUs/askedFAQ/375_askedFAQ@1.png) 1x, url(../img/aboutUs/askedFAQ/375_askedFAQ@2.png) 2x, url(../img/aboutUs/askedFAQ/375_askedFAQ@3.png) 3x);
   background-position: top right;
   background-size: cover;
   background-repeat: no-repeat;
@@ -7389,23 +7389,23 @@ picture.hero__slide-img.next {
   .asked-faq {
     padding: 64px;
     background-size: contain;
-    background-image: -webkit-image-set(url(/img/aboutUs/askedFAQ/834_askedFAQ@1.png) 1x, url(/img/aboutUs/askedFAQ/834_askedFAQ@2.png) 2x, url(/img/aboutUs/askedFAQ/834_askedFAQ@3.png) 3x);
-    background-image: image-set(url(/img/aboutUs/askedFAQ/834_askedFAQ@1.png) 1x, url(/img/aboutUs/askedFAQ/834_askedFAQ@2.png) 2x, url(/img/aboutUs/askedFAQ/834_askedFAQ@3.png) 3x);
+    background-image: -webkit-image-set(url(../img/aboutUs/askedFAQ/834_askedFAQ@1.png) 1x, url(../img/aboutUs/askedFAQ/834_askedFAQ@2.png) 2x, url(../img/aboutUs/askedFAQ/834_askedFAQ@3.png) 3x);
+    background-image: image-set(url(../img/aboutUs/askedFAQ/834_askedFAQ@1.png) 1x, url(../img/aboutUs/askedFAQ/834_askedFAQ@2.png) 2x, url(../img/aboutUs/askedFAQ/834_askedFAQ@3.png) 3x);
   }
 }
 @media screen and (min-width: 1180px) {
   .asked-faq {
     background-position: top left;
     background-size: cover;
-    background-image: -webkit-image-set(url(/img/aboutUs/askedFAQ/1180_askedFAQ@1.png) 1x, url(/img/aboutUs/askedFAQ/1180_askedFAQ@2.png) 2x, url(/img/aboutUs/askedFAQ/1180_askedFAQ@3.png) 3x);
-    background-image: image-set(url(/img/aboutUs/askedFAQ/1180_askedFAQ@1.png) 1x, url(/img/aboutUs/askedFAQ/1180_askedFAQ@2.png) 2x, url(/img/aboutUs/askedFAQ/1180_askedFAQ@3.png) 3x);
+    background-image: -webkit-image-set(url(../img/aboutUs/askedFAQ/1180_askedFAQ@1.png) 1x, url(../img/aboutUs/askedFAQ/1180_askedFAQ@2.png) 2x, url(../img/aboutUs/askedFAQ/1180_askedFAQ@3.png) 3x);
+    background-image: image-set(url(../img/aboutUs/askedFAQ/1180_askedFAQ@1.png) 1x, url(../img/aboutUs/askedFAQ/1180_askedFAQ@2.png) 2x, url(../img/aboutUs/askedFAQ/1180_askedFAQ@3.png) 3x);
   }
 }
 @media screen and (min-width: 1280px) {
   .asked-faq {
     padding: 64px 80px;
-    background-image: -webkit-image-set(url(/img/aboutUs/askedFAQ/1280_askedFAQ@1.png) 1x, url(/img/aboutUs/askedFAQ/1280_askedFAQ@2.png) 2x, url(/img/aboutUs/askedFAQ/1280_askedFAQ@3.png) 3x);
-    background-image: image-set(url(/img/aboutUs/askedFAQ/1280_askedFAQ@1.png) 1x, url(/img/aboutUs/askedFAQ/1280_askedFAQ@2.png) 2x, url(/img/aboutUs/askedFAQ/1280_askedFAQ@3.png) 3x);
+    background-image: -webkit-image-set(url(../img/aboutUs/askedFAQ/1280_askedFAQ@1.png) 1x, url(../img/aboutUs/askedFAQ/1280_askedFAQ@2.png) 2x, url(../img/aboutUs/askedFAQ/1280_askedFAQ@3.png) 3x);
+    background-image: image-set(url(../img/aboutUs/askedFAQ/1280_askedFAQ@1.png) 1x, url(../img/aboutUs/askedFAQ/1280_askedFAQ@2.png) 2x, url(../img/aboutUs/askedFAQ/1280_askedFAQ@3.png) 3x);
   }
   .asked-faq--title {
     margin-top: 20px;
@@ -7425,8 +7425,8 @@ picture.hero__slide-img.next {
 @media screen and (min-width: 1512px) {
   .asked-faq {
     padding: 80px 120px;
-    background-image: -webkit-image-set(url(/img/aboutUs/askedFAQ/1512_askedFAQ@1.png) 1x, url(/img/aboutUs/askedFAQ/1512_askedFAQ@2.png) 2x, url(/img/aboutUs/askedFAQ/1512_askedFAQ@3.png) 3x);
-    background-image: image-set(url(/img/aboutUs/askedFAQ/1512_askedFAQ@1.png) 1x, url(/img/aboutUs/askedFAQ/1512_askedFAQ@2.png) 2x, url(/img/aboutUs/askedFAQ/1512_askedFAQ@3.png) 3x);
+    background-image: -webkit-image-set(url(../img/aboutUs/askedFAQ/1512_askedFAQ@1.png) 1x, url(../img/aboutUs/askedFAQ/1512_askedFAQ@2.png) 2x, url(../img/aboutUs/askedFAQ/1512_askedFAQ@3.png) 3x);
+    background-image: image-set(url(../img/aboutUs/askedFAQ/1512_askedFAQ@1.png) 1x, url(../img/aboutUs/askedFAQ/1512_askedFAQ@2.png) 2x, url(../img/aboutUs/askedFAQ/1512_askedFAQ@3.png) 3x);
   }
   .asked-faq--title {
     margin-top: 0;
@@ -7444,8 +7444,8 @@ picture.hero__slide-img.next {
 @media screen and (min-width: 1728px) {
   .asked-faq {
     padding: 80px 200px;
-    background-image: -webkit-image-set(url(/img/aboutUs/askedFAQ/1728_askedFAQ@1.png) 1x, url(/img/aboutUs/askedFAQ/1728_askedFAQ@2.png) 2x, url(/img/aboutUs/askedFAQ/1728_askedFAQ@3.png) 3x);
-    background-image: image-set(url(/img/aboutUs/askedFAQ/1728_askedFAQ@1.png) 1x, url(/img/aboutUs/askedFAQ/1728_askedFAQ@2.png) 2x, url(/img/aboutUs/askedFAQ/1728_askedFAQ@3.png) 3x);
+    background-image: -webkit-image-set(url(../img/aboutUs/askedFAQ/1728_askedFAQ@1.png) 1x, url(../img/aboutUs/askedFAQ/1728_askedFAQ@2.png) 2x, url(../img/aboutUs/askedFAQ/1728_askedFAQ@3.png) 3x);
+    background-image: image-set(url(../img/aboutUs/askedFAQ/1728_askedFAQ@1.png) 1x, url(../img/aboutUs/askedFAQ/1728_askedFAQ@2.png) 2x, url(../img/aboutUs/askedFAQ/1728_askedFAQ@3.png) 3x);
   }
   .asked-faq--title {
     margin-top: 0;

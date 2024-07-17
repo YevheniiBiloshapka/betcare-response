@@ -1,7 +1,7 @@
 .services {
   overflow: hidden;
   position: relative;
-  background-image: url("/img/services/375_serviceBg.webp");
+  background-image: url("../img/services/375_serviceBg.webp");
 
   background-position: bottom;
   background-size: cover;
@@ -14,52 +14,52 @@
   align-items: center;
   justify-content: start;
   padding-top: 72px;
-  height: 840px;
+  height: 838px;
 }
 
 
   @media screen and (min-width: 834px) {
     & .container{
       padding-top: 144px;
-      height: 1137px;
+      height: 1135px;
     }
-    background-image: url("/img/services/834_serviceBg.webp");
+    background-image: url("../img/services/834_serviceBg.webp");
   }
   @media screen and (min-width: 1180px) {
 
     & .container{
       padding-top: 170.56px;
-      height: 688px;
+      height: 686px;
 
       flex-direction: row;
       align-items: start;
       justify-content: start;
     }
-    background-image: url("/img/services/1180_serviceBg.webp");
+    background-image: url("../img/services/1180_serviceBg.webp");
   }
   @media screen and (min-width: 1280px) {
 
     & .container{
       padding-top: 202.56px;
-      height: 720px;
+      height: 718px;
     }
-    background-image: url("/img/services/1280_serviceBg.webp");
+    background-image: url("../img/services/1280_serviceBg.webp");
   }
   @media screen and (min-width: 1512px) {
 
     & .container{
       padding-top: 162.71px;
-      height: 813px;
+      height: 811px;
     }
-    background-image: url("/img/services/1512_serviceBg.webp");
+    background-image: url("../img/services/1512_serviceBg.webp");
   }
   @media screen and (min-width: 1728px) {
 
     & .container{
       padding-top: 200.76px;
-      height: 900px;
+      height: 898px;
     }
-    background-image: url("/img/services/1728_serviceBg.webp");
+    background-image: url("../img/services/1728_serviceBg.webp");
   }
 }
 
@@ -104,21 +104,21 @@
     height: 100%;
     background-size: contain;
     z-index: 0;
-    @include retina-bg("/img/services/phoneBg/375_phoneNoBg.png","/img/services/phoneBg/375_phoneNoBg@2x.png","/img/services/phoneBg/375_phoneNoBg@3x.png");
+    @include retina-bg("../img/services/phoneBg/375_phoneNoBg.png","../img/services/phoneBg/375_phoneNoBg@2x.png","../img/services/phoneBg/375_phoneNoBg@3x.png");
     @media screen and (min-width: 834px) {
-      @include retina-bg("/img/services/phoneBg/834_phoneNoBg.png","/img/services/phoneBg/834_phoneNoBg@2x.png","/img/services/phoneBg/834_phoneNoBg@3x.png");
+      @include retina-bg("../img/services/phoneBg/834_phoneNoBg.png","../img/services/phoneBg/834_phoneNoBg@2x.png","../img/services/phoneBg/834_phoneNoBg@3x.png");
     }
     @media screen and (min-width: 1180px) {
-      @include retina-bg("/img/services/phoneBg/1180_phoneNoBg.png","/img/services/phoneBg/1180_phoneNoBg@2x.png","/img/services/phoneBg/1180_phoneNoBg@3x.png");
+      @include retina-bg("../img/services/phoneBg/1180_phoneNoBg.png","../img/services/phoneBg/1180_phoneNoBg@2x.png","../img/services/phoneBg/1180_phoneNoBg@3x.png");
     }
     @media screen and (min-width: 1280px) {
-      @include retina-bg("/img/services/phoneBg/1280_phoneNoBg.png","/img/services/phoneBg/1280_phoneNoBg@2x.png","/img/services/phoneBg/1280_phoneNoBg@3x.png");
+      @include retina-bg("../img/services/phoneBg/1280_phoneNoBg.png","../img/services/phoneBg/1280_phoneNoBg@2x.png","../img/services/phoneBg/1280_phoneNoBg@3x.png");
     }
     @media screen and (min-width: 1512px) {
-      @include retina-bg("/img/services/phoneBg/1512_phoneNoBg.png","/img/services/phoneBg/1512_phoneNoBg@2x.png","/img/services/phoneBg/1512_phoneNoBg@3x.png");
+      @include retina-bg("../img/services/phoneBg/1512_phoneNoBg.png","../img/services/phoneBg/1512_phoneNoBg@2x.png","../img/services/phoneBg/1512_phoneNoBg@3x.png");
     }
     @media screen and (min-width: 1728px) {
-      @include retina-bg("/img/services/phoneBg/1728_phoneNoBg.png","/img/services/phoneBg/1728_phoneNoBg@2x.png","/img/services/phoneBg/1728_phoneNoBg@3x.png");
+      @include retina-bg("../img/services/phoneBg/1728_phoneNoBg.png","../img/services/phoneBg/1728_phoneNoBg@2x.png","../img/services/phoneBg/1728_phoneNoBg@3x.png");
     }
   }
   & .swiper-slide--bg-grad{
@@ -134,7 +134,7 @@
     border-radius:60px 60px 0 0;
 
     &.slide_3{
-      background-image: url("/files/servicesVideo/screen3_375x2.png");
+      background-image: url("../files/servicesVideo/screen3_375x2.png");
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
@@ -187,7 +187,7 @@
       height: $height;
       width:  calc($width - 10px);
       &.slide_3{
-        background-image: url("/files/servicesVideo/screen3_834x2.png");}
+        background-image: url("../files/servicesVideo/screen3_834x2.png");}
     }
   }
   @media screen and (min-width: 1180px) {
@@ -217,14 +217,14 @@
       height: $height;
       width:  calc($width - 11px);
       &.slide_3{
-        background-image: url("/files/servicesVideo/screen3_1180x2.png");}
+        background-image: url("../files/servicesVideo/screen3_1180x2.png");}
     }
   }
   @media screen and (min-width: 1280px) {
     margin-left: 220px;
     & .swiper-slide--bg-grad {
       &.slide_3 {
-        background-image: url("/files/servicesVideo/screen3_1280x2.png");
+        background-image: url("../files/servicesVideo/screen3_1280x2.png");
       }
     }
   }
@@ -253,7 +253,7 @@
       height: $height;
       width:  calc($width - 11px);
       &.slide_3 {
-        background-image: url("/files/servicesVideo/screen3_1512x2.png");
+        background-image: url("../files/servicesVideo/screen3_1512x2.png");
       }
     }
   }
@@ -284,7 +284,7 @@
       width:  calc($width - 11px);
       border-radius: 75px 75px 0 0;
       &.slide_3 {
-        background-image: url("/files/servicesVideo/screen3_1728x2.png");
+        background-image: url("../files/servicesVideo/screen3_1728x2.png");
       }
     }
   }

@@ -2,7 +2,7 @@
   position: relative;
 padding: 48px 24px;
 
-  @include retina-bg("/img/aboutUs/aboutUsBenefits/375_aboutUsBenefits@1.png","/img/aboutUs/aboutUsBenefits/375_aboutUsBenefits@2.png","/img/aboutUs/aboutUsBenefits/375_aboutUsBenefits@3.png");
+  @include retina-bg("../img/aboutUs/aboutUsBenefits/375_aboutUsBenefits@1.png","../img/aboutUs/aboutUsBenefits/375_aboutUsBenefits@2.png","../img/aboutUs/aboutUsBenefits/375_aboutUsBenefits@3.png");
   background-position: top right;
   background-size: cover;
   background-repeat: no-repeat;
@@ -10,24 +10,24 @@ padding: 48px 24px;
   @media screen and (min-width: 834px) {
     padding: 64px;
     background-size: contain;
-    @include retina-bg("/img/aboutUs/aboutUsBenefits/834_aboutUsBenefits@1.png","/img/aboutUs/aboutUsBenefits/834_aboutUsBenefits@2.png","/img/aboutUs/aboutUsBenefits/834_aboutUsBenefits@3.png");
+    @include retina-bg("../img/aboutUs/aboutUsBenefits/834_aboutUsBenefits@1.png","../img/aboutUs/aboutUsBenefits/834_aboutUsBenefits@2.png","../img/aboutUs/aboutUsBenefits/834_aboutUsBenefits@3.png");
   }
   @media screen and (min-width:1180px) {
 
-    @include retina-bg("/img/aboutUs/aboutUsBenefits/1180_aboutUsBenefits@1.png","/img/aboutUs/aboutUsBenefits/1180_aboutUsBenefits@2.png","/img/aboutUs/aboutUsBenefits/1180_aboutUsBenefits@3.png");
+    @include retina-bg("../img/aboutUs/aboutUsBenefits/1180_aboutUsBenefits@1.png","../img/aboutUs/aboutUsBenefits/1180_aboutUsBenefits@2.png","../img/aboutUs/aboutUsBenefits/1180_aboutUsBenefits@3.png");
   }
   @media screen and (min-width:1280px) {
     padding: 64px 80px;
-    @include retina-bg("/img/aboutUs/aboutUsBenefits/1280_aboutUsBenefits@1.png","/img/aboutUs/aboutUsBenefits/1280_aboutUsBenefits@2.png","/img/aboutUs/aboutUsBenefits/1280_aboutUsBenefits@3.png");
+    @include retina-bg("../img/aboutUs/aboutUsBenefits/1280_aboutUsBenefits@1.png","../img/aboutUs/aboutUsBenefits/1280_aboutUsBenefits@2.png","../img/aboutUs/aboutUsBenefits/1280_aboutUsBenefits@3.png");
   }
   @media screen and (min-width:1512px) {
     padding: 80px 120px;
-    @include retina-bg("/img/aboutUs/aboutUsBenefits/1512_aboutUsBenefits@1.png","/img/aboutUs/aboutUsBenefits/1512_aboutUsBenefits@2.png","/img/aboutUs/aboutUsBenefits/1512_aboutUsBenefits@3.png");
+    @include retina-bg("../img/aboutUs/aboutUsBenefits/1512_aboutUsBenefits@1.png","../img/aboutUs/aboutUsBenefits/1512_aboutUsBenefits@2.png","../img/aboutUs/aboutUsBenefits/1512_aboutUsBenefits@3.png");
   }
   @media screen and (min-width:1728px) {
     padding: 80px 200px;
 
-    @include retina-bg("/img/aboutUs/aboutUsBenefits/1728_aboutUsBenefits@1.png","/img/aboutUs/aboutUsBenefits/1728_aboutUsBenefits@2.png","/img/aboutUs/aboutUsBenefits/1728_aboutUsBenefits@3.png");
+    @include retina-bg("../img/aboutUs/aboutUsBenefits/1728_aboutUsBenefits@1.png","../img/aboutUs/aboutUsBenefits/1728_aboutUsBenefits@2.png","../img/aboutUs/aboutUsBenefits/1728_aboutUsBenefits@3.png");
   }
 }
 

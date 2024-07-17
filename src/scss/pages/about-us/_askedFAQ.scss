@@ -2,7 +2,7 @@
   position: relative;
   padding: 48px 24px;
 
-  @include retina-bg("/img/aboutUs/askedFAQ/375_askedFAQ@1.png","/img/aboutUs/askedFAQ/375_askedFAQ@2.png","/img/aboutUs/askedFAQ/375_askedFAQ@3.png");
+  @include retina-bg("../img/aboutUs/askedFAQ/375_askedFAQ@1.png","../img/aboutUs/askedFAQ/375_askedFAQ@2.png","../img/aboutUs/askedFAQ/375_askedFAQ@3.png");
   background-position: top right;
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,17 +17,17 @@
   @media screen and (min-width: 834px) {
     padding: 64px;
     background-size: contain;
-    @include retina-bg("/img/aboutUs/askedFAQ/834_askedFAQ@1.png","/img/aboutUs/askedFAQ/834_askedFAQ@2.png","/img/aboutUs/askedFAQ/834_askedFAQ@3.png");
+    @include retina-bg("../img/aboutUs/askedFAQ/834_askedFAQ@1.png","../img/aboutUs/askedFAQ/834_askedFAQ@2.png","../img/aboutUs/askedFAQ/834_askedFAQ@3.png");
   }
   @media screen and (min-width:1180px) {
     background-position: top left;
     background-size: cover;
 
-    @include retina-bg("/img/aboutUs/askedFAQ/1180_askedFAQ@1.png","/img/aboutUs/askedFAQ/1180_askedFAQ@2.png","/img/aboutUs/askedFAQ/1180_askedFAQ@3.png");
+    @include retina-bg("../img/aboutUs/askedFAQ/1180_askedFAQ@1.png","../img/aboutUs/askedFAQ/1180_askedFAQ@2.png","../img/aboutUs/askedFAQ/1180_askedFAQ@3.png");
   }
   @media screen and (min-width:1280px) {
     padding: 64px 80px;
-    @include retina-bg("/img/aboutUs/askedFAQ/1280_askedFAQ@1.png","/img/aboutUs/askedFAQ/1280_askedFAQ@2.png","/img/aboutUs/askedFAQ/1280_askedFAQ@3.png");
+    @include retina-bg("../img/aboutUs/askedFAQ/1280_askedFAQ@1.png","../img/aboutUs/askedFAQ/1280_askedFAQ@2.png","../img/aboutUs/askedFAQ/1280_askedFAQ@3.png");
     &--title{
       margin-top: 20px;
       text-align: start;
@@ -43,7 +43,7 @@
   @media screen and (min-width:1512px) {
     padding: 80px 120px;
 
-    @include retina-bg("/img/aboutUs/askedFAQ/1512_askedFAQ@1.png","/img/aboutUs/askedFAQ/1512_askedFAQ@2.png","/img/aboutUs/askedFAQ/1512_askedFAQ@3.png");
+    @include retina-bg("../img/aboutUs/askedFAQ/1512_askedFAQ@1.png","../img/aboutUs/askedFAQ/1512_askedFAQ@2.png","../img/aboutUs/askedFAQ/1512_askedFAQ@3.png");
 
     &--title{
       margin-top: 0;
@@ -58,7 +58,7 @@
   @media screen and (min-width:1728px) {
     padding: 80px 200px;
 
-    @include retina-bg("/img/aboutUs/askedFAQ/1728_askedFAQ@1.png","/img/aboutUs/askedFAQ/1728_askedFAQ@2.png","/img/aboutUs/askedFAQ/1728_askedFAQ@3.png");
+    @include retina-bg("../img/aboutUs/askedFAQ/1728_askedFAQ@1.png","../img/aboutUs/askedFAQ/1728_askedFAQ@2.png","../img/aboutUs/askedFAQ/1728_askedFAQ@3.png");
 
     &--title{
       margin-top: 0;
