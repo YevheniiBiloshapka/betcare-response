@@ -39,14 +39,22 @@ document.addEventListener('DOMContentLoaded', function () {
         if (activeSlideVideo) {
           activeSlideVideo.pause();
           activeSlideVideo.currentTime = 0;
-          activeSlideVideo.play();
+          activeSlideVideo.load(); // Добавляем загрузку видео перед воспроизведением
+          activeSlideVideo.addEventListener('loadeddata', function onLoadedData() {
+            activeSlideVideo.play();
+            activeSlideVideo.removeEventListener('loadeddata', onLoadedData);
+          });
         }
       },
       init: function () {
         // Воспроизведение первого видео при загрузке
         let activeSlideVideo = this.slides[this.activeIndex].querySelector('video');
         if (activeSlideVideo) {
-          activeSlideVideo.play();
+          activeSlideVideo.load(); // Добавляем загрузку видео перед воспроизведением
+          activeSlideVideo.addEventListener('loadeddata', function onLoadedData() {
+            activeSlideVideo.play();
+            activeSlideVideo.removeEventListener('loadeddata', onLoadedData);
+          });
         }
       }
     }
