@@ -133,12 +133,7 @@
     background: linear-gradient(165deg, #361B26 0%, #1E1B1C 46.76%, #3D1A2A 100.56%);
     border-radius:60px 60px 0 0;
 
-    &.slide_3{
-      background-image: url("../files/servicesVideo/screen3_375x2.png");
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
+
   }
   & .gallery-top iframe  {
     position: absolute;
@@ -186,8 +181,7 @@
       border-radius: 70px 70px 0 0;
       height: $height;
       width:  calc($width - 10px);
-      &.slide_3{
-        background-image: url("../files/servicesVideo/screen3_834x2.png");}
+
     }
   }
   @media screen and (min-width: 1180px) {
@@ -216,16 +210,13 @@
       border-radius: 60px 60px 0 0;
       height: $height;
       width:  calc($width - 11px);
-      &.slide_3{
-        background-image: url("../files/servicesVideo/screen3_1180x2.png");}
+
     }
   }
   @media screen and (min-width: 1280px) {
     margin-left: 220px;
     & .swiper-slide--bg-grad {
-      &.slide_3 {
-        background-image: url("../files/servicesVideo/screen3_1280x2.png");
-      }
+
     }
   }
   @media screen and (min-width: 1512px) {
@@ -252,9 +243,7 @@
     & .swiper-slide--bg-grad{
       height: $height;
       width:  calc($width - 11px);
-      &.slide_3 {
-        background-image: url("../files/servicesVideo/screen3_1512x2.png");
-      }
+
     }
   }
   @media screen and (min-width: 1728px) {
@@ -283,9 +272,7 @@
       height: $height;
       width:  calc($width - 11px);
       border-radius: 75px 75px 0 0;
-      &.slide_3 {
-        background-image: url("../files/servicesVideo/screen3_1728x2.png");
-      }
+
     }
   }
 }
