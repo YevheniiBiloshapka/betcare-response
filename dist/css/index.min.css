@@ -4210,50 +4210,86 @@ picture.hero__slide-img.next {
 }
 
 .features__video-block {
-  width: 311px;
-  height: 430px;
-  background-image: url("../img/features/phone/375_phoneBg.webp");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
+  position: relative;
+  z-index: 0;
 }
-.features__video-block img, .features__video-block picture {
-  width: 100%;
+.features__video-block--bg {
+  z-index: 5;
+  width: 311px;
+  height: 424px;
+  background-image: -webkit-image-set(url(../img/features/phoneMoc/375@1.png) 1x, url(../img/features/phoneMoc/375@2.png) 2x, url(../img/features/phoneMoc/375@3.png) 3x);
+  background-image: image-set(url(../img/features/phoneMoc/375@1.png) 1x, url(../img/features/phoneMoc/375@2.png) 2x, url(../img/features/phoneMoc/375@3.png) 3x);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.features__video-block--video {
+  border: 1px solid red;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50px 50px 0 0;
+  z-index: -1;
+  width: 301px;
   height: 100%;
 }
 @media screen and (min-width: 834px) {
-  .features__video-block {
-    width: 420px;
-    height: 569px;
-    background-image: url("../img/features/phone/834_phoneBg.webp");
+  .features__video-block--bg {
+    width: 311px;
+    height: 424px;
+    background-image: -webkit-image-set(url(../img/features/phoneMoc/834@1.png) 1x, url(../img/features/phoneMoc/834@2.png) 2x, url(../img/features/phoneMoc/834@3.png) 3x);
+    background-image: image-set(url(../img/features/phoneMoc/834@1.png) 1x, url(../img/features/phoneMoc/834@2.png) 2x, url(../img/features/phoneMoc/834@3.png) 3x);
+  }
+  .features__video-block--video {
+    width: 301px;
+    height: 100%;
   }
 }
 @media screen and (min-width: 1180px) {
-  .features__video-block {
-    width: 384px;
-    height: 532px;
-    background-image: url("../img/features/phone/1180_phoneBg.webp");
+  .features__video-block--bg {
+    width: 311px;
+    height: 424px;
+    background-image: -webkit-image-set(url(../img/features/phoneMoc/1180@1.png) 1x, url(../img/features/phoneMoc/1180@2.png) 2x, url(../img/features/phoneMoc/1180@3.png) 3x);
+    background-image: image-set(url(../img/features/phoneMoc/1180@1.png) 1x, url(../img/features/phoneMoc/1180@2.png) 2x, url(../img/features/phoneMoc/1180@3.png) 3x);
+  }
+  .features__video-block--video {
+    width: 301px;
+    height: 100%;
   }
 }
 @media screen and (min-width: 1280px) {
-  .features__video-block {
-    width: 384px;
-    height: 532px;
-    background-image: url("../img/features/phone/1280_phoneBg.webp");
+  .features__video-block--bg {
+    width: 311px;
+    height: 424px;
+  }
+  .features__video-block--video {
+    width: 301px;
+    height: 100%;
   }
 }
 @media screen and (min-width: 1512px) {
-  .features__video-block {
+  .features__video-block--bg {
     width: 390px;
-    height: 548px;
-    background-image: url("../img/features/phone/1512_phoneBg.webp");
+    height: 530px;
+  }
+  .features__video-block--video {
+    width: 380px;
+    height: 100%;
+    border-radius: 60px 60px 0 0;
   }
 }
 @media screen and (min-width: 1728px) {
-  .features__video-block {
-    width: 474px;
-    height: 645px;
-    background-image: url("../img/features/phone/1728_phoneBg.webp");
+  .features__video-block--bg {
+    width: 477px;
+    height: 648px;
+    background-image: -webkit-image-set(url(../img/features/phoneMoc/1728@1.png) 1x, url(../img/features/phoneMoc/1728@2.png) 2x, url(../img/features/phoneMoc17285@3.png) 3x);
+    background-image: image-set(url(../img/features/phoneMoc/1728@1.png) 1x, url(../img/features/phoneMoc/1728@2.png) 2x, url(../img/features/phoneMoc17285@3.png) 3x);
+  }
+  .features__video-block--video {
+    width: 467px;
+    height: 100%;
+    border-radius: 70px 70px 0 0;
   }
 }
 

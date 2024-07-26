@@ -96,45 +96,101 @@
     }
   }
 }
-//phone block
 .features__video-block{
-  width: 311px;
-  height: 430px;
+  position: relative;
+  z-index: 0;
+  $width:311px;
+  $height:424px;
 
-  background-image: url("../img/features/phone/375_phoneBg.webp");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-  & img,& picture{
-    width: 100%;
+  &--bg{
+    z-index: 5;
+    width:$width;
+    height:$height;
+
+    @include retina-bg("../img/features/phoneMoc/375@1.png","../img/features/phoneMoc/375@2.png","../img/features/phoneMoc/375@3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+  &--video{
+    border: 1px solid red;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px 50px  0 0;
+    z-index: -1;
+    width: calc($width - 10px);
     height: 100%;
   }
   @media screen and (min-width: 834px){
-    width: 420px;
-    height: 569px;
-    background-image: url("../img/features/phone/834_phoneBg.webp");
+    $width:311px;
+    $height:424px;
+    &--bg {
+      width:$width;
+      height:$height;
+      @include retina-bg("../img/features/phoneMoc/834@1.png", "../img/features/phoneMoc/834@2.png", "../img/features/phoneMoc/834@3.png");
+    }
+    &--video{
+      width: calc($width - 10px);
+      height: 100%;
+    }
   }
   @media screen and (min-width: 1180px){
-    width: 384px;
-    height: 532px;
-    background-image: url("../img/features/phone/1180_phoneBg.webp");
+    $width:311px;
+    $height:424px;
+    &--bg {
+      width:$width;
+      height:$height;
+      @include retina-bg("../img/features/phoneMoc/1180@1.png", "../img/features/phoneMoc/1180@2.png", "../img/features/phoneMoc/1180@3.png");
+    }
+    &--video{
+      width: calc($width - 10px);
+      height: 100%;
+    }
   }
   @media screen and (min-width: 1280px){
-    width: 384px;
-    height: 532px;
-    background-image: url("../img/features/phone/1280_phoneBg.webp");
+    $width:311px;
+    $height:424px;
+    &--bg {
+      width:$width;
+      height:$height;
+    }
+    &--video{
+      width: calc($width - 10px);
+      height: 100%;
+    }
   }
   @media screen and (min-width: 1512px){
-    width: 390px;
-    height: 548px;
-    background-image: url("../img/features/phone/1512_phoneBg.webp");
+    $width:390px;
+    $height:530px;
+    &--bg {
+      width:$width;
+      height:$height;
+
+    }
+    &--video{
+      width: calc($width - 10px);
+      height: 100%;
+      border-radius: 60px 60px  0 0;
+    }
   }
   @media screen and (min-width: 1728px){
-    width: 474px;
-    height: 645px;
-    background-image: url("../img/features/phone/1728_phoneBg.webp");
+    $width:477px;
+    $height:648px;
+    &--bg {
+      width:$width;
+      height:$height;
+      @include retina-bg("../img/features/phoneMoc/1728@1.png", "../img/features/phoneMoc/1728@2.png", "../img/features/phoneMoc17285@3.png");
+    }
+    &--video{
+      width: calc($width - 10px);
+      height: 100%;
+      border-radius: 70px 70px  0 0;
+    }
   }
 }
+
 // list
 .features__tab-block {
   display: flex;

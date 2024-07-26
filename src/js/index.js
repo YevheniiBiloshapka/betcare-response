@@ -1,6 +1,7 @@
 import { SlotMachine } from './components/slot/slotMachine.js';
 import heroTick from './components/part-hero.js';
 import { Header } from './components/header.js';
+import { featuresGeneral } from './components/featuresGeneral.js';
 
 document.addEventListener('DOMContentLoaded', function () {
   var galleryTop = new Swiper('.gallery-top', {
@@ -71,6 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
   galleryTop.controller.control = galleryThumbs;
   galleryThumbs.controller.control = galleryTop;
 
+  featuresGeneral();
   Header();
   SlotMachine();
   heroTick();
