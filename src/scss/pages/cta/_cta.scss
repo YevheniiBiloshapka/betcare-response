@@ -864,7 +864,7 @@ $colors: (
     }
   }
 
-  & h2,h3,h4,h5,h6 {
+  & h2,h3:not(.accordion__item--header-title),h4,h5,h6 {
     color: #C01760;
     @include font-title(h2-mob);
     padding-bottom: 4px;
@@ -928,7 +928,7 @@ $colors: (
   counter-reset: ordered-list;
   margin: 0 0 24px;
 
-  & li {
+  & li:not(.accordion__item){
     position: relative;
     display: flex;
     flex-direction: column;
@@ -940,7 +940,7 @@ $colors: (
 
     @include font-body(normal-bold);
 
-    & li {
+    & li:not(.accordion__item) {
       padding: 0;
 
       &:before {
@@ -950,7 +950,7 @@ $colors: (
     }
   }
 
-  & li:before {
+  & li:not(.accordion__item):before {
     position: absolute;
     left: 0;
     top: 0;
@@ -980,10 +980,10 @@ $colors: (
 
   @media screen and (min-width: 1512px) {
     gap: 32px;
-    & li {
+    & li:not(.accordion__item) {
       @include font-body(big-bold);
     }
-    & li:before {
+    & li:not(.accordion__item):before {
     }
   }
 }
@@ -994,7 +994,7 @@ $colors: (
   list-style: none;
   margin: 0 0 24px;
 
-  & li {
+  & li:not(.accordion__item) {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -1006,17 +1006,17 @@ $colors: (
 
     @include font-body(normal-bold);
 
-    & li {
+    & li:not(.accordion__item) {
       padding: 0;
 
-      &:before {
+      &:not(.accordion__item):before {
         display: none;
         counter-increment: none;
       }
     }
   }
 
-  & li:before {
+  & li:not(.accordion__item):before {
     position: absolute;
     left: 0;
     top: 0;
@@ -1041,10 +1041,10 @@ $colors: (
 
   @media screen and (min-width: 1512px) {
     gap: 32px;
-    & li {
+    & li:not(.accordion__item) {
       @include font-body(big-bold);
     }
-    & li:before {
+    & li:not(.accordion__item):before {
     }
   }
 }

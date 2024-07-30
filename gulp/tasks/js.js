@@ -17,6 +17,7 @@ export const js = () => {
 				aboutUs: './src/js/aboutUs.js',
 				404: './src/js/404.js',
 				privatePolicy: './src/js/privatePolicy.js',
+				reviewLobby: './src/js/reviewLobby.js',
 
 				gsap: './src/js/modules/gsap/gsap.js',
 			},
