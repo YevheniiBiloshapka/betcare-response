@@ -5620,14 +5620,14 @@ picture.hero__slide-img.next {
   }
 }
 
-.cta ul {
+.cta ul:not(.color-list, .level-list, .accordion) {
   display: flex;
   flex-direction: column;
   gap: 16px;
   list-style: none;
   margin: 0 0 24px;
 }
-.cta ul li:not(.accordion__item) {
+.cta ul:not(.color-list, .level-list, .accordion) li:not(.accordion__item) {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -5640,14 +5640,14 @@ picture.hero__slide-img.next {
   line-height: 24px;
   letter-spacing: 0.66px;
 }
-.cta ul li:not(.accordion__item) li:not(.accordion__item) {
+.cta ul:not(.color-list, .level-list, .accordion) li:not(.accordion__item) li:not(.accordion__item) {
   padding: 0;
 }
-.cta ul li:not(.accordion__item) li:not(.accordion__item):not(.accordion__item):before {
+.cta ul:not(.color-list, .level-list, .accordion) li:not(.accordion__item) li:not(.accordion__item):not(.accordion__item):before {
   display: none;
   counter-increment: none;
 }
-.cta ul li:not(.accordion__item):before {
+.cta ul:not(.color-list, .level-list, .accordion) li:not(.accordion__item):before {
   position: absolute;
   left: 0;
   top: 0;
@@ -5665,10 +5665,10 @@ picture.hero__slide-img.next {
   background-color: #C01760;
 }
 @media screen and (min-width: 1512px) {
-  .cta ul {
+  .cta ul:not(.color-list, .level-list, .accordion) {
     gap: 32px;
   }
-  .cta ul li:not(.accordion__item) {
+  .cta ul:not(.color-list, .level-list, .accordion) li:not(.accordion__item) {
     font-size: 18px;
     font-weight: 600;
     line-height: 24px;
@@ -6261,6 +6261,7 @@ picture.hero__slide-img.next {
 }
 .cta .color-list li:before {
   display: none;
+  visibility: hidden;
 }
 .cta .color-list li span {
   font-size: 24px;

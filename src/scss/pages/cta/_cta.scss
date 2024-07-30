@@ -987,7 +987,7 @@ $colors: (
     }
   }
 }
-.cta ul{
+.cta ul:not(.color-list ,.level-list,.accordion){
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -1642,6 +1642,7 @@ $colors: (
   & li{
     &:before{
       display: none;
+      visibility: hidden;
     }
     padding-left: 0;
     display: inline-flex;
