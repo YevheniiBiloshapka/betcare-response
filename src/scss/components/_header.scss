@@ -12,30 +12,7 @@
     }
   }
 }
-.review-lobby-header{
-  .menu__buttons--login{
-    display: flex;
-  }
-  @media screen and (min-width: 834px) {
-    .menu__buttons--login{
-      color: $cl-neutral-900 !important;;
-      background: #D9D9D9 !important;
-      &:hover{
-        color: #1B1B1B !important;;
-        background: $cl-neutral-100 !important;
-      }
-    }
-  }
-  @media screen and (min-width: 1180px) {
-    .menu__buttons--login{
-      width: 121px;
-    }
-  }@media screen and (min-width: 1512px) {
-    .menu__buttons--login{
-      width: 151px;
-    }
-  }
-}
+
 
 .cta-header-scroll {
   position: fixed;
@@ -793,4 +770,36 @@
       gap: 56px;
     }
   }
+}
+
+.review-lobby-header{
+  position: absolute ;
+  &.is-hidden{
+    background-color: $cl-neutral-900;
+  }
+  &.scroll{
+    position: fixed;
+  }
+  & .menu__buttons--login{
+    display: flex;
+  }
+  @media screen and (min-width: 834px) {
+    .menu__buttons--login{
+      color: $cl-neutral-900 !important;;
+      background: #D9D9D9 !important;
+      &:hover{
+        color: #1B1B1B !important;;
+        background: $cl-neutral-100 !important;
+      }
+    }
+  }
+  @media screen and (min-width: 1180px) {
+    .menu__buttons--login{
+      width: 121px;
+    }
+  }@media screen and (min-width: 1512px) {
+  .menu__buttons--login{
+    width: 151px;
+  }
+}
 }
