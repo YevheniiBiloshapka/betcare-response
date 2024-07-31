@@ -7839,7 +7839,7 @@ picture.hero__slide-img.next {
 }
 
 .review-lobby__hero {
-  height: 90vh;
+  height: 500px;
   z-index: 9998;
   position: relative;
   display: flex;
@@ -7855,13 +7855,14 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 834px) {
   .review-lobby__hero {
+    height: 480px;
     background-image: -webkit-image-set(url(../img/reviewLobby/834_reviewLobby.png) 1x, url(../img/reviewLobby/834_reviewLobby@2.png) 2x, url(../img/reviewLobby/834_reviewLobby@3.png) 3x);
     background-image: image-set(url(../img/reviewLobby/834_reviewLobby.png) 1x, url(../img/reviewLobby/834_reviewLobby@2.png) 2x, url(../img/reviewLobby/834_reviewLobby@3.png) 3x);
   }
 }
 @media screen and (min-width: 1180px) {
   .review-lobby__hero {
-    height: 100vh;
+    height: 432px;
     background-image: -webkit-image-set(url(../img/reviewLobby/1180_reviewLobby.png) 1x, url(../img/reviewLobby/1180_reviewLobby@2.png) 2x, url(../img/reviewLobby/1180_reviewLobby@3.png) 3x);
     background-image: image-set(url(../img/reviewLobby/1180_reviewLobby.png) 1x, url(../img/reviewLobby/1180_reviewLobby@2.png) 2x, url(../img/reviewLobby/1180_reviewLobby@3.png) 3x);
   }
@@ -7874,12 +7875,14 @@ picture.hero__slide-img.next {
 }
 @media screen and (min-width: 1512px) {
   .review-lobby__hero {
+    height: 508px;
     background-image: -webkit-image-set(url(../img/reviewLobby/1512_reviewLobby.png) 1x, url(../img/reviewLobby/1512_reviewLobby@2.png) 2x, url(../img/reviewLobby/1512_reviewLobby@3.png) 3x);
     background-image: image-set(url(../img/reviewLobby/1512_reviewLobby.png) 1x, url(../img/reviewLobby/1512_reviewLobby@2.png) 2x, url(../img/reviewLobby/1512_reviewLobby@3.png) 3x);
   }
 }
 @media screen and (min-width: 1728px) {
   .review-lobby__hero {
+    height: 520px;
     background-image: -webkit-image-set(url(../img/reviewLobby/1728_reviewLobby.png) 1x, url(../img/reviewLobby/1728_reviewLobby@2.png) 2x, url(../img/reviewLobby/1728_reviewLobby@3.png) 3x);
     background-image: image-set(url(../img/reviewLobby/1728_reviewLobby.png) 1x, url(../img/reviewLobby/1728_reviewLobby@2.png) 2x, url(../img/reviewLobby/1728_reviewLobby@3.png) 3x);
   }
@@ -8051,6 +8054,24 @@ picture.hero__slide-img.next {
     width: 24px;
     height: 24px;
     min-width: 24px;
+  }
+}
+
+.review-lobby__hero .review-lobby--casino--legal {
+  justify-content: start;
+}
+.review-lobby__hero .review-lobby--casino--legal .review-lobby--casino--legal-button {
+  width: fit-content;
+  text-align: start;
+  padding: 8px 8px 8px 0;
+}
+.review-lobby__hero .review-lobby--casino--legal .review-lobby--casino--legal-button:hover {
+  color: #FFF;
+}
+@media screen and (min-width: 834px) {
+  .review-lobby__hero .review-lobby--casino--legal {
+    justify-content: center;
+    margin-top: 8px;
   }
 }
 
