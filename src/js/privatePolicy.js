@@ -1,64 +1,7 @@
 import { Header } from './components/header.js';
 
-document.addEventListener('DOMContentLoaded', function () {
+const AccordionMobilePolicy = () => {
   const accordionHeader = document.querySelectorAll('[data-action="accordion-header"]');
-  const links = document.querySelectorAll('.legal-document--link');
-  const sections = document.querySelectorAll('.accordion__item');
-  const headers = document.querySelectorAll('.accordion__item--header');
-
-  const topOptions = {
-    root: null, // use the viewport
-    rootMargin: '0px 0px -90% 0px', // trigger when the top of the section is near the top of the viewport
-    threshold: 0 // no threshold, just when the top of the section crosses
-  };
-
-  const bottomOptions = {
-    root: null, // use the viewport
-    rootMargin: '0px 0px 0px 0px', // trigger when the bottom of the section is near the bottom of the viewport
-    threshold: 1.0 // full intersection
-  };
-
-  const headerObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        updateActiveLink(entry.target.closest('.accordion__item').id);
-      }
-    });
-  }, topOptions);
-
-  const bottomObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        updateActiveLink(entry.target.id);
-      }
-    });
-  }, bottomOptions);
-
-  headers.forEach(header => {
-    headerObserver.observe(header);
-  });
-
-  sections.forEach(section => {
-    bottomObserver.observe(section);
-  });
-
-  // Проверка на достижение низа страницы
-  window.addEventListener('scroll', () => {
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-      const lastSection = sections[sections.length - 1];
-      updateActiveLink(lastSection.id);
-    }
-  });
-
-  function updateActiveLink(id) {
-    // Remove active class from all links
-    links.forEach(link => link.classList.remove('active'));
-    // Add active class to the link corresponding to the current section
-    const activeLink = document.querySelector(`.legal-document--link[href="#${id}"]`);
-    if (activeLink) {
-      activeLink.classList.add('active');
-    }
-  }
 
   accordionHeader.forEach(header => {
     header.addEventListener('click', function () {
@@ -79,6 +22,81 @@ document.addEventListener('DOMContentLoaded', function () {
       accordionItem.classList.toggle('show');
     });
   });
+};
 
+const ActiveLinkSwitcher = () => {
+  const links = document.querySelectorAll('.legal-document--link');
+  const sections = document.querySelectorAll('.accordion__item');
+  const sectionVisibility = new Map();
+
+  const updateActiveLink = (mostVisibleSection) => {
+    links.forEach((link) => {
+      const linkHref = link.getAttribute('href').replace('#', '');
+      if (linkHref === mostVisibleSection) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  };
+
+  const findMostVisibleSection = () => {
+    let mostVisibleSection = null;
+    let highestRatio = 0;
+
+    sectionVisibility.forEach((ratio, id) => {
+      if (ratio > highestRatio) {
+        highestRatio = ratio;
+        mostVisibleSection = id;
+      }
+    });
+
+    // Проверяем, достигнут ли конец страницы
+    const isBottom = (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 1;
+    if (isBottom) {
+      mostVisibleSection = sections[sections.length - 1].id;
+    }
+
+    return mostVisibleSection;
+  };
+
+  const observerCallback = (entries) => {
+    entries.forEach((entry) => {
+      sectionVisibility.set(entry.target.id, entry.intersectionRatio);
+    });
+
+    const mostVisibleSection = findMostVisibleSection();
+    if (mostVisibleSection) {
+      updateActiveLink(mostVisibleSection);
+    }
+  };
+
+  const observerOptions = {
+    threshold: Array.from({ length: 101 }, (_, i) => i * 0.01) // значения от 0 до 1 с шагом 0.01
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+
+  const checkBottomOnScroll = () => {
+    const isBottom = (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 1;
+    if (isBottom) {
+      const lastSectionId = sections[sections.length - 1].id;
+      updateActiveLink(lastSectionId);
+    }
+  };
+
+  window.addEventListener('scroll', checkBottomOnScroll);
+  document.addEventListener('DOMContentLoaded', checkBottomOnScroll); // Проверка при загрузке страницы
+};
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  AccordionMobilePolicy();
+  ActiveLinkSwitcher();
   Header();
 });

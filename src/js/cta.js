@@ -1,5 +1,7 @@
 import { Header } from './components/header.js';
 import copyButton from './components/copyButton.js';
+import { ctaAsidePositionCalc } from './components/ctaAsidePositionCalc.js';
+
 
 function Accordion() {
   const accordionHeader = document.querySelectorAll('[data-action="accordion-header"]');
@@ -77,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   });
-
+  ctaAsidePositionCalc();
   copyButton();
   Accordion();
   Header();
