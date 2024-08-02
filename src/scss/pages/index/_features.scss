@@ -113,6 +113,9 @@
     background-position: top;
   }
   &--video{
+    &::-webkit-media-controls {
+      display: none !important;
+    }
     position: absolute;
     top: 0;
     left: 50%;

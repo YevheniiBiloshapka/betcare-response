@@ -4234,6 +4234,9 @@ picture.hero__slide-img.next {
   margin-top: 8px;
   border-radius: 40px 40px 0 0;
 }
+.features__video-block--video::-webkit-media-controls {
+  display: none !important;
+}
 @media screen and (min-width: 834px) {
   .features__video-block--bg {
     width: 311px;
