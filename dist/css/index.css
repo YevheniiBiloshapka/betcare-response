@@ -4302,7 +4302,7 @@ picture.hero__slide-img.next {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  counter-reset: custom-counter;
+  list-style: none !important;
   margin: 0;
   padding-left: 2px;
 }
@@ -4330,17 +4330,19 @@ picture.hero__slide-img.next {
 }
 
 .features__tab {
-  counter-increment: custom-counter;
+  position: relative;
   display: inline-flex;
   align-items: center;
   white-space: nowrap;
   text-align: left;
   opacity: 0.5;
+  cursor: pointer;
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
   letter-spacing: 0.5px;
   color: #353535;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .features__tab svg {
   margin: 0 8px;
@@ -4348,7 +4350,12 @@ picture.hero__slide-img.next {
   height: 20px;
 }
 .features__tab:before {
-  content: counter(custom-counter);
+  counter-increment: none;
+  content: "";
+}
+.features__tab .features__tab--number {
+  z-index: 0;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4364,9 +4371,29 @@ picture.hero__slide-img.next {
   letter-spacing: 0.66px;
   color: #353535;
   background: #FFF;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.features__tab .features__tab--number::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  counter-increment: li;
+  z-index: -1;
+  width: inherit;
+  height: inherit;
+  border-radius: 400px;
+  background-color: #FFF;
+  content: "";
+  opacity: 0;
+}
+.features__tab.pulse .features__tab--number::before {
+  animation: pulseNumber 1.2s ease-out;
 }
 .features__tab.active {
   opacity: 1;
+}
+.features__tab:hover {
+  opacity: 0.8;
 }
 @media screen and (min-width: 834px) {
   .features__tab {
@@ -4380,7 +4407,7 @@ picture.hero__slide-img.next {
     width: 28px;
     height: 28px;
   }
-  .features__tab:before {
+  .features__tab .features__tab--number {
     width: 40px;
     height: 40px;
     margin-right: 16px;
@@ -4398,13 +4425,23 @@ picture.hero__slide-img.next {
     width: 28px;
     height: 28px;
   }
-  .features__tab:before {
+  .features__tab .features__tab--number {
     width: 48px;
     height: 48px;
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;
     letter-spacing: 0.51px;
+  }
+}
+@keyframes pulseNumber {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
   }
 }
 .faq {

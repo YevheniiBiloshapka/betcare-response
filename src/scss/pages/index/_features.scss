@@ -202,7 +202,9 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  counter-reset: custom-counter;
+  list-style: none !important;
+
+  //counter-reset: custom-counter;
   margin: 0 ;
   padding-left:2px;
 
@@ -224,17 +226,20 @@
 }
 // item
 .features__tab {
+  position: relative;
 
-  counter-increment: custom-counter;
+  //counter-increment: custom-counter;
   display: inline-flex;
   align-items: center;
   white-space: nowrap;
   text-align: left;
   opacity: 0.5;
+  cursor: pointer;
 
 
   @include font-body(small-bold);
   color: $cl-neutral-800;
+  @include transition();
 
   & svg {
     margin: 0 8px;
@@ -242,10 +247,14 @@
     width: $size;
     height: $size;
   }
-
-  &:before {
-    content: counter(custom-counter);
-
+  &:before{
+    counter-increment: none;
+    content: "";
+  }
+  & .features__tab--number {
+    z-index: 0;
+    //content: counter(custom-counter);
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -260,10 +269,33 @@
     @include font-body(normal-bold);
     color: $cl-neutral-800;
     background: $cl-neutral-100;
+    @include transition();
+  }
+
+ .features__tab--number::before {
+   position: absolute;
+   top: 0;
+   left: 0;
+   //transform: translate(-50%,-50%);
+    counter-increment: li;
+   z-index: -1;
+    width: inherit;
+    height: inherit;
+   border-radius: 400px;
+    background-color: $cl-neutral-100;
+    content:"";
+     opacity: 0;
+
+  }
+  &.pulse .features__tab--number::before{
+    animation: pulseNumber 1.2s ease-out;
   }
 
   &.active {
     opacity: 1;
+  }
+  &:hover{
+    opacity: 0.8;
   }
 
   @media screen and (min-width: 834px) {
@@ -274,7 +306,7 @@
       width: $size;
       height: $size;
     }
-    &:before {
+    & .features__tab--number {
       $size: 40px;
       width:  $size;
       height:  $size;
@@ -289,7 +321,7 @@
       width: $size;
       height: $size;
     }
-    &:before {
+    & .features__tab--number {
       $size: 48px;
       width:  $size;
       height:  $size;
@@ -297,5 +329,15 @@
     }
   }
   @media screen and (min-width: 1728px) {
+  }
+}
+@keyframes pulseNumber {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
   }
 }
