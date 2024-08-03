@@ -28,8 +28,7 @@ export const featuresGeneral = () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         activateTab();
-        video.play();
-
+        video.play()
         observer.unobserve(video);
       }
     });
@@ -41,23 +40,23 @@ export const featuresGeneral = () => {
 
   tabs.forEach((tab, index) => {
     tab.addEventListener('click', (event) => {
-      // Добавляем класс пульсации при клике
       tab.classList.add('pulse');
 
       setTimeout(() => {
         tab.classList.remove('pulse');
-      }, 800); // Длительность анимации
+      }, 500);
 
       clearExistingTimeouts();
-      video.currentTime = delays[index] / 1000; // Устанавливаем время видео в секундах
+      video.pause();
+      video.currentTime = delays[index] / 1000;
+      video.play()
       activateTab(index);
-      video.play();
     });
   });
 
   video.addEventListener('ended', () => {
     video.currentTime = 0;
     activateTab();
-    video.play();
+    video.play()
   });
 };
