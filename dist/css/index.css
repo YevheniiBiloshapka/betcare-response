@@ -4392,9 +4392,6 @@ picture.hero__slide-img.next {
 .features__tab.active {
   opacity: 1;
 }
-.features__tab:hover {
-  opacity: 0.8;
-}
 @media screen and (min-width: 834px) {
   .features__tab {
     font-size: 18px;
@@ -4411,6 +4408,11 @@ picture.hero__slide-img.next {
     width: 40px;
     height: 40px;
     margin-right: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .features__tab:hover {
+    opacity: 0.8;
   }
 }
 @media screen and (min-width: 1512px) {

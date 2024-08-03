@@ -294,9 +294,6 @@
   &.active {
     opacity: 1;
   }
-  &:hover{
-    opacity: 0.8;
-  }
 
   @media screen and (min-width: 834px) {
     @include font-body(big-bold);
@@ -312,6 +309,12 @@
       height:  $size;
       margin-right: 16px;
     }
+  }
+  @media screen and (min-width: 1280px) {
+    &:hover{
+      opacity: 0.8;
+    }
+
   }
   @media screen and (min-width: 1512px) {
     @include font-body(large-bold);
