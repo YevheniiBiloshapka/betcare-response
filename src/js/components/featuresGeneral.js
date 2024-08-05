@@ -24,11 +24,25 @@ export const featuresGeneral = () => {
     });
   };
 
+  const playVideo = () => {
+    if (video.readyState >= 2) {
+      video.play().catch(error => {
+        console.error('Error playing video:', error);
+      });
+    } else {
+      video.addEventListener('canplay', () => {
+        video.play().catch(error => {
+          console.error('Error playing video:', error);
+        });
+      }, { once: true });
+    }
+  };
+
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         activateTab();
-        video.play()
+        playVideo();
         observer.unobserve(video);
       }
     });
@@ -49,7 +63,7 @@ export const featuresGeneral = () => {
       clearExistingTimeouts();
       video.pause();
       video.currentTime = delays[index] / 1000;
-      video.play()
+      playVideo();
       activateTab(index);
     });
   });
@@ -57,6 +71,6 @@ export const featuresGeneral = () => {
   video.addEventListener('ended', () => {
     video.currentTime = 0;
     activateTab();
-    video.play()
+    playVideo();
   });
 };
