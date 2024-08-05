@@ -26,14 +26,10 @@ export const featuresGeneral = () => {
 
   const playVideo = () => {
     if (video.readyState >= 2) {
-      video.play().catch(error => {
-        console.error('Error playing video:', error);
-      });
+      video.play()
     } else {
       video.addEventListener('canplay', () => {
-        video.play().catch(error => {
-          console.error('Error playing video:', error);
-        });
+        video.play()
       }, { once: true });
     }
   };

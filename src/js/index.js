@@ -84,13 +84,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  document.body.addEventListener('touchstart', () => {
+  document.body.addEventListener('click touchstart', () => {
     const videoElements = document.querySelectorAll('.swiper-slide video');
     videoElements.forEach(videoElement => {
       if (videoElement.paused) {
-        videoElement.play().catch(error => {
-          console.error('Error playing video:', error);
-        });
+        videoElement.play()
       }
     });
   });
