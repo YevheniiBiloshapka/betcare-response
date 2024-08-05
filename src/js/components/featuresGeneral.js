@@ -2,6 +2,7 @@ export const featuresGeneral = () => {
   const video = document.querySelector('.features__video-block--video');
   const tabs = document.querySelectorAll('.features__tab');
   const delays = [0, 4000, 8000, 12000]; // Задержки в миллисекундах
+  const cycleDelay = 3000; // Задержка перед началом нового цикла
 
   let timeoutIds = [];
   let currentTabIndex = 0;
@@ -24,6 +25,14 @@ export const featuresGeneral = () => {
         timeoutIds.push(timeoutId);
       }
     });
+
+    // Добавляем задержку перед новым циклом
+    const totalDelay = delays[delays.length - 1] - (startIndex > 0 ? delays[startIndex] : 0) + cycleDelay;
+    setTimeout(() => {
+      video.currentTime = 0;
+      activateTab(0);
+      playVideo();
+    }, totalDelay);
   };
 
   const playVideo = () => {
@@ -49,23 +58,6 @@ export const featuresGeneral = () => {
   });
 
   observer.observe(video);
-
-  tabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => {
-      tab.classList.add('pulse');
-
-      setTimeout(() => {
-        tab.classList.remove('pulse');
-      }, 500);
-
-      clearExistingTimeouts();
-      video.pause();
-      video.currentTime = delays[index] / 1000;
-      playVideo();
-      activateTab(index);
-      currentTabIndex = index;
-    });
-  });
 
   video.addEventListener('timeupdate', () => {
     const currentTime = video.currentTime * 1000; // Текущая позиция видео в миллисекундах

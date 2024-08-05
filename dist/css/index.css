@@ -4336,7 +4336,6 @@ picture.hero__slide-img.next {
   white-space: nowrap;
   text-align: left;
   opacity: 0.5;
-  cursor: pointer;
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
@@ -4386,9 +4385,6 @@ picture.hero__slide-img.next {
   content: "";
   opacity: 0;
 }
-.features__tab.pulse .features__tab--number::before {
-  animation: pulseNumber 1.2s ease-out;
-}
 .features__tab.active {
   opacity: 1;
 }
@@ -4410,11 +4406,6 @@ picture.hero__slide-img.next {
     margin-right: 16px;
   }
 }
-@media screen and (min-width: 1280px) {
-  .features__tab:hover {
-    opacity: 0.8;
-  }
-}
 @media screen and (min-width: 1512px) {
   .features__tab {
     font-size: 24px;
@@ -4434,16 +4425,6 @@ picture.hero__slide-img.next {
     font-weight: 600;
     line-height: 36px;
     letter-spacing: 0.51px;
-  }
-}
-@keyframes pulseNumber {
-  0% {
-    transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(2);
-    opacity: 0;
   }
 }
 .faq {

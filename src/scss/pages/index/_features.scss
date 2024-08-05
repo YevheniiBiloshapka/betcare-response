@@ -234,7 +234,7 @@
   white-space: nowrap;
   text-align: left;
   opacity: 0.5;
-  cursor: pointer;
+
 
 
   @include font-body(small-bold);
@@ -287,9 +287,7 @@
      opacity: 0;
 
   }
-  &.pulse .features__tab--number::before{
-    animation: pulseNumber 1.2s ease-out;
-  }
+
 
   &.active {
     opacity: 1;
@@ -311,10 +309,6 @@
     }
   }
   @media screen and (min-width: 1280px) {
-    &:hover{
-      opacity: 0.8;
-    }
-
   }
   @media screen and (min-width: 1512px) {
     @include font-body(large-bold);
@@ -332,15 +326,5 @@
     }
   }
   @media screen and (min-width: 1728px) {
-  }
-}
-@keyframes pulseNumber {
-  0% {
-    transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(2);
-    opacity: 0;
   }
 }
