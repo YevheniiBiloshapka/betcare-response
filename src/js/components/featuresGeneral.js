@@ -4,6 +4,7 @@ export const featuresGeneral = () => {
   const delays = [0, 4000, 8000, 12000]; // Задержки в миллисекундах
 
   let timeoutIds = [];
+  let currentTabIndex = 0;
 
   const clearExistingTimeouts = () => {
     timeoutIds.forEach(timeoutId => clearTimeout(timeoutId));
@@ -13,11 +14,12 @@ export const featuresGeneral = () => {
   const activateTab = (startIndex = 0) => {
     clearExistingTimeouts();
     tabs.forEach((tab, index) => {
+      const delay = delays[index] - (startIndex > 0 ? delays[startIndex] : 0);
       if (index >= startIndex) {
-        const delay = delays[index] - (startIndex > 0 ? delays[startIndex] : 0);
         const timeoutId = setTimeout(() => {
           tabs.forEach(t => t.classList.remove('active'));
           tab.classList.add('active');
+          currentTabIndex = index;
         }, delay);
         timeoutIds.push(timeoutId);
       }
@@ -26,10 +28,10 @@ export const featuresGeneral = () => {
 
   const playVideo = () => {
     if (video.readyState >= 2) {
-      video.play()
+      video.play();
     } else {
       video.addEventListener('canplay', () => {
-        video.play()
+        video.play();
       }, { once: true });
     }
   };
@@ -49,7 +51,7 @@ export const featuresGeneral = () => {
   observer.observe(video);
 
   tabs.forEach((tab, index) => {
-    tab.addEventListener('click', (event) => {
+    tab.addEventListener('click', () => {
       tab.classList.add('pulse');
 
       setTimeout(() => {
@@ -61,12 +63,25 @@ export const featuresGeneral = () => {
       video.currentTime = delays[index] / 1000;
       playVideo();
       activateTab(index);
+      currentTabIndex = index;
     });
+  });
+
+  video.addEventListener('timeupdate', () => {
+    const currentTime = video.currentTime * 1000; // Текущая позиция видео в миллисекундах
+    for (let i = delays.length - 1; i >= 0; i--) {
+      if (currentTime >= delays[i]) {
+        tabs.forEach(t => t.classList.remove('active'));
+        tabs[i].classList.add('active');
+        currentTabIndex = i;
+        break;
+      }
+    }
   });
 
   video.addEventListener('ended', () => {
     video.currentTime = 0;
-    activateTab();
+    activateTab(0);
     playVideo();
   });
 
@@ -82,4 +97,10 @@ export const featuresGeneral = () => {
       playVideo();
     }
   });
+
+  // Устанавливаем свойство loop для видео, чтобы оно воспроизводилось зациклено
+  video.loop = true;
+
+  // Начальная активация первой вкладки
+  activateTab(0);
 };
