@@ -72,6 +72,30 @@ document.addEventListener('DOMContentLoaded', function () {
   galleryTop.controller.control = galleryThumbs;
   galleryThumbs.controller.control = galleryTop;
 
+  // Добавляем обработчик кликов и касаний на body для начала воспроизведения видео
+  document.body.addEventListener('click', () => {
+    const videoElements = document.querySelectorAll('.swiper-slide video');
+    videoElements.forEach(videoElement => {
+      if (videoElement.paused) {
+        videoElement.play().catch(error => {
+          console.error('Error playing video:', error);
+        });
+      }
+    });
+  });
+
+  document.body.addEventListener('touchstart', () => {
+    const videoElements = document.querySelectorAll('.swiper-slide video');
+    videoElements.forEach(videoElement => {
+      if (videoElement.paused) {
+        videoElement.play().catch(error => {
+          console.error('Error playing video:', error);
+        });
+      }
+    });
+  });
+
+
   featuresGeneral();
   Header();
   SlotMachine();

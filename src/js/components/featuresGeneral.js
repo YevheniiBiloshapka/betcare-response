@@ -73,4 +73,17 @@ export const featuresGeneral = () => {
     activateTab();
     playVideo();
   });
+
+  // Добавляем обработчик кликов и касаний на body для начала воспроизведения видео
+  document.body.addEventListener('click', () => {
+    if (video.paused) {
+      playVideo();
+    }
+  });
+
+  document.body.addEventListener('touchstart', () => {
+    if (video.paused) {
+      playVideo();
+    }
+  });
 };
