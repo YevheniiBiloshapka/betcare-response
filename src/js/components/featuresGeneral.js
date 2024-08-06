@@ -1,98 +1,61 @@
 export const featuresGeneral = () => {
   const video = document.querySelector('.features__video-block--video');
   const tabs = document.querySelectorAll('.features__tab');
-  const delays = [0, 4000, 8000, 12000]; // Задержки в миллисекундах
-  const cycleDelay = 3000; // Задержка перед началом нового цикла
+  let isResetting = false; // Флаг для предотвращения лишних переключений
+  let lastTime = 0; // Для отслеживания изменений времени
 
-  let timeoutIds = [];
-  let currentTabIndex = 0;
-
-  const clearExistingTimeouts = () => {
-    timeoutIds.forEach(timeoutId => clearTimeout(timeoutId));
-    timeoutIds = [];
-  };
-
-  const activateTab = (startIndex = 0) => {
-    clearExistingTimeouts();
-    tabs.forEach((tab, index) => {
-      const delay = delays[index] - (startIndex > 0 ? delays[startIndex] : 0);
-      if (index >= startIndex) {
-        const timeoutId = setTimeout(() => {
-          tabs.forEach(t => t.classList.remove('active'));
-          tab.classList.add('active');
-          currentTabIndex = index;
-        }, delay);
-        timeoutIds.push(timeoutId);
-      }
-    });
-
-    // Добавляем задержку перед новым циклом
-    const totalDelay = delays[delays.length - 1] - (startIndex > 0 ? delays[startIndex] : 0) + cycleDelay;
-    setTimeout(() => {
-      video.currentTime = 0;
-      activateTab(0);
-      playVideo();
-    }, totalDelay);
-  };
-
-  const playVideo = () => {
-    if (video.readyState >= 2) {
-      video.play();
-    } else {
-      video.addEventListener('canplay', () => {
-        video.play();
-      }, { once: true });
-    }
-  };
-
-  const observer = new IntersectionObserver((entries, observer) => {
+  const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        activateTab();
-        playVideo();
-        observer.unobserve(video);
+        video.play();
+      } else {
+        video.pause();
       }
     });
-  }, {
-    threshold: 0.5
   });
 
   observer.observe(video);
 
-  video.addEventListener('timeupdate', () => {
-    const currentTime = video.currentTime * 1000; // Текущая позиция видео в миллисекундах
-    for (let i = delays.length - 1; i >= 0; i--) {
-      if (currentTime >= delays[i]) {
-        tabs.forEach(t => t.classList.remove('active'));
-        tabs[i].classList.add('active');
-        currentTabIndex = i;
-        break;
+  const timecodes = [
+    { time: 0, index: 0 },
+    { time: 4, index: 1 },
+    { time: 8, index: 2 },
+    { time: 12, index: 3 }
+  ];
+
+  video.addEventListener('timeupdate', function () {
+    if (isResetting) return; // Если флаг установлен, выходим из функции
+
+    const currentTime = video.currentTime;
+
+    if (Math.abs(currentTime - lastTime) < 0.1) return; // Проверка на значительное изменение времени
+    lastTime = currentTime; // Обновляем последнее время
+
+    timecodes.forEach((timecode, idx) => {
+      if (currentTime >= timecode.time) {
+        tabs.forEach(tab => tab.classList.remove('active'));
+        tabs[timecode.index].classList.add('active');
       }
+    });
+
+    if (currentTime >= 15) {
+      isResetting = true; // Устанавливаем флаг перед сбросом времени
+      video.currentTime = 0;
+      video.play();
     }
   });
 
-  video.addEventListener('ended', () => {
+  video.addEventListener('ended', function () {
     video.currentTime = 0;
-    activateTab(0);
-    playVideo();
+    video.play();
   });
 
-  // Добавляем обработчик кликов и касаний на body для начала воспроизведения видео
-  document.body.addEventListener('click', () => {
-    if (video.paused) {
-      playVideo();
+  video.addEventListener('play', function () {
+    if (isResetting) {
+      tabs.forEach(tab => tab.classList.remove('active'));
+      tabs[0].classList.add('active');
+      isResetting = false; // Сбрасываем флаг после начала воспроизведения
+      lastTime = 0; // Сбрасываем последнее время
     }
   });
-
-  document.body.addEventListener('touchstart', () => {
-    if (video.paused) {
-      playVideo();
-    }
-  });
-
-  // Устанавливаем свойство loop для видео, чтобы оно воспроизводилось зациклено
-  video.loop = true;
-
-  // Начальная активация первой вкладки
-  activateTab(0);
 };
