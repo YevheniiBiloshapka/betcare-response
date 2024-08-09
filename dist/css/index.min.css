@@ -5131,20 +5131,23 @@ picture.hero__slide-img.next {
   }
 }
 .cta-swiper--img {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%, 0);
   z-index: 1;
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
   overflow: hidden;
-  border-radius: 44px;
+  object-position: center;
   object-fit: cover;
-  object-position: top;
+  border-radius: 10px 10px 35px 35px;
+  width: 254px;
+  height: 520px;
+  outline: 1px solid red;
 }
 .cta-swiper--img--wrapper {
-  margin: 4px auto;
-  width: 272px;
-  max-width: 272px;
-  height: 565px;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 .cta-swiper--label {
   margin-bottom: 2px !important;
@@ -5215,28 +5218,75 @@ picture.hero__slide-img.next {
   .cta-swiper--box {
     max-width: 260px;
   }
+  .cta-swiper--box {
+    margin: 0 auto;
+    max-width: 260px;
+  }
   .cta-swiper--img-box {
+    margin: 0 auto;
     position: relative;
     z-index: 2;
-    width: 180px;
-    height: 370px;
-    max-height: 370px;
+    width: 260px;
+    height: 535px;
+    max-height: 535px;
   }
-  .cta-swiper--img {
-    z-index: 1;
+  .cta-swiper--screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
     width: 100%;
     height: 100%;
-    min-height: 100%;
+    background-image: -webkit-image-set(url(../img/cta/phoneBg/375_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/375_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/375_ctaSliderPhone@3.png) 3x);
+    background-image: image-set(url(../img/cta/phoneBg/375_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/375_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/375_ctaSliderPhone@3.png) 3x);
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow: hidden;
-    border-radius: 24px;
-    object-fit: cover;
-    object-position: top;
+  }
+}
+@media screen and (min-width: 1280px) and (min-width: 834px) {
+  .cta-swiper--screen {
+    background-image: -webkit-image-set(url(../img/cta/phoneBg/834_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/834_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/834_ctaSliderPhone@3.png) 3x);
+    background-image: image-set(url(../img/cta/phoneBg/834_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/834_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/834_ctaSliderPhone@3.png) 3x);
+  }
+}
+@media screen and (min-width: 1280px) and (min-width: 1180px) {
+  .cta-swiper--screen {
+    background-image: -webkit-image-set(url(../img/cta/phoneBg/1180_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/1180_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/1180_ctaSliderPhone@3.png) 3x);
+    background-image: image-set(url(../img/cta/phoneBg/1180_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/1180_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/1180_ctaSliderPhone@3.png) 3x);
+  }
+}
+@media screen and (min-width: 1280px) and (min-width: 1280px) {
+  .cta-swiper--screen {
+    background-image: -webkit-image-set(url(../img/cta/phoneBg/1280_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/1280_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/1280_ctaSliderPhone@3.png) 3x);
+    background-image: image-set(url(../img/cta/phoneBg/1280_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/1280_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/1280_ctaSliderPhone@3.png) 3x);
+  }
+}
+@media screen and (min-width: 1280px) and (min-width: 1512px) {
+  .cta-swiper--screen {
+    background-image: -webkit-image-set(url(../img/cta/phoneBg/1512_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/1512_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/1512_ctaSliderPhone@3.png) 3x);
+    background-image: image-set(url(../img/cta/phoneBg/1512_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/1512_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/1512_ctaSliderPhone@3.png) 3x);
+  }
+}
+@media screen and (min-width: 1280px) and (min-width: 1728px) {
+  .cta-swiper--screen {
+    background-image: -webkit-image-set(url(../img/cta/phoneBg/1728_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/1728_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/1728_ctaSliderPhone@3.png) 3x);
+    background-image: image-set(url(../img/cta/phoneBg/1728_ctaSliderPhone@1.png) 1x, url(../img/cta/phoneBg/1728_ctaSliderPhone@2.png) 2x, url(../img/cta/phoneBg/1728_ctaSliderPhone@3.png) 3x);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .cta-swiper--img {
+    border-radius: 10px 10px 35px 35px;
+    width: 240px;
+    height: 485px;
+    outline: 1px solid red;
   }
   .cta-swiper--img--wrapper {
-    margin: 4px auto;
-    width: 173px;
-    max-width: 173px;
-    height: 361px;
+    position: relative;
+    width: 100%;
+    height: 100%;
   }
   .cta-swiper--label {
     font-size: 14px !important;
@@ -5257,29 +5307,6 @@ picture.hero__slide-img.next {
   }
   .cta-swiper--box {
     max-width: 260px;
-  }
-  .cta-swiper--img-box {
-    position: relative;
-    z-index: 2;
-    width: 260px;
-    height: 534.91px;
-    max-height: 534.91px;
-  }
-  .cta-swiper--img {
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    overflow: hidden;
-    border-radius: 34px;
-    object-fit: cover;
-    object-position: top;
-  }
-  .cta-swiper--img--wrapper {
-    margin: 4px auto;
-    width: 253px;
-    max-width: 253px;
-    height: 525.91px;
   }
   .cta-swiper--label {
     font-size: 16px !important;
@@ -6440,11 +6467,12 @@ picture.hero__slide-img.next {
   }
 }
 
-.cta img {
+.cta img:not(.cta-swiper--img) {
   aspect-ratio: 1/1;
   object-fit: cover;
   object-position: center;
 }
+
 @keyframes loading {
   to {
     background-position-x: -20%;

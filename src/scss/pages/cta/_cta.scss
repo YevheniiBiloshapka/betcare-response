@@ -470,22 +470,23 @@ $colors: (
     }
   }
   &--img {
-    $paddingHeight: 9px;
-    $paddingWidth:7px;
-
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%,0);
     z-index: 1;
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
     overflow: hidden;
-    border-radius: 44px;
+    object-position: center;
     object-fit: cover;
-    object-position: top;
+
+    border-radius:10px 10px 35px 35px;
+    width: 254px;
+    height: 520px;
+    outline: 1px solid red;
     &--wrapper{
-      margin: 4px auto;
-      width: calc($imgBoxWidth - $paddingWidth);
-      max-width: calc($imgBoxWidth - $paddingWidth);
-      height: calc($imgBoxHeight - $paddingHeight);
+      position: relative;
+       width: 100%;
+      height: 100%;
 
     }
   }
@@ -554,47 +555,72 @@ $colors: (
       gap: 16px;
     }
 
-    &--img {
-
-    }
 
   }
   @media screen and (min-width: 1280px)  {
     max-width: 725px;
     margin: 24px 0;
-    $imgBoxWidth: 180px;
-    $imgBoxHeight: 370px;
+    $imgBoxWidth: 260px;
+    $imgBoxHeight: 535px;
     &--box{
       max-width:260px ;
     }
+    &--box{
+      margin: 0 auto;
+      max-width:$imgBoxWidth ;
+    }
     &--img-box {
-
+      margin: 0 auto;
       position: relative;
       z-index: 2;
       width: $imgBoxWidth;
       height: $imgBoxHeight;
       max-height: $imgBoxHeight;
     }
-    &--img {
-      $paddingHeight: 9px;
-      $paddingWidth:7px;
+    &--screen{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
 
-      z-index: 1;
       width: 100%;
       height: 100%;
-      min-height: 100%;
+      @include retina-bg("../img/cta/phoneBg/375_ctaSliderPhone@1.png","../img/cta/phoneBg/375_ctaSliderPhone@2.png","../img/cta/phoneBg/375_ctaSliderPhone@3.png");
+      background-size: cover;
+      background-repeat: no-repeat;
       overflow: hidden;
-      border-radius: 24px;
-      object-fit: cover;
-      object-position: top;
+      @media screen and (min-width: 834px) {
+        @include retina-bg("../img/cta/phoneBg/834_ctaSliderPhone@1.png","../img/cta/phoneBg/834_ctaSliderPhone@2.png","../img/cta/phoneBg/834_ctaSliderPhone@3.png");
+      }
+      @media screen and (min-width: 1180px) {
+        @include retina-bg("../img/cta/phoneBg/1180_ctaSliderPhone@1.png","../img/cta/phoneBg/1180_ctaSliderPhone@2.png","../img/cta/phoneBg/1180_ctaSliderPhone@3.png");
+      }
+      @media screen and (min-width: 1280px) {
+        @include retina-bg("../img/cta/phoneBg/1280_ctaSliderPhone@1.png","../img/cta/phoneBg/1280_ctaSliderPhone@2.png","../img/cta/phoneBg/1280_ctaSliderPhone@3.png");
+      }
+      @media screen and (min-width: 1512px) {
+        @include retina-bg("../img/cta/phoneBg/1512_ctaSliderPhone@1.png","../img/cta/phoneBg/1512_ctaSliderPhone@2.png","../img/cta/phoneBg/1512_ctaSliderPhone@3.png");
+      }
+      @media screen and (min-width: 1728px) {
+        @include retina-bg("../img/cta/phoneBg/1728_ctaSliderPhone@1.png","../img/cta/phoneBg/1728_ctaSliderPhone@2.png","../img/cta/phoneBg/1728_ctaSliderPhone@3.png");
+      }
+    }
+    &--img {
+
+      border-radius:10px 10px 35px 35px;
+      width: 240px;
+      height: 485px;
+      outline: 1px solid red;
       &--wrapper{
-        margin: 4px auto;
-        width: calc($imgBoxWidth - $paddingWidth);
-        max-width: calc($imgBoxWidth - $paddingWidth);
-        height: calc($imgBoxHeight - $paddingHeight);
+        position: relative;
+        width: 100%;
+        height: 100%;
 
       }
     }
+
     &--label {
       @include font-body(small-bold, true)
     }
@@ -605,39 +631,8 @@ $colors: (
   }
   @media screen and (min-width: 1512px){
     max-width: 869px;
-    $imgBoxWidth: 260px;
-    $imgBoxHeight: 534.91px;
-
     &--box{
       max-width:260px ;
-    }
-    &--img-box {
-
-      position: relative;
-      z-index: 2;
-      width: $imgBoxWidth;
-      height: $imgBoxHeight;
-      max-height: $imgBoxHeight;
-    }
-    &--img {
-      $paddingHeight: 9px;
-      $paddingWidth:7px;
-
-      z-index: 1;
-      width: 100%;
-      height: 100%;
-      min-height: 100%;
-      overflow: hidden;
-      border-radius: 34px;
-      object-fit: cover;
-      object-position: top;
-      &--wrapper{
-        margin: 4px auto;
-        width: calc($imgBoxWidth - $paddingWidth);
-        max-width: calc($imgBoxWidth - $paddingWidth);
-        height: calc($imgBoxHeight - $paddingHeight);
-
-      }
     }
     &--label {
       @include font-body(normal-bold, true)
@@ -649,7 +644,6 @@ $colors: (
   }
   @media screen and (min-width: 1728px){
     max-width: 869px;
-
   }
 }
 
@@ -1816,17 +1810,10 @@ $colors: (
   }
 }
 
-.cta img{
+.cta img:not(.cta-swiper--img){
   aspect-ratio: 1/1;
-
   object-fit: cover;
   object-position: center;
-
-  @media screen and (min-width: 1280px) {
-
-    //max-height: 336px;
-    //max-width: 360px;
-  }
 }
 
 @keyframes loading {
